@@ -2,9 +2,11 @@ biochatter
 bioinformatics
 Biomedicine
 ChatGSE
+Ivanoff
 LLM
 LLMs
 Lobentanzer
+Marois
 Saez
 saezlab
 saezrodriguez
