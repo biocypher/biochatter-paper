@@ -1,22 +1,24 @@
 [
-{
-  "id": "url:https://github.com/manubot/rootstock",
-  "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
-  "issued": {
-    "date-parts": [
-      [
-        2019
+  {
+    "id": "gallagher-infinite",
+    "type": "webpage",
+    "URL": "https://www.bbc.com/news/health-65252510",
+    "title": "Study reveals cancer’s ‘infinite’ ability to evolve",
+    "container-title": "BBC News",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          12
+        ]
       ]
+    },
+    "author": [
+      {
+        "given": "James",
+        "family": "Gallagher"
+      }
     ]
-  },
-  "author": [
-    {
-      "given": "Daniel",
-      "family": "Himmelstein"
-    }
-  ]
-}
+  }
 ]
