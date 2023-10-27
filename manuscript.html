@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T08:18:20+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T08:18:20+00:00" />
+  <meta name="dc.modified" content="2023-10-27T08:53:06+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T08:53:06+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/fa69d7a71e35f621b0ae36f86a354120658dd4a3/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fa69d7a71e35f621b0ae36f86a354120658dd4a3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fa69d7a71e35f621b0ae36f86a354120658dd4a3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a745e0c32f7160411f5998cbd74fee560faacd78/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a745e0c32f7160411f5998cbd74fee560faacd78/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a745e0c32f7160411f5998cbd74fee560faacd78/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/fa69d7a71e35f621b0ae36f86a354120658dd4a3/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/a745e0c32f7160411f5998cbd74fee560faacd78/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/fa69d7a71e35f621b0ae36f86a354120658dd4a3">biocypher/biochatter-paper@fa69d7a</a>
+from <a href="https://github.com/biocypher/biochatter-paper/tree/a745e0c32f7160411f5998cbd74fee560faacd78">biocypher/biochatter-paper@a745e0c</a>
 on October 27, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -138,23 +138,89 @@ To improve biomedical analyses, we propose to combine human ingenuity and machin
 We safeguard against common LLM shortcomings using general and biomedicine-specific measures and allow automated integration of popular bioinformatics methods.
 Ultimately, we aim to improve the AI-readiness of biomedicine and make LLMs more useful and trustworthy in research applications.</p>
 <h2 id="main">Main</h2>
-<p>Despite our technological advances, biology and biomedicine continue to pose incredible challenges (Gallagher, 2023).
+<p>Despite our technological advances, biology and biomedicine continue to pose incredible challenges <span class="citation" data-cites="5mQXgjfA">[<a href="#ref-5mQXgjfA" role="doc-biblioref">1</a>]</span>.
 We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation.
-One reason for this challenge may be the inherent limitation of human knowledge (Marois and Ivanoff, 2005).
+One reason for this challenge may be the inherent limitation of human knowledge <span class="citation" data-cites="q5vfV9nk">[<a href="#ref-q5vfV9nk" role="doc-biblioref">2</a>]</span>.
 Even seasoned domain experts cannot know the implications of every molecule, be it metabolite, DNA, RNA, or protein, even in their own domain.
 In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.</p>
-<p>Citation by URL <span class="citation" data-cites="5mQXgjfA">[<a href="#ref-5mQXgjfA" role="doc-biblioref">1</a>]</span>.</p>
-<p>Citation by alias <span class="citation" data-cites="195HIa77n">[<a href="#ref-195HIa77n" role="doc-biblioref">2</a>]</span>.</p>
+<p>Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters <span class="citation" data-cites="JIjeWPOb">[<a href="#ref-17lpGtuH5" role="doc-biblioref">5</a>]</span>.
+Trained correctly, they can recall and combine virtually limitless knowledge from their training set.
+ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as bioinformatics-specific tasks <span class="citation" data-cites="ae7XiPvs">[<a href="#ref-wo7jyZHW" role="doc-biblioref">7</a>]</span>.
+However, the current, predominantly manual, way of interacting with LLMs is virtually non-reproducible, and their behaviour can be erratic.
+For instance, they are known to hallucinate: they make up facts as they go along, and, to make matters worse, are convinced - and convincing - regarding the truth of their hallucinations <span class="citation" data-cites="elx4isXx">[<a href="#ref-wo7jyZHW" role="doc-biblioref">7</a>]</span>.
+While current efforts towards AGI (Artificial General Intelligence) manage to ameliorate some of the shortcomings by ensembling multiple models <span class="citation" data-cites="UEmjXz02">[<a href="#ref-UEmjXz02" role="doc-biblioref">9</a>]</span> with long-term memory stores <span class="citation" data-cites="gy4YOpGJ">[<a href="#ref-gy4YOpGJ" role="doc-biblioref">10</a>]</span>, the current generation of AI does not inspire adequate trust to be applied to biomedical problems without supervision <span class="citation" data-cites="elx4isXx">[<a href="#ref-elx4isXx" role="doc-biblioref">8</a>]</span>.
+Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues.</p>
+<p>A major aim of computational biology is to distil high-dimensional molecular measurements into a humanly digestible form by projecting the measurements into a lower-dimensional space composed of gene programs, pathways, or other functional groupings of biological entities, for example via gene set enrichment analyses.
+However, even this distilled knowledge requires advanced expertise and thorough literature research to effectively interpret and exploit, and benchmarking the methods’ performance is non-trivial <span class="citation" data-cites="k6hpwdsR">[<a href="#ref-k6hpwdsR" role="doc-biblioref">11</a>]</span>.</p>
+<p>To improve and accelerate this interpretation and exploration, we have developed biochatter, a platform for communicating with LLMs specifically tuned to biomedical research, the use of which we demonstrate in a conversational web interface, ChatGSE (Figure <a href="#fig:overview">1</a>).
+The platform guides the human researcher intuitively through the interaction with the model, while counteracting the problematic behaviours of the LLM.
+Since the interaction is mainly based on plain text, it can be used by virtually any researcher.
+We engineer prompts around the queries of the user to improve model performance with regard to biomedicine, and automate the integration of popular bioinformatics methods, such as differential expression and gene set enrichment (Supplementary Note <span class="citation" data-cites="sec:sup-prompts">[<a href="#ref-sec:sup-prompts" role="doc-biblioref"><strong>sec:sup-prompts?</strong></a>]</span>).</p>
+<!-- Figure 1 -->
+<div id="fig:overview" class="fignos">
+<figure>
+<img src="images/graphical_abstract.png" alt="Figure 1: The ChatGSE composable platform architecture (simplified). The user submits a question about a topic of interest (e.g., an experiment) along with the low-dimensional results of a bioinformatics analysis (top left). The platform’s main response circuit (blue) composes a number of specifically engineered prompts and passes them (and a conversation history) to the primary LLM, which generates a response for the user based on all inputs. This response is simultaneously used to prompt the secondary circuit (orange), which fulfils auxiliary tasks to complement the primary response. In particular, using search, the secondary circuit queries a database as prior knowledge repository and compares annotations to the primary response. The knowledge graph can also serve as long-term memory extension of the model. Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a document summarisation model. If this “second opinion” differs from the primary response, a warning is issued. The platform is composable in all aspects, in principle allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM." />
+<figcaption aria-hidden="true"><span>Figure 1:</span> <strong>The ChatGSE composable platform architecture (simplified).</strong>
+The user submits a question about a topic of interest (e.g., an experiment) along with the low-dimensional results of a bioinformatics analysis (top left).
+The platform’s main response circuit (blue) composes a number of specifically engineered prompts and passes them (and a conversation history) to the primary LLM, which generates a response for the user based on all inputs.
+This response is simultaneously used to prompt the secondary circuit (orange), which fulfils auxiliary tasks to complement the primary response.
+In particular, using search, the secondary circuit queries a database as prior knowledge repository and compares annotations to the primary response.
+The knowledge graph can also serve as long-term memory extension of the model.
+Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a document summarisation model.
+If this “second opinion” differs from the primary response, a warning is issued.
+The platform is composable in all aspects, in principle allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM.</figcaption>
+</figure>
+</div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-5mQXgjfA" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Study reveals cancer’s ‘infinite’ ability to evolve</strong> <div class="csl-block">BBC News</div> (2023-04-12) <a href="https://www.bbc.com/news/health-65252510">https://www.bbc.com/news/health-65252510</a></div>
 </div>
-<div id="ref-195HIa77n" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Study reveals cancer’s ‘infinite’ ability to evolve</strong> <div class="csl-block">James Gallagher</div> <em>BBC News</em> (2023-04-12) <a href="https://www.bbc.com/news/health-65252510">https://www.bbc.com/news/health-65252510</a></div>
+<div id="ref-q5vfV9nk" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Capacity limits of information processing in the brain</strong> <div class="csl-block">René Marois, Jason Ivanoff</div> <em>Trends in Cognitive Sciences</em> (2005-06) <a href="https://doi.org/d5gmqt">https://doi.org/d5gmqt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.tics.2005.04.010">10.1016/j.tics.2005.04.010</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/15925809">15925809</a></div></div>
+</div>
+<div id="ref-JIjeWPOb" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>PaLM: Scaling Language Modeling with Pathways</strong> <div class="csl-block">Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, … Noah Fiedel</div> <em>arXiv</em> (2022) <a href="https://doi.org/kfxf">https://doi.org/kfxf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2204.02311">10.48550/arxiv.2204.02311</a></div></div>
+</div>
+<div id="ref-IzWFZmuQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>LaMDA: Language Models for Dialog Applications</strong> <div class="csl-block">Romal Thoppilan, Daniel De Freitas, Jamie Hall, Noam Shazeer, Apoorv Kulshreshtha, Heng-Tze Cheng, Alicia Jin, Taylor Bos, Leslie Baker, Yu Du, … Quoc Le</div> <em>arXiv</em> (2022) <a href="https://doi.org/kmfc">https://doi.org/kmfc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2201.08239">10.48550/arxiv.2201.08239</a></div></div>
+</div>
+<div id="ref-17lpGtuH5" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>GPT-4 Technical Report</strong> <div class="csl-block">OpenAI</div> <em>arXiv</em> (2023) <a href="https://doi.org/grx4cb">https://doi.org/grx4cb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2303.08774">10.48550/arxiv.2303.08774</a></div></div>
+</div>
+<div id="ref-ae7XiPvs" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Reference-free and cost-effective automated cell type annotation with GPT-4 in single-cell RNA-seq analysis</strong> <div class="csl-block">Wenpin Hou, Zhicheng Ji</div> <em>Cold Spring Harbor Laboratory</em> (2023-04-21) <a href="https://doi.org/gsznzg">https://doi.org/gsznzg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.04.16.537094">10.1101/2023.04.16.537094</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37131626">37131626</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10153208">PMC10153208</a></div></div>
+</div>
+<div id="ref-wo7jyZHW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>How will generative AI disrupt data science in drug discovery?</strong> <div class="csl-block">Jean-Philippe Vert</div> <em>Nature Biotechnology</em> (2023-05-08) <a href="https://doi.org/gsznzd">https://doi.org/gsznzd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41587-023-01789-6">10.1038/s41587-023-01789-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37156917">37156917</a></div></div>
+</div>
+<div id="ref-elx4isXx" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Foundation models for generalist medical artificial intelligence</strong> <div class="csl-block">Michael Moor, Oishi Banerjee, Zahra Shakeri Hossein Abad, Harlan M Krumholz, Jure Leskovec, Eric J Topol, Pranav Rajpurkar</div> <em>Nature</em> (2023-04-12) <a href="https://doi.org/gr4td4">https://doi.org/gr4td4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-023-05881-4">10.1038/s41586-023-05881-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37045921">37045921</a></div></div>
+</div>
+<div id="ref-UEmjXz02" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>🦜️🔗 Langchain</strong> <a href="https://python.langchain.com/">https://python.langchain.com/</a></div>
+</div>
+<div id="ref-gy4YOpGJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>AutoGPT Official</strong> <div class="csl-block">AutoGPT Official</div> (2023-09-18) <a href="https://autogpt.net/">https://autogpt.net/</a></div>
+</div>
+<div id="ref-k6hpwdsR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Toward a gold standard for benchmarking gene set enrichment analysis</strong> <div class="csl-block">Ludwig Geistlinger, Gergely Csaba, Mara Santarelli, Marcel Ramos, Lucas Schiffer, Nitesh Turaga, Charity Law, Sean Davis, Vincent Carey, Martin Morgan, … Levi Waldron</div> <em>Briefings in Bioinformatics</em> (2020-03-09) <a href="https://doi.org/ggs7tp">https://doi.org/ggs7tp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bib/bbz158">10.1093/bib/bbz158</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32026945">32026945</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7820859">PMC7820859</a></div></div>
+</div>
+<div id="ref-MMp6cQ1x" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>The TRUST Principles for digital repositories</strong> <div class="csl-block">Dawei Lin, Jonathan Crabtree, Ingrid Dillo, Robert R Downs, Rorie Edmunds, David Giaretta, Marisa De Giusti, Hervé L’Hours, Wim Hugo, Reyna Jenkyns, … John Westbrook</div> <em>Scientific Data</em> (2020-05-14) <a href="https://doi.org/ggwrtj">https://doi.org/ggwrtj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41597-020-0486-7">10.1038/s41597-020-0486-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32409645">32409645</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7224370">PMC7224370</a></div></div>
 </div>
 </div>
+<h2 id="supplementary-materials">Supplementary Materials</h2>
+<p>In our Supplementary Notes, we explain the functions of our platform in more detail.
+Please note that several of the mentioned features, particularly more advanced ones, are in early developmental stages.
+For practical reasons, we divide our software into two distinct packages, the user interface (UI) component ChatGSE and the Python backend library biochatter.
+For an up-to-date overview and preview of current functionality of the platform, please visit the online preview.
+Both libraries are developed in Python (version 3.10), according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">12</a>]</span>.
+We use Streamlit (version 1.21.0, https://streamlit.io) for the web UI.
+We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.</p>
+<p>{#sec:sup-prompts}</p>
+<h3 id="prompt-engineering">Prompt Engineering</h3>
 <!-- default theme -->
 
 <style>
