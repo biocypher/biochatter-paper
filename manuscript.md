@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T13:58:57+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T13:58:57+00:00" />
+  <meta name="dc.modified" content="2023-10-27T14:32:02+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T14:32:02+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,9 +46,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/d15b129df5ec2c94c7cb4402a69ad0eef84b69aa/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d15b129df5ec2c94c7cb4402a69ad0eef84b69aa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d15b129df5ec2c94c7cb4402a69ad0eef84b69aa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/d15b129df5ec2c94c7cb4402a69ad0eef84b69aa/))
 was automatically generated
-from [biocypher/biochatter-paper@8ef06f0](https://github.com/biocypher/biochatter-paper/tree/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c)
+from [biocypher/biochatter-paper@d15b129](https://github.com/biocypher/biochatter-paper/tree/d15b129df5ec2c94c7cb4402a69ad0eef84b69aa)
 on October 27, 2023.
 </em></small>
 
@@ -137,11 +137,11 @@ One reason for this challenge may be the inherent limitation of human knowledge 
 Even seasoned domain experts cannot know the implications of every molecule, be it metabolite, DNA, RNA, or protein, even in their own domain.
 In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.
 
-Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311, @10.48550/arxiv.2201.08239, @10.48550/arxiv.2303.08774].
+Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311; @10.48550/arxiv.2201.08239; @10.48550/arxiv.2303.08774].
 Trained correctly, they can recall and combine virtually limitless knowledge from their training set.
-ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as bioinformatics-specific tasks [@doi:10.1101/2023.04.16.537094, @doi:10.1038/s41587-023-01789-6].
+ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as bioinformatics-specific tasks [@doi:10.1101/2023.04.16.537094; @doi:10.1038/s41587-023-01789-6].
 However, the current, predominantly manual, way of interacting with LLMs is virtually non-reproducible, and their behaviour can be erratic.
-For instance, they are known to hallucinate: they make up facts as they go along, and, to make matters worse, are convinced - and convincing - regarding the truth of their hallucinations [@doi:10.1038/s41586-023-05881-4, @doi:10.1038/s41587-023-01789-6].
+For instance, they are known to hallucinate: they make up facts as they go along, and, to make matters worse, are convinced - and convincing - regarding the truth of their hallucinations [@doi:10.1038/s41586-023-05881-4; @doi:10.1038/s41587-023-01789-6].
 While current efforts towards AGI (Artificial General Intelligence) manage to ameliorate some of the shortcomings by ensembling multiple models [@{https://python.langchain.com}] with long-term memory stores [@{https://autogpt.net/}], the current generation of AI does not inspire adequate trust to be applied to biomedical problems without supervision [@doi:10.1038/s41586-023-05881-4].
 Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues.
 

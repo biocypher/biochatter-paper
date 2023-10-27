@@ -20,7 +20,7 @@ Dugourd
 embeddings
 ensembling
 frontend
-gpt
+GPT
 GSK
 HuggingChat
 inclusivity
