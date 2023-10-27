@@ -20,7 +20,7 @@ Dugourd
 embeddings
 ensembling
 frontend
-GPT
+gpt
 GSK
 HuggingChat
 inclusivity
@@ -55,7 +55,7 @@ SL
 slobentanzer
 Stadapharm
 Streamlit
-summarisation
+Summarisation
 templating
 Travere
 UI
