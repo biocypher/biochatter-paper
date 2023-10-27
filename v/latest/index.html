@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T10:43:55+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T10:43:55+00:00" />
+  <meta name="dc.modified" content="2023-10-27T13:58:57+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T13:58:57+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/475eefd57703a5526fd04f272d565bfcd1c0c12b">biocypher/biochatter-paper@475eefd</a>
+from <a href="https://github.com/biocypher/biochatter-paper/tree/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c">biocypher/biochatter-paper@8ef06f0</a>
 on October 27, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -155,7 +155,7 @@ While current efforts towards AGI (Artificial General Intelligence) manage to am
 Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues.</p>
 <p>A major aim of computational biology is to distil high-dimensional molecular measurements into a humanly digestible form by projecting the measurements into a lower-dimensional space composed of gene programs, pathways, or other functional groupings of biological entities, for example via gene set enrichment analyses.
 However, even this distilled knowledge requires advanced expertise and thorough literature research to effectively interpret and exploit, and benchmarking the methods’ performance is non-trivial <span class="citation" data-cites="k6hpwdsR">[<a href="#ref-k6hpwdsR" role="doc-biblioref">11</a>]</span>.</p>
-<p>To improve and accelerate this interpretation and exploration, we have developed biochatter, a platform for communicating with LLMs specifically tuned to biomedical research, the use of which we demonstrate in a conversational web interface, ChatGSE (Figure <a href="#fig:overview">1</a>).
+<p>To improve and accelerate this interpretation and exploration, we have developed BioChatter, a platform for communicating with LLMs specifically tuned to biomedical research, the use of which we demonstrate in a conversational web interface, ChatGSE (Figure <a href="#fig:overview">1</a>).
 The platform guides the human researcher intuitively through the interaction with the model, while counteracting the problematic behaviours of the LLM.
 Since the interaction is mainly based on plain text, it can be used by virtually any researcher.
 We engineer prompts around the queries of the user to improve model performance with regard to biomedicine, and automate the integration of popular bioinformatics methods, such as differential expression and gene set enrichment (Supplementary Note <a href="#prompt-engineering">Prompt Engineering</a>).</p>
@@ -180,7 +180,10 @@ These interactions are handled by a pre-programmed conversational “Assistant,�
 Using vector database approaches, the user’s prompts can be further supplemented with information extracted from pertinent, user-provided literature (Supplementary Note <a href="#in-context-learning">In-context Learning</a>).</p>
 <p>To increase data-awareness of the AI agents, we introduce connectivity to databases, which can extend the long-term memory of the models, semantically ground the biological entities with respect to suitable ontologies, and compare the model’s responses to prior knowledge ground truth.
 By integrating a flexible knowledge graph creation framework <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">12</a>]</span>, we allow versatile use cases across the entire research spectrum.
-For example, connecting to a knowledge graph of cell markers based on Cell Ontology [doi:10.1186/s13326-016-0088-7], the task of annotating single cell data sets can be automated and made more reproducible (Supplementary Note <a href="#cell-type-annotation">Cell Type Annotation</a>) by abstracting the pioneering efforts of manually executed studies <span class="citation" data-cites="ae7XiPvs">[<a href="#ref-ae7XiPvs" role="doc-biblioref">6</a>]</span>.</p>
+For example, connecting to a knowledge graph of cell markers based on Cell Ontology [doi:10.1186/s13326-016-0088-7], the task of annotating single cell data sets can be automated and made more reproducible (Supplementary Note <a href="#cell-type-annotation">Cell Type Annotation</a>) by abstracting the pioneering efforts of manually executed studies <span class="citation" data-cites="ae7XiPvs">[<a href="#ref-ae7XiPvs" role="doc-biblioref">6</a>]</span>.
+We engineer the prompts around knowledge graph queries around the semantic configuration of BioCypher knowledge graphs, which allows efficient communication of the LLM with the knowledge graph and avoids hallucination-based issues.
+This allows querying any knowledge graph using natural language as well as the development of advanced multi-stage reasoning strategies (Supplementary Note <a href="#knowledge-graphs">Knowledge Graphs</a>).</p>
+<!-- TODO BENCHMARKING SECTION -->
 <p>Currently, the most powerful conversational AI platform, ChatGPT (OpenAI), is surrounded by data privacy concerns <span class="citation" data-cites="PDhRVYjU">[<a href="#ref-PDhRVYjU" role="doc-biblioref">13</a>]</span>.
 We address this issue in two ways.
 Firstly, we provide access to the OpenAI models through the API (Application Programming Interface), which is subject to different, more stringent data protection than the web interface <span class="citation" data-cites="C5Z1X3MG">[<a href="#ref-C5Z1X3MG" role="doc-biblioref">14</a>]</span>.
@@ -257,6 +260,8 @@ LLMs have been shown to be able to perform this task with high accuracy, and can
 <p>Using the graphical user interface of ChatGSE, we can provide recommendations of inferred cell types to the human user, such that the ultimate decision about a cell type annotation remains with the domain expert, while the tedious aspects of annotation are reduced significantly.
 If the model reaches a threshold of perfect annotation for any cell type (e.g., a &gt;99% success rate in more than 50 cells), the user can decide to trust the model in instances of this cell type and fully automate the annotation in these instances.
 Similarly, confidence metrics can be used to trigger user input only at cell type inferences that are not straightforward.</p>
+<h3 id="knowledge-graphs">Knowledge Graphs</h3>
+<!-- TODO -->
 <h3 id="causal-inference">Causal Inference</h3>
 <p>More recent models have shown considerable capacity for common sense reasoning, in particular, GPT-4 <span class="citation" data-cites="17lpGtuH5">[<a href="#ref-17lpGtuH5" role="doc-biblioref">5</a>]</span>.
 There is an unmet need to compare the reasoning outcomes of LLMs to other, more traditional modes of inference, such as the do-calculus <span class="citation" data-cites="peGxtHPM">[<a href="#ref-peGxtHPM" role="doc-biblioref">23</a>]</span>, logic models <span class="citation" data-cites="s2EFuVEM">[<a href="#ref-s2EFuVEM" role="doc-biblioref">24</a>]</span>, and semantic reasoning approaches <span class="citation" data-cites="10hJQkRMY">[<a href="#ref-10hJQkRMY" role="doc-biblioref">25</a>]</span>.
