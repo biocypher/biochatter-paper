@@ -17,6 +17,7 @@ authors:
     email: sebastian.lobentanzer@gmail.com
     affiliations:
       - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+    corresponding: true
   - github: saezrodriguez
     name: Julio Saez-Rodriguez
     initials: JSR
@@ -26,3 +27,4 @@ authors:
     email: pub.saez@uni-heidelberg.de
     affiliations:
       - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+    corresponding: true
