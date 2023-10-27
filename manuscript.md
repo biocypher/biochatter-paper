@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T10:43:55+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T10:43:55+00:00" />
+  <meta name="dc.modified" content="2023-10-27T13:58:57+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T13:58:57+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,9 +46,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c/))
 was automatically generated
-from [biocypher/biochatter-paper@475eefd](https://github.com/biocypher/biochatter-paper/tree/475eefd57703a5526fd04f272d565bfcd1c0c12b)
+from [biocypher/biochatter-paper@8ef06f0](https://github.com/biocypher/biochatter-paper/tree/8ef06f0f4f3f299ec3e9f87a07317baef4b7443c)
 on October 27, 2023.
 </em></small>
 
@@ -148,7 +148,7 @@ Additionally, biomedicine demands greater care in data privacy, licensing, and t
 A major aim of computational biology is to distil high-dimensional molecular measurements into a humanly digestible form by projecting the measurements into a lower-dimensional space composed of gene programs, pathways, or other functional groupings of biological entities, for example via gene set enrichment analyses.
 However, even this distilled knowledge requires advanced expertise and thorough literature research to effectively interpret and exploit, and benchmarking the methods’ performance is non-trivial [@doi:10.1093/bib/bbz158].
 
-To improve and accelerate this interpretation and exploration, we have developed biochatter, a platform for communicating with LLMs specifically tuned to biomedical research, the use of which we demonstrate in a conversational web interface, ChatGSE (Figure @fig:overview).
+To improve and accelerate this interpretation and exploration, we have developed BioChatter, a platform for communicating with LLMs specifically tuned to biomedical research, the use of which we demonstrate in a conversational web interface, ChatGSE (Figure @fig:overview).
 The platform guides the human researcher intuitively through the interaction with the model, while counteracting the problematic behaviours of the LLM.
 Since the interaction is mainly based on plain text, it can be used by virtually any researcher.
 We engineer prompts around the queries of the user to improve model performance with regard to biomedicine, and automate the integration of popular bioinformatics methods, such as differential expression and gene set enrichment (Supplementary Note [Prompt Engineering]).
@@ -174,6 +174,10 @@ Using vector database approaches, the user’s prompts can be further supplement
 To increase data-awareness of the AI agents, we introduce connectivity to databases, which can extend the long-term memory of the models, semantically ground the biological entities with respect to suitable ontologies, and compare the model's responses to prior knowledge ground truth.
 By integrating a flexible knowledge graph creation framework [@doi:10.1038/s41587-023-01848-y], we allow versatile use cases across the entire research spectrum.
 For example, connecting to a knowledge graph of cell markers based on Cell Ontology [doi:10.1186/s13326-016-0088-7], the task of annotating single cell data sets can be automated and made more reproducible (Supplementary Note [Cell Type Annotation]) by abstracting the pioneering efforts of manually executed studies [@doi:10.1101/2023.04.16.537094].
+We engineer the prompts around knowledge graph queries around the semantic configuration of BioCypher knowledge graphs, which allows efficient communication of the LLM with the knowledge graph and avoids hallucination-based issues.
+This allows querying any knowledge graph using natural language as well as the development of advanced multi-stage reasoning strategies (Supplementary Note [Knowledge Graphs]).
+
+<!-- TODO BENCHMARKING SECTION -->
 
 Currently, the most powerful conversational AI platform, ChatGPT (OpenAI), is surrounded by data privacy concerns [@{https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/}].
 We address this issue in two ways.
@@ -275,6 +279,10 @@ Using the graphical user interface of ChatGSE, we can provide recommendations of
 If the model reaches a threshold of perfect annotation for any cell type (e.g., a >99% success rate in more than 50 cells), the user can decide to trust the model in instances of this cell type and fully automate the annotation in these instances.
 Similarly, confidence metrics can be used to trigger user input only at cell type inferences that are not straightforward.
 
+### Knowledge Graphs
+
+<!-- TODO -->
+
 ### Causal Inference
 
 More recent models have shown considerable capacity for common sense reasoning, in particular, GPT-4 [@doi:10.48550/arxiv.2303.08774].
@@ -292,6 +300,7 @@ Given a response from said model, the literature agent is tasked with extracting
 The validation of extracted article authors, titles, and identifiers can be performed by a simple search in a connected database of scientific publications.
 
 ### Experimental Design
+
 Experimental design is a crucial step in any biological experiment.
 However, it can be a subtle and complex task, requiring a deep understanding of the biological system under study as well as statistical and computational expertise.
 LLMs can potentially fill the gaps that exist in most research groups, which traditionally focus on either the biological or the statistical aspects of experimental design.
@@ -300,6 +309,7 @@ Similar to the general chat functionality, we provide facilities to upload exper
 Coupled with a suitable knowledge graph (for instance containing methods literature) and/or a document summarisation of relevant articles, ChatGSE can be a simple and effective tool to consider the design of an experiment from multiple perspectives.
 
 ### Podcast my Paper
+
 The recent years have brought significant advances in text-to-speech applications, yielding large accessibility benefits to simple text-based communication and personal assistants.
 However, the text of scientific papers is riddled with special characters, references, legends, and entities otherwise hard to interpret by text-to-speech algorithms, such as PCR primer sequences.
 
@@ -308,6 +318,7 @@ The resulting cleaned sections are also lightly summarised to account for consum
 The resulting audio can be played back on any media device.
 
 ### Journal Club
+
 In many instances, the evaluation of scientific literature is pursued comparatively.
 Whether it is the discussion of which hypothesis is the correct one of two, or which method should be applied to address a specific question, multiple manuscripts need to be integrated to draw conclusions.
 We propose to facilitate scientific “discussion” by orchestrating an AI journal club, in which a primary model guides individual models, each responsible for representing one scientific position (e.g., each representing one manuscript).
