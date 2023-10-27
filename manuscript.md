@@ -1,14 +1,15 @@
 ---
-title: Manuscript Title
+title: A Platform for the Biomedical Application of Large Language Models
 keywords:
-- markdown
-- publishing
-- manubot
-lang: en-US
+- biomedicine
+- bioinformatics
+- large language models
+- framework
+lang: en-UK
 date-meta: '2023-10-27'
 author-meta:
-- John Doe
-- Jane Roe
+- Sebastian Lobentanzer
+- Julio Saez-Rodriguez
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -16,38 +17,38 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="A Platform for the Biomedical Application of Large Language Models" />
+  <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
+  <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
+  <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T08:02:20+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T08:02:20+00:00" />
-  <meta name="dc.language" content="en-US" />
-  <meta name="citation_language" content="en-US" />
+  <meta name="dc.modified" content="2023-10-27T08:05:51+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T08:05:51+00:00" />
+  <meta name="dc.language" content="en-UK" />
+  <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Sebastian Lobentanzer" />
+  <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
+  <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
+  <meta name="twitter:creator" content="@slobentanzer" />
+  <meta name="citation_author" content="Julio Saez-Rodriguez" />
+  <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
+  <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
+  <meta name="twitter:creator" content="@saezlab" />
   <link rel="canonical" href="https://biocypher.github.io/biochatter-paper/" />
   <meta property="og:url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta property="twitter:url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/07413fdbf212558534245d4357e494e549b93fc6/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/07413fdbf212558534245d4357e494e549b93fc6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/07413fdbf212558534245d4357e494e549b93fc6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/07413fdbf212558534245d4357e494e549b93fc6/))
 was automatically generated
-from [biocypher/biochatter-paper@48c7d75](https://github.com/biocypher/biochatter-paper/tree/48c7d75849f6fa24b2c2d6a529edc028f1b2d029)
+from [biocypher/biochatter-paper@07413fd](https://github.com/biocypher/biochatter-paper/tree/07413fdbf212558534245d4357e494e549b93fc6)
 on October 27, 2023.
 </em></small>
 
@@ -81,39 +82,35 @@ on October 27, 2023.
 
 
 
-+ **John Doe**
++ **Sebastian Lobentanzer**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0003-3399-6695](https://orcid.org/0000-0003-3399-6695)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
+    [slobentanzer](https://github.com/slobentanzer)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)
-    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
-    [\@johndoe@mastodon.social](https://mastodon.social/@johndoe)
+    [slobentanzer](https://twitter.com/slobentanzer)
     <br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
   </small>
 
-+ **Jane Roe**
-  ^[✉](#correspondence)^<br>
++ **Julio Saez-Rodriguez**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-8552-8976](https://orcid.org/0000-0002-8552-8976)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)
+    [saezrodriguez](https://github.com/saezrodriguez)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [saezlab](https://twitter.com/saezlab)
     <br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
   </small>
 
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/biocypher/biochatter-paper/issues)
-or email to
-Jane Roe \<jane.roe@whatever.edu\>.
-
 
 :::
 
