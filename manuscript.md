@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T09:46:28+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T09:46:28+00:00" />
+  <meta name="dc.modified" content="2023-10-27T09:59:35+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T09:59:35+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,9 +46,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/7c327ac4fefa581c888b4bbb9710dfaf7f0562cf/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7c327ac4fefa581c888b4bbb9710dfaf7f0562cf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7c327ac4fefa581c888b4bbb9710dfaf7f0562cf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/7c327ac4fefa581c888b4bbb9710dfaf7f0562cf/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/))
 was automatically generated
-from [biocypher/biochatter-paper@7c327ac](https://github.com/biocypher/biochatter-paper/tree/7c327ac4fefa581c888b4bbb9710dfaf7f0562cf)
+from [biocypher/biochatter-paper@a5297db](https://github.com/biocypher/biochatter-paper/tree/a5297db3e4a0fe2d66595a9f841b29cf87a791a8)
 on October 27, 2023.
 </em></small>
 
@@ -166,6 +166,11 @@ If this “second opinion” differs from the primary response, a warning is iss
 The platform is composable in all aspects, in principle allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM.
 ](images/graphical_abstract.png "Overview"){#fig:overview}
 
+On the model side, we implement several measures in addition to the prompt engineering around the user's queries.
+For instance, we deploy a second model to safeguard the factual correctness of the primary LLM's responses (Supplementary Note [Correcting Agent]).
+These interactions are handled by a pre-programmed conversational “Assistant,” which dynamically orchestrates LLM agents with distinct tasks using a Python model chaining framework [@{https://python.langchain.com}].
+Using vector database approaches, the user’s prompts can be further supplemented with information extracted from pertinent, user-provided literature (Supplementary Note [In-context Learning]).
+
 ## References {.page_break_before}
 
 <!-- Explicitly insert bibliography here -->
@@ -184,3 +189,59 @@ We use Streamlit (version 1.21.0, https://streamlit.io) for the web UI.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
 
 ### Prompt Engineering
+
+Recent experience with Large Language Models (LLMs) shows that the clever engineering of model prompts can yield drastic performance increases.
+For example, when performing logical inference, simply adding “Let’s think step by step” to the end of a question prompt increased LLM performance from ~20% to ~80% [@doi:10.48550/arxiv.2205.11916].
+As such, we highly prioritise the identification and adjustment of prompts tuned exactly to the requirements of the specific task to be performed, respecting “general” rules of interacting with LLMs as well as biomedicine-specific issues.
+
+We designed the backend of ChatGSE to be completely flexible with regard to the application and rearrangement of prompts and prompt templates (which allow the insertion of variables such as the user input question or data).
+For templating, we use the corresponding generic functionality provided by LangChain [@{https://python.langchain.com}], while adding our biomedicine-specific layer on top.
+We provide general prompts to the primary model, setting it up to be helpful and concise in its responses, and individual prompts for each tool we want the primary model to “understand.”
+This includes explanation of the method itself as well as structural information about the data file containing the results.
+
+To make this functionality available to all users, we provide a “Prompt Engineering” tab in the ChatGSE application, which allows the modification (or removal) of existing prompts, as well as the addition of new ones.
+We also provide functionality to import and export these prompts in JSON format to facilitate reproducible and shareable biomedical prompt engineering.
+To discuss and share examples of useful or ineffective prompts, we encourage all users to join the #chatgse stream in our freely accessible Zulip channel at https://biocypher.zulipchat.com, or the GitHub discussion thread at https://github.com/biocypher/ChatGSE/discussions/11.
+
+To further improve reproducible prompt engineering, we will establish online datasets for benchmarking LLM performance on biomedical tasks.
+These datasets will be available through the ChatGSE frontend and the performance of specific prompt sets on these benchmarks will be captured using an online leaderboard system.
+This way, the most useful prompt sets for specific tasks can be maintained concurrently with the development of the LLMs.
+
+### Correcting Agent
+
+The propensity of LLMs to hallucinate untrue facts necessitates control mechanisms and guardrails for their application in research, particularly in high-stakes fields such as biomedicine [@doi:10.1038/s41587-023-01789-6].
+Some corrective incentive can be included in the instructions to the primary model, for instance by including a “Criticism” directive such as “Constructively self-criticise your big-picture behaviour constantly.” However, this does not guarantee to prevent hallucinations completely, as the same model that hallucinates also is responsible for correction.
+
+Thus, we implement a modular combination of primary and corrective model, where the corrective agent – a “second opinion” – is set up with instructions tuned exactly to the task of fact-checking the responses of the primary model (“You are a fact-checker. Please judge the following statement for its factual correctness. ...”).
+The performance of the corrective agent can be further increased by using a more powerful model (e.g., moving from gpt-3.5-turbo to gpt-4), by pre-processing the primary model’s response (e.g., splitting the response into single sentences and fact-checking each sentence individually), and comparing the primary model’s statements to prior knowledge stored in a knowledge graph connected to the chat platform.
+As model development advances and other parties create models as powerful as OpenAI’s, we foresee it will be useful to combine models from different suppliers to increase diversity between primary and corrective models.
+Using ChatGSE’s modular framework, arbitrary numbers of corrective models can be added to the LLM chain.
+
+To allow all users to interact with correcting functionality, we include a dedicated “Corrective Agent” tab for adjusting settings of the corrective model independent of the settings for the primary model.
+We also facilitate the testing of corrective agents and their prompts by providing a free-text field for sending false information to the corrective agent.
+This is necessary since some models, particularly those from OpenAI, are heavily regulated to not purposely provide false information, even for testing purposes.
+
+The comparative power of the LLM agents can be further increased by connecting to a vector database containing embeddings of the contents of specific user-supplied documents.
+For more information, see the following Supplementary Note 3: [In-context Learning].
+
+### In-context Learning
+
+While the general knowledge of current LLMs is extensive, they may not know how to prioritise very specific scientific results, or they may not have had access to some research articles in their training data (e.g., due to their recency or licensing issues).
+To bridge this gap, we can provide additional information from relevant publications to the model via the prompt.
+However, we cannot add entire publications to the prompt, since the input length of current models still is restricted; we need to isolate the information that is specifically relevant to the question given by the user.
+To find this information, we perform a similarity search between the user’s question and the contents of user-provided scientific articles (or other texts).
+The most efficient way to do this mapping is by using a vector database.
+
+The contextual background information provided by the user (e.g., by uploading a scientific article of prior work related to the experiment to be interpreted) is split into pieces suitable to be digested by the LLM, which are individually embedded by the model.
+These embeddings (represented by vectors) are used to store the text fragments in a vector database; the storage as vectors allows fast and efficient retrieval of similar entities via the comparison of individual vectors.
+For example, the two sentences “Amyloid beta levels are associated with Alzheimer’s Disease stage.” and “One of the most important clinical markers of AD progression is the amount of deposited A-beta 42.” would be closely associated in a vector database (given the embedding model is of sufficient quality, i.e., similar to GPT-3 or better), while traditional text-based similarity metrics probably would not identify them as highly similar.
+
+By comparing the user’s question to prior knowledge in the vector database, we can extract the relevant pieces of information from the entire background.
+These pieces (for instance, single sentences directly related to the topic of the question) are then sufficiently small to be directly added to the prompt.
+In this way, the model can learn from additional context without the need for retraining or fine-tuning.
+This method is sometimes described as in-context learning [@doi:10.48550/arxiv.2303.17580].
+
+To provide access to this functionality in ChatGSE, we add a “Document Summarisation” tab to the platform that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
+This contextual information is transparently displayed in the main chat window.
+Since this functionality requires a connection to a vector database system, we provide modular connectivity to several standard vector database providers, such as Pinecone, Weaviate, or Milvus.
+
