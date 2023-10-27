@@ -33,9 +33,13 @@ content/10.main.md:35:composable
 content/10.main.md:35:LLM
 content/60.supplement.md:5:backend
 content/60.supplement.md:5:biochatter
+content/60.supplement.md:5:biochatter
+content/60.supplement.md:5:ChatGSE
 content/60.supplement.md:5:ChatGSE
 content/60.supplement.md:5:UI
-content/60.supplement.md:8:streamlit
-content/60.supplement.md:8:Streamlit
-content/60.supplement.md:8:UI
-content/60.supplement.md:9:inclusivity
+content/60.supplement.md:6:backend
+content/60.supplement.md:6:UIs
+content/60.supplement.md:9:streamlit
+content/60.supplement.md:9:Streamlit
+content/60.supplement.md:9:UI
+content/60.supplement.md:10:inclusivity
