@@ -1,30 +1,26 @@
 ---
-title: "Manuscript Title"
+title: "A Platform for the Biomedical Application of Large Language Models"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
-  - markdown
-  - publishing
-  - manubot
-lang: en-US
+  - biomedicine
+  - bioinformatics
+  - large language models
+  - framework
+lang: en-UK
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    mastodon: johndoe
-    mastodon-server: mastodon.social
-    email: john.doe@something.com
+  - github: slobentanzer
+    name: Sebastian Lobentanzer
+    initials: SL
+    orcid: 0000-0003-3399-6695
+    twitter: slobentanzer
+    email: sebastian.lobentanzer@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+  - github: saezrodriguez
+    name: Julio Saez-Rodriguez
+    initials: JSR
+    orcid: 0000-0002-8552-8976
+    twitter: saezlab
+    email: pub.saez@uni-heidelberg.de
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-    corresponding: true
+      - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
