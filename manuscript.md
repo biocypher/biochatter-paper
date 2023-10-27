@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T10:32:11+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T10:32:11+00:00" />
+  <meta name="dc.modified" content="2023-10-27T10:43:55+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T10:43:55+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,9 +46,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/475eefd57703a5526fd04f272d565bfcd1c0c12b/))
 was automatically generated
-from [biocypher/biochatter-paper@47e5d3d](https://github.com/biocypher/biochatter-paper/tree/47e5d3d7bab4c1660894f6993869996fc6b6d399)
+from [biocypher/biochatter-paper@475eefd](https://github.com/biocypher/biochatter-paper/tree/475eefd57703a5526fd04f272d565bfcd1c0c12b)
 on October 27, 2023.
 </em></small>
 
@@ -195,24 +195,7 @@ While we focus on the biomedical field, the concept of the tool can easily be ex
 The Python library to interact with LLMs, vector databases, and all other features is developed openly on GitHub (https://github.com/biocypher/biochatter), and can be integrated into any number of user interface solutions apart from our own, for instance, INDRA [@doi:10.15252/msb.20177651] and drugst.one [@doi:10.48550/arxiv.2305.15453].
 We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool inputs, prompt engineering, safeguarding mechanisms, and any other feature.
 
-## Author Contributions
-
-SL conceptualised and developed the platform and wrote the manuscript.
-JSR supervised the project, revised the manuscript, and acquired funding.
-
-## Acknowledgements
-We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
-
-## Conflict of Interest
-JSR reports funding from GSK, Pfizer and Sanofi and fees from Travere Therapeutics, Stadapharm and Astex Pharmaceuticals.
-
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
-
-
-## Supplementary Materials
+## Supplementary Materials {.page_break_before}
 
 In our Supplementary Notes, we explain the functions of our platform in more detail.
 Please note that several of the mentioned features, particularly more advanced ones, are in early developmental stages.
@@ -339,4 +322,21 @@ Using one model per position solves this problem by distributing token limits ac
 The models interact with one another in the way that human discussions are led: the moderator (primary model) gives tasks to the secondary models according to the human researcher’s question, and elicits a response that the adversary needs to address in the next iteration of the discussion.
 The discussion, while being autonomous apart from the initial question, can be guided step-by-step by the human researcher.
 
+
+
+## Author Contributions {.page_break_before}
+
+SL conceptualised and developed the platform and wrote the manuscript.
+JSR supervised the project, revised the manuscript, and acquired funding.
+
+## Acknowledgements
+We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
+
+## Conflict of Interest
+JSR reports funding from GSK, Pfizer and Sanofi and fees from Travere Therapeutics, Stadapharm and Astex Pharmaceuticals.
+
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
 

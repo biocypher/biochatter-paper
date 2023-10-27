@@ -8,7 +8,7 @@ biassed
 biochatter
 BioCypher
 bioinformatics
-biomedicine
+Biomedicine
 ChatGPT
 ChatGSE
 ChatGSE’s
@@ -55,7 +55,7 @@ SL
 slobentanzer
 Stadapharm
 Streamlit
-summarisation
+Summarisation
 templating
 Travere
 UI
