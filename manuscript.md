@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T09:59:35+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T09:59:35+00:00" />
+  <meta name="dc.modified" content="2023-10-27T10:32:11+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T10:32:11+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,9 +46,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/))
 was automatically generated
-from [biocypher/biochatter-paper@a5297db](https://github.com/biocypher/biochatter-paper/tree/a5297db3e4a0fe2d66595a9f841b29cf87a791a8)
+from [biocypher/biochatter-paper@47e5d3d](https://github.com/biocypher/biochatter-paper/tree/47e5d3d7bab4c1660894f6993869996fc6b6d399)
 on October 27, 2023.
 </em></small>
 
@@ -171,6 +171,41 @@ For instance, we deploy a second model to safeguard the factual correctness of t
 These interactions are handled by a pre-programmed conversational “Assistant,” which dynamically orchestrates LLM agents with distinct tasks using a Python model chaining framework [@{https://python.langchain.com}].
 Using vector database approaches, the user’s prompts can be further supplemented with information extracted from pertinent, user-provided literature (Supplementary Note [In-context Learning]).
 
+To increase data-awareness of the AI agents, we introduce connectivity to databases, which can extend the long-term memory of the models, semantically ground the biological entities with respect to suitable ontologies, and compare the model's responses to prior knowledge ground truth.
+By integrating a flexible knowledge graph creation framework [@doi:10.1038/s41587-023-01848-y], we allow versatile use cases across the entire research spectrum.
+For example, connecting to a knowledge graph of cell markers based on Cell Ontology [doi:10.1186/s13326-016-0088-7], the task of annotating single cell data sets can be automated and made more reproducible (Supplementary Note [Cell Type Annotation]) by abstracting the pioneering efforts of manually executed studies [@doi:10.1101/2023.04.16.537094].
+
+Currently, the most powerful conversational AI platform, ChatGPT (OpenAI), is surrounded by data privacy concerns [@{https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/}].
+We address this issue in two ways.
+Firstly, we provide access to the OpenAI models through the API (Application Programming Interface), which is subject to different, more stringent data protection than the web interface [@{https://openai.com/policies/terms-of-use}].
+Secondly, we aim to preferentially support open-source LLMs to facilitate more transparency in their application and increase data privacy by being able to run a model locally [@doi:10.1038/d41586-023-01295-4].
+Our orchestration tool supports dozens of LLM providers [@{https://python.langchain.com}], such as the Hugging Face API, which can be used to query the recently released open-source ChatGPT-alternative HuggingChat or any other of the more than 100 000 open-source models on Hugging Face Hub [@{https://huggingface.co/docs/hub/index}].
+Hugging Face also provide an open LLM leaderboard with up-to-date benchmarks of open-source LLMs [@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}].
+Although OpenAI’s models currently vastly outperform any alternatives in terms of both LLM performance and API convenience, we expect many open-source developments in this area in the future.
+Therefore, we support plug-and-play exchange of models to enhance biomedical AI-readiness.
+
+In the future, we aim to integrate biological prior knowledge representation with LLM reasoning.
+Using the emergent strategies of in-context learning, instruction learning, and chain-of-thought prompting [@doi:10.48550/arxiv.2303.17580], this can enable causal inference on relationships between biological entities, for instance via protein-protein interactions (Supplementary Note [Causal Inference]), and automated validation of literature references provided by the LLM (Supplementary Note [Literature Reference Database]).
+While the current models do not yet appear suited for unsupervised reasoning in the biomedical space, they can already save much time otherwise spent on web and literature searches.
+Additionally, the ChatGSE platform provides a reproducible environment for benchmarking of models and engineered prompts to gauge their biomedical reliability.
+The ability to chain arbitrary types of models enables advanced applications, for instance connecting to visual modalities such as spatial omics.
+We provide further details and application scenarios in our Supplementary Notes.
+
+While we focus on the biomedical field, the concept of the tool can easily be extended to other scientific domains by adjusting domain-specific prompts and data inputs, which in our framework are accessible in a composable and user-friendly manner.
+The Python library to interact with LLMs, vector databases, and all other features is developed openly on GitHub (https://github.com/biocypher/biochatter), and can be integrated into any number of user interface solutions apart from our own, for instance, INDRA [@doi:10.15252/msb.20177651] and drugst.one [@doi:10.48550/arxiv.2305.15453].
+We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool inputs, prompt engineering, safeguarding mechanisms, and any other feature.
+
+## Author Contributions
+
+SL conceptualised and developed the platform and wrote the manuscript.
+JSR supervised the project, revised the manuscript, and acquired funding.
+
+## Acknowledgements
+We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
+
+## Conflict of Interest
+JSR reports funding from GSK, Pfizer and Sanofi and fees from Travere Therapeutics, Stadapharm and Astex Pharmaceuticals.
+
 ## References {.page_break_before}
 
 <!-- Explicitly insert bibliography here -->
@@ -244,4 +279,64 @@ This method is sometimes described as in-context learning [@doi:10.48550/arxiv.2
 To provide access to this functionality in ChatGSE, we add a “Document Summarisation” tab to the platform that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed in the main chat window.
 Since this functionality requires a connection to a vector database system, we provide modular connectivity to several standard vector database providers, such as Pinecone, Weaviate, or Milvus.
+
+### Cell Type Annotation
+
+A common repetitive task in bioinformatics is to annotate single-cell datasets with cell type labels.
+This task is usually performed by a human expert, who will look at the expression of marker genes and assign a cell type label based on their knowledge of the cell types present in the tissue of interest.
+LLMs have been shown to be able to perform this task with high accuracy, and can be used to automate cell type annotation with minimal human input [@doi:10.1101/2023.04.16.537094].
+
+We propose to combine LLM inference on cell types with the storage solutions provided by ChatGSE: using a vector database to store embeddings of cells for a more streamlined workflow, and using a traditional database on the basis of BioCypher [@doi:10.1038/s41587-023-01848-y] to inject prior knowledge into the process, as well as store the intermediate decisions of the model/user.
+
+Using the graphical user interface of ChatGSE, we can provide recommendations of inferred cell types to the human user, such that the ultimate decision about a cell type annotation remains with the domain expert, while the tedious aspects of annotation are reduced significantly.
+If the model reaches a threshold of perfect annotation for any cell type (e.g., a >99% success rate in more than 50 cells), the user can decide to trust the model in instances of this cell type and fully automate the annotation in these instances.
+Similarly, confidence metrics can be used to trigger user input only at cell type inferences that are not straightforward.
+
+### Causal Inference
+
+More recent models have shown considerable capacity for common sense reasoning, in particular, GPT-4 [@doi:10.48550/arxiv.2303.08774].
+There is an unmet need to compare the reasoning outcomes of LLMs to other, more traditional modes of inference, such as the do-calculus [@doi:10.1017/CBO9780511803161], logic models [@doi:10.1038/nrg3885], and semantic reasoning approaches [@doi:10.1145/3357384.3358147].
+With ChatGSE, we provide a Python platform for the side-by-side application of reasoning algorithms, in the “Causal Inference” tab.
+
+The ability to connect to flexible databases created by BioCypher enables the representation of the same basic knowledge, but tailored to each individual reasoning mode (for instance, a labelled property graph as input for the logic model, an RDF graph for the semantic reasoner, and a vector database for the LLM).
+This increases the ease-of-use as well as the reproducibility of benchmarking the reasoning abilities of different algorithms.
+
+### Literature Reference Database
+
+LLMs are very good feature extractors.
+In addition to the correcting agent described in Supplementary Note [Correcting Agent], a “literature agent” can additionally be used to ameliorate the occasionally untruthful statements of the primary model.
+Given a response from said model, the literature agent is tasked with extracting references to academic papers from the response (if it contains such), and validating the existence of the claimed reference as well as its attributes (such as title and digital object identifier).
+The validation of extracted article authors, titles, and identifiers can be performed by a simple search in a connected database of scientific publications.
+
+### Experimental Design
+Experimental design is a crucial step in any biological experiment.
+However, it can be a subtle and complex task, requiring a deep understanding of the biological system under study as well as statistical and computational expertise.
+LLMs can potentially fill the gaps that exist in most research groups, which traditionally focus on either the biological or the statistical aspects of experimental design.
+
+Similar to the general chat functionality, we provide facilities to upload experimental design plans and ask about their feasibility in the biological or statistical context in an “Experimental Design” tab.
+Coupled with a suitable knowledge graph (for instance containing methods literature) and/or a document summarisation of relevant articles, ChatGSE can be a simple and effective tool to consider the design of an experiment from multiple perspectives.
+
+### Podcast my Paper
+The recent years have brought significant advances in text-to-speech applications, yielding large accessibility benefits to simple text-based communication and personal assistants.
+However, the text of scientific papers is riddled with special characters, references, legends, and entities otherwise hard to interpret by text-to-speech algorithms, such as PCR primer sequences.
+
+To process arbitrary scientific manuscripts into “listenable” text, we create an agent that ingests the paper paragraph-wise and distributes individual sections to an LLM for text cleaning, removing all detracting information, such as reference numbers, web links, figure legends, and statistical information.
+The resulting cleaned sections are also lightly summarised to account for consumption by listening, and then fed into a text-to-speech model to generate individual sections (chapters) of the article.
+The resulting audio can be played back on any media device.
+
+### Journal Club
+In many instances, the evaluation of scientific literature is pursued comparatively.
+Whether it is the discussion of which hypothesis is the correct one of two, or which method should be applied to address a specific question, multiple manuscripts need to be integrated to draw conclusions.
+We propose to facilitate scientific “discussion” by orchestrating an AI journal club, in which a primary model guides individual models, each responsible for representing one scientific position (e.g., each representing one manuscript).
+
+This way of reasoning has proven effective in the way science is conducted by humans.
+By installing dedicated representatives of any position, the argument can be led more effectively, since each participant of the discussion is only responsible for knowing the facts that relate to their own position.
+In AI reasoning, problems could arise when one model is responsible for multiple sides of an argument, although for different reasons.
+In the case of argument being grounded in a vector database injection process (see Supplementary Note 3: [In-context Learning]), only one model in charge of representing two or more positions (manuscripts) on the matter may become biassed towards a specific position due to multiple issues.
+The amount of prompts that can be injected into one model query is limited by the token input length, and sentences from manuscripts that are by chance more similar to the phrase used for the similarity search could become overrepresented in the model’s reasoning.
+Using one model per position solves this problem by distributing token limits across multiple models, and by accessing only single manuscripts (or several manuscripts, but from the same “camp”).
+
+The models interact with one another in the way that human discussions are led: the moderator (primary model) gives tasks to the secondary models according to the human researcher’s question, and elicits a response that the adversary needs to address in the next iteration of the discussion.
+The discussion, while being autonomous apart from the initial question, can be guided step-by-step by the human researcher.
+
 

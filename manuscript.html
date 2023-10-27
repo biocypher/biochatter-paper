@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T09:59:35+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T09:59:35+00:00" />
+  <meta name="dc.modified" content="2023-10-27T10:32:11+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T10:32:11+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/a5297db3e4a0fe2d66595a9f841b29cf87a791a8/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/47e5d3d7bab4c1660894f6993869996fc6b6d399/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/a5297db3e4a0fe2d66595a9f841b29cf87a791a8">biocypher/biochatter-paper@a5297db</a>
+from <a href="https://github.com/biocypher/biochatter-paper/tree/47e5d3d7bab4c1660894f6993869996fc6b6d399">biocypher/biochatter-paper@47e5d3d</a>
 on October 27, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -178,6 +178,33 @@ The platform is composable in all aspects, in principle allowing arbitrary exten
 For instance, we deploy a second model to safeguard the factual correctness of the primary LLM’s responses (Supplementary Note <a href="#correcting-agent">Correcting Agent</a>).
 These interactions are handled by a pre-programmed conversational “Assistant,” which dynamically orchestrates LLM agents with distinct tasks using a Python model chaining framework <span class="citation" data-cites="UEmjXz02">[<a href="#ref-UEmjXz02" role="doc-biblioref">9</a>]</span>.
 Using vector database approaches, the user’s prompts can be further supplemented with information extracted from pertinent, user-provided literature (Supplementary Note <a href="#in-context-learning">In-context Learning</a>).</p>
+<p>To increase data-awareness of the AI agents, we introduce connectivity to databases, which can extend the long-term memory of the models, semantically ground the biological entities with respect to suitable ontologies, and compare the model’s responses to prior knowledge ground truth.
+By integrating a flexible knowledge graph creation framework <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">12</a>]</span>, we allow versatile use cases across the entire research spectrum.
+For example, connecting to a knowledge graph of cell markers based on Cell Ontology [doi:10.1186/s13326-016-0088-7], the task of annotating single cell data sets can be automated and made more reproducible (Supplementary Note <a href="#cell-type-annotation">Cell Type Annotation</a>) by abstracting the pioneering efforts of manually executed studies <span class="citation" data-cites="ae7XiPvs">[<a href="#ref-ae7XiPvs" role="doc-biblioref">6</a>]</span>.</p>
+<p>Currently, the most powerful conversational AI platform, ChatGPT (OpenAI), is surrounded by data privacy concerns <span class="citation" data-cites="PDhRVYjU">[<a href="#ref-PDhRVYjU" role="doc-biblioref">13</a>]</span>.
+We address this issue in two ways.
+Firstly, we provide access to the OpenAI models through the API (Application Programming Interface), which is subject to different, more stringent data protection than the web interface <span class="citation" data-cites="C5Z1X3MG">[<a href="#ref-C5Z1X3MG" role="doc-biblioref">14</a>]</span>.
+Secondly, we aim to preferentially support open-source LLMs to facilitate more transparency in their application and increase data privacy by being able to run a model locally <span class="citation" data-cites="17E1dWalv">[<a href="#ref-17E1dWalv" role="doc-biblioref">15</a>]</span>.
+Our orchestration tool supports dozens of LLM providers <span class="citation" data-cites="UEmjXz02">[<a href="#ref-UEmjXz02" role="doc-biblioref">9</a>]</span>, such as the Hugging Face API, which can be used to query the recently released open-source ChatGPT-alternative HuggingChat or any other of the more than 100 000 open-source models on Hugging Face Hub <span class="citation" data-cites="NicesiwN">[<a href="#ref-NicesiwN" role="doc-biblioref">16</a>]</span>.
+Hugging Face also provide an open LLM leaderboard with up-to-date benchmarks of open-source LLMs <span class="citation" data-cites="LE2GwIqT">[<a href="#ref-LE2GwIqT" role="doc-biblioref">17</a>]</span>.
+Although OpenAI’s models currently vastly outperform any alternatives in terms of both LLM performance and API convenience, we expect many open-source developments in this area in the future.
+Therefore, we support plug-and-play exchange of models to enhance biomedical AI-readiness.</p>
+<p>In the future, we aim to integrate biological prior knowledge representation with LLM reasoning.
+Using the emergent strategies of in-context learning, instruction learning, and chain-of-thought prompting <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">18</a>]</span>, this can enable causal inference on relationships between biological entities, for instance via protein-protein interactions (Supplementary Note <a href="#causal-inference">Causal Inference</a>), and automated validation of literature references provided by the LLM (Supplementary Note <a href="#literature-reference-database">Literature Reference Database</a>).
+While the current models do not yet appear suited for unsupervised reasoning in the biomedical space, they can already save much time otherwise spent on web and literature searches.
+Additionally, the ChatGSE platform provides a reproducible environment for benchmarking of models and engineered prompts to gauge their biomedical reliability.
+The ability to chain arbitrary types of models enables advanced applications, for instance connecting to visual modalities such as spatial omics.
+We provide further details and application scenarios in our Supplementary Notes.</p>
+<p>While we focus on the biomedical field, the concept of the tool can easily be extended to other scientific domains by adjusting domain-specific prompts and data inputs, which in our framework are accessible in a composable and user-friendly manner.
+The Python library to interact with LLMs, vector databases, and all other features is developed openly on GitHub (https://github.com/biocypher/biochatter), and can be integrated into any number of user interface solutions apart from our own, for instance, INDRA <span class="citation" data-cites="NUMlJ9H8">[<a href="#ref-NUMlJ9H8" role="doc-biblioref">19</a>]</span> and drugst.one <span class="citation" data-cites="1AGIzw2nN">[<a href="#ref-1AGIzw2nN" role="doc-biblioref">20</a>]</span>.
+We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool inputs, prompt engineering, safeguarding mechanisms, and any other feature.</p>
+<h2 id="author-contributions">Author Contributions</h2>
+<p>SL conceptualised and developed the platform and wrote the manuscript.
+JSR supervised the project, revised the manuscript, and acquired funding.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.</p>
+<h2 id="conflict-of-interest">Conflict of Interest</h2>
+<p>JSR reports funding from GSK, Pfizer and Sanofi and fees from Travere Therapeutics, Stadapharm and Astex Pharmaceuticals.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -214,14 +241,47 @@ Using vector database approaches, the user’s prompts can be further supplement
 <div id="ref-k6hpwdsR" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Toward a gold standard for benchmarking gene set enrichment analysis</strong> <div class="csl-block">Ludwig Geistlinger, Gergely Csaba, Mara Santarelli, Marcel Ramos, Lucas Schiffer, Nitesh Turaga, Charity Law, Sean Davis, Vincent Carey, Martin Morgan, … Levi Waldron</div> <em>Briefings in Bioinformatics</em> (2020-03-09) <a href="https://doi.org/ggs7tp">https://doi.org/ggs7tp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bib/bbz158">10.1093/bib/bbz158</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32026945">32026945</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7820859">PMC7820859</a></div></div>
 </div>
-<div id="ref-MMp6cQ1x" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>The TRUST Principles for digital repositories</strong> <div class="csl-block">Dawei Lin, Jonathan Crabtree, Ingrid Dillo, Robert R Downs, Rorie Edmunds, David Giaretta, Marisa De Giusti, Hervé L’Hours, Wim Hugo, Reyna Jenkyns, … John Westbrook</div> <em>Scientific Data</em> (2020-05-14) <a href="https://doi.org/ggwrtj">https://doi.org/ggwrtj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41597-020-0486-7">10.1038/s41597-020-0486-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32409645">32409645</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7224370">PMC7224370</a></div></div>
+<div id="ref-tr1XjZ1R" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Democratizing knowledge representation with BioCypher</strong> <div class="csl-block">Sebastian Lobentanzer, Patrick Aloy, Jan Baumbach, Balazs Bohar, Vincent J Carey, Pornpimol Charoentong, Katharina Danhauser, Tunca Doğan, Johann Dreo, Ian Dunham, … Julio Saez-Rodriguez</div> <em>Nature Biotechnology</em> (2023-06-19) <a href="https://doi.org/gszqjr">https://doi.org/gszqjr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41587-023-01848-y">10.1038/s41587-023-01848-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37337100">37337100</a></div></div>
 </div>
-<div id="ref-bzAtd1rg" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Large Language Models are Zero-Shot Reasoners</strong> <div class="csl-block">Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa</div> <em>arXiv</em> (2022) <a href="https://doi.org/gr263v">https://doi.org/gr263v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2205.11916">10.48550/arxiv.2205.11916</a></div></div>
+<div id="ref-PDhRVYjU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>European privacy watchdog creates ChatGPT task force</strong> <div class="csl-block">Toby Sterling</div> <em>Reuters</em> (2023-04-14) <a href="https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/">https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/</a></div>
+</div>
+<div id="ref-C5Z1X3MG" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Terms of use</strong> <a href="https://openai.com/policies/terms-of-use">https://openai.com/policies/terms-of-use</a></div>
+</div>
+<div id="ref-17E1dWalv" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Why open-source generative AI models are an ethical way forward for science</strong> <div class="csl-block">Arthur Spirling</div> <em>Nature</em> (2023-04-18) <a href="https://doi.org/gsqx6v">https://doi.org/gsqx6v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-01295-4">10.1038/d41586-023-01295-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37072520">37072520</a></div></div>
+</div>
+<div id="ref-NicesiwN" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Hugging Face Hub documentation</strong> <a href="https://huggingface.co/docs/hub/index">https://huggingface.co/docs/hub/index</a></div>
+</div>
+<div id="ref-LE2GwIqT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Open LLM Leaderboard - a Hugging Face Space by HuggingFaceH4</strong> <a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard">https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard</a></div>
 </div>
 <div id="ref-1BzQcjRCZ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face</strong> <div class="csl-block">Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang</div> <em>arXiv</em> (2023) <a href="https://doi.org/gskd97">https://doi.org/gskd97</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2303.17580">10.48550/arxiv.2303.17580</a></div></div>
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face</strong> <div class="csl-block">Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang</div> <em>arXiv</em> (2023) <a href="https://doi.org/gskd97">https://doi.org/gskd97</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2303.17580">10.48550/arxiv.2303.17580</a></div></div>
+</div>
+<div id="ref-NUMlJ9H8" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>From word models to executable models of signaling networks using automated assembly</strong> <div class="csl-block">Benjamin M Gyori, John A Bachman, Kartik Subramanian, Jeremy L Muhlich, Lucian Galescu, Peter K Sorger</div> <em>Molecular Systems Biology</em> (2017-11) <a href="https://doi.org/gcm498">https://doi.org/gcm498</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15252/msb.20177651">10.15252/msb.20177651</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29175850">29175850</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5731347">PMC5731347</a></div></div>
+</div>
+<div id="ref-1AGIzw2nN" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Drugst.One -- A plug-and-play solution for online systems medicine and network-based drug repurposing</strong> <div class="csl-block">Andreas Maier, Michael Hartung, Mark Abovsky, Klaudia Adamowicz, Gary D Bader, Sylvie Baier, David B Blumenthal, Jing Chen, Maria L Elkjaer, Carlos Garcia-Hernandez, … Jan Baumbach</div> <em>arXiv</em> (2023) <a href="https://doi.org/gszqjw">https://doi.org/gszqjw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2305.15453">10.48550/arxiv.2305.15453</a></div></div>
+</div>
+<div id="ref-MMp6cQ1x" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>The TRUST Principles for digital repositories</strong> <div class="csl-block">Dawei Lin, Jonathan Crabtree, Ingrid Dillo, Robert R Downs, Rorie Edmunds, David Giaretta, Marisa De Giusti, Hervé L’Hours, Wim Hugo, Reyna Jenkyns, … John Westbrook</div> <em>Scientific Data</em> (2020-05-14) <a href="https://doi.org/ggwrtj">https://doi.org/ggwrtj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41597-020-0486-7">10.1038/s41597-020-0486-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32409645">32409645</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7224370">PMC7224370</a></div></div>
+</div>
+<div id="ref-bzAtd1rg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Large Language Models are Zero-Shot Reasoners</strong> <div class="csl-block">Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa</div> <em>arXiv</em> (2022) <a href="https://doi.org/gr263v">https://doi.org/gr263v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2205.11916">10.48550/arxiv.2205.11916</a></div></div>
+</div>
+<div id="ref-peGxtHPM" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Causality</strong> <div class="csl-block">Judea Pearl</div> <em>Cambridge University Press</em> (2009-09-14) <a href="https://doi.org/ggd72q">https://doi.org/ggd72q</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1017/cbo9780511803161">10.1017/cbo9780511803161</a></div></div>
+</div>
+<div id="ref-s2EFuVEM" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Quantitative and logic modelling of molecular and gene networks</strong> <div class="csl-block">Nicolas Le Novère</div> <em>Nature Reviews Genetics</em> (2015-02-03) <a href="https://doi.org/f6299z">https://doi.org/f6299z</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nrg3885">10.1038/nrg3885</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25645874">25645874</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4604653">PMC4604653</a></div></div>
+</div>
+<div id="ref-10hJQkRMY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Datalog Reasoning over Compressed RDF Knowledge Bases</strong> <div class="csl-block">Pan Hu, Jacopo Urbani, Boris Motik, Ian Horrocks</div> <em>Proceedings of the 28th ACM International Conference on Information and Knowledge Management</em> (2019-11-03) <a href="https://doi.org/grfjn7">https://doi.org/grfjn7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/3357384.3358147">10.1145/3357384.3358147</a></div></div>
 </div>
 </div>
 <h2 id="supplementary-materials">Supplementary Materials</h2>
@@ -230,12 +290,12 @@ Please note that several of the mentioned features, particularly more advanced o
 For practical reasons, we divide our software into two distinct packages, the user interface (UI) component <a href="https://github.com/biocypher/ChatGSE">ChatGSE</a> and the Python backend library <a href="https://github.com/biocypher/biochatter">biochatter</a>.
 This also reflects how we expect the platform to be used: as a generic backend library for the development of custom UIs.
 For an up-to-date overview and preview of current functionality of the platform, please visit the <a href="https://chat.biocypher.org">online preview</a>.
-Both libraries are developed in Python (version 3.10), according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">12</a>]</span>.
+Both libraries are developed in Python (version 3.10), according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">21</a>]</span>.
 We use Streamlit (version 1.21.0, https://streamlit.io) for the web UI.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.</p>
 <h3 id="prompt-engineering">Prompt Engineering</h3>
 <p>Recent experience with Large Language Models (LLMs) shows that the clever engineering of model prompts can yield drastic performance increases.
-For example, when performing logical inference, simply adding “Let’s think step by step” to the end of a question prompt increased LLM performance from ~20% to ~80% <span class="citation" data-cites="bzAtd1rg">[<a href="#ref-bzAtd1rg" role="doc-biblioref">13</a>]</span>.
+For example, when performing logical inference, simply adding “Let’s think step by step” to the end of a question prompt increased LLM performance from ~20% to ~80% <span class="citation" data-cites="bzAtd1rg">[<a href="#ref-bzAtd1rg" role="doc-biblioref">22</a>]</span>.
 As such, we highly prioritise the identification and adjustment of prompts tuned exactly to the requirements of the specific task to be performed, respecting “general” rules of interacting with LLMs as well as biomedicine-specific issues.</p>
 <p>We designed the backend of ChatGSE to be completely flexible with regard to the application and rearrangement of prompts and prompt templates (which allow the insertion of variables such as the user input question or data).
 For templating, we use the corresponding generic functionality provided by LangChain <span class="citation" data-cites="UEmjXz02">[<a href="#ref-UEmjXz02" role="doc-biblioref">9</a>]</span>, while adding our biomedicine-specific layer on top.
@@ -271,10 +331,53 @@ For example, the two sentences “Amyloid beta levels are associated with Alzhei
 <p>By comparing the user’s question to prior knowledge in the vector database, we can extract the relevant pieces of information from the entire background.
 These pieces (for instance, single sentences directly related to the topic of the question) are then sufficiently small to be directly added to the prompt.
 In this way, the model can learn from additional context without the need for retraining or fine-tuning.
-This method is sometimes described as in-context learning <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">14</a>]</span>.</p>
+This method is sometimes described as in-context learning <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">18</a>]</span>.</p>
 <p>To provide access to this functionality in ChatGSE, we add a “Document Summarisation” tab to the platform that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed in the main chat window.
 Since this functionality requires a connection to a vector database system, we provide modular connectivity to several standard vector database providers, such as Pinecone, Weaviate, or Milvus.</p>
+<h3 id="cell-type-annotation">Cell Type Annotation</h3>
+<p>A common repetitive task in bioinformatics is to annotate single-cell datasets with cell type labels.
+This task is usually performed by a human expert, who will look at the expression of marker genes and assign a cell type label based on their knowledge of the cell types present in the tissue of interest.
+LLMs have been shown to be able to perform this task with high accuracy, and can be used to automate cell type annotation with minimal human input <span class="citation" data-cites="ae7XiPvs">[<a href="#ref-ae7XiPvs" role="doc-biblioref">6</a>]</span>.</p>
+<p>We propose to combine LLM inference on cell types with the storage solutions provided by ChatGSE: using a vector database to store embeddings of cells for a more streamlined workflow, and using a traditional database on the basis of BioCypher <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">12</a>]</span> to inject prior knowledge into the process, as well as store the intermediate decisions of the model/user.</p>
+<p>Using the graphical user interface of ChatGSE, we can provide recommendations of inferred cell types to the human user, such that the ultimate decision about a cell type annotation remains with the domain expert, while the tedious aspects of annotation are reduced significantly.
+If the model reaches a threshold of perfect annotation for any cell type (e.g., a &gt;99% success rate in more than 50 cells), the user can decide to trust the model in instances of this cell type and fully automate the annotation in these instances.
+Similarly, confidence metrics can be used to trigger user input only at cell type inferences that are not straightforward.</p>
+<h3 id="causal-inference">Causal Inference</h3>
+<p>More recent models have shown considerable capacity for common sense reasoning, in particular, GPT-4 <span class="citation" data-cites="17lpGtuH5">[<a href="#ref-17lpGtuH5" role="doc-biblioref">5</a>]</span>.
+There is an unmet need to compare the reasoning outcomes of LLMs to other, more traditional modes of inference, such as the do-calculus <span class="citation" data-cites="peGxtHPM">[<a href="#ref-peGxtHPM" role="doc-biblioref">23</a>]</span>, logic models <span class="citation" data-cites="s2EFuVEM">[<a href="#ref-s2EFuVEM" role="doc-biblioref">24</a>]</span>, and semantic reasoning approaches <span class="citation" data-cites="10hJQkRMY">[<a href="#ref-10hJQkRMY" role="doc-biblioref">25</a>]</span>.
+With ChatGSE, we provide a Python platform for the side-by-side application of reasoning algorithms, in the “Causal Inference” tab.</p>
+<p>The ability to connect to flexible databases created by BioCypher enables the representation of the same basic knowledge, but tailored to each individual reasoning mode (for instance, a labelled property graph as input for the logic model, an RDF graph for the semantic reasoner, and a vector database for the LLM).
+This increases the ease-of-use as well as the reproducibility of benchmarking the reasoning abilities of different algorithms.</p>
+<h3 id="literature-reference-database">Literature Reference Database</h3>
+<p>LLMs are very good feature extractors.
+In addition to the correcting agent described in Supplementary Note <a href="#correcting-agent">Correcting Agent</a>, a “literature agent” can additionally be used to ameliorate the occasionally untruthful statements of the primary model.
+Given a response from said model, the literature agent is tasked with extracting references to academic papers from the response (if it contains such), and validating the existence of the claimed reference as well as its attributes (such as title and digital object identifier).
+The validation of extracted article authors, titles, and identifiers can be performed by a simple search in a connected database of scientific publications.</p>
+<h3 id="experimental-design">Experimental Design</h3>
+<p>Experimental design is a crucial step in any biological experiment.
+However, it can be a subtle and complex task, requiring a deep understanding of the biological system under study as well as statistical and computational expertise.
+LLMs can potentially fill the gaps that exist in most research groups, which traditionally focus on either the biological or the statistical aspects of experimental design.</p>
+<p>Similar to the general chat functionality, we provide facilities to upload experimental design plans and ask about their feasibility in the biological or statistical context in an “Experimental Design” tab.
+Coupled with a suitable knowledge graph (for instance containing methods literature) and/or a document summarisation of relevant articles, ChatGSE can be a simple and effective tool to consider the design of an experiment from multiple perspectives.</p>
+<h3 id="podcast-my-paper">Podcast my Paper</h3>
+<p>The recent years have brought significant advances in text-to-speech applications, yielding large accessibility benefits to simple text-based communication and personal assistants.
+However, the text of scientific papers is riddled with special characters, references, legends, and entities otherwise hard to interpret by text-to-speech algorithms, such as PCR primer sequences.</p>
+<p>To process arbitrary scientific manuscripts into “listenable” text, we create an agent that ingests the paper paragraph-wise and distributes individual sections to an LLM for text cleaning, removing all detracting information, such as reference numbers, web links, figure legends, and statistical information.
+The resulting cleaned sections are also lightly summarised to account for consumption by listening, and then fed into a text-to-speech model to generate individual sections (chapters) of the article.
+The resulting audio can be played back on any media device.</p>
+<h3 id="journal-club">Journal Club</h3>
+<p>In many instances, the evaluation of scientific literature is pursued comparatively.
+Whether it is the discussion of which hypothesis is the correct one of two, or which method should be applied to address a specific question, multiple manuscripts need to be integrated to draw conclusions.
+We propose to facilitate scientific “discussion” by orchestrating an AI journal club, in which a primary model guides individual models, each responsible for representing one scientific position (e.g., each representing one manuscript).</p>
+<p>This way of reasoning has proven effective in the way science is conducted by humans.
+By installing dedicated representatives of any position, the argument can be led more effectively, since each participant of the discussion is only responsible for knowing the facts that relate to their own position.
+In AI reasoning, problems could arise when one model is responsible for multiple sides of an argument, although for different reasons.
+In the case of argument being grounded in a vector database injection process (see Supplementary Note 3: <a href="#in-context-learning">In-context Learning</a>), only one model in charge of representing two or more positions (manuscripts) on the matter may become biassed towards a specific position due to multiple issues.
+The amount of prompts that can be injected into one model query is limited by the token input length, and sentences from manuscripts that are by chance more similar to the phrase used for the similarity search could become overrepresented in the model’s reasoning.
+Using one model per position solves this problem by distributing token limits across multiple models, and by accessing only single manuscripts (or several manuscripts, but from the same “camp”).</p>
+<p>The models interact with one another in the way that human discussions are led: the moderator (primary model) gives tasks to the secondary models according to the human researcher’s question, and elicits a response that the adversary needs to address in the next iteration of the discussion.
+The discussion, while being autonomous apart from the initial question, can be guided step-by-step by the human researcher.</p>
 <!-- default theme -->
 
 <style>
