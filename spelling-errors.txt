@@ -1,11 +1,13 @@
 AGI
+andimajore
+Andreas
 Astex
 Aurelien
 backend
 Badia
 benchmarking
 biassed
-biochatter
+BioChatter
 BioCypher
 bioinformatics
 biomedicine
@@ -32,6 +34,7 @@ LLM
 LLM’s
 LLMs
 Lobentanzer
+Maier
 Milvus
 Mompel
 omics
