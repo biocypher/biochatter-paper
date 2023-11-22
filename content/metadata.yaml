@@ -17,6 +17,13 @@ authors:
     affiliations:
       - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
     corresponding: true
+  - github: andimajore
+    name: Andreas Maier
+    initials: AM
+    orcid: 0000-0003-4408-0068
+    email: andreas.maier-1@uni-hamburg.de
+    affiliations:
+      - Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany
   - github: saezrodriguez
     name: Julio Saez-Rodriguez
     initials: JSR
