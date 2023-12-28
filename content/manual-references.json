@@ -20,5 +20,44 @@
         "family": "Gallagher"
       }
     ]
+  },
+  {
+    "id": "pytest",
+    "type": "webpage",
+    "URL": "https://github.com/pytest-dev/pytest",
+    "title": "pytest x.y",
+    "issued": {
+      "date-parts": [
+        [
+          2004
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Holger",
+        "family": "Krekel"
+      },
+      {
+        "given": "Bruno",
+        "family": "Oliveira"
+      },
+      {
+        "given": "Ronny",
+        "family": "Pfannschmidt"
+      },
+      {
+        "given": "Floris",
+        "family": "Bruynooghe"
+      },
+      {
+        "given": "Brianna",
+        "family": "Laugher"
+      },
+      {
+        "given": "Florian",
+        "family": "Bruhin"
+      }
+    ]
   }
 ]
