@@ -10,6 +10,9 @@ date-meta: '2023-12-29'
 author-meta:
 - Sebastian Lobentanzer
 - Andreas Maier
+- Cankun Wang
+- Qin Ma
+- Shaohong Feng
 - Julio Saez-Rodriguez
 header-includes: |
   <!--
@@ -25,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-29" />
   <meta name="citation_publication_date" content="2023-12-29" />
   <meta property="article:published_time" content="2023-12-29" />
-  <meta name="dc.modified" content="2023-12-29T13:56:02+00:00" />
-  <meta property="article:modified_time" content="2023-12-29T13:56:02+00:00" />
+  <meta name="dc.modified" content="2023-12-29T14:00:02+00:00" />
+  <meta property="article:modified_time" content="2023-12-29T14:00:02+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,6 +43,17 @@ header-includes: |
   <meta name="citation_author" content="Andreas Maier" />
   <meta name="citation_author_institution" content="Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-4408-0068" />
+  <meta name="citation_author" content="Cankun Wang" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
+  <meta name="citation_author_orcid" content="0000-0002-0225-9855" />
+  <meta name="twitter:creator" content="@Wang-Cankun" />
+  <meta name="citation_author" content="Qin Ma" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
+  <meta name="citation_author_orcid" content="0000-0002-3264-8392" />
+  <meta name="twitter:creator" content="@QinMaBMBL" />
+  <meta name="citation_author" content="Shaohong Feng" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
+  <meta name="citation_author_orcid" content="0009-0000-8124-3626" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
@@ -50,9 +64,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +88,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/))
 was automatically generated
-from [biocypher/biochatter-paper@f083f32](https://github.com/biocypher/biochatter-paper/tree/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4)
+from [biocypher/biochatter-paper@985ed1f](https://github.com/biocypher/biochatter-paper/tree/985ed1f8a14d402b9120a0c91e4acd8d901b672a)
 on December 29, 2023.
 </em></small>
 
@@ -108,6 +122,43 @@ on December 29, 2023.
     <br>
   <small>
      Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany
+  </small>
+
++ **Cankun Wang**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-0225-9855](https://orcid.org/0000-0002-0225-9855)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [Wang-Cankun](https://github.com/Wang-Cankun)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [Wang-Cankun](https://twitter.com/Wang-Cankun)
+    <br>
+  <small>
+     Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+  </small>
+
++ **Qin Ma**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-3264-8392](https://orcid.org/0000-0002-3264-8392)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [maqin2001](https://github.com/maqin2001)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [QinMaBMBL](https://twitter.com/QinMaBMBL)
+    <br>
+  <small>
+     Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+  </small>
+
++ **Shaohong Feng**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0009-0000-8124-3626](https://orcid.org/0009-0000-8124-3626)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [fengsh27](https://github.com/fengsh27)
+    <br>
+  <small>
+     Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
   </small>
 
 + **Julio Saez-Rodriguez**

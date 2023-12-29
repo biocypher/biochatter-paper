@@ -12,9 +12,12 @@
     "author-meta": [
       "Sebastian Lobentanzer",
       "Andreas Maier",
+      "Cankun Wang",
+      "Qin Ma",
+      "Shaohong Feng",
       "Julio Saez-Rodriguez"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta name=\"citation_title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta property=\"og:title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta property=\"twitter:title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta name=\"dc.date\" content=\"2023-12-29\" />\n<meta name=\"citation_publication_date\" content=\"2023-12-29\" />\n<meta property=\"article:published_time\" content=\"2023-12-29\" />\n<meta name=\"dc.modified\" content=\"2023-12-29T13:56:02+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-12-29T13:56:02+00:00\" />\n<meta name=\"dc.language\" content=\"en-UK\" />\n<meta name=\"citation_language\" content=\"en-UK\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Sebastian Lobentanzer\" />\n<meta name=\"citation_author_institution\" content=\"Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3399-6695\" />\n<meta name=\"twitter:creator\" content=\"@slobentanzer\" />\n<meta name=\"citation_author\" content=\"Andreas Maier\" />\n<meta name=\"citation_author_institution\" content=\"Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4408-0068\" />\n<meta name=\"citation_author\" content=\"Julio Saez-Rodriguez\" />\n<meta name=\"citation_author_institution\" content=\"Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8552-8976\" />\n<meta name=\"twitter:creator\" content=\"@saezlab\" />\n<link rel=\"canonical\" href=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta property=\"og:url\" content=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta property=\"twitter:url\" content=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://biocypher.github.io/biochatter-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://biocypher.github.io/biochatter-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta name=\"citation_title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta property=\"og:title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta property=\"twitter:title\" content=\"A Platform for the Biomedical Application of Large Language Models\" />\n<meta name=\"dc.date\" content=\"2023-12-29\" />\n<meta name=\"citation_publication_date\" content=\"2023-12-29\" />\n<meta property=\"article:published_time\" content=\"2023-12-29\" />\n<meta name=\"dc.modified\" content=\"2023-12-29T14:00:02+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-12-29T14:00:02+00:00\" />\n<meta name=\"dc.language\" content=\"en-UK\" />\n<meta name=\"citation_language\" content=\"en-UK\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Sebastian Lobentanzer\" />\n<meta name=\"citation_author_institution\" content=\"Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3399-6695\" />\n<meta name=\"twitter:creator\" content=\"@slobentanzer\" />\n<meta name=\"citation_author\" content=\"Andreas Maier\" />\n<meta name=\"citation_author_institution\" content=\"Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4408-0068\" />\n<meta name=\"citation_author\" content=\"Cankun Wang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0225-9855\" />\n<meta name=\"twitter:creator\" content=\"@Wang-Cankun\" />\n<meta name=\"citation_author\" content=\"Qin Ma\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3264-8392\" />\n<meta name=\"twitter:creator\" content=\"@QinMaBMBL\" />\n<meta name=\"citation_author\" content=\"Shaohong Feng\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0009-0000-8124-3626\" />\n<meta name=\"citation_author\" content=\"Julio Saez-Rodriguez\" />\n<meta name=\"citation_author_institution\" content=\"Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8552-8976\" />\n<meta name=\"twitter:creator\" content=\"@saezlab\" />\n<link rel=\"canonical\" href=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta property=\"og:url\" content=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta property=\"twitter:url\" content=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://biocypher.github.io/biochatter-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://biocypher.github.io/biochatter-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://biocypher.github.io/biochatter-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -26,7 +29,7 @@
   "manubot": {
     "date": "2023-12-29",
     "date_long": "December 29, 2023",
-    "generated": "2023-12-29T13:56:02+00:00",
+    "generated": "2023-12-29T14:00:02+00:00",
     "generated_date_long": "December 29, 2023",
     "randomize_author_order": false,
     "authors": [
@@ -59,6 +62,47 @@
         ]
       },
       {
+        "github": "Wang-Cankun",
+        "name": "Cankun Wang",
+        "initials": "CW",
+        "orcid": "0000-0002-0225-9855",
+        "email": "cankun.wang@osumc.edu",
+        "twitter": "Wang-Cankun",
+        "affiliations": [
+          "Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA"
+        ],
+        "affiliation_numbers": [
+          3
+        ]
+      },
+      {
+        "github": "maqin2001",
+        "name": "Qin Ma",
+        "initials": "QM",
+        "orcid": "0000-0002-3264-8392",
+        "email": "qin.ma@osumc.edu",
+        "twitter": "QinMaBMBL",
+        "affiliations": [
+          "Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA"
+        ],
+        "affiliation_numbers": [
+          3
+        ]
+      },
+      {
+        "github": "fengsh27",
+        "name": "Shaohong Feng",
+        "initials": "SF",
+        "orcid": "0009-0000-8124-3626",
+        "email": "shaohong.feng@osumc.edu",
+        "affiliations": [
+          "Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA"
+        ],
+        "affiliation_numbers": [
+          3
+        ]
+      },
+      {
         "github": "saezrodriguez",
         "name": "Julio Saez-Rodriguez",
         "initials": "JSR",
@@ -82,6 +126,10 @@
       {
         "affiliation": "Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany",
         "affiliation_number": 2
+      },
+      {
+        "affiliation": "Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA",
+        "affiliation_number": 3
       }
     ],
     "ci_source": {
@@ -89,15 +137,15 @@
       "repo_slug": "biocypher/biochatter-paper",
       "repo_owner": "biocypher",
       "repo_name": "biochatter-paper",
-      "commit": "f083f323b3d0e1cb6b418fc3fdd066ce494d8df4",
-      "triggering_commit": "f083f323b3d0e1cb6b418fc3fdd066ce494d8df4",
-      "build_url": "https://github.com/biocypher/biochatter-paper/commit/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/checks",
-      "job_url": "https://github.com/biocypher/biochatter-paper/actions/runs/7357219824"
+      "commit": "985ed1f8a14d402b9120a0c91e4acd8d901b672a",
+      "triggering_commit": "985ed1f8a14d402b9120a0c91e4acd8d901b672a",
+      "build_url": "https://github.com/biocypher/biochatter-paper/commit/985ed1f8a14d402b9120a0c91e4acd8d901b672a/checks",
+      "job_url": "https://github.com/biocypher/biochatter-paper/actions/runs/7357240178"
     },
     "html_url": "https://biocypher.github.io/biochatter-paper/",
     "pdf_url": "https://biocypher.github.io/biochatter-paper/manuscript.pdf",
-    "html_url_versioned": "https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/",
-    "pdf_url_versioned": "https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/manuscript.pdf",
+    "html_url_versioned": "https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/",
+    "pdf_url_versioned": "https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/manuscript.pdf",
     "manubot_version": "0.5.6",
     "rootstock_commit": "48c7d75849f6fa24b2c2d6a529edc028f1b2d029",
     "manuscript_stats": {

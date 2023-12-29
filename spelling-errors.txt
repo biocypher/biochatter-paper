@@ -10,6 +10,7 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomedicine
+Cankun
 ChatGPT
 ChatGSE
 complemetary
@@ -19,6 +20,8 @@ Dimitrov
 Dugourd
 embeddings
 ensembling
+Feng
+fengsh
 GPT
 GPUs
 GSK
@@ -37,6 +40,7 @@ LLM’s
 LLMs
 Lobentanzer
 Maier
+maqin
 Milvus
 Mompel
 ontologies
@@ -46,6 +50,8 @@ parameterisation
 Pau
 py
 Pytest
+Qin
+QinMaBMBL
 quantisations
 recency
 reproducibility
@@ -54,6 +60,7 @@ saezlab
 saezrodriguez
 Sanofi
 Schumacher
+Shaohong
 siloed
 SL
 slobentanzer
