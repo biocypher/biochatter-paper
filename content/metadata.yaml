@@ -1,6 +1,6 @@
 ---
 title: "A Platform for the Biomedical Application of Large Language Models"
-date: null  # Defaults to date generated, but can specify like '2022-10-31'.
+date: null # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - biomedicine
   - bioinformatics
@@ -24,6 +24,29 @@ authors:
     email: andreas.maier-1@uni-hamburg.de
     affiliations:
       - Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany
+  - github: Wang-Cankun
+    name: Cankun Wang
+    initials: CW
+    orcid: 0000-0002-0225-9855
+    email: cankun.wang@osumc.edu
+    twitter: Wang-Cankun
+    affiliations:
+      - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+  - github: maqin2001
+    name: Qin Ma
+    initials: QM
+    orcid: 0000-0002-3264-8392
+    email: qin.ma@osumc.edu
+    twitter: QinMaBMBL
+    affiliations:
+      - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+  - github: fengsh27
+    name: Shaohong Feng
+    initials: SF
+    orcid: 0009-0000-8124-3626
+    email: shaohong.feng@osumc.edu
+    affiliations:
+      - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
   - github: saezrodriguez
     name: Julio Saez-Rodriguez
     initials: JSR
