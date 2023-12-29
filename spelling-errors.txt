@@ -4,12 +4,12 @@ APIs
 Astex
 Aurelien
 Badia
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
-Biomedicine
+biomedicine
 ChatGPT
 ChatGSE
 complemetary
@@ -66,5 +66,6 @@ variablity
 vectorstore
 WASM
 WebAssembly
+WebLLM
 Xorbits
 YAML

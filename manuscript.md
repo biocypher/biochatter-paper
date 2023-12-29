@@ -25,8 +25,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-29" />
   <meta name="citation_publication_date" content="2023-12-29" />
   <meta property="article:published_time" content="2023-12-29" />
-  <meta name="dc.modified" content="2023-12-29T11:48:49+00:00" />
-  <meta property="article:modified_time" content="2023-12-29T11:48:49+00:00" />
+  <meta name="dc.modified" content="2023-12-29T13:56:02+00:00" />
+  <meta property="article:modified_time" content="2023-12-29T13:56:02+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/59292daba61be5f9027e4302454df4cf0049427e/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/59292daba61be5f9027e4302454df4cf0049427e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/59292daba61be5f9027e4302454df4cf0049427e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/59292daba61be5f9027e4302454df4cf0049427e/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4/))
 was automatically generated
-from [biocypher/biochatter-paper@59292da](https://github.com/biocypher/biochatter-paper/tree/59292daba61be5f9027e4302454df4cf0049427e)
+from [biocypher/biochatter-paper@f083f32](https://github.com/biocypher/biochatter-paper/tree/f083f323b3d0e1cb6b418fc3fdd066ce494d8df4)
 on December 29, 2023.
 </em></small>
 
@@ -383,7 +383,10 @@ We provide Docker images for the automatic deployment of the API and the models.
 Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub [@{https://huggingface.co/}] can be added using the intuitive graphical user interface.
 
 In addition, we provide fully browser-based deployment of LLMs using WebAssembly (WASM) and the web-llm library (https://github.com/mlc-ai/web-llm).
-This allows the deployment of LLMs on end-user devices without the need for a server.
+We host a local model using web-llm, which is accessed by the BioChatter server within ChatGSE Next.
+This combination creates a secure conversational environment and minimises the risks associated with data breaches.
+Hosting local LLMs using WebLLM allows them to run without an internet connection in a WASM module.
+This architecture thus enables complete data security and is limited only by the resources of the host computer.
 While the same can be achieved with a local deployment of the Xorbits Inference API, the browser-based deployment is more user-friendly and does not require any additional software.
 
 ### Model Chaining
