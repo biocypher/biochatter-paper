@@ -20,5 +20,110 @@
         "family": "Gallagher"
       }
     ]
+  },
+  {
+    "id": "pytest",
+    "type": "webpage",
+    "URL": "https://github.com/pytest-dev/pytest",
+    "title": "pytest x.y",
+    "issued": {
+      "date-parts": [
+        [
+          2004
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Holger",
+        "family": "Krekel"
+      },
+      {
+        "given": "Bruno",
+        "family": "Oliveira"
+      },
+      {
+        "given": "Ronny",
+        "family": "Pfannschmidt"
+      },
+      {
+        "given": "Floris",
+        "family": "Bruynooghe"
+      },
+      {
+        "given": "Brianna",
+        "family": "Laugher"
+      },
+      {
+        "given": "Florian",
+        "family": "Bruhin"
+      }
+    ]
+  },
+  {
+    "id": "rag",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Patrick",
+        "family": "Lewis"
+      },
+      {
+        "given": "Ethan",
+        "family": "Perez"
+      },
+      {
+        "given": "Aleksandra",
+        "family": "Piktus"
+      },
+      {
+        "given": "Fabio",
+        "family": "Petroni"
+      },
+      {
+        "given": "Vladimir",
+        "family": "Karpukhin"
+      },
+      {
+        "given": "Naman",
+        "family": "Goyal"
+      },
+      {
+        "given": "Heinrich",
+        "family": "Küttler"
+      },
+      {
+        "given": "Mike",
+        "family": "Lewis"
+      },
+      {
+        "given": "Wen-tau",
+        "family": "Yih"
+      },
+      {
+        "given": "Tim",
+        "family": "Rocktäschel"
+      },
+      {
+        "given": "Sebastian",
+        "family": "Riedel"
+      },
+      {
+        "given": "Douwe",
+        "family": "Kiela"
+      }
+    ],
+    "container-title": "Advances in Neural Information Processing Systems",
+    "page": "9459-9474",
+    "volume": "33",
+    "URL": "https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf",
+    "publisher": "Curran Associates, Inc."
   }
 ]
