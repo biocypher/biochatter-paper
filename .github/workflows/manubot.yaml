@@ -3,11 +3,9 @@ on:
   push:
     branches:
       - main
-      - master
   pull_request:
     branches:
       - main
-      - master
   # NOTE: scheduled workflows are supported as of 2022-09-27 (example commented below)
   # https://github.com/community/community/discussions/12269#discussioncomment-3747667
   # scheduled:
@@ -21,11 +19,11 @@ on:
       BUILD_DOCX:
         type: boolean
         description: generate DOCX output
-        default: false
+        default: true
       BUILD_LATEX:
         type: boolean
         description: generate LaTeX output
-        default: false
+        default: true
       SPELLCHECK:
         type: boolean
         description: Check spelling

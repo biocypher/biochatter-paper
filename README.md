@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# BioChatter - the manuscript
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -8,10 +8,11 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
-
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
+To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework, BioChatter.
+Based on open-source software packages, we synergise the many functionalities that currently develop around LLMs, such as knowledge integration and retrieval augmented generation, model chaining, and benchmarks, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedical informatics.
+We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
+We demonstrate its use via a multi-purpose web app, ChatGSE (https://chat.biocypher.org), and provide documentation, support, and an open community to all interested researchers.
 
 ## Manubot
 

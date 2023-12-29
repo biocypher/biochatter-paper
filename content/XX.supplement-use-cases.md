@@ -2,12 +2,6 @@
 
 In our Supplementary Notes, we explain the functions of our platform in more detail.
 Please note that several of the mentioned features, particularly more advanced ones, are in early developmental stages.
-For practical reasons, we divide our software into two distinct packages, the user interface (UI) component [ChatGSE](https://github.com/biocypher/ChatGSE) and the Python backend library [biochatter](https://github.com/biocypher/biochatter).
-This also reflects how we expect the platform to be used: as a generic backend library for the development of custom UIs.
-For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
-Both libraries are developed in Python (version 3.10), according to modern standards of software development [@doi:10.1038/s41597-020-0486-7].
-We use Streamlit (version 1.21.0, https://streamlit.io) for the web UI.
-We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
 
 ### Prompt Engineering
 
@@ -22,16 +16,12 @@ This includes explanation of the method itself as well as structural information
 
 To make this functionality available to all users, we provide a “Prompt Engineering” tab in the ChatGSE application, which allows the modification (or removal) of existing prompts, as well as the addition of new ones.
 We also provide functionality to import and export these prompts in JSON format to facilitate reproducible and shareable biomedical prompt engineering.
-To discuss and share examples of useful or ineffective prompts, we encourage all users to join the #chatgse stream in our freely accessible Zulip channel at https://biocypher.zulipchat.com, or the GitHub discussion thread at https://github.com/biocypher/ChatGSE/discussions/11.
-
-To further improve reproducible prompt engineering, we will establish online datasets for benchmarking LLM performance on biomedical tasks.
-These datasets will be available through the ChatGSE frontend and the performance of specific prompt sets on these benchmarks will be captured using an online leaderboard system.
-This way, the most useful prompt sets for specific tasks can be maintained concurrently with the development of the LLMs.
+To discuss and share examples of useful or ineffective prompts, we encourage all users to join the #biochatter-and-chatgse stream in our freely accessible Zulip channel at https://biocypher.zulipchat.com, or the GitHub discussion thread at https://github.com/biocypher/ChatGSE/discussions/11.
 
 ### Correcting Agent
 
-The propensity of LLMs to hallucinate untrue facts necessitates control mechanisms and guardrails for their application in research, particularly in high-stakes fields such as biomedicine [@doi:10.1038/s41587-023-01789-6].
-Some corrective incentive can be included in the instructions to the primary model, for instance by including a “Criticism” directive such as “Constructively self-criticise your big-picture behaviour constantly.” However, this does not guarantee to prevent hallucinations completely, as the same model that hallucinates also is responsible for correction.
+The propensity of LLMs to confabulate untrue facts necessitates control mechanisms and guardrails for their application in research, particularly in high-stakes fields such as biomedicine [@doi:10.1038/s41587-023-01789-6].
+Some corrective incentive can be included in the instructions to the primary model, for instance by including a “Criticism” directive such as “Constructively self-criticise your big-picture behaviour constantly.” However, this does not guarantee to prevent confabulations completely, as the same model that confabulates also is responsible for correction.
 
 Thus, we implement a modular combination of primary and corrective model, where the corrective agent – a “second opinion” – is set up with instructions tuned exactly to the task of fact-checking the responses of the primary model (“You are a fact-checker. Please judge the following statement for its factual correctness. ...”).
 The performance of the corrective agent can be further increased by using a more powerful model (e.g., moving from gpt-3.5-turbo to gpt-4), by pre-processing the primary model’s response (e.g., splitting the response into single sentences and fact-checking each sentence individually), and comparing the primary model’s statements to prior knowledge stored in a knowledge graph connected to the chat platform.
@@ -45,27 +35,6 @@ This is necessary since some models, particularly those from OpenAI, are heavily
 The comparative power of the LLM agents can be further increased by connecting to a vector database containing embeddings of the contents of specific user-supplied documents.
 For more information, see the following Supplementary Note 3: [In-context Learning].
 
-### In-context Learning
-
-While the general knowledge of current LLMs is extensive, they may not know how to prioritise very specific scientific results, or they may not have had access to some research articles in their training data (e.g., due to their recency or licensing issues).
-To bridge this gap, we can provide additional information from relevant publications to the model via the prompt.
-However, we cannot add entire publications to the prompt, since the input length of current models still is restricted; we need to isolate the information that is specifically relevant to the question given by the user.
-To find this information, we perform a similarity search between the user’s question and the contents of user-provided scientific articles (or other texts).
-The most efficient way to do this mapping is by using a vector database.
-
-The contextual background information provided by the user (e.g., by uploading a scientific article of prior work related to the experiment to be interpreted) is split into pieces suitable to be digested by the LLM, which are individually embedded by the model.
-These embeddings (represented by vectors) are used to store the text fragments in a vector database; the storage as vectors allows fast and efficient retrieval of similar entities via the comparison of individual vectors.
-For example, the two sentences “Amyloid beta levels are associated with Alzheimer’s Disease stage.” and “One of the most important clinical markers of AD progression is the amount of deposited A-beta 42.” would be closely associated in a vector database (given the embedding model is of sufficient quality, i.e., similar to GPT-3 or better), while traditional text-based similarity metrics probably would not identify them as highly similar.
-
-By comparing the user’s question to prior knowledge in the vector database, we can extract the relevant pieces of information from the entire background.
-These pieces (for instance, single sentences directly related to the topic of the question) are then sufficiently small to be directly added to the prompt.
-In this way, the model can learn from additional context without the need for retraining or fine-tuning.
-This method is sometimes described as in-context learning [@doi:10.48550/arxiv.2303.17580].
-
-To provide access to this functionality in ChatGSE, we add a “Document Summarisation” tab to the platform that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
-This contextual information is transparently displayed in the main chat window.
-Since this functionality requires a connection to a vector database system, we provide modular connectivity to several standard vector database providers, such as Pinecone, Weaviate, or Milvus.
-
 ### Cell Type Annotation
 
 A common repetitive task in bioinformatics is to annotate single-cell datasets with cell type labels.
@@ -77,10 +46,6 @@ We propose to combine LLM inference on cell types with the storage solutions pro
 Using the graphical user interface of ChatGSE, we can provide recommendations of inferred cell types to the human user, such that the ultimate decision about a cell type annotation remains with the domain expert, while the tedious aspects of annotation are reduced significantly.
 If the model reaches a threshold of perfect annotation for any cell type (e.g., a >99% success rate in more than 50 cells), the user can decide to trust the model in instances of this cell type and fully automate the annotation in these instances.
 Similarly, confidence metrics can be used to trigger user input only at cell type inferences that are not straightforward.
-
-### Knowledge Graphs
-
-<!-- TODO -->
 
 ### Causal Inference
 
