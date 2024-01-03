@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-03" />
   <meta name="citation_publication_date" content="2024-01-03" />
   <meta property="article:published_time" content="2024-01-03" />
-  <meta name="dc.modified" content="2024-01-03T09:11:41+00:00" />
-  <meta property="article:modified_time" content="2024-01-03T09:11:41+00:00" />
+  <meta name="dc.modified" content="2024-01-03T09:14:01+00:00" />
+  <meta property="article:modified_time" content="2024-01-03T09:14:01+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -64,9 +64,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/))
 was automatically generated
-from [biocypher/biochatter-paper@93d4614](https://github.com/biocypher/biochatter-paper/tree/93d46142efb462908691b32fe8cac4193eebce70)
+from [biocypher/biochatter-paper@a53eb60](https://github.com/biocypher/biochatter-paper/tree/a53eb609f3a883d052091365f61238f460e02536)
 on January 3, 2024.
 </em></small>
 
@@ -355,7 +355,7 @@ We develop under the permissive MIT licence and encourage contributions and sugg
 BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (https://github.com/biocypher/biochatter).
 
 To demonstrate basic and advanced use cases of the framework, we provide two web apps, ChatGSE and ChatGSE Next.
-ChatGSE is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/ChatGSE).
+ChatGSE is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/chatgse).
 The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
 For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
 ChatGSE Next (https://github.com/biocypher/chatgse-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).

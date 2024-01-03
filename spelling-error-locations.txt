@@ -156,7 +156,7 @@ content/40.methods.md:3:biocypher
 content/40.methods.md:5:ChatGSE
 content/40.methods.md:5:ChatGSE
 content/40.methods.md:6:biocypher
-content/40.methods.md:6:ChatGSE
+content/40.methods.md:6:chatgse
 content/40.methods.md:6:ChatGSE
 content/40.methods.md:6:streamlit
 content/40.methods.md:6:Streamlit
@@ -294,7 +294,7 @@ content/XX.supplement-use-cases.md:19:biochatter
 content/XX.supplement-use-cases.md:19:biocypher
 content/XX.supplement-use-cases.md:19:biocypher
 content/XX.supplement-use-cases.md:19:chatgse
-content/XX.supplement-use-cases.md:19:ChatGSE
+content/XX.supplement-use-cases.md:19:chatgse
 content/XX.supplement-use-cases.md:23:biomedicine
 content/XX.supplement-use-cases.md:23:LLMs
 content/XX.supplement-use-cases.md:27:gpt

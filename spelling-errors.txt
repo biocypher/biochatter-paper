@@ -9,7 +9,7 @@ BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
-biomedicine
+Biomedicine
 Cankun
 ChatGPT
 ChatGSE
