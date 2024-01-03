@@ -16,7 +16,7 @@ This includes explanation of the method itself as well as structural information
 
 To make this functionality available to all users, we provide a “Prompt Engineering” tab in the ChatGSE application, which allows the modification (or removal) of existing prompts, as well as the addition of new ones.
 We also provide functionality to import and export these prompts in JSON format to facilitate reproducible and shareable biomedical prompt engineering.
-To discuss and share examples of useful or ineffective prompts, we encourage all users to join the #biochatter-and-chatgse stream in our freely accessible Zulip channel at https://biocypher.zulipchat.com, or the GitHub discussion thread at https://github.com/biocypher/ChatGSE/discussions/11.
+To discuss and share examples of useful or ineffective prompts, we encourage all users to join the #biochatter-and-chatgse stream in our freely accessible Zulip channel at https://biocypher.zulipchat.com, or the GitHub discussion thread at https://github.com/biocypher/chatgse/discussions/11.
 
 ### Correcting Agent
 
