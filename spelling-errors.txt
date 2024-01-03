@@ -3,13 +3,14 @@ Andreas
 APIs
 Astex
 Aurelien
+backend
 Badia
 benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
-biomedicine
+Biomedicine
 Cankun
 ChatGPT
 ChatGSE
@@ -35,7 +36,7 @@ KGs
 LangChain
 leaderboard
 leaderboards
-llm
+LLM
 LLM’s
 LLMs
 Lobentanzer

@@ -58,8 +58,8 @@
   <meta name="dc.date" content="2024-01-03" />
   <meta name="citation_publication_date" content="2024-01-03" />
   <meta property="article:published_time" content="2024-01-03" />
-  <meta name="dc.modified" content="2024-01-03T09:14:55+00:00" />
-  <meta property="article:modified_time" content="2024-01-03T09:14:55+00:00" />
+  <meta name="dc.modified" content="2024-01-03T10:53:05+00:00" />
+  <meta property="article:modified_time" content="2024-01-03T10:53:05+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -113,9 +113,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/b3e613d371de6db5d0f372fd28c10e4958792765">biocypher/biochatter-paper@b3e613d</a>
+from <a href="https://github.com/biocypher/biochatter-paper/tree/d21c30a7aba90cf73c790dadc26ba24fec3142e7">biocypher/biochatter-paper@d21c30a</a>
 on January 3, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -264,9 +264,12 @@ Current approaches are mostly trial-and-error-based manual engineering, which is
 To address this issue, we include a prompt engineering framework in BioChatter that allows the preservation of prompt sets for specific tasks, which can be shared and reused by the community.
 In addition, to facilitate the scaling of prompt engineering, we integrate this framework in the benchmarking pipeline, which allows the automated evaluation of prompt sets as new models are published.</p>
 <h3 id="benchmarking">Benchmarking</h3>
-<p>To facilitate the reproducible evaluation of LLMs, we implement a benchmarking framework that allows the comparison of models, prompt sets, and other components of the pipeline.
+<p>The increasing generality of LLMs poses challenges for their comprehensive evaluation.
+To circumvent this issue, we focus on specific biomedical tasks and datasets, leaving general validation to existing benchmarks.
+For advanced assessment, we employ automated validation of the model’s responses by a second LLM.
+For transparent and reproducible evaluation of LLMs, we implement a benchmarking framework that allows the comparison of models, prompt sets, and all other components of the pipeline.
 Built on the generic Pytest framework <span class="citation" data-cites="14upAJPXR">[<a href="#ref-14upAJPXR" role="doc-biblioref">22</a>]</span>, it allows the automated evaluation of a matrix of all possible combinations of components.
-The results are stored and displayed on our website for easy comparison, and the benchmark is updated upon the release of new models and extensions to the datasets.
+The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets.
 We create a bespoke biomedical benchmark for multiple reasons:
 Firstly, the biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components <span class="citation" data-cites="uYvzQA7w">[<a href="#ref-uYvzQA7w" role="doc-biblioref">20</a>]</span>.
 Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs <span class="citation" data-cites="LE2GwIqT">[<a href="#ref-LE2GwIqT" role="doc-biblioref">19</a>]</span>.
@@ -330,9 +333,9 @@ ChatGSE is a web app based on the Streamlit framework (version 1.21.0, https://s
 The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
 For an up-to-date overview and preview of current functionality of the platform, please visit the <a href="https://chat.biocypher.org">online preview</a>.
 ChatGSE Next (https://github.com/biocypher/chatgse-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
-It is written in TypeScript using Flask and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability.
+It is written in TypeScript using Flask (version 3.0.0) and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
 However, this comes at the cost of increased complexity and development time.
-We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter library in their existing solutions.</p>
+We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter backend library in their existing solutions.</p>
 <p>All packages are developed openly and according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">28</a>]</span>; we use the permissive MIT licence to encourage downstream use and development.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.</p>
 <h3 id="benchmarking-1">Benchmarking</h3>
@@ -345,11 +348,13 @@ The individual dimensions of the matrix are:</p>
 <li><p><strong>LLMs</strong>: Testing proprietary (OpenAI) and open-source models (commonly using the Xorbits Inference API and HuggingFace models) against the same set of tasks is the primary aim of our benchmarking framework. We facilitate the automation of testing by including a programmatic way of deploying open-source models.</p></li>
 <li><p><strong>prompts</strong>: Since model performance can rely on prompts dramatically, a set of prompts for each task with varying degrees of specificity and fixed as well as variable components is used to evaluate this variability.</p></li>
 <li><p><strong>datasets</strong>: We test various tasks using a set of datasets for each task in question-answer-style.</p></li>
-<li><p><strong>data processing</strong>: Some data processing steps can have great impact on the downstream performance of LLMs. For instance, we test the conversion of numbers (which LLMs are notoriously bad at handling) to categorical text (e.g., low, medium, high).</p></li>
+<li><p><strong>data processing</strong>: Some data processing steps can have great impact on the downstream performance of LLMs.
+For instance, we test the conversion of numbers (which LLMs are notoriously bad at handling) to categorical text (e.g., low, medium, high).</p></li>
 <li><p><strong>model quantisations</strong>: We test a set of quantisations for each model (where available) to account for the trade-off between model size and performance.</p></li>
 <li><p><strong>model parameters</strong>: Where suitable, we test a set of parameters for each model, such as “temperature,” which determines the reproducibility of model responses.</p></li>
 <li><p><strong>integrations</strong>: We write dedicated tests for specific tasks that require integrations, for instance with knowledge graphs or vector databases.</p></li>
 <li><p><strong>stochasticity</strong>: To account for variablity in model responses, we include a parameter to run each test multiple times and generate summary statistics.</p></li>
+<li><p><strong>sentiment and behaviour</strong>: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.</p></li>
 </ul>
 <p>The Pytest framework is implemented at https://github.com/biocypher/biochatter/blob/main/benchmark, and more information and results are available at https://biocypher.github.io/biochatter/benchmark.</p>
 <p>To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
