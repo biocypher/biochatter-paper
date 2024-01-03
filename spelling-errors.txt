@@ -9,7 +9,7 @@ BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
-Biomedicine
+biomedicine
 Cankun
 ChatGPT
 ChatGSE
@@ -35,7 +35,7 @@ KGs
 LangChain
 leaderboard
 leaderboards
-LLM
+llm
 LLM’s
 LLMs
 Lobentanzer

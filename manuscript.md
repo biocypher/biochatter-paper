@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-03" />
   <meta name="citation_publication_date" content="2024-01-03" />
   <meta property="article:published_time" content="2024-01-03" />
-  <meta name="dc.modified" content="2024-01-03T09:14:01+00:00" />
-  <meta property="article:modified_time" content="2024-01-03T09:14:01+00:00" />
+  <meta name="dc.modified" content="2024-01-03T09:14:55+00:00" />
+  <meta property="article:modified_time" content="2024-01-03T09:14:55+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -64,9 +64,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/a53eb609f3a883d052091365f61238f460e02536/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/b3e613d371de6db5d0f372fd28c10e4958792765/))
 was automatically generated
-from [biocypher/biochatter-paper@a53eb60](https://github.com/biocypher/biochatter-paper/tree/a53eb609f3a883d052091365f61238f460e02536)
+from [biocypher/biochatter-paper@b3e613d](https://github.com/biocypher/biochatter-paper/tree/b3e613d371de6db5d0f372fd28c10e4958792765)
 on January 3, 2024.
 </em></small>
 
@@ -353,6 +353,7 @@ We develop under the permissive MIT licence and encourage contributions and sugg
 ## (Supplementary / Online) Methods
 
 BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (https://github.com/biocypher/biochatter).
+We provide documentation at https://biocypher.github.io/biochatter, including a tutorial and API reference.
 
 To demonstrate basic and advanced use cases of the framework, we provide two web apps, ChatGSE and ChatGSE Next.
 ChatGSE is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/chatgse).
