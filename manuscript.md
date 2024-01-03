@@ -6,7 +6,7 @@ keywords:
 - large language models
 - framework
 lang: en-UK
-date-meta: '2023-12-29'
+date-meta: '2024-01-03'
 author-meta:
 - Sebastian Lobentanzer
 - Andreas Maier
@@ -25,11 +25,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2023-12-29" />
-  <meta name="citation_publication_date" content="2023-12-29" />
-  <meta property="article:published_time" content="2023-12-29" />
-  <meta name="dc.modified" content="2023-12-29T14:00:02+00:00" />
-  <meta property="article:modified_time" content="2023-12-29T14:00:02+00:00" />
+  <meta name="dc.date" content="2024-01-03" />
+  <meta name="citation_publication_date" content="2024-01-03" />
+  <meta property="article:published_time" content="2024-01-03" />
+  <meta name="dc.modified" content="2024-01-03T09:11:41+00:00" />
+  <meta property="article:modified_time" content="2024-01-03T09:11:41+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -64,9 +64,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,10 +88,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/985ed1f8a14d402b9120a0c91e4acd8d901b672a/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/93d46142efb462908691b32fe8cac4193eebce70/))
 was automatically generated
-from [biocypher/biochatter-paper@985ed1f](https://github.com/biocypher/biochatter-paper/tree/985ed1f8a14d402b9120a0c91e4acd8d901b672a)
-on December 29, 2023.
+from [biocypher/biochatter-paper@93d4614](https://github.com/biocypher/biochatter-paper/tree/93d46142efb462908691b32fe8cac4193eebce70)
+on January 3, 2024.
 </em></small>
 
 
@@ -350,15 +350,19 @@ While we focus on the biomedical field, the concept of our frameworks can easily
 Our Python library is developed openly on GitHub (https://github.com/biocypher/biochatter) and can be integrated into any number of user interface solutions.
 We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool integrations, prompt engineering, benchmarking, and any other feature.
 
-## Methods
+## (Supplementary / Online) Methods
 
-BioChatter is a Python library, currently supporting Python 3.10-3.12, and generally the three most recent releases, which we ensure with a continuous integration pipeline on GitHub.
+BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (https://github.com/biocypher/biochatter).
+
+To demonstrate basic and advanced use cases of the framework, we provide two web apps, ChatGSE and ChatGSE Next.
 ChatGSE is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/ChatGSE).
-It is mainly used for demonstrating the various applications of the BioChatter framework and API.
-<!-- TODO update web app, preview -->
+The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
 For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
 ChatGSE Next (https://github.com/biocypher/chatgse-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
-It is written in TypeScript using Flask and Node.js and demonstrates the use of BioChatter in a modern web app.
+It is written in TypeScript using Flask and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability.
+However, this comes at the cost of increased complexity and development time.
+We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter library in their existing solutions.
+
 All packages are developed openly and according to modern standards of software development [@doi:10.1038/s41597-020-0486-7]; we use the permissive MIT licence to encourage downstream use and development.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
 
