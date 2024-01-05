@@ -17,6 +17,8 @@ authors:
     affiliations:
       - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
     corresponding: true
+  - name: The BioChatter Consortium
+    type: consortium
   - github: andimajore
     name: Andreas Maier
     initials: AM
