@@ -6,9 +6,10 @@ keywords:
 - large language models
 - framework
 lang: en-UK
-date-meta: '2024-01-03'
+date-meta: '2024-01-05'
 author-meta:
 - Sebastian Lobentanzer
+- The BioChatter Consortium
 - Andreas Maier
 - Cankun Wang
 - Qin Ma
@@ -25,11 +26,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-03" />
-  <meta name="citation_publication_date" content="2024-01-03" />
-  <meta property="article:published_time" content="2024-01-03" />
-  <meta name="dc.modified" content="2024-01-03T10:53:05+00:00" />
-  <meta property="article:modified_time" content="2024-01-03T10:53:05+00:00" />
+  <meta name="dc.date" content="2024-01-05" />
+  <meta name="citation_publication_date" content="2024-01-05" />
+  <meta property="article:published_time" content="2024-01-05" />
+  <meta name="dc.modified" content="2024-01-05T14:32:59+00:00" />
+  <meta property="article:modified_time" content="2024-01-05T14:32:59+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,6 +41,7 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
   <meta name="twitter:creator" content="@slobentanzer" />
+  <meta name="citation_author" content="The BioChatter Consortium" />
   <meta name="citation_author" content="Andreas Maier" />
   <meta name="citation_author_institution" content="Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-4408-0068" />
@@ -64,9 +66,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/d21c30a7aba90cf73c790dadc26ba24fec3142e7/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/))
 was automatically generated
-from [biocypher/biochatter-paper@d21c30a](https://github.com/biocypher/biochatter-paper/tree/d21c30a7aba90cf73c790dadc26ba24fec3142e7)
-on January 3, 2024.
+from [biocypher/biochatter-paper@18ca772](https://github.com/biocypher/biochatter-paper/tree/18ca7724c4094bbab6def604f1344f3e72889f26)
+on January 5, 2024.
 </em></small>
 
 
@@ -111,6 +113,11 @@ on January 3, 2024.
     <br>
   <small>
      Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+  </small>
+
++ **The BioChatter Consortium**
+  <br>
+  <small>
   </small>
 
 + **Andreas Maier**
@@ -189,7 +196,7 @@ Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
 
 Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
-Based on open-source software packages, we synergise the many functionalities that currently develop around LLMs, such as knowledge integration and retrieval augmented generation, model chaining, and benchmarks, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedical informatics.
+Based on open-source software packages, we synergise the many functionalities that currently develop around LLMs, such as knowledge integration / retrieval-augmented generation, model chaining, and benchmarks, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedical informatics.
 We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
 We demonstrate use cases via a multi-purpose web app, ChatGSE (https://chat.biocypher.org), and provide documentation, support, and an open community to all interested researchers.
 
@@ -293,12 +300,13 @@ Knowledge graphs (KGs) are a powerful tool to represent and query knowledge in a
 With BioCypher [@biocypher], we have developed a framework to create KGs from biomedical data in a user-friendly manner while also semantically grounding the data in ontologies.
 BioChatter is an extension of the BioCypher ecosystem, elevating its user-friendliness further by allowing natural language interactions with the data; any BioCypher KG is automatically compatible with BioChatter.
 We use information generated in the build process of BioCypher KGs to tune BioChatter's understanding of the data structures and contents, thereby increasing the efficiency of LLM-based KG querying (see Methods).
-In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's reasoning, which can be used to ground the model's responses in the context of the KG via in-context learning / RAG (see below).
+In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's reasoning, which can be used to ground the model's responses in the context of the KG via in-context learning / retrieval-augmented generation (see below).
 
-### Retrieval Augmented Generation
+### Retrieval-Augmented Generation
 
 LLM confabulation is a major issue for biomedical applications, where the consequences of incorrect information can be severe.
-One popular way of addressing this issue is to apply "in-context learning," which is also more recently referred to as "retrieval augmented generation" (RAG) [@doi:10.48550/arxiv.2303.17580].
+One popular way of addressing this issue is to apply "in-context learning," which is also more recently referred to as "retrieval-augmented generation" (RAG) [@doi:10.48550/arxiv.2303.17580].
+Briefly, RAG relies on injection of information into the model prompt of a pre-trained model, and as such does not require retraining / fine-tuning; once created, any RAG prompt can be used with any LLM.
 While this can be done by processing structured knowledge, for instance from KGs, it is often more efficient to use a semantic search engine to retrieve relevant information from unstructured data sources such as literature.
 To this end, we allow the management and integration of vector databases in the BioChatter framework.
 The user is able to connect to a vector database, embed an arbitrary number of documents, and then use semantic search to improve the model prompts by adding text fragments relevant to the given question (see Methods).
@@ -334,7 +342,7 @@ We allow self-hosting of open-source models on any scale, from dedicated hardwar
 
 ### Limitations
 
-Depending on generic open-source libraries such as LangChain [@langchain] and Pytest [@pytest] allows us to focus on the biomedical domain but also introduces dependencies on these libraries.
+Depending on generic open-source libraries such as LangChain [@langchain] and Pytest [@pytest] allows us to focus on the biomedical domain but also introduces technical dependencies on these libraries.
 While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
 In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.
 
@@ -365,7 +373,8 @@ For an up-to-date overview and preview of current functionality of the platform,
 ChatGSE Next (https://github.com/biocypher/chatgse-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
 It is written in TypeScript using Flask (version 3.0.0) and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
 However, this comes at the cost of increased complexity and development time.
-We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter backend library in their existing solutions.
+To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at https://github.com/biocypher/biochatter-server and as a Docker image in our Docker Hub organisation (https://hub.docker.com/orgs/biocypher).
+We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter server or library in their existing solutions.
 
 All packages are developed openly and according to modern standards of software development [@doi:10.1038/s41597-020-0486-7]; we use the permissive MIT licence to encourage downstream use and development.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
@@ -380,7 +389,7 @@ The individual dimensions of the matrix are:
 
 - **LLMs**: Testing proprietary (OpenAI) and open-source models (commonly using the Xorbits Inference API and HuggingFace models) against the same set of tasks is the primary aim of our benchmarking framework. We facilitate the automation of testing by including a programmatic way of deploying open-source models.
 
-- **prompts**: Since model performance can rely on prompts dramatically, a set of prompts for each task with varying degrees of specificity and fixed as well as variable components is used to evaluate this variability.
+- **prompts**: Since model performance can dramatically rely on the used prompts, a set of prompts for each task with varying degrees of specificity and fixed as well as variable components is used to evaluate this variability.
 
 - **datasets**: We test various tasks using a set of datasets for each task in question-answer-style.
 
@@ -400,7 +409,7 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 The Pytest framework is implemented at https://github.com/biocypher/biochatter/blob/main/benchmark, and more information and results are available at https://biocypher.github.io/biochatter/benchmark.
 
 To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
-The encryption is performed using a hybrid encryption scheme, where the data is encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
+The encryption is performed using a hybrid encryption scheme, where the data are encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
 The datasets are stored in a dedicated encrypted pipeline that is only accessible to the workflow that executes the benchmark.
 These processes are implemented at https://github.com/biocypher/llm-test-dataset and accessed from the benchmark procedure in BioChatter.
 
@@ -416,11 +425,11 @@ To illustrate the usage of this feature, we provide a demonstration repository a
 
 ### Retrieval Augmented Generation
 
-While the general knowledge of current LLMs is extensive, they may not know how to prioritise very specific scientific results, or they may not have had access to some research articles in their training data (e.g., due to their recency or licensing issues).
+While current LLMs possess extensive internal general knowledge, they may not know how to prioritise very specific scientific results, or they may not have had access to some research articles in their training data (e.g., due to their recency or licensing issues).
 To bridge this gap, we can provide additional information from relevant publications to the model via the prompt.
-However, we cannot add entire publications to the prompt, since the input length of current models still is restricted; we need to isolate the information that is specifically relevant to the question given by the user.
+However, we frequently cannot add entire publications to the prompt, since the input length of current models still is restricted; we need to isolate the information that is specifically relevant to the question given by the user.
 To find this information, we perform a semantic similarity search between the user’s question and the contents of user-provided scientific articles (or other texts).
-The most efficient way to do this mapping is by using a vector database.
+The most efficient way to do this mapping is by using a vector database [@doi:10.48550/arxiv.2308.07107].
 
 The contextual background information provided by the user (e.g., by uploading a scientific article of prior work related to the experiment to be interpreted) is split into pieces suitable to be digested by the LLM, which are individually embedded by the model.
 These embeddings (represented by vectors) are used to store the text fragments in a vector database; the storage as vectors allows fast and efficient retrieval of similar entities via the comparison of individual vectors.

@@ -10,7 +10,7 @@ BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
-Biomedicine
+biomedicine
 Cankun
 ChatGPT
 ChatGSE
@@ -23,6 +23,7 @@ embeddings
 ensembling
 Feng
 fengsh
+frontend
 GPT
 GPUs
 GSK
@@ -49,6 +50,7 @@ OpenAI
 OpenAI’s
 parameterisation
 Pau
+pre
 py
 Pytest
 Qin
