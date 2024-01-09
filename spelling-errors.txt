@@ -5,7 +5,7 @@ Astex
 Aurelien
 backend
 Badia
-benchmarking
+Benchmarking
 BioChatter
 BioChatter’s
 BioCypher
@@ -37,7 +37,7 @@ KGs
 LangChain
 leaderboard
 leaderboards
-LLM
+llm
 LLM’s
 LLMs
 Lobentanzer
@@ -51,6 +51,7 @@ OpenAI’s
 parameterisation
 Pau
 pre
+programme
 py
 Pytest
 Qin

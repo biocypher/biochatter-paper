@@ -6,7 +6,7 @@ keywords:
 - large language models
 - framework
 lang: en-UK
-date-meta: '2024-01-05'
+date-meta: '2024-01-09'
 author-meta:
 - Sebastian Lobentanzer
 - The BioChatter Consortium
@@ -26,11 +26,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-05" />
-  <meta name="citation_publication_date" content="2024-01-05" />
-  <meta property="article:published_time" content="2024-01-05" />
-  <meta name="dc.modified" content="2024-01-05T14:32:59+00:00" />
-  <meta property="article:modified_time" content="2024-01-05T14:32:59+00:00" />
+  <meta name="dc.date" content="2024-01-09" />
+  <meta name="citation_publication_date" content="2024-01-09" />
+  <meta property="article:published_time" content="2024-01-09" />
+  <meta name="dc.modified" content="2024-01-09T14:36:33+00:00" />
+  <meta property="article:modified_time" content="2024-01-09T14:36:33+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/77e04c7ecf6eb4b02896cc84ecd0614c09af1131/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/77e04c7ecf6eb4b02896cc84ecd0614c09af1131/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/77e04c7ecf6eb4b02896cc84ecd0614c09af1131/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/18ca7724c4094bbab6def604f1344f3e72889f26/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/77e04c7ecf6eb4b02896cc84ecd0614c09af1131/))
 was automatically generated
-from [biocypher/biochatter-paper@18ca772](https://github.com/biocypher/biochatter-paper/tree/18ca7724c4094bbab6def604f1344f3e72889f26)
-on January 5, 2024.
+from [biocypher/biochatter-paper@77e04c7](https://github.com/biocypher/biochatter-paper/tree/77e04c7ecf6eb4b02896cc84ecd0614c09af1131)
+on January 9, 2024.
 </em></small>
 
 
@@ -229,7 +229,7 @@ BioChatter’s main response circuit (blue) composes a number of specifically en
 This response is simultaneously used to prompt the secondary circuit (orange), which fulfils auxiliary tasks to complement the primary response.
 In particular, using search, the secondary circuit queries a database as prior knowledge repository and compares annotations to the primary response.
 The knowledge graph can also serve as long-term memory extension of the model.
-Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a retrieval augmented generation process.
+Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a retrieval-augmented generation process.
 If this “second opinion” differs from the primary response, a warning is issued.
 The platform is composable in all aspects, allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM.
 ](images/graphical_abstract.png "Overview"){#fig:overview}
@@ -250,7 +250,7 @@ Functionalities include:
 
 - **knowledge graph querying** with automatic integration of any KG created in the BioCypher framework [@biocypher]
 
-- **retrieval augmented generation** (RAG) using vector database embeddings of user-provided literature
+- **retrieval-augmented generation** (RAG) using vector database embeddings of user-provided literature
 
 - **model chaining** to orchestrate multiple LLMs and other models in a single conversation using the LangChain framework [@langchain]
 
@@ -423,7 +423,7 @@ This information is used by BioChatter to tune its understanding of the KG, whic
 By understanding the context of the KG, the exact contents, and the exact spelling of all identifiers and properties, we effectively support the LLM in generating correct queries.
 To illustrate the usage of this feature, we provide a demonstration repository at https://github.com/biocypher/pole including a KG build procedure and ChatGSE app, which can be run using a single Docker Compose command.
 
-### Retrieval Augmented Generation
+### Retrieval-Augmented Generation
 
 While current LLMs possess extensive internal general knowledge, they may not know how to prioritise very specific scientific results, or they may not have had access to some research articles in their training data (e.g., due to their recency or licensing issues).
 To bridge this gap, we can provide additional information from relevant publications to the model via the prompt.
@@ -443,7 +443,7 @@ In this way, the model can learn from additional context without the need for re
 This method is sometimes described as in-context learning [@doi:10.48550/arxiv.2303.17580] or retrieval-augmented generation [@rag].
 
 To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the vectorstore_host.py module), and for performing semantic search on the vector database and injecting the results into the prompt (in the vectorstore.py module).
-To demonstrate the use of the API, we add a “Retrieval Augmented Generation” tab to the ChatGSE preview app that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
+To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the ChatGSE preview app that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed.
 Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the ChatGSE app in one Docker Compose workflow.
 
@@ -481,9 +481,13 @@ JSR supervised the project, revised the manuscript, and acquired funding.
 All authors read and approved the final manuscript.
 
 ## Acknowledgements
+
 We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
 
+SL has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 965193 (DECIDER).
+
 ## Conflict of Interest
+
 JSR reports funding from GSK, Pfizer and Sanofi and fees from Travere Therapeutics, Stadapharm and Astex Pharmaceuticals.
 
 ## References {.page_break_before}
