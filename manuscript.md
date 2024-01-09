@@ -12,6 +12,7 @@ author-meta:
 - The BioChatter Consortium
 - Andreas Maier
 - Cankun Wang
+- Nils Krehl
 - Qin Ma
 - Shaohong Feng
 - Julio Saez-Rodriguez
@@ -29,8 +30,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-09" />
   <meta name="citation_publication_date" content="2024-01-09" />
   <meta property="article:published_time" content="2024-01-09" />
-  <meta name="dc.modified" content="2024-01-09T14:37:26+00:00" />
-  <meta property="article:modified_time" content="2024-01-09T14:37:26+00:00" />
+  <meta name="dc.modified" content="2024-01-09T14:40:51+00:00" />
+  <meta property="article:modified_time" content="2024-01-09T14:40:51+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,6 +50,9 @@ header-includes: |
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
   <meta name="citation_author_orcid" content="0000-0002-0225-9855" />
   <meta name="twitter:creator" content="@Wang-Cankun" />
+  <meta name="citation_author" content="Nils Krehl" />
+  <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
+  <meta name="citation_author_orcid" content="TBD" />
   <meta name="citation_author" content="Qin Ma" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
   <meta name="citation_author_orcid" content="0000-0002-3264-8392" />
@@ -66,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f55016ceb632bf8a8c02edce90b98d6ece491b77/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f55016ceb632bf8a8c02edce90b98d6ece491b77/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f55016ceb632bf8a8c02edce90b98d6ece491b77/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,9 +94,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/f55016ceb632bf8a8c02edce90b98d6ece491b77/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/))
 was automatically generated
-from [biocypher/biochatter-paper@f55016c](https://github.com/biocypher/biochatter-paper/tree/f55016ceb632bf8a8c02edce90b98d6ece491b77)
+from [biocypher/biochatter-paper@9807ff1](https://github.com/biocypher/biochatter-paper/tree/9807ff1c4361be325b205bf4e40364f380871129)
 on January 9, 2024.
 </em></small>
 
@@ -142,6 +146,17 @@ on January 9, 2024.
     <br>
   <small>
      Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+  </small>
+
++ **Nils Krehl**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [TBD](https://orcid.org/TBD)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [nilskre](https://github.com/nilskre)
+    <br>
+  <small>
+     Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
   </small>
 
 + **Qin Ma**
@@ -477,6 +492,7 @@ They also add to the computational burden of the system, which is particularly r
 
 SL conceptualised and developed the platform and wrote the manuscript.
 AM implemented the local deployment functionality.
+NK implemented benchmarking procedures.
 JSR supervised the project, revised the manuscript, and acquired funding.
 All authors read and approved the final manuscript.
 

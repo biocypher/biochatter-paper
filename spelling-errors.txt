@@ -10,7 +10,7 @@ BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
-Biomedicine
+biomedicine
 Cankun
 ChatGPT
 ChatGSE
@@ -36,10 +36,11 @@ js
 JSR
 Jupyter
 KGs
+Krehl
 LangChain
 leaderboard
 leaderboards
-llm
+LLM
 LLM’s
 LLMs
 Lobentanzer
@@ -47,6 +48,9 @@ Maier
 maqin
 Milvus
 Mompel
+Nils
+nilskre
+NK
 ontologies
 OpenAI
 OpenAI’s
@@ -75,6 +79,7 @@ Stadapharm
 stochasticity
 Streamlit
 synergise
+TBD
 tradeoff
 Travere
 variablity
