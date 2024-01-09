@@ -14,7 +14,6 @@ biomedicine
 Cankun
 ChatGPT
 ChatGSE
-complemetary
 composable
 datasets
 Dimitrov

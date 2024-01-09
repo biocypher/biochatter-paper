@@ -30,8 +30,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-09" />
   <meta name="citation_publication_date" content="2024-01-09" />
   <meta property="article:published_time" content="2024-01-09" />
-  <meta name="dc.modified" content="2024-01-09T14:40:51+00:00" />
-  <meta property="article:modified_time" content="2024-01-09T14:40:51+00:00" />
+  <meta name="dc.modified" content="2024-01-09T14:48:45+00:00" />
+  <meta property="article:modified_time" content="2024-01-09T14:48:45+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,9 +94,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/))
 was automatically generated
-from [biocypher/biochatter-paper@9807ff1](https://github.com/biocypher/biochatter-paper/tree/9807ff1c4361be325b205bf4e40364f380871129)
+from [biocypher/biochatter-paper@cfcb226](https://github.com/biocypher/biochatter-paper/tree/cfcb226d512e3bfa9702ef1a616b8f44f9666238)
 on January 9, 2024.
 </em></small>
 
@@ -364,7 +364,7 @@ In addition, keeping up with these rapid developments is demanding on developer 
 Most importantly, the current generation of LLMs is not yet ready for unsupervised use in biomedical research.
 While we have taken steps to mitigate the risks of using LLMs, such as independent benchmarks, fact-checking, and knowledge graph querying, we cannot guarantee that the models will not produce harmful outputs.
 We see current LLMs, particularly in the scope of the BioCypher ecosystem, as helpful tools to assist human researchers, alleviating menial and repetitive tasks and helping with technical aspects such as query languages.
-They are not meant to replace human ingenuity and expertise, but to augment it with their complemetary strengths.
+They are not meant to replace human ingenuity and expertise, but to augment it with their complementary strengths.
 
 ### Future directions
 
