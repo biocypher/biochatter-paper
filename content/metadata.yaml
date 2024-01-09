@@ -34,6 +34,12 @@ authors:
     twitter: Wang-Cankun
     affiliations:
       - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+  - github: nilskre
+    name: Nils Krehl
+    initials: NK
+    orcid: TBD
+    affiliations:
+      - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
   - github: maqin2001
     name: Qin Ma
     initials: QM
