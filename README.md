@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/biocypher/biochatter-paper/tree/gh-pages) branch hosts the contents of this directory at <https://biocypher.github.io/biochatter-paper/>.
-The permalink for this webpage version is <https://biocypher.github.io/biochatter-paper/v/f55016ceb632bf8a8c02edce90b98d6ece491b77/>.
+The permalink for this webpage version is <https://biocypher.github.io/biochatter-paper/v/9807ff1c4361be325b205bf4e40364f380871129/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://biocypher.github.io/biochatter-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`f55016ceb632bf8a8c02edce90b98d6ece491b77`](https://github.com/biocypher/biochatter-paper/commit/f55016ceb632bf8a8c02edce90b98d6ece491b77).
+[`9807ff1c4361be325b205bf4e40364f380871129`](https://github.com/biocypher/biochatter-paper/commit/9807ff1c4361be325b205bf4e40364f380871129).
