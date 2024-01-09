@@ -30,8 +30,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-09" />
   <meta name="citation_publication_date" content="2024-01-09" />
   <meta property="article:published_time" content="2024-01-09" />
-  <meta name="dc.modified" content="2024-01-09T14:48:45+00:00" />
-  <meta property="article:modified_time" content="2024-01-09T14:48:45+00:00" />
+  <meta name="dc.modified" content="2024-01-09T18:19:56+00:00" />
+  <meta property="article:modified_time" content="2024-01-09T18:19:56+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,9 +94,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/cfcb226d512e3bfa9702ef1a616b8f44f9666238/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/))
 was automatically generated
-from [biocypher/biochatter-paper@cfcb226](https://github.com/biocypher/biochatter-paper/tree/cfcb226d512e3bfa9702ef1a616b8f44f9666238)
+from [biocypher/biochatter-paper@20e1438](https://github.com/biocypher/biochatter-paper/tree/20e1438f7af6be13bed0f287c532a98f37bda2b3)
 on January 9, 2024.
 </em></small>
 
@@ -346,9 +346,10 @@ To keep the framework effective and sustainable, we focus on reusing existing op
 
 To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components.
-As even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components [@biollmbench], such a framework is a necessary step towards the objective evaluation of LLMs.
+Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters, such as model version and temperature [@biollmbench].
+As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
-The living benchmark will be updated with new questions and tasks as they arise in the community [@biollmbench].
+The living benchmark will be updated with new questions and tasks as they arise in the community.
 
 We facilitate access to LLMs by allowing the use of both proprietary and open-source models, and we provide a flexible deployment framework for the latter.
 Proprietary models are currently the most economic solution for accessing state-of-the-art models, and as such primarily suited for users just starting out or lacking the resources to deploy their own models.
