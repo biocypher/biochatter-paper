@@ -6,7 +6,6 @@ content/01.abstract.md:5:LLMs
 content/01.abstract.md:5:synergise
 content/01.abstract.md:6:LLMs
 content/01.abstract.md:7:biocypher
-content/01.abstract.md:7:ChatGSE
 content/10.introduction.md:3:biomedicine
 content/10.introduction.md:8:LLMs
 content/10.introduction.md:10:bioinformatics
@@ -26,9 +25,10 @@ content/10.introduction.md:23:composable
 content/10.introduction.md:25:BioChatter
 content/10.introduction.md:25:BioChatter’s
 content/10.introduction.md:25:LLM
+content/10.introduction.md:28:BioCypher
 content/10.introduction.md:29:LLM
-content/10.introduction.md:31:composable
-content/10.introduction.md:31:LLM
+content/10.introduction.md:30:composable
+content/10.introduction.md:30:LLM
 content/20.results.md:3:biochatter
 content/20.results.md:3:BioChatter
 content/20.results.md:3:biocypher
@@ -50,11 +50,11 @@ content/20.results.md:18:LLMs
 content/20.results.md:20:LLM
 content/20.results.md:20:LLM
 content/20.results.md:22:biocypher
-content/20.results.md:22:ChatGSE
 content/20.results.md:24:LLM
 content/20.results.md:26:BioChatter
 content/20.results.md:26:LLMs
 content/20.results.md:27:GPT
+content/20.results.md:27:Mixtral
 content/20.results.md:27:OpenAI
 content/20.results.md:28:ChatGPT
 content/20.results.md:28:OpenAI
@@ -233,7 +233,6 @@ content/40.methods.md:59:BioChatter
 content/40.methods.md:59:LLM
 content/40.methods.md:60:LLM
 content/40.methods.md:61:biocypher
-content/40.methods.md:61:ChatGSE
 content/40.methods.md:65:LLMs
 content/40.methods.md:65:recency
 content/40.methods.md:71:LLM

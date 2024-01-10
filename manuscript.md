@@ -30,8 +30,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-10" />
   <meta name="citation_publication_date" content="2024-01-10" />
   <meta property="article:published_time" content="2024-01-10" />
-  <meta name="dc.modified" content="2024-01-10T10:24:15+00:00" />
-  <meta property="article:modified_time" content="2024-01-10T10:24:15+00:00" />
+  <meta name="dc.modified" content="2024-01-10T13:58:56+00:00" />
+  <meta property="article:modified_time" content="2024-01-10T13:58:56+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,9 +94,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/))
 was automatically generated
-from [biocypher/biochatter-paper@4cf8307](https://github.com/biocypher/biochatter-paper/tree/4cf8307c33ab438dcc49541739d1bdac57c2effb)
+from [biocypher/biochatter-paper@c8a88e1](https://github.com/biocypher/biochatter-paper/tree/c8a88e1086c1b7ca690d8080473575bc0126ef01)
 on January 10, 2024.
 </em></small>
 
@@ -213,7 +213,7 @@ Current-generation Large Language Models (LLMs) have stirred enormous interest i
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
 Based on open-source software packages, we synergise the many functionalities that currently develop around LLMs, such as knowledge integration / retrieval-augmented generation, model chaining, and benchmarks, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedical informatics.
 We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
-We demonstrate use cases via a multi-purpose web app, ChatGSE (https://chat.biocypher.org), and provide documentation, support, and an open community to all interested researchers.
+We demonstrate use cases via a multi-purpose web app (https://chat.biocypher.org), and provide documentation, support, and an open community to all interested researchers.
 
 
 ## Introduction {.page_break_before}
@@ -243,11 +243,10 @@ Many questions arise in daily biomedical research practice, for instance, interp
 BioChatter’s main response circuit (blue) composes a number of specifically engineered prompts and passes them (and a conversation history) to the primary LLM, which generates a response for the user based on all inputs.
 This response is simultaneously used to prompt the secondary circuit (orange), which fulfils auxiliary tasks to complement the primary response.
 In particular, using search, the secondary circuit queries a database as prior knowledge repository and compares annotations to the primary response.
-The knowledge graph can also serve as long-term memory extension of the model.
-Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a retrieval-augmented generation process.
-If this “second opinion” differs from the primary response, a warning is issued.
-The platform is composable in all aspects, allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM.
-](images/graphical_abstract.png "Overview"){#fig:overview}
+The (BioCypher) knowledge graph can also serve as long-term memory extension of the model.
+Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a retrieval augmented generation process.
+The platform is composable in most aspects, allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM.
+](images/biochatter_overview.png "Overview"){#fig:overview}
 
 
 ## Results
@@ -271,12 +270,12 @@ Functionalities include:
 
 - **fact-checking** of LLM responses using a second LLM
 
-In the following, we briefly describe these components, which are demonstrated in the ChatGSE web app (https://chat.biocypher.org).
+In the following, we briefly describe these components, which are demonstrated in our web app (https://chat.biocypher.org).
 
 ### Question Answering and LLM Connectivity
 
 The core functionality of BioChatter is to interact with LLMs.
-The framework supports both leading proprietary models such as the GPT series from OpenAI as well as open-source models such as LLaMA2 [@doi:10.48550/arXiv.2307.09288] via a flexible open-source deployment framework [@{https://github.com/xorbitsai/inference}] (see Methods).
+The framework supports both leading proprietary models such as the GPT series from OpenAI as well as open-source models such as LLaMA2 [@doi:10.48550/arXiv.2307.09288] and Mixtral 8x7B [@doi:10.48550/arXiv.2401.04088] via a flexible open-source deployment framework [@{https://github.com/xorbitsai/inference}] (see Methods).
 Currently, the most powerful conversational AI platform, ChatGPT (OpenAI), is surrounded by data privacy concerns [@{https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/}].
 We address this issue in two ways.
 Firstly, we provide access to the different OpenAI models through their API, which is subject to different, more stringent data protection than the web interface [@{https://openai.com/policies/terms-of-use}], most importantly by disallowing reuse of user inputs for subsequent model training.
@@ -437,7 +436,7 @@ For instance, we detail the properties of a node and the source and target class
 Additionally, during the KG build process, we enrich this information and save it to a YAML file and, optionally, directly to the KG.
 This information is used by BioChatter to tune its understanding of the KG, which allows the LLM to query the KG more efficiently.
 By understanding the context of the KG, the exact contents, and the exact spelling of all identifiers and properties, we effectively support the LLM in generating correct queries.
-To illustrate the usage of this feature, we provide a demonstration repository at https://github.com/biocypher/pole including a KG build procedure and ChatGSE app, which can be run using a single Docker Compose command.
+To illustrate the usage of this feature, we provide a demonstration repository at https://github.com/biocypher/pole including a KG build procedure and web app, which can be run using a single Docker Compose command.
 
 ### Retrieval-Augmented Generation
 

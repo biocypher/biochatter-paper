@@ -46,6 +46,7 @@ Lobentanzer
 Maier
 maqin
 Milvus
+Mixtral
 Mompel
 Nils
 nilskre
