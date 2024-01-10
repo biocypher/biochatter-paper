@@ -6,7 +6,7 @@ keywords:
 - large language models
 - framework
 lang: en-UK
-date-meta: '2024-01-09'
+date-meta: '2024-01-10'
 author-meta:
 - Sebastian Lobentanzer
 - The BioChatter Consortium
@@ -27,11 +27,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-09" />
-  <meta name="citation_publication_date" content="2024-01-09" />
-  <meta property="article:published_time" content="2024-01-09" />
-  <meta name="dc.modified" content="2024-01-09T18:19:56+00:00" />
-  <meta property="article:modified_time" content="2024-01-09T18:19:56+00:00" />
+  <meta name="dc.date" content="2024-01-10" />
+  <meta name="citation_publication_date" content="2024-01-10" />
+  <meta property="article:published_time" content="2024-01-10" />
+  <meta name="dc.modified" content="2024-01-10T10:24:15+00:00" />
+  <meta property="article:modified_time" content="2024-01-10T10:24:15+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,10 +94,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/20e1438f7af6be13bed0f287c532a98f37bda2b3/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/4cf8307c33ab438dcc49541739d1bdac57c2effb/))
 was automatically generated
-from [biocypher/biochatter-paper@20e1438](https://github.com/biocypher/biochatter-paper/tree/20e1438f7af6be13bed0f287c532a98f37bda2b3)
-on January 9, 2024.
+from [biocypher/biochatter-paper@4cf8307](https://github.com/biocypher/biochatter-paper/tree/4cf8307c33ab438dcc49541739d1bdac57c2effb)
+on January 10, 2024.
 </em></small>
 
 
@@ -418,7 +418,7 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 
 - **integrations**: We write dedicated tests for specific tasks that require integrations, for instance with knowledge graphs or vector databases.
 
-- **stochasticity**: To account for variablity in model responses, we include a parameter to run each test multiple times and generate summary statistics.
+- **stochasticity**: To account for variability in model responses, we include a parameter to run each test multiple times and generate summary statistics.
 
 - **sentiment and behaviour**: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.
 

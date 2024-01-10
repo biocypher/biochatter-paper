@@ -81,7 +81,6 @@ synergise
 TBD
 tradeoff
 Travere
-variablity
 vectorstore
 WASM
 WebAssembly
