@@ -30,8 +30,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-10" />
   <meta name="citation_publication_date" content="2024-01-10" />
   <meta property="article:published_time" content="2024-01-10" />
-  <meta name="dc.modified" content="2024-01-10T13:58:56+00:00" />
-  <meta property="article:modified_time" content="2024-01-10T13:58:56+00:00" />
+  <meta name="dc.modified" content="2024-01-10T18:26:27+00:00" />
+  <meta property="article:modified_time" content="2024-01-10T18:26:27+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,9 +94,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/c8a88e1086c1b7ca690d8080473575bc0126ef01/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/))
 was automatically generated
-from [biocypher/biochatter-paper@c8a88e1](https://github.com/biocypher/biochatter-paper/tree/c8a88e1086c1b7ca690d8080473575bc0126ef01)
+from [biocypher/biochatter-paper@798ba92](https://github.com/biocypher/biochatter-paper/tree/798ba92273ecaa31b6f572c90561a7438db2e78d)
 on January 10, 2024.
 </em></small>
 
@@ -493,6 +493,9 @@ They also add to the computational burden of the system, which is particularly r
 SL conceptualised and developed the platform and wrote the manuscript.
 AM implemented the local deployment functionality.
 NK implemented benchmarking procedures.
+CW architected the ChatGSE next server infrastructure.
+QM oversaw the development and deployment of the ChatGSE next server environment.
+SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the ChatGSE next server.
 JSR supervised the project, revised the manuscript, and acquired funding.
 All authors read and approved the final manuscript.
 
