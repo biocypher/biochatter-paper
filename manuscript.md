@@ -30,8 +30,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T22:45:29+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T22:45:29+00:00" />
+  <meta name="dc.modified" content="2024-01-15T23:09:35+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T23:09:35+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,9 +94,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/))
 was automatically generated
-from [biocypher/biochatter-paper@9b67c57](https://github.com/biocypher/biochatter-paper/tree/9b67c57caa82e159baca12227fe22b45af4152f0)
+from [biocypher/biochatter-paper@30728d4](https://github.com/biocypher/biochatter-paper/tree/30728d45eafaa6c4139d854cd42ea358fd780a2e)
 on January 15, 2024.
 </em></small>
 
@@ -287,7 +287,7 @@ Therefore, we support plug-and-play exchange of models to enhance biomedical AI-
 ### Prompt Engineering
 
 An essential property of LLMs is their sensitivity to the prompt, i.e., the initial input that guides the model towards a specific task or behaviour.
-Prompt engineering is an emerging discipline of practical AI, and as such there are no established best practices [@doi:10.48550/arXiv.2302.11382].
+Prompt engineering is an emerging discipline of practical AI, and as such there are no established best practices [@doi:10.48550/arXiv.2302.11382;@doi:10.48550/arXiv.2312.16171].
 Current approaches are mostly trial-and-error-based manual engineering, which is not reproducible and changes with every new model [@biollmbench].
 To address this issue, we include a prompt engineering framework in BioChatter that allows the preservation of prompt sets for specific tasks, which can be shared and reused by the community.
 In addition, to facilitate the scaling of prompt engineering, we integrate this framework in the benchmarking pipeline, which allows the automated evaluation of prompt sets as new models are published.
@@ -337,11 +337,12 @@ As an example, we implement a fact-checking module that uses a second LLM to eva
 
 ## Discussion
 
-The fast pace of developments around current-generation LLMs poses a particular challenge to the biomedical community.
+The fast pace of developments around current-generation LLMs poses a great challenge to society as a whole and the biomedical community in particular [@doi:10.1038/d41586-024-00029-4;@doi:10.1038/d41586-023-03817-6;@doi:10.1038/d41586-023-03803-y].
 While the potential of these models is enormous, their application is not straightforward, and their use requires a certain level of expertise.
 In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration [@doi:10.1177/1745691612459058].
 Inspired by the productivity of open source libraries such as LangChain [@langchain], we propose an open framework that allows biomedical researchers to focus on the application of LLMs as opposed to engineering challenges.
 To keep the framework effective and sustainable, we focus on reusing existing open-source libraries and tools, while adapting the advancements from the wider LLM community to the biomedical domain.
+The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond [@doi:10.1038/d41586-024-00029-4].
 
 To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components.
@@ -352,7 +353,7 @@ The living benchmark will be updated with new questions and tasks as they arise 
 
 We facilitate access to LLMs by allowing the use of both proprietary and open-source models, and we provide a flexible deployment framework for the latter.
 Proprietary models are currently the most economic solution for accessing state-of-the-art models, and as such primarily suited for users just starting out or lacking the resources to deploy their own models.
-In contrast, open-source models are quickly catching up in terms of performance [@biollmbench], and they are essential for the sustainability of the field.
+In contrast, open-source models are quickly catching up in terms of performance [@biollmbench], and they are essential for the sustainability of the field [@doi:10.1038/d41586-024-00029-4].
 We allow self-hosting of open-source models on any scale, from dedicated hardware with GPUs, to local deployment on end-user laptops, to browser-based deployment using web technology.
 
 ### Limitations
@@ -368,11 +369,13 @@ They are not meant to replace human ingenuity and expertise, but to augment it w
 
 ### Future directions
 
+Multitask learners that can synthesise, for instance, language, vision, and molecular measurements, are an emerging field of research [@doi:10.48550/arXiv.2306.04529;@doi:10.48550/arXiv.2211.01786;@doi:10.48550/arXiv.2310.09478].
+To remain accessible in the face of ever increasing complexity of these models, we will focus on the usability improvements that allow broad adoption in biomedical research. 
 Autonomous agents for trivial tasks have already been developed on the basis of LLMs, and we expect this field to mature in the future [@doi:10.48550/arXiv.2308.11432].
 As research on agent behaviour progresses, we will integrate these developments into the BioChatter framework to allow the creation of helpful assistants for biomedical research.
+
 All framework developments will be performed in light of the ethical implications of LLMs, and we will continue to support the use of open-source models to increase transparency and data privacy.
 While we focus on the biomedical field, the concept of our frameworks can easily be extended to other scientific domains by adjusting domain-specific prompts and data inputs, which are accessible in a composable and user-friendly manner in our frameworks [@biocypher].
-
 Our Python library is developed openly on GitHub (https://github.com/biocypher/biochatter) and can be integrated into any number of user interface solutions.
 We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool integrations, prompt engineering, benchmarking, and any other feature.
 
