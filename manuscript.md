@@ -6,7 +6,7 @@ keywords:
 - large language models
 - framework
 lang: en-UK
-date-meta: '2024-01-10'
+date-meta: '2024-01-15'
 author-meta:
 - Sebastian Lobentanzer
 - The BioChatter Consortium
@@ -27,11 +27,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-10" />
-  <meta name="citation_publication_date" content="2024-01-10" />
-  <meta property="article:published_time" content="2024-01-10" />
-  <meta name="dc.modified" content="2024-01-10T18:26:27+00:00" />
-  <meta property="article:modified_time" content="2024-01-10T18:26:27+00:00" />
+  <meta name="dc.date" content="2024-01-15" />
+  <meta name="citation_publication_date" content="2024-01-15" />
+  <meta property="article:published_time" content="2024-01-15" />
+  <meta name="dc.modified" content="2024-01-15T22:45:29+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T22:45:29+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,10 +94,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/798ba92273ecaa31b6f572c90561a7438db2e78d/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/9b67c57caa82e159baca12227fe22b45af4152f0/))
 was automatically generated
-from [biocypher/biochatter-paper@798ba92](https://github.com/biocypher/biochatter-paper/tree/798ba92273ecaa31b6f572c90561a7438db2e78d)
-on January 10, 2024.
+from [biocypher/biochatter-paper@9b67c57](https://github.com/biocypher/biochatter-paper/tree/9b67c57caa82e159baca12227fe22b45af4152f0)
+on January 15, 2024.
 </em></small>
 
 
@@ -220,7 +220,7 @@ We demonstrate use cases via a multi-purpose web app (https://chat.biocypher.org
 
 Despite our technological advances, biology and biomedicine continue to pose incredible challenges [@gallagher-infinite;@dl-bioscience].
 We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation [@dl-bioscience].
-One reason for this challenge may be the inherent limitation of human knowledge [@doi:10.1016/j.tics.2005.04.010]: Even seasoned domain experts cannot know the implications of every molecule, be it metabolite, DNA, RNA, or protein, even in their own domain.
+One reason for this challenge may be the inherent limitation of human knowledge [@doi:10.1016/j.tics.2005.04.010]: Even seasoned domain experts cannot know the implications of every gene, molecule, symptom, or biomarker.
 In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.
 
 Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311;@doi:10.48550/arxiv.2201.08239;@doi:10.48550/arxiv.2303.08774].
@@ -229,7 +229,7 @@ ChatGPT has taken the world by storm, and many biomedical researchers already us
 However, the current, predominantly manual, way of interacting with LLMs is virtually non-reproducible, and their behaviour can be erratic.
 For instance, they are known to confabulate: they make up facts as they go along, and, to make matters worse, are convinced - and convincing - regarding the truth of their confabulations [@doi:10.1038/s41586-023-05881-4;@doi:10.1038/s41587-023-01789-6].
 While current efforts towards Artificial General Intelligence manage to ameliorate some of the shortcomings by ensembling multiple models [@{https://python.langchain.com}] with long-term memory stores [@{https://autogpt.net/}], the current generation of AI does not inspire adequate trust to be applied to biomedical problems without supervision [@doi:10.1038/s41586-023-05881-4].
-Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues.
+Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues [@doi:10.48550/arXiv.2401.05654].
 
 Computational biomedicine involves many tasks that could be assisted by LLMs, such as the interpretation of experimental results, the design of experiments, the evaluation of literature, and the exploration of web resources.
 To improve and accelerate these tasks, we have developed BioChatter, a platform for communicating with LLMs specifically tuned to biomedical research (Figure @fig:overview).

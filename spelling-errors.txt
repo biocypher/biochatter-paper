@@ -6,11 +6,12 @@ Astex
 Aurelien
 backend
 Badia
-benchmarking
+Benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
+biomarker
 biomedicine
 Cankun
 ChatGPT
