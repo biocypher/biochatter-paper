@@ -30,8 +30,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:09:35+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:09:35+00:00" />
+  <meta name="dc.modified" content="2024-01-15T23:17:36+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T23:17:36+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,9 +70,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,9 +94,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/30728d45eafaa6c4139d854cd42ea358fd780a2e/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/))
 was automatically generated
-from [biocypher/biochatter-paper@30728d4](https://github.com/biocypher/biochatter-paper/tree/30728d45eafaa6c4139d854cd42ea358fd780a2e)
+from [biocypher/biochatter-paper@977b70f](https://github.com/biocypher/biochatter-paper/tree/977b70feef6070ad074d65964e94a7b3ea0ae4ec)
 on January 15, 2024.
 </em></small>
 
@@ -225,7 +225,7 @@ In addition, biological events are context-dependent, for instance with respect 
 
 Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311;@doi:10.48550/arxiv.2201.08239;@doi:10.48550/arxiv.2303.08774].
 Trained correctly, they can recall and combine virtually limitless knowledge from their training set.
-ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as bioinformatics-specific tasks [@doi:10.1101/2023.04.16.537094;@doi:10.1038/s41587-023-01789-6].
+ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as research tasks [@doi:10.1038/s41586-023-06792-0;@doi:10.1101/2023.04.16.537094;@doi:10.1038/s41587-023-01789-6].
 However, the current, predominantly manual, way of interacting with LLMs is virtually non-reproducible, and their behaviour can be erratic.
 For instance, they are known to confabulate: they make up facts as they go along, and, to make matters worse, are convinced - and convincing - regarding the truth of their confabulations [@doi:10.1038/s41586-023-05881-4;@doi:10.1038/s41587-023-01789-6].
 While current efforts towards Artificial General Intelligence manage to ameliorate some of the shortcomings by ensembling multiple models [@{https://python.langchain.com}] with long-term memory stores [@{https://autogpt.net/}], the current generation of AI does not inspire adequate trust to be applied to biomedical problems without supervision [@doi:10.1038/s41586-023-05881-4].
