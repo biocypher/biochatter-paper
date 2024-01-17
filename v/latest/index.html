@@ -5,15 +5,15 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Sebastian Lobentanzer" />
+  <meta name="author" content="Shaohong Feng" />
   <meta name="author" content="The BioChatter Consortium" />
   <meta name="author" content="Andreas Maier" />
   <meta name="author" content="Cankun Wang" />
   <meta name="author" content="Nils Krehl" />
   <meta name="author" content="Qin Ma" />
-  <meta name="author" content="Shaohong Feng" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-15" />
-  <meta name="keywords" content="biomedicine, bioinformatics, large language models, framework" />
+  <meta name="dcterms.date" content="2024-01-17" />
+  <meta name="keywords" content="biomedicine, large language models, framework, retrieval-augmented generation, knowledge graph" />
   <title>A Platform for the Biomedical Application of Large Language Models</title>
   <style>
     code{white-space: pre-wrap;}
@@ -57,11 +57,11 @@
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-15" />
-  <meta name="citation_publication_date" content="2024-01-15" />
-  <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:17:36+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:17:36+00:00" />
+  <meta name="dc.date" content="2024-01-17" />
+  <meta name="citation_publication_date" content="2024-01-17" />
+  <meta property="article:published_time" content="2024-01-17" />
+  <meta name="dc.modified" content="2024-01-17T11:57:37+00:00" />
+  <meta property="article:modified_time" content="2024-01-17T11:57:37+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,6 +72,9 @@
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
   <meta name="twitter:creator" content="@slobentanzer" />
+  <meta name="citation_author" content="Shaohong Feng" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
+  <meta name="citation_author_orcid" content="0009-0000-8124-3626" />
   <meta name="citation_author" content="The BioChatter Consortium" />
   <meta name="citation_author" content="Andreas Maier" />
   <meta name="citation_author_institution" content="Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany" />
@@ -87,9 +90,6 @@
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
   <meta name="citation_author_orcid" content="0000-0002-3264-8392" />
   <meta name="twitter:creator" content="@QinMaBMBL" />
-  <meta name="citation_author" content="Shaohong Feng" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
-  <meta name="citation_author_orcid" content="0009-0000-8124-3626" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
@@ -100,9 +100,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -119,10 +119,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/977b70feef6070ad074d65964e94a7b3ea0ae4ec">biocypher/biochatter-paper@977b70f</a>
-on January 15, 2024.
+from <a href="https://github.com/biocypher/biochatter-paper/tree/f5bc96da45b3d14bc19d30bdb60c59663534b7ea">biocypher/biochatter-paper@f5bc96d</a>
+on January 17, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -137,6 +137,16 @@ on January 15, 2024.
 <br>
 <small>
 Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+</small></p></li>
+<li><p><strong>Shaohong Feng</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0009-0000-8124-3626">0009-0000-8124-3626</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/fengsh27">fengsh27</a>
+<br>
+<small>
+Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
 </small></p></li>
 <li><p><strong>The BioChatter Consortium</strong>
 <br>
@@ -186,16 +196,6 @@ Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, I
 <small>
 Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
 </small></p></li>
-<li><p><strong>Shaohong Feng</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/0009-0000-8124-3626">0009-0000-8124-3626</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/fengsh27">fengsh27</a>
-<br>
-<small>
-Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
-</small></p></li>
 <li><p><strong>Julio Saez-Rodriguez</strong>
 <sup><a href="#correspondence">✉</a></sup><br>
 <img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
@@ -215,6 +215,7 @@ or email to
 Sebastian Lobentanzer &lt;sebastian.lobentanzer@gmail.com&gt;,
 Julio Saez-Rodriguez &lt;pub.saez@uni-heidelberg.de&gt;.</p>
 </div>
+<p>Authors between consortium and last author are ordered alphabetically.</p>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <p>Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
@@ -499,7 +500,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Mixtral of Experts</strong> <div class="csl-block">Albert Q Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Emma Bou Hanna, Florian Bressand, … William El Sayed</div> <em>arXiv</em> (2024) <a href="https://doi.org/gtc2g3">https://doi.org/gtc2g3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2401.04088">10.48550/arxiv.2401.04088</a></div></div>
 </div>
 <div id="ref-mGEvmJGA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-01-15) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-01-17) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
 </div>
 <div id="ref-PDhRVYjU" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">18. </div><div class="csl-right-inline"><a href="https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/">https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/</a></div>
@@ -526,7 +527,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4</strong> <div class="csl-block">Sondos Mahmoud Bsharat, Aidar Myrzakhan, Zhiqiang Shen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnfg">https://doi.org/gtdnfg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2312.16171">10.48550/arxiv.2312.16171</a></div></div>
 </div>
 <div id="ref-14upAJPXR" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-01-15) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-01-17) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
 </div>
 <div id="ref-yT66jV6G" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark</strong> <div class="csl-block">Oscar Sainz, Jon Ander Campos, Iker García-Ferrero, Julen Etxaniz, Oier Lopez de Lacalle, Eneko Agirre</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvp">https://doi.org/gtbgvp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.18018">10.48550/arxiv.2310.18018</a></div></div>
@@ -571,7 +572,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</strong> <div class="csl-block">Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, … Douwe Kiela</div> <em>Advances in Neural Information Processing Systems</em> (2020) <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf</a></div>
 </div>
 <div id="ref-12p6amlLS" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Hugging Face – The AI community building the future.</strong> (2024-01-12) <a href="https://huggingface.co/">https://huggingface.co/</a></div>
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Hugging Face – The AI community building the future.</strong> (2024-01-10) <a href="https://huggingface.co/">https://huggingface.co/</a></div>
 </div>
 </div>
 <!-- default theme -->
