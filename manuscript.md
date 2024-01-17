@@ -2,19 +2,20 @@
 title: A Platform for the Biomedical Application of Large Language Models
 keywords:
 - biomedicine
-- bioinformatics
 - large language models
 - framework
+- retrieval-augmented generation
+- knowledge graph
 lang: en-UK
-date-meta: '2024-01-15'
+date-meta: '2024-01-17'
 author-meta:
 - Sebastian Lobentanzer
+- Shaohong Feng
 - The BioChatter Consortium
 - Andreas Maier
 - Cankun Wang
 - Nils Krehl
 - Qin Ma
-- Shaohong Feng
 - Julio Saez-Rodriguez
 header-includes: |
   <!--
@@ -27,11 +28,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-15" />
-  <meta name="citation_publication_date" content="2024-01-15" />
-  <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:17:36+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:17:36+00:00" />
+  <meta name="dc.date" content="2024-01-17" />
+  <meta name="citation_publication_date" content="2024-01-17" />
+  <meta property="article:published_time" content="2024-01-17" />
+  <meta name="dc.modified" content="2024-01-17T11:57:37+00:00" />
+  <meta property="article:modified_time" content="2024-01-17T11:57:37+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,6 +43,9 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
   <meta name="twitter:creator" content="@slobentanzer" />
+  <meta name="citation_author" content="Shaohong Feng" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
+  <meta name="citation_author_orcid" content="0009-0000-8124-3626" />
   <meta name="citation_author" content="The BioChatter Consortium" />
   <meta name="citation_author" content="Andreas Maier" />
   <meta name="citation_author_institution" content="Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany" />
@@ -57,9 +61,6 @@ header-includes: |
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
   <meta name="citation_author_orcid" content="0000-0002-3264-8392" />
   <meta name="twitter:creator" content="@QinMaBMBL" />
-  <meta name="citation_author" content="Shaohong Feng" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
-  <meta name="citation_author_orcid" content="0009-0000-8124-3626" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
@@ -70,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,10 +95,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/977b70feef6070ad074d65964e94a7b3ea0ae4ec/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/))
 was automatically generated
-from [biocypher/biochatter-paper@977b70f](https://github.com/biocypher/biochatter-paper/tree/977b70feef6070ad074d65964e94a7b3ea0ae4ec)
-on January 15, 2024.
+from [biocypher/biochatter-paper@f5bc96d](https://github.com/biocypher/biochatter-paper/tree/f5bc96da45b3d14bc19d30bdb60c59663534b7ea)
+on January 17, 2024.
 </em></small>
 
 
@@ -117,6 +118,17 @@ on January 15, 2024.
     <br>
   <small>
      Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+  </small>
+
++ **Shaohong Feng**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0009-0000-8124-3626](https://orcid.org/0009-0000-8124-3626)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [fengsh27](https://github.com/fengsh27)
+    <br>
+  <small>
+     Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
   </small>
 
 + **The BioChatter Consortium**
@@ -172,17 +184,6 @@ on January 15, 2024.
      Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
   </small>
 
-+ **Shaohong Feng**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0009-0000-8124-3626](https://orcid.org/0009-0000-8124-3626)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [fengsh27](https://github.com/fengsh27)
-    <br>
-  <small>
-     Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
-  </small>
-
 + **Julio Saez-Rodriguez**
   ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
@@ -206,6 +207,7 @@ Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
 
 :::
 
+Authors between consortium and last author are ordered alphabetically.
 
 ## Abstract {.page_break_before}
 

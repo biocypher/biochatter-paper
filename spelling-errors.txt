@@ -12,7 +12,7 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-Biomedicine
+biomedicine
 Cankun
 ChatGPT
 ChatGSE
