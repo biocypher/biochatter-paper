@@ -3,9 +3,10 @@ title: "A Platform for the Biomedical Application of Large Language Models"
 date: null # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - biomedicine
-  - bioinformatics
   - large language models
   - framework
+  - retrieval-augmented generation
+  - knowledge graph
 lang: en-UK
 authors:
   - github: slobentanzer
@@ -17,6 +18,13 @@ authors:
     affiliations:
       - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
     corresponding: true
+  - github: fengsh27
+    name: Shaohong Feng
+    initials: SF
+    orcid: 0009-0000-8124-3626
+    email: shaohong.feng@osumc.edu
+    affiliations:
+      - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
   - name: The BioChatter Consortium
     type: consortium
   - github: andimajore
@@ -46,13 +54,6 @@ authors:
     orcid: 0000-0002-3264-8392
     email: qin.ma@osumc.edu
     twitter: QinMaBMBL
-    affiliations:
-      - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
-  - github: fengsh27
-    name: Shaohong Feng
-    initials: SF
-    orcid: 0009-0000-8124-3626
-    email: shaohong.feng@osumc.edu
     affiliations:
       - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
   - github: saezrodriguez
