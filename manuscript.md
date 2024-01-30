@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-30" />
   <meta name="citation_publication_date" content="2024-01-30" />
   <meta property="article:published_time" content="2024-01-30" />
-  <meta name="dc.modified" content="2024-01-30T10:21:57+00:00" />
-  <meta property="article:modified_time" content="2024-01-30T10:21:57+00:00" />
+  <meta name="dc.modified" content="2024-01-30T15:07:08+00:00" />
+  <meta property="article:modified_time" content="2024-01-30T15:07:08+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/))
 was automatically generated
-from [biocypher/biochatter-paper@b16e53c](https://github.com/biocypher/biochatter-paper/tree/b16e53c99faee063b8886e65ee570e77421725ab)
+from [biocypher/biochatter-paper@747ebc7](https://github.com/biocypher/biochatter-paper/tree/747ebc72d4dc890000a47e0e077c78f6548a71d9)
 on January 30, 2024.
 </em></small>
 
@@ -213,14 +213,14 @@ Authors between consortium and last author are ordered alphabetically.
 
 Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
-Based on open-source software packages, we synergise the many functionalities that currently develop around LLMs, such as knowledge integration / retrieval-augmented generation, model chaining, and benchmarks, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedical informatics.
+Based on open-source software packages, we synergise the many functionalities that are currently developing around LLMs, such as knowledge integration / retrieval-augmented generation, model chaining, and benchmarking, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedicine.
 We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
-We demonstrate use cases via a multi-purpose web app (https://chat.biocypher.org), and provide documentation, support, and an open community to all interested researchers.
+We demonstrate use cases via two multi-purpose web apps (https://chat.biocypher.org), and provide documentation, support, and an open community.
 
 
 ## Introduction {.page_break_before}
 
-Despite our technological advances, biology and biomedicine continue to pose incredible challenges [@gallagher-infinite;@dl-bioscience].
+Despite technological advances, major challenges remain to understand biological and biomedical systems [@gallagher-infinite;@dl-bioscience].
 We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation [@dl-bioscience].
 One reason for this challenge may be the inherent limitation of human knowledge [@doi:10.1016/j.tics.2005.04.010]: Even seasoned domain experts cannot know the implications of every gene, molecule, symptom, or biomarker.
 In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.
@@ -244,9 +244,9 @@ Since the interaction is mainly based on plain text (in any language), it can be
 Many questions arise in daily biomedical research practice, for instance, interpretation of experimental results or the use of a web resource (top left).
 BioChatter’s main response circuit (blue) composes a number of specifically engineered prompts and passes them (and a conversation history) to the primary LLM, which generates a response for the user based on all inputs.
 This response is simultaneously used to prompt the secondary circuit (orange), which fulfils auxiliary tasks to complement the primary response.
-In particular, using search, the secondary circuit queries a database as prior knowledge repository and compares annotations to the primary response.
-The (BioCypher) knowledge graph can also serve as long-term memory extension of the model.
-Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a retrieval augmented generation process.
+In particular, using search, the secondary circuit queries a database as a prior knowledge repository and compares annotations to the primary response, or uses the knowledge to perform Retrieval-Augmented Generation (RAG).
+A knowledge graph such as BioCypher [@biocypher] can similarly serve as knowledge resource or long-term memory extension of the model.
+Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a RAG process.
 The platform is composable in most aspects, allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM.
 ](images/biochatter_overview.png "Overview"){#fig:overview}
 
@@ -347,7 +347,7 @@ To keep the framework effective and sustainable, we focus on reusing existing op
 The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond [@doi:10.1038/d41586-024-00029-4].
 
 To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
-We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components.
+We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components (https://biochatter.org/benchmark-overview/).
 Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters, such as model version and temperature [@biollmbench].
 As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
@@ -360,14 +360,14 @@ We allow self-hosting of open-source models on any scale, from dedicated hardwar
 
 ### Limitations
 
-Depending on generic open-source libraries such as LangChain [@langchain] and Pytest [@pytest] allows us to focus on the biomedical domain but also introduces technical dependencies on these libraries.
-While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
-In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.
-
-Most importantly, the current generation of LLMs is not yet ready for unsupervised use in biomedical research.
+The current generation of LLMs is not yet ready for unsupervised use in biomedical research.
 While we have taken steps to mitigate the risks of using LLMs, such as independent benchmarks, fact-checking, and knowledge graph querying, we cannot guarantee that the models will not produce harmful outputs.
 We see current LLMs, particularly in the scope of the BioCypher ecosystem, as helpful tools to assist human researchers, alleviating menial and repetitive tasks and helping with technical aspects such as query languages.
 They are not meant to replace human ingenuity and expertise, but to augment it with their complementary strengths.
+
+Depending on generic open-source libraries such as LangChain [@langchain] and Pytest [@pytest] allows us to focus on the biomedical domain but also introduces technical dependencies on these libraries.
+While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
+In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.
 
 ### Future directions
 
