@@ -12,7 +12,7 @@
   <meta name="author" content="Nils Krehl" />
   <meta name="author" content="Qin Ma" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-17" />
+  <meta name="dcterms.date" content="2024-01-30" />
   <meta name="keywords" content="biomedicine, large language models, framework, retrieval-augmented generation, knowledge graph" />
   <title>A Platform for the Biomedical Application of Large Language Models</title>
   <style>
@@ -57,11 +57,11 @@
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-17" />
-  <meta name="citation_publication_date" content="2024-01-17" />
-  <meta property="article:published_time" content="2024-01-17" />
-  <meta name="dc.modified" content="2024-01-17T11:57:37+00:00" />
-  <meta property="article:modified_time" content="2024-01-17T11:57:37+00:00" />
+  <meta name="dc.date" content="2024-01-30" />
+  <meta name="citation_publication_date" content="2024-01-30" />
+  <meta property="article:published_time" content="2024-01-30" />
+  <meta name="dc.modified" content="2024-01-30T10:12:14+00:00" />
+  <meta property="article:modified_time" content="2024-01-30T10:12:14+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -100,9 +100,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -119,10 +119,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/f5bc96da45b3d14bc19d30bdb60c59663534b7ea">biocypher/biochatter-paper@f5bc96d</a>
-on January 17, 2024.
+from <a href="https://github.com/biocypher/biochatter-paper/tree/ed86e25f28cdb77281607c895c3a7ddd692a2578">biocypher/biochatter-paper@ed86e25</a>
+on January 30, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -352,18 +352,20 @@ Our Python library is developed openly on GitHub (https://github.com/biocypher/b
 We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool integrations, prompt engineering, benchmarking, and any other feature.</p>
 <h2 id="supplementary-online-methods">(Supplementary / Online) Methods</h2>
 <p>BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (https://github.com/biocypher/biochatter).
-We provide documentation at https://biocypher.github.io/biochatter, including a tutorial and API reference.</p>
-<p>To demonstrate basic and advanced use cases of the framework, we provide two web apps, ChatGSE and ChatGSE Next.
-ChatGSE is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/chatgse).
+We provide documentation at https://biocypher.github.io/biochatter, including a tutorial and API reference.
+All packages are developed openly and according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">38</a>]</span>; we use the permissive MIT licence to encourage downstream use and development.
+We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.</p>
+<h3 id="applications">Applications</h3>
+<p>To demonstrate basic and advanced use cases of the framework, we provide two web apps, BioChatter Light and BioChatter Next.</p>
+<p>BioChatter Light is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/biochatter-light).
 The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
-For an up-to-date overview and preview of current functionality of the platform, please visit the <a href="https://chat.biocypher.org">online preview</a>.
-ChatGSE Next (https://github.com/biocypher/chatgse-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
+This framework is suited for rapid prototyping of bespoke solutions for specific use cases.
+For an up-to-date overview and preview of current functionality of the platform, please visit the <a href="https://chat.biocypher.org">online preview</a>.</p>
+<p>BioChatter Next (https://github.com/biocypher/biochatter-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
 It is written in TypeScript using Flask (version 3.0.0) and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
 However, this comes at the cost of increased complexity and development time.
-To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at https://github.com/biocypher/biochatter-server and as a Docker image in our Docker Hub organisation (https://hub.docker.com/orgs/biocypher).
-We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter server or library in their existing solutions.</p>
-<p>All packages are developed openly and according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">38</a>]</span>; we use the permissive MIT licence to encourage downstream use and development.
-We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.</p>
+To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at https://github.com/biocypher/biochatter-server and as a Docker image in our Docker Hub organisation (https://hub.docker.com/repository/docker/biocypher/biochatter-server).</p>
+<p>We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter server or library in their existing solutions.</p>
 <h3 id="benchmarking-1">Benchmarking</h3>
 <p>The benchmarking framework implements a matrix of component combinations using the parameterisation feature of Pytest <span class="citation" data-cites="14upAJPXR">[<a href="#ref-14upAJPXR" role="doc-biblioref">26</a>]</span>.
 This allows the automated evaluation of all possible combinations of components, such as LLMs, prompts, and datasets.
@@ -411,15 +413,15 @@ Semantic search results (for instance, single sentences directly related to the 
 In this way, the model can learn from additional context without the need for retraining or fine-tuning.
 This method is sometimes described as in-context learning <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">28</a>]</span> or retrieval-augmented generation <span class="citation" data-cites="aiaYUZ1t">[<a href="#ref-aiaYUZ1t" role="doc-biblioref">40</a>]</span>.</p>
 <p>To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the vectorstore_host.py module), and for performing semantic search on the vector database and injecting the results into the prompt (in the vectorstore.py module).
-To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the ChatGSE preview app that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
+To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the preview apps that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed.
-Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the ChatGSE app in one Docker Compose workflow.</p>
+Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the BioChatter Light app in one Docker Compose workflow.</p>
 <h3 id="deployment-of-open-source-models">Deployment of Open-Source Models</h3>
 <p>To facilitate access to open-source models, we adopt a flexible deployment framework based on the Xorbits Inference API <span class="citation" data-cites="mGEvmJGA">[<a href="#ref-mGEvmJGA" role="doc-biblioref">17</a>]</span>.
 We provide Docker images for the automatic deployment of the API and the models.
 Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub <span class="citation" data-cites="12p6amlLS">[<a href="#ref-12p6amlLS" role="doc-biblioref">41</a>]</span> can be added using the intuitive graphical user interface.</p>
 <p>In addition, we provide fully browser-based deployment of LLMs using WebAssembly (WASM) and the web-llm library (https://github.com/mlc-ai/web-llm).
-We host a local model using web-llm, which is accessed by the BioChatter server within ChatGSE Next.
+We host a local model using web-llm, which is accessed by the BioChatter server within BioChatter Next.
 This combination creates a secure conversational environment and minimises the risks associated with data breaches.
 Hosting local LLMs using WebLLM allows them to run without an internet connection in a WASM module.
 This architecture thus enables complete data security and is limited only by the resources of the host computer.
@@ -438,9 +440,9 @@ They also add to the computational burden of the system, which is particularly r
 <p>SL conceptualised and developed the platform and wrote the manuscript.
 AM implemented the local deployment functionality.
 NK implemented benchmarking procedures.
-CW architected the ChatGSE next server infrastructure.
-QM oversaw the development and deployment of the ChatGSE next server environment.
-SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the ChatGSE next server.
+CW architected the BioChatter Next server infrastructure.
+QM oversaw the development and deployment of the BioChatter Next server environment.
+SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the BioChatter Next server.
 JSR supervised the project, revised the manuscript, and acquired funding.
 All authors read and approved the final manuscript.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
@@ -485,7 +487,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>🦜️🔗 Langchain</strong> <a href="https://python.langchain.com/">https://python.langchain.com/</a></div>
 </div>
 <div id="ref-gy4YOpGJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>AutoGPT Official</strong> <div class="csl-block">AutoGPT Official</div> (2023-12-18) <a href="https://autogpt.net/">https://autogpt.net/</a></div>
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>AutoGPT Official</strong> <div class="csl-block">AutoGPT Official</div> (2024-01-29) <a href="https://autogpt.net/">https://autogpt.net/</a></div>
 </div>
 <div id="ref-fliCQWwF" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Towards Conversational Diagnostic AI</strong> <div class="csl-block">Tao Tu, Anil Palepu, Mike Schaekermann, Khaled Saab, Jan Freyberg, Ryutaro Tanno, Amy Wang, Brenna Li, Mohamed Amin, Nenad Tomasev, … Vivek Natarajan</div> <em>arXiv</em> (2024) <a href="https://doi.org/gtdmpj">https://doi.org/gtdmpj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2401.05654">10.48550/arxiv.2401.05654</a></div></div>
@@ -500,7 +502,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Mixtral of Experts</strong> <div class="csl-block">Albert Q Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Emma Bou Hanna, Florian Bressand, … William El Sayed</div> <em>arXiv</em> (2024) <a href="https://doi.org/gtc2g3">https://doi.org/gtc2g3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2401.04088">10.48550/arxiv.2401.04088</a></div></div>
 </div>
 <div id="ref-mGEvmJGA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-01-17) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-01-30) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
 </div>
 <div id="ref-PDhRVYjU" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">18. </div><div class="csl-right-inline"><a href="https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/">https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/</a></div>
@@ -527,7 +529,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4</strong> <div class="csl-block">Sondos Mahmoud Bsharat, Aidar Myrzakhan, Zhiqiang Shen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnfg">https://doi.org/gtdnfg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2312.16171">10.48550/arxiv.2312.16171</a></div></div>
 </div>
 <div id="ref-14upAJPXR" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-01-17) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-01-30) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
 </div>
 <div id="ref-yT66jV6G" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark</strong> <div class="csl-block">Oscar Sainz, Jon Ander Campos, Iker García-Ferrero, Julen Etxaniz, Oier Lopez de Lacalle, Eneko Agirre</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvp">https://doi.org/gtbgvp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.18018">10.48550/arxiv.2310.18018</a></div></div>
@@ -566,13 +568,13 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>The TRUST Principles for digital repositories</strong> <div class="csl-block">Dawei Lin, Jonathan Crabtree, Ingrid Dillo, Robert R Downs, Rorie Edmunds, David Giaretta, Marisa De Giusti, Hervé L’Hours, Wim Hugo, Reyna Jenkyns, … John Westbrook</div> <em>Scientific Data</em> (2020-05-14) <a href="https://doi.org/ggwrtj">https://doi.org/ggwrtj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41597-020-0486-7">10.1038/s41597-020-0486-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32409645">32409645</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7224370">PMC7224370</a></div></div>
 </div>
 <div id="ref-o6hUZE9J" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Large Language Models for Information Retrieval: A Survey</strong> <div class="csl-block">Yutao Zhu, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Zhicheng Dou, Ji-Rong Wen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvn">https://doi.org/gtbgvn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2308.07107">10.48550/arxiv.2308.07107</a></div></div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Large Language Models for Information Retrieval: A Survey</strong> <div class="csl-block">Yutao Zhu, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Haonan Chen, Zhicheng Dou, Ji-Rong Wen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvn">https://doi.org/gtbgvn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2308.07107">10.48550/arxiv.2308.07107</a></div></div>
 </div>
 <div id="ref-aiaYUZ1t" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</strong> <div class="csl-block">Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, … Douwe Kiela</div> <em>Advances in Neural Information Processing Systems</em> (2020) <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf</a></div>
 </div>
 <div id="ref-12p6amlLS" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Hugging Face – The AI community building the future.</strong> (2024-01-10) <a href="https://huggingface.co/">https://huggingface.co/</a></div>
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Hugging Face – The AI community building the future.</strong> (2023-12-15) <a href="https://huggingface.co/">https://huggingface.co/</a></div>
 </div>
 </div>
 <!-- default theme -->
