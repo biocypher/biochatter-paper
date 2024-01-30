@@ -12,7 +12,7 @@ Current-generation Large Language Models (LLMs) have stirred enormous interest i
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework, BioChatter.
 Based on open-source software packages, we synergise the many functionalities that currently develop around LLMs, such as knowledge integration and retrieval augmented generation, model chaining, and benchmarks, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedical informatics.
 We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
-We demonstrate its use via a multi-purpose web app, ChatGSE (https://chat.biocypher.org), and provide documentation, support, and an open community to all interested researchers.
+We demonstrate its use via a multi-purpose web app (https://chat.biocypher.org), and provide documentation, support, and an open community to all interested researchers.
 
 ## Manubot
 
