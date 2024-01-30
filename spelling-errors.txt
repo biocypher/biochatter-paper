@@ -12,7 +12,7 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-Biomedicine
+biomedicine
 Cankun
 ChatGPT
 composable
@@ -30,6 +30,7 @@ Grunenthal
 GSK
 honoraria
 HuggingFace
+Immuno
 inclusivity
 integrations
 js
@@ -57,6 +58,8 @@ OpenAI
 OpenAI’s
 parameterisation
 Pau
+Pelotonia
+PIIO
 pre
 programme
 py

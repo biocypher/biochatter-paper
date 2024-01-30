@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-30" />
   <meta name="citation_publication_date" content="2024-01-30" />
   <meta property="article:published_time" content="2024-01-30" />
-  <meta name="dc.modified" content="2024-01-30T10:12:14+00:00" />
-  <meta property="article:modified_time" content="2024-01-30T10:12:14+00:00" />
+  <meta name="dc.modified" content="2024-01-30T10:21:57+00:00" />
+  <meta property="article:modified_time" content="2024-01-30T10:21:57+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/b16e53c99faee063b8886e65ee570e77421725ab/))
 was automatically generated
-from [biocypher/biochatter-paper@ed86e25](https://github.com/biocypher/biochatter-paper/tree/ed86e25f28cdb77281607c895c3a7ddd692a2578)
+from [biocypher/biochatter-paper@b16e53c](https://github.com/biocypher/biochatter-paper/tree/b16e53c99faee063b8886e65ee570e77421725ab)
 on January 30, 2024.
 </em></small>
 
@@ -398,7 +398,8 @@ This framework is suited for rapid prototyping of bespoke solutions for specific
 For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
 
 BioChatter Next (https://github.com/biocypher/biochatter-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
-It is written in TypeScript using Flask (version 3.0.0) and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
+It is written combining Typescript and Python and utilises Next.js (v13.4.9) for a sleek frontend and Flask (v3.0.0) as backend.
+It demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
 However, this comes at the cost of increased complexity and development time.
 To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at https://github.com/biocypher/biochatter-server and as a Docker image in our Docker Hub organisation (https://hub.docker.com/repository/docker/biocypher/biochatter-server).
 
@@ -513,7 +514,7 @@ All authors read and approved the final manuscript.
 
 We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
 
-SL has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 965193 (DECIDER).
+This work was supported by funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 965193 (SL), award U54-AG075931 (QM) from the National Institutes of Health, award NSF1945971 (QM) from the National Science Foundation, and the Pelotonia Institute of Immuno-Oncology (PIIO).
 
 ## Conflict of Interest
 
