@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-01-17'
+date-meta: '2024-01-30'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -28,11 +28,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-17" />
-  <meta name="citation_publication_date" content="2024-01-17" />
-  <meta property="article:published_time" content="2024-01-17" />
-  <meta name="dc.modified" content="2024-01-17T11:57:37+00:00" />
-  <meta property="article:modified_time" content="2024-01-17T11:57:37+00:00" />
+  <meta name="dc.date" content="2024-01-30" />
+  <meta name="citation_publication_date" content="2024-01-30" />
+  <meta property="article:published_time" content="2024-01-30" />
+  <meta name="dc.modified" content="2024-01-30T10:12:14+00:00" />
+  <meta property="article:modified_time" content="2024-01-30T10:12:14+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,10 +95,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/f5bc96da45b3d14bc19d30bdb60c59663534b7ea/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/ed86e25f28cdb77281607c895c3a7ddd692a2578/))
 was automatically generated
-from [biocypher/biochatter-paper@f5bc96d](https://github.com/biocypher/biochatter-paper/tree/f5bc96da45b3d14bc19d30bdb60c59663534b7ea)
-on January 17, 2024.
+from [biocypher/biochatter-paper@ed86e25](https://github.com/biocypher/biochatter-paper/tree/ed86e25f28cdb77281607c895c3a7ddd692a2578)
+on January 30, 2024.
 </em></small>
 
 
@@ -385,19 +385,24 @@ We develop under the permissive MIT licence and encourage contributions and sugg
 
 BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (https://github.com/biocypher/biochatter).
 We provide documentation at https://biocypher.github.io/biochatter, including a tutorial and API reference.
-
-To demonstrate basic and advanced use cases of the framework, we provide two web apps, ChatGSE and ChatGSE Next.
-ChatGSE is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/chatgse).
-The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
-For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
-ChatGSE Next (https://github.com/biocypher/chatgse-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
-It is written in TypeScript using Flask (version 3.0.0) and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
-However, this comes at the cost of increased complexity and development time.
-To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at https://github.com/biocypher/biochatter-server and as a Docker image in our Docker Hub organisation (https://hub.docker.com/orgs/biocypher).
-We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter server or library in their existing solutions.
-
 All packages are developed openly and according to modern standards of software development [@doi:10.1038/s41597-020-0486-7]; we use the permissive MIT licence to encourage downstream use and development.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
+
+### Applications
+
+To demonstrate basic and advanced use cases of the framework, we provide two web apps, BioChatter Light and BioChatter Next.
+
+BioChatter Light is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/biochatter-light).
+The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
+This framework is suited for rapid prototyping of bespoke solutions for specific use cases.
+For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
+
+BioChatter Next (https://github.com/biocypher/biochatter-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
+It is written in TypeScript using Flask (version 3.0.0) and Node.js and demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
+However, this comes at the cost of increased complexity and development time.
+To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at https://github.com/biocypher/biochatter-server and as a Docker image in our Docker Hub organisation (https://hub.docker.com/repository/docker/biocypher/biochatter-server).
+
+We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter server or library in their existing solutions.
 
 ### Benchmarking
 
@@ -463,9 +468,9 @@ In this way, the model can learn from additional context without the need for re
 This method is sometimes described as in-context learning [@doi:10.48550/arxiv.2303.17580] or retrieval-augmented generation [@rag].
 
 To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the vectorstore_host.py module), and for performing semantic search on the vector database and injecting the results into the prompt (in the vectorstore.py module).
-To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the ChatGSE preview app that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
+To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the preview apps that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed.
-Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the ChatGSE app in one Docker Compose workflow.
+Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the BioChatter Light app in one Docker Compose workflow.
 
 ### Deployment of Open-Source Models
 
@@ -474,7 +479,7 @@ We provide Docker images for the automatic deployment of the API and the models.
 Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub [@{https://huggingface.co/}] can be added using the intuitive graphical user interface.
 
 In addition, we provide fully browser-based deployment of LLMs using WebAssembly (WASM) and the web-llm library (https://github.com/mlc-ai/web-llm).
-We host a local model using web-llm, which is accessed by the BioChatter server within ChatGSE Next.
+We host a local model using web-llm, which is accessed by the BioChatter server within BioChatter Next.
 This combination creates a secure conversational environment and minimises the risks associated with data breaches.
 Hosting local LLMs using WebLLM allows them to run without an internet connection in a WASM module.
 This architecture thus enables complete data security and is limited only by the resources of the host computer.
@@ -498,9 +503,9 @@ They also add to the computational burden of the system, which is particularly r
 SL conceptualised and developed the platform and wrote the manuscript.
 AM implemented the local deployment functionality.
 NK implemented benchmarking procedures.
-CW architected the ChatGSE next server infrastructure.
-QM oversaw the development and deployment of the ChatGSE next server environment.
-SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the ChatGSE next server.
+CW architected the BioChatter Next server infrastructure.
+QM oversaw the development and deployment of the BioChatter Next server environment.
+SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the BioChatter Next server.
 JSR supervised the project, revised the manuscript, and acquired funding.
 All authors read and approved the final manuscript.
 

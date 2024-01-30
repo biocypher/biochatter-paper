@@ -12,10 +12,9 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-biomedicine
+Biomedicine
 Cankun
 ChatGPT
-ChatGSE
 composable
 datasets
 Dimitrov
