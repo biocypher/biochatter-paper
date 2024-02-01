@@ -6,13 +6,13 @@ Astex
 Aurelien
 backend
 Badia
-benchmarking
+Benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-Biomedicine
+biomedicine
 Cankun
 ChatGPT
 composable
