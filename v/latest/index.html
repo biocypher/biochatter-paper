@@ -12,7 +12,7 @@
   <meta name="author" content="Nils Krehl" />
   <meta name="author" content="Qin Ma" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-30" />
+  <meta name="dcterms.date" content="2024-02-01" />
   <meta name="keywords" content="biomedicine, large language models, framework, retrieval-augmented generation, knowledge graph" />
   <title>A Platform for the Biomedical Application of Large Language Models</title>
   <style>
@@ -57,11 +57,11 @@
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-30" />
-  <meta name="citation_publication_date" content="2024-01-30" />
-  <meta property="article:published_time" content="2024-01-30" />
-  <meta name="dc.modified" content="2024-01-30T15:07:08+00:00" />
-  <meta property="article:modified_time" content="2024-01-30T15:07:08+00:00" />
+  <meta name="dc.date" content="2024-02-01" />
+  <meta name="citation_publication_date" content="2024-02-01" />
+  <meta property="article:published_time" content="2024-02-01" />
+  <meta name="dc.modified" content="2024-02-01T13:14:43+00:00" />
+  <meta property="article:modified_time" content="2024-02-01T13:14:43+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -100,9 +100,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -119,10 +119,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/747ebc72d4dc890000a47e0e077c78f6548a71d9">biocypher/biochatter-paper@747ebc7</a>
-on January 30, 2024.
+from <a href="https://github.com/biocypher/biochatter-paper/tree/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30">biocypher/biochatter-paper@984881b</a>
+on February 1, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -254,8 +254,22 @@ The platform is composable in most aspects, allowing arbitrary extensions to oth
 </div>
 <h2 id="results">Results</h2>
 <p>BioChatter (https://github.com/biocypher/biochatter) is a python framework that provides an easy-to-use interface to interact with LLMs and auxiliary technologies via an intuitive API (application programming interface).
-This way, its functionality can be integrated into any number of user interfaces, such as web apps, command line interfaces, or Jupyter notebooks.
-The framework is designed to be composable, meaning that any of its components can be exchanged with other implementations, for instance, to use a different LLM or knowledge graph (KG).
+This way, its functionality can be integrated into any number of user interfaces, such as web apps, command line interfaces, or Jupyter notebooks (Figure <a href="#fig:architecture">2</a>).</p>
+<!-- Figure 2 -->
+<div id="fig:architecture" class="fignos">
+<figure>
+<img src="images/biochatter_architecture.png" alt="Figure 2: The BioChatter framework architecture. A) The BioChatter framework components (blue) connect to knowledge graphs and vector databases (orange). Users (green) can interact with the framework via its Python API, via the lightweight Python frontend using Streamlit (BioChatter Light), or via a fully featured web app with client-server architecture (BioChatter Next). Developers can write simple frontends using the Streamlit framework, or integrate the REST API provided by the BioChatter Server into their own bespoke solutions. B) Different use cases of BioChatter on a spectrum of tradeoff between simplicity/economy (left) and security (right). Economical and simple solutions involve proprietary services that can be used with low effort but are subject to data privacy concerns. Increasingly secure solutions require more effort to set up and maintain, but allow the user to retain more control over their data. Fully local solutions are available given sufficient hardware (starting with contemporary laptops), but are not highly scalable." />
+<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>The BioChatter framework architecture.</strong>
+A) The BioChatter framework components (blue) connect to knowledge graphs and vector databases (orange).
+Users (green) can interact with the framework via its Python API, via the lightweight Python frontend using Streamlit (BioChatter Light), or via a fully featured web app with client-server architecture (BioChatter Next).
+Developers can write simple frontends using the Streamlit framework, or integrate the REST API provided by the BioChatter Server into their own bespoke solutions.
+B) Different use cases of BioChatter on a spectrum of tradeoff between simplicity/economy (left) and security (right).
+Economical and simple solutions involve proprietary services that can be used with low effort but are subject to data privacy concerns.
+Increasingly secure solutions require more effort to set up and maintain, but allow the user to retain more control over their data.
+Fully local solutions are available given sufficient hardware (starting with contemporary laptops), but are not highly scalable.</figcaption>
+</figure>
+</div>
+<p>The framework is designed to be composable, meaning that any of its components can be exchanged with other implementations (Figure <a href="#fig:overview">1</a>).
 Functionalities include:</p>
 <ul>
 <li><p><strong>basic question answering</strong> with LLMs hosted by providers (such as OpenAI) as well as locally deployed open-source models</p></li>
@@ -266,7 +280,7 @@ Functionalities include:</p>
 <li><p><strong>model chaining</strong> to orchestrate multiple LLMs and other models in a single conversation using the LangChain framework <span class="citation" data-cites="UEmjXz02">[<a href="#ref-UEmjXz02" role="doc-biblioref">11</a>]</span></p></li>
 <li><p><strong>fact-checking</strong> of LLM responses using a second LLM</p></li>
 </ul>
-<p>In the following, we briefly describe these components, which are demonstrated in our web app (https://chat.biocypher.org).</p>
+<p>In the following, we briefly describe these components, which are demonstrated in our web apps (https://chat.biocypher.org).</p>
 <h3 id="question-answering-and-llm-connectivity">Question Answering and LLM Connectivity</h3>
 <p>The core functionality of BioChatter is to interact with LLMs.
 The framework supports both leading proprietary models such as the GPT series from OpenAI as well as open-source models such as LLaMA2 <span class="citation" data-cites="SgpSThMj">[<a href="#ref-SgpSThMj" role="doc-biblioref">15</a>]</span> and Mixtral 8x7B <span class="citation" data-cites="1B6emxNKq">[<a href="#ref-1B6emxNKq" role="doc-biblioref">16</a>]</span> via a flexible open-source deployment framework <span class="citation" data-cites="mGEvmJGA">[<a href="#ref-mGEvmJGA" role="doc-biblioref">17</a>]</span> (see Methods).
@@ -285,17 +299,17 @@ To address this issue, we include a prompt engineering framework in BioChatter t
 In addition, to facilitate the scaling of prompt engineering, we integrate this framework in the benchmarking pipeline, which allows the automated evaluation of prompt sets as new models are published.</p>
 <h3 id="benchmarking">Benchmarking</h3>
 <p>The increasing generality of LLMs poses challenges for their comprehensive evaluation.
-To circumvent this issue, we focus on specific biomedical tasks and datasets, leaving general validation to existing benchmarks.
+To circumvent this issue, we focus on specific biomedical tasks and datasets.
 For advanced assessment, we employ automated validation of the model’s responses by a second LLM.
 For transparent and reproducible evaluation of LLMs, we implement a benchmarking framework that allows the comparison of models, prompt sets, and all other components of the pipeline.
 Built on the generic Pytest framework <span class="citation" data-cites="14upAJPXR">[<a href="#ref-14upAJPXR" role="doc-biblioref">26</a>]</span>, it allows the automated evaluation of a matrix of all possible combinations of components.
 The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets.
 We create a bespoke biomedical benchmark for multiple reasons:
 Firstly, the biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components <span class="citation" data-cites="uYvzQA7w">[<a href="#ref-uYvzQA7w" role="doc-biblioref">23</a>]</span>.
-Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs <span class="citation" data-cites="LE2GwIqT">[<a href="#ref-LE2GwIqT" role="doc-biblioref">22</a>]</span>.
-Thirdly, we aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination <span class="citation" data-cites="yT66jV6G">[<a href="#ref-yT66jV6G" role="doc-biblioref">27</a>]</span>.
+Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs <span class="citation" data-cites="KONKs6Pw LE2GwIqT">[<a href="#ref-LE2GwIqT" role="doc-biblioref">22</a>,<a href="#ref-KONKs6Pw" role="doc-biblioref">27</a>]</span>.
+Thirdly, we aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination <span class="citation" data-cites="yT66jV6G">[<a href="#ref-yT66jV6G" role="doc-biblioref">28</a>]</span>.
 To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).</p>
-<p><strong>Figure?</strong></p>
+<p><strong>Table</strong></p>
 <h3 id="knowledge-graphs">Knowledge Graphs</h3>
 <p>Knowledge graphs (KGs) are a powerful tool to represent and query knowledge in a structured manner.
 With BioCypher <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">14</a>]</span>, we have developed a framework to create KGs from biomedical data in a user-friendly manner while also semantically grounding the data in ontologies.
@@ -304,25 +318,25 @@ We use information generated in the build process of BioCypher KGs to tune BioCh
 In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM’s reasoning, which can be used to ground the model’s responses in the context of the KG via in-context learning / retrieval-augmented generation (see below).</p>
 <h3 id="retrieval-augmented-generation">Retrieval-Augmented Generation</h3>
 <p>LLM confabulation is a major issue for biomedical applications, where the consequences of incorrect information can be severe.
-One popular way of addressing this issue is to apply “in-context learning,” which is also more recently referred to as “retrieval-augmented generation” (RAG) <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">28</a>]</span>.
+One popular way of addressing this issue is to apply “in-context learning,” which is also more recently referred to as “retrieval-augmented generation” (RAG) <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">29</a>]</span>.
 Briefly, RAG relies on injection of information into the model prompt of a pre-trained model, and as such does not require retraining / fine-tuning; once created, any RAG prompt can be used with any LLM.
 While this can be done by processing structured knowledge, for instance from KGs, it is often more efficient to use a semantic search engine to retrieve relevant information from unstructured data sources such as literature.
 To this end, we allow the management and integration of vector databases in the BioChatter framework.
 The user is able to connect to a vector database, embed an arbitrary number of documents, and then use semantic search to improve the model prompts by adding text fragments relevant to the given question (see Methods).</p>
 <h3 id="model-chaining-and-fact-checking">Model Chaining and Fact Checking</h3>
 <p>LLMs cannot only seamlessly interact with human users, but also with other LLMs as well as many other types of models.
-They understand API calls and can therefore theoretically orchestrate complex multi-step tasks <span class="citation" data-cites="hHuKg12k lmJHElQl">[<a href="#ref-hHuKg12k" role="doc-biblioref">29</a>,<a href="#ref-lmJHElQl" role="doc-biblioref">30</a>]</span>.
+They understand API calls and can therefore theoretically orchestrate complex multi-step tasks <span class="citation" data-cites="hHuKg12k lmJHElQl">[<a href="#ref-hHuKg12k" role="doc-biblioref">30</a>,<a href="#ref-lmJHElQl" role="doc-biblioref">31</a>]</span>.
 However, implementation is not trivial and the complex process can lead to unpredictable behaviours.
 We aim to improve the stability of model chaining in biomedical applications by developing bespoke approaches for common biomedical tasks, such as interpretation and design of experiments, evaluating literature, and exploring web resources.
 While we focus on reusing existing open-source frameworks such as LangChain <span class="citation" data-cites="UEmjXz02">[<a href="#ref-UEmjXz02" role="doc-biblioref">11</a>]</span>, we also develop bespoke solutions where necessary to provide stability for the given application.
 As an example, we implement a fact-checking module that uses a second LLM to evaluate the factual correctness of the primary LLM’s responses continuously during the conversation (see Methods).</p>
 <h2 id="discussion">Discussion</h2>
-<p>The fast pace of developments around current-generation LLMs poses a great challenge to society as a whole and the biomedical community in particular <span class="citation" data-cites="BXdkfGlr 3cvgHyjq kWGPJCV0">[<a href="#ref-BXdkfGlr" role="doc-biblioref">31</a>,<a href="#ref-3cvgHyjq" role="doc-biblioref">32</a>,<a href="#ref-kWGPJCV0" role="doc-biblioref">33</a>]</span>.
+<p>The fast pace of developments around current-generation LLMs poses a great challenge to society as a whole and the biomedical community in particular <span class="citation" data-cites="BXdkfGlr 3cvgHyjq kWGPJCV0">[<a href="#ref-BXdkfGlr" role="doc-biblioref">32</a>,<a href="#ref-3cvgHyjq" role="doc-biblioref">33</a>,<a href="#ref-kWGPJCV0" role="doc-biblioref">34</a>]</span>.
 While the potential of these models is enormous, their application is not straightforward, and their use requires a certain level of expertise.
-In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration <span class="citation" data-cites="JKZeMkVq">[<a href="#ref-JKZeMkVq" role="doc-biblioref">34</a>]</span>.
+In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration <span class="citation" data-cites="JKZeMkVq">[<a href="#ref-JKZeMkVq" role="doc-biblioref">35</a>]</span>.
 Inspired by the productivity of open source libraries such as LangChain <span class="citation" data-cites="UEmjXz02">[<a href="#ref-UEmjXz02" role="doc-biblioref">11</a>]</span>, we propose an open framework that allows biomedical researchers to focus on the application of LLMs as opposed to engineering challenges.
 To keep the framework effective and sustainable, we focus on reusing existing open-source libraries and tools, while adapting the advancements from the wider LLM community to the biomedical domain.
-The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond <span class="citation" data-cites="BXdkfGlr">[<a href="#ref-BXdkfGlr" role="doc-biblioref">31</a>]</span>.</p>
+The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond <span class="citation" data-cites="BXdkfGlr">[<a href="#ref-BXdkfGlr" role="doc-biblioref">32</a>]</span>.</p>
 <p>To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components (https://biochatter.org/benchmark-overview/).
 Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters, such as model version and temperature <span class="citation" data-cites="uYvzQA7w">[<a href="#ref-uYvzQA7w" role="doc-biblioref">23</a>]</span>.
@@ -331,7 +345,7 @@ We prevent data leakage from the benchmark datasets into the training data of ne
 The living benchmark will be updated with new questions and tasks as they arise in the community.</p>
 <p>We facilitate access to LLMs by allowing the use of both proprietary and open-source models, and we provide a flexible deployment framework for the latter.
 Proprietary models are currently the most economic solution for accessing state-of-the-art models, and as such primarily suited for users just starting out or lacking the resources to deploy their own models.
-In contrast, open-source models are quickly catching up in terms of performance <span class="citation" data-cites="uYvzQA7w">[<a href="#ref-uYvzQA7w" role="doc-biblioref">23</a>]</span>, and they are essential for the sustainability of the field <span class="citation" data-cites="BXdkfGlr">[<a href="#ref-BXdkfGlr" role="doc-biblioref">31</a>]</span>.
+In contrast, open-source models are quickly catching up in terms of performance <span class="citation" data-cites="uYvzQA7w">[<a href="#ref-uYvzQA7w" role="doc-biblioref">23</a>]</span>, and they are essential for the sustainability of the field <span class="citation" data-cites="BXdkfGlr">[<a href="#ref-BXdkfGlr" role="doc-biblioref">32</a>]</span>.
 We allow self-hosting of open-source models on any scale, from dedicated hardware with GPUs, to local deployment on end-user laptops, to browser-based deployment using web technology.</p>
 <h3 id="limitations">Limitations</h3>
 <p>The current generation of LLMs is not yet ready for unsupervised use in biomedical research.
@@ -342,9 +356,9 @@ They are not meant to replace human ingenuity and expertise, but to augment it w
 While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
 In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.</p>
 <h3 id="future-directions">Future directions</h3>
-<p>Multitask learners that can synthesise, for instance, language, vision, and molecular measurements, are an emerging field of research <span class="citation" data-cites="47ndFyxw JbgxHZwW 43KJj9IS">[<a href="#ref-47ndFyxw" role="doc-biblioref">35</a>,<a href="#ref-JbgxHZwW" role="doc-biblioref">36</a>,<a href="#ref-43KJj9IS" role="doc-biblioref">37</a>]</span>.
+<p>Multitask learners that can synthesise, for instance, language, vision, and molecular measurements, are an emerging field of research <span class="citation" data-cites="47ndFyxw JbgxHZwW 43KJj9IS">[<a href="#ref-47ndFyxw" role="doc-biblioref">36</a>,<a href="#ref-JbgxHZwW" role="doc-biblioref">37</a>,<a href="#ref-43KJj9IS" role="doc-biblioref">38</a>]</span>.
 To remain accessible in the face of ever increasing complexity of these models, we will focus on the usability improvements that allow broad adoption in biomedical research.
-Autonomous agents for trivial tasks have already been developed on the basis of LLMs, and we expect this field to mature in the future <span class="citation" data-cites="lmJHElQl">[<a href="#ref-lmJHElQl" role="doc-biblioref">30</a>]</span>.
+Autonomous agents for trivial tasks have already been developed on the basis of LLMs, and we expect this field to mature in the future <span class="citation" data-cites="lmJHElQl">[<a href="#ref-lmJHElQl" role="doc-biblioref">31</a>]</span>.
 As research on agent behaviour progresses, we will integrate these developments into the BioChatter framework to allow the creation of helpful assistants for biomedical research.</p>
 <p>All framework developments will be performed in light of the ethical implications of LLMs, and we will continue to support the use of open-source models to increase transparency and data privacy.
 While we focus on the biomedical field, the concept of our frameworks can easily be extended to other scientific domains by adjusting domain-specific prompts and data inputs, which are accessible in a composable and user-friendly manner in our frameworks <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">14</a>]</span>.
@@ -353,7 +367,7 @@ We develop under the permissive MIT licence and encourage contributions and sugg
 <h2 id="supplementary-online-methods">(Supplementary / Online) Methods</h2>
 <p>BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (https://github.com/biocypher/biochatter).
 We provide documentation at https://biocypher.github.io/biochatter, including a tutorial and API reference.
-All packages are developed openly and according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">38</a>]</span>; we use the permissive MIT licence to encourage downstream use and development.
+All packages are developed openly and according to modern standards of software development <span class="citation" data-cites="MMp6cQ1x">[<a href="#ref-MMp6cQ1x" role="doc-biblioref">39</a>]</span>; we use the permissive MIT licence to encourage downstream use and development.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.</p>
 <h3 id="applications">Applications</h3>
 <p>To demonstrate basic and advanced use cases of the framework, we provide two web apps, BioChatter Light and BioChatter Next.</p>
@@ -403,16 +417,16 @@ To illustrate the usage of this feature, we provide a demonstration repository a
 To bridge this gap, we can provide additional information from relevant publications to the model via the prompt.
 However, we frequently cannot add entire publications to the prompt, since the input length of current models still is restricted; we need to isolate the information that is specifically relevant to the question given by the user.
 To find this information, we perform a semantic similarity search between the user’s question and the contents of user-provided scientific articles (or other texts).
-The most efficient way to do this mapping is by using a vector database <span class="citation" data-cites="o6hUZE9J">[<a href="#ref-o6hUZE9J" role="doc-biblioref">39</a>]</span>.</p>
+The most efficient way to do this mapping is by using a vector database <span class="citation" data-cites="o6hUZE9J">[<a href="#ref-o6hUZE9J" role="doc-biblioref">40</a>]</span>.</p>
 <p>The contextual background information provided by the user (e.g., by uploading a scientific article of prior work related to the experiment to be interpreted) is split into pieces suitable to be digested by the LLM, which are individually embedded by the model.
 These embeddings (represented by vectors) are used to store the text fragments in a vector database; the storage as vectors allows fast and efficient retrieval of similar entities via the comparison of individual vectors.
 For example, the two sentences “Amyloid beta levels are associated with Alzheimer’s Disease stage.” and “One of the most important clinical markers of AD progression is the amount of deposited A-beta 42.” would be closely associated in a vector database (given the embedding model is of sufficient quality, i.e., similar to GPT-3 or better), while traditional text-based similarity metrics probably would not identify them as highly similar.</p>
 <p>By comparing the user’s question to prior knowledge in the vector database, we can extract the relevant pieces of information from the entire background.
 Even better, we can first use an LLM to generate an answer to the user’s question and then use this answer to query the vector database for relevant information.
-Regardless of whether the initial answer is correct, it is likely that the “fake answer” is more semantically similar to the relevant pieces of information than the user’s question <span class="citation" data-cites="o6hUZE9J">[<a href="#ref-o6hUZE9J" role="doc-biblioref">39</a>]</span>.
+Regardless of whether the initial answer is correct, it is likely that the “fake answer” is more semantically similar to the relevant pieces of information than the user’s question <span class="citation" data-cites="o6hUZE9J">[<a href="#ref-o6hUZE9J" role="doc-biblioref">40</a>]</span>.
 Semantic search results (for instance, single sentences directly related to the topic of the question) are then sufficiently small to be added to the prompt.
 In this way, the model can learn from additional context without the need for retraining or fine-tuning.
-This method is sometimes described as in-context learning <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">28</a>]</span> or retrieval-augmented generation <span class="citation" data-cites="aiaYUZ1t">[<a href="#ref-aiaYUZ1t" role="doc-biblioref">40</a>]</span>.</p>
+This method is sometimes described as in-context learning <span class="citation" data-cites="1BzQcjRCZ">[<a href="#ref-1BzQcjRCZ" role="doc-biblioref">29</a>]</span> or retrieval-augmented generation <span class="citation" data-cites="aiaYUZ1t">[<a href="#ref-aiaYUZ1t" role="doc-biblioref">41</a>]</span>.</p>
 <p>To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the vectorstore_host.py module), and for performing semantic search on the vector database and injecting the results into the prompt (in the vectorstore.py module).
 To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the preview apps that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed.
@@ -420,7 +434,7 @@ Since this functionality requires a connection to a vector database system, we p
 <h3 id="deployment-of-open-source-models">Deployment of Open-Source Models</h3>
 <p>To facilitate access to open-source models, we adopt a flexible deployment framework based on the Xorbits Inference API <span class="citation" data-cites="mGEvmJGA">[<a href="#ref-mGEvmJGA" role="doc-biblioref">17</a>]</span>.
 We provide Docker images for the automatic deployment of the API and the models.
-Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub <span class="citation" data-cites="12p6amlLS">[<a href="#ref-12p6amlLS" role="doc-biblioref">41</a>]</span> can be added using the intuitive graphical user interface.</p>
+Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub <span class="citation" data-cites="12p6amlLS">[<a href="#ref-12p6amlLS" role="doc-biblioref">42</a>]</span> can be added using the intuitive graphical user interface.</p>
 <p>In addition, we provide fully browser-based deployment of LLMs using WebAssembly (WASM) and the web-llm library (https://github.com/mlc-ai/web-llm).
 We host a local model using web-llm, which is accessed by the BioChatter server within BioChatter Next.
 This combination creates a secure conversational environment and minimises the risks associated with data breaches.
@@ -503,7 +517,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Mixtral of Experts</strong> <div class="csl-block">Albert Q Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Emma Bou Hanna, Florian Bressand, … William El Sayed</div> <em>arXiv</em> (2024) <a href="https://doi.org/gtc2g3">https://doi.org/gtc2g3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2401.04088">10.48550/arxiv.2401.04088</a></div></div>
 </div>
 <div id="ref-mGEvmJGA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-01-30) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-02-01) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
 </div>
 <div id="ref-PDhRVYjU" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">18. </div><div class="csl-right-inline"><a href="https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/">https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/</a></div>
@@ -530,52 +544,55 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4</strong> <div class="csl-block">Sondos Mahmoud Bsharat, Aidar Myrzakhan, Zhiqiang Shen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnfg">https://doi.org/gtdnfg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2312.16171">10.48550/arxiv.2312.16171</a></div></div>
 </div>
 <div id="ref-14upAJPXR" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-01-30) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-02-01) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
+</div>
+<div id="ref-KONKs6Pw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Large language models encode clinical knowledge</strong> <div class="csl-block">Karan Singhal, Shekoofeh Azizi, Tao Tu, SSara Mahdavi, Jason Wei, Hyung Won Chung, Nathan Scales, Ajay Tanwani, Heather Cole-Lewis, Stephen Pfohl, … Vivek Natarajan</div> <em>Nature</em> (2023-07-12) <a href="https://doi.org/gsgp8c">https://doi.org/gsgp8c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-023-06291-2">10.1038/s41586-023-06291-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37438534">37438534</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10396962">PMC10396962</a></div></div>
 </div>
 <div id="ref-yT66jV6G" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark</strong> <div class="csl-block">Oscar Sainz, Jon Ander Campos, Iker García-Ferrero, Julen Etxaniz, Oier Lopez de Lacalle, Eneko Agirre</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvp">https://doi.org/gtbgvp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.18018">10.48550/arxiv.2310.18018</a></div></div>
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark</strong> <div class="csl-block">Oscar Sainz, Jon Ander Campos, Iker García-Ferrero, Julen Etxaniz, Oier Lopez de Lacalle, Eneko Agirre</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvp">https://doi.org/gtbgvp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.18018">10.48550/arxiv.2310.18018</a></div></div>
 </div>
 <div id="ref-1BzQcjRCZ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face</strong> <div class="csl-block">Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang</div> <em>arXiv</em> (2023) <a href="https://doi.org/gskd97">https://doi.org/gskd97</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2303.17580">10.48550/arxiv.2303.17580</a></div></div>
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face</strong> <div class="csl-block">Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang</div> <em>arXiv</em> (2023) <a href="https://doi.org/gskd97">https://doi.org/gskd97</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2303.17580">10.48550/arxiv.2303.17580</a></div></div>
 </div>
 <div id="ref-hHuKg12k" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Gorilla: Large Language Model Connected with Massive APIs</strong> <div class="csl-block">Shishir G Patil, Tianjun Zhang, Xin Wang, Joseph E Gonzalez</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvm">https://doi.org/gtbgvm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2305.15334">10.48550/arxiv.2305.15334</a></div></div>
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Gorilla: Large Language Model Connected with Massive APIs</strong> <div class="csl-block">Shishir G Patil, Tianjun Zhang, Xin Wang, Joseph E Gonzalez</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvm">https://doi.org/gtbgvm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2305.15334">10.48550/arxiv.2305.15334</a></div></div>
 </div>
 <div id="ref-lmJHElQl" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>A Survey on Large Language Model based Autonomous Agents</strong> <div class="csl-block">Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, Jiakai Tang, Xu Chen, Yankai Lin, … Ji-Rong Wen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gsv93m">https://doi.org/gsv93m</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2308.11432">10.48550/arxiv.2308.11432</a></div></div>
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>A Survey on Large Language Model based Autonomous Agents</strong> <div class="csl-block">Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, Jiakai Tang, Xu Chen, Yankai Lin, … Ji-Rong Wen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gsv93m">https://doi.org/gsv93m</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2308.11432">10.48550/arxiv.2308.11432</a></div></div>
 </div>
 <div id="ref-BXdkfGlr" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>There are holes in Europe’s AI Act — and researchers can help to fill them</strong> <div class="csl-block">Nature</div> (2024-01-10) <a href="https://doi.org/gtdnfb">https://doi.org/gtdnfb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-024-00029-4">10.1038/d41586-024-00029-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38200306">38200306</a></div></div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>There are holes in Europe’s AI Act — and researchers can help to fill them</strong> <div class="csl-block">Nature</div> (2024-01-10) <a href="https://doi.org/gtdnfb">https://doi.org/gtdnfb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-024-00029-4">10.1038/d41586-024-00029-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38200306">38200306</a></div></div>
 </div>
 <div id="ref-3cvgHyjq" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Is AI leading to a reproducibility crisis in science?</strong> <div class="csl-block">Philip Ball</div> <em>Nature</em> (2023-12-05) <a href="https://doi.org/gs8bmk">https://doi.org/gs8bmk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-03817-6">10.1038/d41586-023-03817-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38052897">38052897</a></div></div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Is AI leading to a reproducibility crisis in science?</strong> <div class="csl-block">Philip Ball</div> <em>Nature</em> (2023-12-05) <a href="https://doi.org/gs8bmk">https://doi.org/gs8bmk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-03817-6">10.1038/d41586-023-03817-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38052897">38052897</a></div></div>
 </div>
 <div id="ref-kWGPJCV0" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Generative AI could revolutionize health care — but not if control is ceded to big tech</strong> <div class="csl-block">Augustin Toma, Senthujan Senkaiahliyan, Patrick R Lawler, Barry Rubin, Bo Wang</div> <em>Nature</em> (2023-11-30) <a href="https://doi.org/gtdnd9">https://doi.org/gtdnd9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-03803-y">10.1038/d41586-023-03803-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38036861">38036861</a></div></div>
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Generative AI could revolutionize health care — but not if control is ceded to big tech</strong> <div class="csl-block">Augustin Toma, Senthujan Senkaiahliyan, Patrick R Lawler, Barry Rubin, Bo Wang</div> <em>Nature</em> (2023-11-30) <a href="https://doi.org/gtdnd9">https://doi.org/gtdnd9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-03803-y">10.1038/d41586-023-03803-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38036861">38036861</a></div></div>
 </div>
 <div id="ref-JKZeMkVq" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Scientific Utopia</strong> <div class="csl-block">Brian A Nosek, Jeffrey R Spies, Matt Motyl</div> <em>Perspectives on Psychological Science</em> (2012-11) <a href="https://doi.org/f4fc2k">https://doi.org/f4fc2k</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1177/1745691612459058">10.1177/1745691612459058</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26168121">26168121</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10540222">PMC10540222</a></div></div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Scientific Utopia</strong> <div class="csl-block">Brian A Nosek, Jeffrey R Spies, Matt Motyl</div> <em>Perspectives on Psychological Science</em> (2012-11) <a href="https://doi.org/f4fc2k">https://doi.org/f4fc2k</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1177/1745691612459058">10.1177/1745691612459058</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26168121">26168121</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10540222">PMC10540222</a></div></div>
 </div>
 <div id="ref-47ndFyxw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Git-Theta: A Git Extension for Collaborative Development of Machine Learning Models</strong> <div class="csl-block">Nikhil Kandpal, Brian Lester, Mohammed Muqeeth, Anisha Mascarenhas, Monty Evans, Vishal Baskaran, Tenghao Huang, Haokun Liu, Colin Raffel</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnfd">https://doi.org/gtdnfd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2306.04529">10.48550/arxiv.2306.04529</a></div></div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Git-Theta: A Git Extension for Collaborative Development of Machine Learning Models</strong> <div class="csl-block">Nikhil Kandpal, Brian Lester, Mohammed Muqeeth, Anisha Mascarenhas, Monty Evans, Vishal Baskaran, Tenghao Huang, Haokun Liu, Colin Raffel</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnfd">https://doi.org/gtdnfd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2306.04529">10.48550/arxiv.2306.04529</a></div></div>
 </div>
 <div id="ref-JbgxHZwW" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Crosslingual Generalization through Multitask Finetuning</strong> <div class="csl-block">Niklas Muennighoff, Thomas Wang, Lintang Sutawika, Adam Roberts, Stella Biderman, Teven Le Scao, MSaiful Bari, Sheng Shen, Zheng-Xin Yong, Hailey Schoelkopf, … Colin Raffel</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtdnfc">https://doi.org/gtdnfc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2211.01786">10.48550/arxiv.2211.01786</a></div></div>
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Crosslingual Generalization through Multitask Finetuning</strong> <div class="csl-block">Niklas Muennighoff, Thomas Wang, Lintang Sutawika, Adam Roberts, Stella Biderman, Teven Le Scao, MSaiful Bari, Sheng Shen, Zheng-Xin Yong, Hailey Schoelkopf, … Colin Raffel</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtdnfc">https://doi.org/gtdnfc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2211.01786">10.48550/arxiv.2211.01786</a></div></div>
 </div>
 <div id="ref-43KJj9IS" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning</strong> <div class="csl-block">Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnff">https://doi.org/gtdnff</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.09478">10.48550/arxiv.2310.09478</a></div></div>
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning</strong> <div class="csl-block">Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnff">https://doi.org/gtdnff</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.09478">10.48550/arxiv.2310.09478</a></div></div>
 </div>
 <div id="ref-MMp6cQ1x" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>The TRUST Principles for digital repositories</strong> <div class="csl-block">Dawei Lin, Jonathan Crabtree, Ingrid Dillo, Robert R Downs, Rorie Edmunds, David Giaretta, Marisa De Giusti, Hervé L’Hours, Wim Hugo, Reyna Jenkyns, … John Westbrook</div> <em>Scientific Data</em> (2020-05-14) <a href="https://doi.org/ggwrtj">https://doi.org/ggwrtj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41597-020-0486-7">10.1038/s41597-020-0486-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32409645">32409645</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7224370">PMC7224370</a></div></div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>The TRUST Principles for digital repositories</strong> <div class="csl-block">Dawei Lin, Jonathan Crabtree, Ingrid Dillo, Robert R Downs, Rorie Edmunds, David Giaretta, Marisa De Giusti, Hervé L’Hours, Wim Hugo, Reyna Jenkyns, … John Westbrook</div> <em>Scientific Data</em> (2020-05-14) <a href="https://doi.org/ggwrtj">https://doi.org/ggwrtj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41597-020-0486-7">10.1038/s41597-020-0486-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32409645">32409645</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7224370">PMC7224370</a></div></div>
 </div>
 <div id="ref-o6hUZE9J" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Large Language Models for Information Retrieval: A Survey</strong> <div class="csl-block">Yutao Zhu, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Haonan Chen, Zhicheng Dou, Ji-Rong Wen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvn">https://doi.org/gtbgvn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2308.07107">10.48550/arxiv.2308.07107</a></div></div>
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Large Language Models for Information Retrieval: A Survey</strong> <div class="csl-block">Yutao Zhu, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Haonan Chen, Zhicheng Dou, Ji-Rong Wen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtbgvn">https://doi.org/gtbgvn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2308.07107">10.48550/arxiv.2308.07107</a></div></div>
 </div>
 <div id="ref-aiaYUZ1t" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</strong> <div class="csl-block">Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, … Douwe Kiela</div> <em>Advances in Neural Information Processing Systems</em> (2020) <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf</a></div>
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</strong> <div class="csl-block">Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, … Douwe Kiela</div> <em>Advances in Neural Information Processing Systems</em> (2020) <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf</a></div>
 </div>
 <div id="ref-12p6amlLS" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Hugging Face – The AI community building the future.</strong> (2023-12-15) <a href="https://huggingface.co/">https://huggingface.co/</a></div>
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Hugging Face – The AI community building the future.</strong> (2024-01-28) <a href="https://huggingface.co/">https://huggingface.co/</a></div>
 </div>
 </div>
 <!-- default theme -->
