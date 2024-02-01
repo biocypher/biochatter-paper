@@ -12,7 +12,7 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-biomedicine
+Biomedicine
 Cankun
 ChatGPT
 composable
@@ -24,6 +24,7 @@ ensembling
 Feng
 fengsh
 frontend
+frontends
 GPT
 GPUs
 Grunenthal
@@ -74,6 +75,7 @@ saezlab
 saezrodriguez
 Sanofi
 scalability
+scalable
 Schumacher
 Shaohong
 siloed

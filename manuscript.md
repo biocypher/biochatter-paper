@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-01-30'
+date-meta: '2024-02-01'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -28,11 +28,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-01-30" />
-  <meta name="citation_publication_date" content="2024-01-30" />
-  <meta property="article:published_time" content="2024-01-30" />
-  <meta name="dc.modified" content="2024-01-30T15:07:08+00:00" />
-  <meta property="article:modified_time" content="2024-01-30T15:07:08+00:00" />
+  <meta name="dc.date" content="2024-02-01" />
+  <meta name="citation_publication_date" content="2024-02-01" />
+  <meta property="article:published_time" content="2024-02-01" />
+  <meta name="dc.modified" content="2024-02-01T13:14:43+00:00" />
+  <meta property="article:modified_time" content="2024-02-01T13:14:43+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,10 +95,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/747ebc72d4dc890000a47e0e077c78f6548a71d9/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30/))
 was automatically generated
-from [biocypher/biochatter-paper@747ebc7](https://github.com/biocypher/biochatter-paper/tree/747ebc72d4dc890000a47e0e077c78f6548a71d9)
-on January 30, 2024.
+from [biocypher/biochatter-paper@984881b](https://github.com/biocypher/biochatter-paper/tree/984881b9c4cc5fc904a52a0ba41a76afa2ff9d30)
+on February 1, 2024.
 </em></small>
 
 
@@ -254,8 +254,21 @@ The platform is composable in most aspects, allowing arbitrary extensions to oth
 ## Results
 
 BioChatter (https://github.com/biocypher/biochatter) is a python framework that provides an easy-to-use interface to interact with LLMs and auxiliary technologies via an intuitive API (application programming interface).
-This way, its functionality can be integrated into any number of user interfaces, such as web apps, command line interfaces, or Jupyter notebooks.
-The framework is designed to be composable, meaning that any of its components can be exchanged with other implementations, for instance, to use a different LLM or knowledge graph (KG).
+This way, its functionality can be integrated into any number of user interfaces, such as web apps, command line interfaces, or Jupyter notebooks (Figure @fig:architecture).
+
+<!-- Figure 2 -->
+![
+**The BioChatter framework architecture.**
+A) The BioChatter framework components (blue) connect to knowledge graphs and vector databases (orange).
+Users (green) can interact with the framework via its Python API, via the lightweight Python frontend using Streamlit (BioChatter Light), or via a fully featured web app with client-server architecture (BioChatter Next).
+Developers can write simple frontends using the Streamlit framework, or integrate the REST API provided by the BioChatter Server into their own bespoke solutions.
+B) Different use cases of BioChatter on a spectrum of tradeoff between simplicity/economy (left) and security (right). 
+Economical and simple solutions involve proprietary services that can be used with low effort but are subject to data privacy concerns.
+Increasingly secure solutions require more effort to set up and maintain, but allow the user to retain more control over their data.
+Fully local solutions are available given sufficient hardware (starting with contemporary laptops), but are not highly scalable.
+](images/biochatter_architecture.png "Architecture"){#fig:architecture}
+
+The framework is designed to be composable, meaning that any of its components can be exchanged with other implementations (Figure @fig:overview).
 Functionalities include:
 
 - **basic question answering** with LLMs hosted by providers (such as OpenAI) as well as locally deployed open-source models
@@ -272,7 +285,7 @@ Functionalities include:
 
 - **fact-checking** of LLM responses using a second LLM
 
-In the following, we briefly describe these components, which are demonstrated in our web app (https://chat.biocypher.org).
+In the following, we briefly describe these components, which are demonstrated in our web apps (https://chat.biocypher.org).
 
 ### Question Answering and LLM Connectivity
 
@@ -297,18 +310,18 @@ In addition, to facilitate the scaling of prompt engineering, we integrate this 
 ### Benchmarking
 
 The increasing generality of LLMs poses challenges for their comprehensive evaluation.
-To circumvent this issue, we focus on specific biomedical tasks and datasets, leaving general validation to existing benchmarks.
+To circumvent this issue, we focus on specific biomedical tasks and datasets.
 For advanced assessment, we employ automated validation of the model's responses by a second LLM.
 For transparent and reproducible evaluation of LLMs, we implement a benchmarking framework that allows the comparison of models, prompt sets, and all other components of the pipeline.
 Built on the generic Pytest framework [@pytest], it allows the automated evaluation of a matrix of all possible combinations of components.
 The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets.
 We create a bespoke biomedical benchmark for multiple reasons: 
 Firstly, the biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components [@biollmbench].
-Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs [@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}].
+Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}].
 Thirdly, we aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination [@doi:10.48550/arXiv.2310.18018].
 To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).
 
-**Figure?**
+**Table**
 
 ### Knowledge Graphs
 
