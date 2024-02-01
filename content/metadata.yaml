@@ -25,6 +25,7 @@ authors:
     email: shaohong.feng@osumc.edu
     affiliations:
       - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+    corresponding: false
   - name: The BioChatter Consortium
     type: consortium
   - github: andimajore
@@ -34,6 +35,7 @@ authors:
     email: andreas.maier-1@uni-hamburg.de
     affiliations:
       - Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany
+    corresponding: false
   - github: Wang-Cankun
     name: Cankun Wang
     initials: CW
@@ -42,12 +44,14 @@ authors:
     twitter: Wang-Cankun
     affiliations:
       - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+    corresponding: false
   - github: nilskre
     name: Nils Krehl
     initials: NK
     orcid: TBD
     affiliations:
       - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+    corresponding: false
   - github: maqin2001
     name: Qin Ma
     initials: QM
@@ -56,6 +60,7 @@ authors:
     twitter: QinMaBMBL
     affiliations:
       - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+    corresponding: false
   - github: saezrodriguez
     name: Julio Saez-Rodriguez
     initials: JSR
