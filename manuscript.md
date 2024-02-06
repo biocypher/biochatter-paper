@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-06" />
   <meta name="citation_publication_date" content="2024-02-06" />
   <meta property="article:published_time" content="2024-02-06" />
-  <meta name="dc.modified" content="2024-02-06T22:05:00+00:00" />
-  <meta property="article:modified_time" content="2024-02-06T22:05:00+00:00" />
+  <meta name="dc.modified" content="2024-02-06T22:15:48+00:00" />
+  <meta property="article:modified_time" content="2024-02-06T22:15:48+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/))
 was automatically generated
-from [biocypher/biochatter-paper@a212d2e](https://github.com/biocypher/biochatter-paper/tree/a212d2e1cab7f9b4cf31af0bfad605756bb14888)
+from [biocypher/biochatter-paper@7f136e2](https://github.com/biocypher/biochatter-paper/tree/7f136e2a7dd0717c8324250eb9305b0b2b822621)
 on February 6, 2024.
 </em></small>
 
@@ -448,8 +448,10 @@ We invite all interested researchers to select the framework that best suits the
 
 The benchmarking framework implements a matrix of component combinations using the parameterisation feature of Pytest [@pytest].
 This allows the automated evaluation of all possible combinations of components, such as LLMs, prompts, and datasets.
-As a default, we run each test five times to account for the stochastic nature of LLMs.
+We ran the benchmarks on a MacBook Pro Max with an M3 Max chip with 40-core GPU and 128GB or RAM.
+As a default, we ran each test five times to account for the stochastic nature of LLMs.
 We generally set the temperature to the lowest value possible for each model to decrease fluctuation.
+
 The Pytest matrix uses a hash-based system to evaluate whether a model-dataset combination has been run before.
 Briefly, the hash is calculated from the dictionary representation of the test parameters, and the test is skipped if the combination of hash and model name is already present in the database.
 This allows automatic running of all tests that have been newly added or modified.
@@ -523,6 +525,7 @@ To facilitate access to open-source models, we adopt a flexible deployment frame
 Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub [@{https://huggingface.co/}] can be added using the intuitive graphical user interface.
 We use Xorbits Inference version 0.8.4 to deploy the benchmarked models, and we provide a Docker Compose repository to deploy the app on a Linux server with Nvidia GPUs ([https://github.com/biocypher/xinference-docker-builtin/](https://github.com/biocypher/xinference-docker-builtin/)).
 This Compose uses the multi-architecture image (for ARM64 and AMD64 chips) we provide on our Docker Hub organisation ([https://hub.docker.com/repository/docker/biocypher/xinference-builtin](https://hub.docker.com/repository/docker/biocypher/xinference-builtin)).
+On Mac OS with Apple Silicon chips, Docker does not have access to the GPU driver, and as such, Xinference needs to be deployed natively.
 
 ### Model Chaining
 

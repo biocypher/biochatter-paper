@@ -7,7 +7,7 @@ Aurelien
 backend
 Badia
 benchmarked
-benchmarking
+Benchmarking
 BioChatter
 BioChatter’s
 BioCypher
@@ -27,7 +27,7 @@ Feng
 fengsh
 frontend
 frontends
-gpt
+GPT
 GPUs
 Grunenthal
 GSK
@@ -48,12 +48,14 @@ LLM
 LLM’s
 LLMs
 Lobentanzer
+MacBook
 Maier
 maqin
 Meta’s
 Milvus
 Mixtral
 Mompel
+natively
 Nils
 nilskre
 NK
@@ -93,5 +95,6 @@ TBD
 tradeoff
 Travere
 vectorstore
+Xinference
 Xorbits
 YAML
