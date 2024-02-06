@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-01'
+date-meta: '2024-02-06'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -28,11 +28,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-01" />
-  <meta name="citation_publication_date" content="2024-02-01" />
-  <meta property="article:published_time" content="2024-02-01" />
-  <meta name="dc.modified" content="2024-02-01T13:20:35+00:00" />
-  <meta property="article:modified_time" content="2024-02-01T13:20:35+00:00" />
+  <meta name="dc.date" content="2024-02-06" />
+  <meta name="citation_publication_date" content="2024-02-06" />
+  <meta property="article:published_time" content="2024-02-06" />
+  <meta name="dc.modified" content="2024-02-06T21:41:37+00:00" />
+  <meta property="article:modified_time" content="2024-02-06T21:41:37+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/0b9ad94a61bddd8216ea5a8ef5b70ee8c0e385dc/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0b9ad94a61bddd8216ea5a8ef5b70ee8c0e385dc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0b9ad94a61bddd8216ea5a8ef5b70ee8c0e385dc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,10 +95,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/0b9ad94a61bddd8216ea5a8ef5b70ee8c0e385dc/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/))
 was automatically generated
-from [biocypher/biochatter-paper@0b9ad94](https://github.com/biocypher/biochatter-paper/tree/0b9ad94a61bddd8216ea5a8ef5b70ee8c0e385dc)
-on February 1, 2024.
+from [biocypher/biochatter-paper@bb259e3](https://github.com/biocypher/biochatter-paper/tree/bb259e35014e020f0d7d83544a94ff8344ddb0d9)
+on February 6, 2024.
 </em></small>
 
 
@@ -321,6 +321,15 @@ Secondly, we aim to create benchmark datasets that are complementary to the exis
 Thirdly, we aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination [@doi:10.48550/arXiv.2310.18018].
 To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).
 
+Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Table @tab:benchmark).
+Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure for the LLMs' usefulness in our applications.
+However, they generally reflect the results from general-purpose benchmarks (refs).
+OpenAI's GPT models (gpt-3.5-turbo and gpt-4) lead by some margin, and Meta's LLaMA2 is in second position.
+LLaMA2 in its 70B (70 billion parameters) version shows better performance than the smaller (7B and 13B) variants, but not for all quantisations (reductions in model size due to the reduction of bits representing each parameter).
+The 2- and 3-bit quantisations of the 70B model show worse performance than the 7B model; the 4-bit quantised 70B model performs best among all open-source models, roughly doubling the performance of the 3-bit 70B model.
+The Mixtral 8x7B model (46.7 billion parameters), a generally well-performing current open-source model, shows worse performance than all LLaMA2 models in our benchmark.
+We will update the benchmark ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)) as new models, benchmark datasets, and BioChatter functionalities are released.
+
 **Table**
 
 ### Knowledge Graphs
@@ -330,6 +339,7 @@ With BioCypher [@biocypher], we have developed a framework to create KGs from bi
 BioChatter is an extension of the BioCypher ecosystem, elevating its user-friendliness further by allowing natural language interactions with the data; any BioCypher KG is automatically compatible with BioChatter.
 We use information generated in the build process of BioCypher KGs to tune BioChatter's understanding of the data structures and contents, thereby increasing the efficiency of LLM-based KG querying (see Methods).
 In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's reasoning, which can be used to ground the model's responses in the context of the KG via in-context learning / retrieval-augmented generation (see below).
+We demonstrate the user experience of KG-driven interaction in Supplementary Note 1 and on our website ([https://biochatter.org/vignette-kg/](https://biochatter.org/vignette-kg/)).
 
 ### Retrieval-Augmented Generation
 
@@ -339,6 +349,7 @@ Briefly, RAG relies on injection of information into the model prompt of a pre-t
 While this can be done by processing structured knowledge, for instance from KGs, it is often more efficient to use a semantic search engine to retrieve relevant information from unstructured data sources such as literature.
 To this end, we allow the management and integration of vector databases in the BioChatter framework.
 The user is able to connect to a vector database, embed an arbitrary number of documents, and then use semantic search to improve the model prompts by adding text fragments relevant to the given question (see Methods).
+We demonstrate the user experience of RAG in Supplementary Note 2 and on our website ([https://biochatter.org/vignette-rag/](https://biochatter.org/vignette-rag/)).
 
 ### Model Chaining and Fact Checking
 
@@ -360,7 +371,7 @@ To keep the framework effective and sustainable, we focus on reusing existing op
 The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond [@doi:10.1038/d41586-024-00029-4].
 
 To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
-We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components (https://biochatter.org/benchmark-overview/).
+We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
 Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters, such as model version and temperature [@biollmbench].
 As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
@@ -391,7 +402,7 @@ As research on agent behaviour progresses, we will integrate these developments 
 
 All framework developments will be performed in light of the ethical implications of LLMs, and we will continue to support the use of open-source models to increase transparency and data privacy.
 While we focus on the biomedical field, the concept of our frameworks can easily be extended to other scientific domains by adjusting domain-specific prompts and data inputs, which are accessible in a composable and user-friendly manner in our frameworks [@biocypher].
-Our Python library is developed openly on GitHub (https://github.com/biocypher/biochatter) and can be integrated into any number of user interface solutions.
+Our Python library is developed openly on GitHub ([https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)) and can be integrated into any number of user interface solutions.
 We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool integrations, prompt engineering, benchmarking, and any other feature.
 
 ## (Supplementary / Online) Methods
@@ -422,6 +433,8 @@ We invite all interested researchers to select the framework that best suits the
 
 The benchmarking framework implements a matrix of component combinations using the parameterisation feature of Pytest [@pytest].
 This allows the automated evaluation of all possible combinations of components, such as LLMs, prompts, and datasets.
+As a default, we run each test five times to account for the stochastic nature of LLMs.
+We generally set the temperature to the lowest value possible for each model to decrease fluctuation.
 The results are stored in a database and displayed on the website for easy comparison.
 The benchmark is updated upon the release of new models and extensions to the datasets.
 The individual dimensions of the matrix are:
@@ -445,12 +458,12 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 
 - **sentiment and behaviour**: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.
 
-The Pytest framework is implemented at https://github.com/biocypher/biochatter/blob/main/benchmark, and more information and results are available at https://biocypher.github.io/biochatter/benchmark.
+The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information and results are available at [https://biocypher.github.io/biochatter/benchmarking](https://biocypher.github.io/biochatter/benchmarking).
 
 To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
 The encryption is performed using a hybrid encryption scheme, where the data are encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
 The datasets are stored in a dedicated encrypted pipeline that is only accessible to the workflow that executes the benchmark.
-These processes are implemented at https://github.com/biocypher/llm-test-dataset and accessed from the benchmark procedure in BioChatter.
+These processes are implemented at [https://github.com/biocypher/llm-test-dataset](https://github.com/biocypher/llm-test-dataset) and accessed from the benchmark procedure in BioChatter.
 
 ### Knowledge Graphs
 
@@ -460,7 +473,8 @@ For instance, we detail the properties of a node and the source and target class
 Additionally, during the KG build process, we enrich this information and save it to a YAML file and, optionally, directly to the KG.
 This information is used by BioChatter to tune its understanding of the KG, which allows the LLM to query the KG more efficiently.
 By understanding the context of the KG, the exact contents, and the exact spelling of all identifiers and properties, we effectively support the LLM in generating correct queries.
-To illustrate the usage of this feature, we provide a demonstration repository at https://github.com/biocypher/pole including a KG build procedure and web app, which can be run using a single Docker Compose command.
+To illustrate the usage of this feature, we provide a demonstration repository at [https://github.com/biocypher/pole](https://github.com/biocypher/pole) including a KG build procedure and web app, which can be run using a single Docker Compose command.
+The pole KG can also be used in conjunction with the BioChatter Next app by using the `docker-compose-incl-kg.yaml` file to build the application locally.
 
 ### Retrieval-Augmented Generation
 
@@ -489,15 +503,8 @@ Since this functionality requires a connection to a vector database system, we p
 ### Deployment of Open-Source Models
 
 To facilitate access to open-source models, we adopt a flexible deployment framework based on the Xorbits Inference API [@{https://github.com/xorbitsai/inference}].
-We provide Docker images for the automatic deployment of the API and the models.
 Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub [@{https://huggingface.co/}] can be added using the intuitive graphical user interface.
-
-In addition, we provide fully browser-based deployment of LLMs using WebAssembly (WASM) and the web-llm library (https://github.com/mlc-ai/web-llm).
-We host a local model using web-llm, which is accessed by the BioChatter server within BioChatter Next.
-This combination creates a secure conversational environment and minimises the risks associated with data breaches.
-Hosting local LLMs using WebLLM allows them to run without an internet connection in a WASM module.
-This architecture thus enables complete data security and is limited only by the resources of the host computer.
-While the same can be achieved with a local deployment of the Xorbits Inference API, the browser-based deployment is more user-friendly and does not require any additional software.
+We use Xorbits Inference version 0.8.4 to deploy the benchmarked models, and we provide a Docker Compose repository to deploy the app on a Linux server with Nvidia GPUs ([https://github.com/biocypher/xinference-docker-builtin/](https://github.com/biocypher/xinference-docker-builtin/)).
 
 ### Model Chaining
 

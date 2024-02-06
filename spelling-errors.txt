@@ -6,13 +6,14 @@ Astex
 Aurelien
 backend
 Badia
-Benchmarking
+benchmarked
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-biomedicine
+Biomedicine
 Cankun
 ChatGPT
 composable
@@ -48,6 +49,7 @@ LLMs
 Lobentanzer
 Maier
 maqin
+Meta’s
 Milvus
 Mixtral
 Mompel
@@ -68,6 +70,7 @@ Pytest
 Qin
 QinMaBMBL
 quantisations
+quantised
 recency
 reproducibility
 Saez
@@ -89,8 +92,5 @@ TBD
 tradeoff
 Travere
 vectorstore
-WASM
-WebAssembly
-WebLLM
 Xorbits
 YAML
