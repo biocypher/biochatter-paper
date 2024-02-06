@@ -27,7 +27,7 @@ Feng
 fengsh
 frontend
 frontends
-GPT
+gpt
 GPUs
 Grunenthal
 GSK

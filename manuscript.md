@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-06" />
   <meta name="citation_publication_date" content="2024-02-06" />
   <meta property="article:published_time" content="2024-02-06" />
-  <meta name="dc.modified" content="2024-02-06T21:55:10+00:00" />
-  <meta property="article:modified_time" content="2024-02-06T21:55:10+00:00" />
+  <meta name="dc.modified" content="2024-02-06T21:57:04+00:00" />
+  <meta property="article:modified_time" content="2024-02-06T21:57:04+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/))
 was automatically generated
-from [biocypher/biochatter-paper@87085fa](https://github.com/biocypher/biochatter-paper/tree/87085fa90b65b1067e4227de5a672201cd826702)
+from [biocypher/biochatter-paper@a197daf](https://github.com/biocypher/biochatter-paper/tree/a197daffcbee59015794ee269888418126a78dfd)
 on February 6, 2024.
 </em></small>
 
@@ -330,7 +330,22 @@ The 2- and 3-bit quantisations of the 70B model show worse performance than the 
 The Mixtral 8x7B model (46.7 billion parameters), a generally well-performing current open-source model, shows worse performance than all LLaMA2 models in our benchmark.
 We will update the benchmark ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)) as new models, benchmark datasets, and BioChatter functionalities are released.
 
-**Table**
+<!-- insert table -->
+[]: # Table 1
+[]: # 
+[]: # | Model | Size | F1 score | Precision | Recall | 
+[]: # | --- | --- | --- | --- | --- |
+[]: # | OpenAI GPT-3.5-turbo | 175B | 0.92 | 0.92 | 0.92 |
+[]: # | OpenAI GPT-4 | 1.6T | 0.93 | 0.93 | 0.93 |
+[]: # | Meta LLaMA2 7B | 7B | 0.89 | 0.89 | 0.89 |
+[]: # | Meta LLaMA2 13B | 13B | 0.90 | 0.90 | 0.90 |
+[]: # | Meta LLaMA2 70B | 70B | 0.91 | 0.91 | 0.91 |
+[]: # | Meta LLaMA2 70B 2-bit | 70B | 0.88 | 0.88 | 0.88 |
+[]: # | Meta LLaMA2 70B 3-bit | 70B | 0.87 | 0.87 | 0.87 |
+[]: # | Meta LLaMA2 70B 4-bit | 70B | 0.92 | 0.92 | 0.92 |
+[]: # | Mixtral 8x7B | 46.7B | 0.86 | 0.86 | 0.86 |
+
+{#tab:benchmark}
 
 ### Knowledge Graphs
 
