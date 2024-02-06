@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-06" />
   <meta name="citation_publication_date" content="2024-02-06" />
   <meta property="article:published_time" content="2024-02-06" />
-  <meta name="dc.modified" content="2024-02-06T21:57:04+00:00" />
-  <meta property="article:modified_time" content="2024-02-06T21:57:04+00:00" />
+  <meta name="dc.modified" content="2024-02-06T22:00:46+00:00" />
+  <meta property="article:modified_time" content="2024-02-06T22:00:46+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/a197daffcbee59015794ee269888418126a78dfd/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/))
 was automatically generated
-from [biocypher/biochatter-paper@a197daf](https://github.com/biocypher/biochatter-paper/tree/a197daffcbee59015794ee269888418126a78dfd)
+from [biocypher/biochatter-paper@7c0b49f](https://github.com/biocypher/biochatter-paper/tree/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82)
 on February 6, 2024.
 </em></small>
 
@@ -450,8 +450,9 @@ The benchmarking framework implements a matrix of component combinations using t
 This allows the automated evaluation of all possible combinations of components, such as LLMs, prompts, and datasets.
 As a default, we run each test five times to account for the stochastic nature of LLMs.
 We generally set the temperature to the lowest value possible for each model to decrease fluctuation.
-The results are stored in a database and displayed on the website for easy comparison.
-The benchmark is updated upon the release of new models and extensions to the datasets.
+The Pytest matrix uses a hash-based system to evaluate whether a model-dataset combination has been run before.
+Briefly, the hash is calculated from the dictionary representation of the test parameters, and the test is skipped if the combination of hash and model name is already present in the database.
+This allows automatic running of all tests that have been newly added or modified.
 The individual dimensions of the matrix are:
 
 - **LLMs**: Testing proprietary (OpenAI) and open-source models (commonly using the Xorbits Inference API and HuggingFace models) against the same set of tasks is the primary aim of our benchmarking framework. We facilitate the automation of testing by including a programmatic way of deploying open-source models.
@@ -473,10 +474,8 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 
 - **sentiment and behaviour**: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.
 
-The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information and results are available at [https://biocypher.github.io/biochatter/benchmarking](https://biocypher.github.io/biochatter/benchmarking).
-The Pytest matrix uses a hash-based system to evaluate whether a model-dataset combination has been run before.
-Briefly, the hash is calculated from the dictionary representation of the test parameters, and the test is skipped if the combination of hash and model name is already present in the database.
-This allows automatic running of all tests that have been newly added or modified.
+The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information is available at [https://biocypher.github.io/biochatter/benchmarking](https://biocypher.github.io/biochatter/benchmarking).
+The benchmark is updated upon the release of new models and extensions to the datasets, available at [https://biocypher.github.io/biochatter/benchmark](https://biocypher.github.io/biochatter/benchmark).
 
 To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
 The encryption is performed using a hybrid encryption scheme, where the data are encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
