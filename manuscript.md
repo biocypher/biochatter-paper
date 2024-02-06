@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-06" />
   <meta name="citation_publication_date" content="2024-02-06" />
   <meta property="article:published_time" content="2024-02-06" />
-  <meta name="dc.modified" content="2024-02-06T22:00:46+00:00" />
-  <meta property="article:modified_time" content="2024-02-06T22:00:46+00:00" />
+  <meta name="dc.modified" content="2024-02-06T22:05:00+00:00" />
+  <meta property="article:modified_time" content="2024-02-06T22:05:00+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/a212d2e1cab7f9b4cf31af0bfad605756bb14888/))
 was automatically generated
-from [biocypher/biochatter-paper@7c0b49f](https://github.com/biocypher/biochatter-paper/tree/7c0b49f57b014a6258efe0f19c60c8e8c4ec3a82)
+from [biocypher/biochatter-paper@a212d2e](https://github.com/biocypher/biochatter-paper/tree/a212d2e1cab7f9b4cf31af0bfad605756bb14888)
 on February 6, 2024.
 </em></small>
 
@@ -379,7 +379,7 @@ As an example, we implement a fact-checking module that uses a second LLM to eva
 ## Discussion
 
 The fast pace of developments around current-generation LLMs poses a great challenge to society as a whole and the biomedical community in particular [@doi:10.1038/d41586-024-00029-4;@doi:10.1038/d41586-023-03817-6;@doi:10.1038/d41586-023-03803-y].
-While the potential of these models is enormous, their application is not straightforward, and their use requires a certain level of expertise.
+While the potential of these models is enormous, their application is not straightforward, and their use requires a certain level of expertise [@doi:10.1038/s41587-023-02103-0].
 In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration [@doi:10.1177/1745691612459058].
 Inspired by the productivity of open source libraries such as LangChain [@langchain], we propose an open framework that allows biomedical researchers to focus on the application of LLMs as opposed to engineering challenges.
 To keep the framework effective and sustainable, we focus on reusing existing open-source libraries and tools, while adapting the advancements from the wider LLM community to the biomedical domain.
