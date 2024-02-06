@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-06" />
   <meta name="citation_publication_date" content="2024-02-06" />
   <meta property="article:published_time" content="2024-02-06" />
-  <meta name="dc.modified" content="2024-02-06T21:41:37+00:00" />
-  <meta property="article:modified_time" content="2024-02-06T21:41:37+00:00" />
+  <meta name="dc.modified" content="2024-02-06T21:55:10+00:00" />
+  <meta property="article:modified_time" content="2024-02-06T21:55:10+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/bb259e35014e020f0d7d83544a94ff8344ddb0d9/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/87085fa90b65b1067e4227de5a672201cd826702/))
 was automatically generated
-from [biocypher/biochatter-paper@bb259e3](https://github.com/biocypher/biochatter-paper/tree/bb259e35014e020f0d7d83544a94ff8344ddb0d9)
+from [biocypher/biochatter-paper@87085fa](https://github.com/biocypher/biochatter-paper/tree/87085fa90b65b1067e4227de5a672201cd826702)
 on February 6, 2024.
 </em></small>
 
@@ -459,6 +459,9 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 - **sentiment and behaviour**: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.
 
 The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information and results are available at [https://biocypher.github.io/biochatter/benchmarking](https://biocypher.github.io/biochatter/benchmarking).
+The Pytest matrix uses a hash-based system to evaluate whether a model-dataset combination has been run before.
+Briefly, the hash is calculated from the dictionary representation of the test parameters, and the test is skipped if the combination of hash and model name is already present in the database.
+This allows automatic running of all tests that have been newly added or modified.
 
 To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
 The encryption is performed using a hybrid encryption scheme, where the data are encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
@@ -505,6 +508,7 @@ Since this functionality requires a connection to a vector database system, we p
 To facilitate access to open-source models, we adopt a flexible deployment framework based on the Xorbits Inference API [@{https://github.com/xorbitsai/inference}].
 Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub [@{https://huggingface.co/}] can be added using the intuitive graphical user interface.
 We use Xorbits Inference version 0.8.4 to deploy the benchmarked models, and we provide a Docker Compose repository to deploy the app on a Linux server with Nvidia GPUs ([https://github.com/biocypher/xinference-docker-builtin/](https://github.com/biocypher/xinference-docker-builtin/)).
+This Compose uses the multi-architecture image (for ARM64 and AMD64 chips) we provide on our Docker Hub organisation ([https://hub.docker.com/repository/docker/biocypher/xinference-builtin](https://hub.docker.com/repository/docker/biocypher/xinference-builtin)).
 
 ### Model Chaining
 
