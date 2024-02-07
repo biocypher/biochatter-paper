@@ -14,6 +14,7 @@ author-meta:
 - The BioChatter Consortium
 - Andreas Maier
 - Cankun Wang
+- Jan Baumbach
 - Nils Krehl
 - Qin Ma
 - Julio Saez-Rodriguez
@@ -31,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-07" />
   <meta name="citation_publication_date" content="2024-02-07" />
   <meta property="article:published_time" content="2024-02-07" />
-  <meta name="dc.modified" content="2024-02-07T14:00:55+00:00" />
-  <meta property="article:modified_time" content="2024-02-07T14:00:55+00:00" />
+  <meta name="dc.modified" content="2024-02-07T14:35:43+00:00" />
+  <meta property="article:modified_time" content="2024-02-07T14:35:43+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,6 +55,11 @@ header-includes: |
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
   <meta name="citation_author_orcid" content="0000-0002-0225-9855" />
   <meta name="twitter:creator" content="@Wang-Cankun" />
+  <meta name="citation_author" content="Jan Baumbach" />
+  <meta name="citation_author_institution" content="Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany" />
+  <meta name="citation_author_institution" content="Computational Biomedicine Lab, Department of Mathematics and Computer Science, University of Southern Denmark, Odense, Denmark" />
+  <meta name="citation_author_orcid" content="0000-0002-0282-0462" />
+  <meta name="twitter:creator" content="@None" />
   <meta name="citation_author" content="Nils Krehl" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="TBD" />
@@ -71,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/))
 was automatically generated
-from [biocypher/biochatter-paper@27ac834](https://github.com/biocypher/biochatter-paper/tree/27ac83401be03eeedf940576196755db6005ed01)
+from [biocypher/biochatter-paper@81be011](https://github.com/biocypher/biochatter-paper/tree/81be01100c593b3a4ad5155c089c4d87d8edc78f)
 on February 7, 2024.
 </em></small>
 
@@ -158,6 +164,15 @@ on February 7, 2024.
     <br>
   <small>
      Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+  </small>
+
++ **Jan Baumbach**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-0282-0462](https://orcid.org/0000-0002-0282-0462)
+    <br>
+  <small>
+     Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany; Computational Biomedicine Lab, Department of Mathematics and Computer Science, University of Southern Denmark, Odense, Denmark
   </small>
 
 + **Nils Krehl**
@@ -533,6 +548,7 @@ NK implemented benchmarking procedures.
 CW architected the BioChatter Next server infrastructure.
 QM oversaw the development and deployment of the BioChatter Next server environment.
 SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the BioChatter Next server.
+JB provided guidance and supervision as well as hardware resources for local LLM use and contributed to performance benchmarking.
 JSR supervised the project, revised the manuscript, and acquired funding.
 All authors read and approved the final manuscript.
 
@@ -540,7 +556,7 @@ All authors read and approved the final manuscript.
 
 We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
 
-This work was supported by funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 965193 (SL), award U54-AG075931 (QM) from the National Institutes of Health, award NSF1945971 (QM) from the National Science Foundation, and the Pelotonia Institute of Immuno-Oncology (PIIO).
+This work was supported by funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 965193 (SL) and 101057619 (JB), the Swiss State Secretariat for Education, Research and Innovation (SERI) under contract No. 22.00115 (JB), award U54-AG075931 (QM) from the National Institutes of Health, award NSF1945971 (QM) from the National Science Foundation, and the Pelotonia Institute of Immuno-Oncology (PIIO).
 
 ## Conflict of Interest
 

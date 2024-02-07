@@ -6,8 +6,9 @@ Astex
 Aurelien
 backend
 Badia
+Baumbach
 benchmarked
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
@@ -27,7 +28,7 @@ Feng
 fengsh
 frontend
 frontends
-gpt
+GPT
 GPUs
 Grunenthal
 GSK
@@ -36,6 +37,7 @@ HuggingFace
 Immuno
 inclusivity
 integrations
+JB
 js
 JSR
 Jupyter
@@ -58,6 +60,7 @@ natively
 Nils
 nilskre
 NK
+Odense
 ontologies
 OpenAI
 OpenAI’s
@@ -81,6 +84,7 @@ Sanofi
 scalability
 scalable
 Schumacher
+SERI
 Shaohong
 siloed
 SL
