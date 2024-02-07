@@ -14,7 +14,7 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-Biomedicine
+biomedicine
 Cankun
 ChatGPT
 composable
@@ -28,7 +28,7 @@ Feng
 fengsh
 frontend
 frontends
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
