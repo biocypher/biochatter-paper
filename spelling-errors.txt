@@ -14,7 +14,7 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-biomedicine
+Biomedicine
 Cankun
 ChatGPT
 composable

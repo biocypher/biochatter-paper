@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-07" />
   <meta name="citation_publication_date" content="2024-02-07" />
   <meta property="article:published_time" content="2024-02-07" />
-  <meta name="dc.modified" content="2024-02-07T14:35:43+00:00" />
-  <meta property="article:modified_time" content="2024-02-07T14:35:43+00:00" />
+  <meta name="dc.modified" content="2024-02-07T15:56:19+00:00" />
+  <meta property="article:modified_time" content="2024-02-07T15:56:19+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/8a1b3f4f88a2e605f234e4deeb889ace85464348/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8a1b3f4f88a2e605f234e4deeb889ace85464348/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8a1b3f4f88a2e605f234e4deeb889ace85464348/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/81be01100c593b3a4ad5155c089c4d87d8edc78f/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/8a1b3f4f88a2e605f234e4deeb889ace85464348/))
 was automatically generated
-from [biocypher/biochatter-paper@81be011](https://github.com/biocypher/biochatter-paper/tree/81be01100c593b3a4ad5155c089c4d87d8edc78f)
+from [biocypher/biochatter-paper@8a1b3f4](https://github.com/biocypher/biochatter-paper/tree/8a1b3f4f88a2e605f234e4deeb889ace85464348)
 on February 7, 2024.
 </em></small>
 
@@ -332,7 +332,7 @@ Built on the generic Pytest framework [@pytest], it allows the automated evaluat
 The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets.
 We create a bespoke biomedical benchmark for multiple reasons: 
 Firstly, the biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components [@biollmbench].
-Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}].
+Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard};@{https://crfm.stanford.edu/helm/lite/latest/}].
 Thirdly, we aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination [@doi:10.48550/arXiv.2310.18018].
 To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).
 
@@ -388,7 +388,7 @@ The transparency we emphasise at every step of the framework is essential to a s
 To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
 Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters, such as model version and temperature [@biollmbench].
-As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs.
+As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs, and its results are a great starting point for delving deeper into the reasons why some models perform differently than expected.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
 The living benchmark will be updated with new questions and tasks as they arise in the community.
 

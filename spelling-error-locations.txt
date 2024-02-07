@@ -378,6 +378,7 @@ content/XX.supplement-consortium.md:3:BioChatter
 content/XX.supplement-consortium.md:3:LLMs
 content/XX.supplement-consortium.md:4:BioChatter
 content/XX.supplement-consortium.md:9:Aurelien
+content/XX.supplement-consortium.md:9:Biomedicine
 content/XX.supplement-consortium.md:9:Dugourd
 content/XX.supplement-use-cases.md:8:LLMs
 content/XX.supplement-use-cases.md:9:LLM
