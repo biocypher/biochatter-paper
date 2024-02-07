@@ -61,6 +61,16 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
     corresponding: false
+  - github:
+    name: Jan Baumbach
+    initials: JB
+    orcid: 0000-0002-0282-0462
+    twitter:
+    email: jan.baumbach@uni-hamburg.de
+    affiliations:
+      - Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany
+      - Computational Biomedicine Lab, Department of Mathematics and Computer Science, University of Southern Denmark, Odense, Denmark
+    corresponding: false
   - github: saezrodriguez
     name: Julio Saez-Rodriguez
     initials: JSR
