@@ -27,7 +27,7 @@ Feng
 fengsh
 frontend
 frontends
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
@@ -51,7 +51,6 @@ Lobentanzer
 MacBook
 Maier
 maqin
-Meta’s
 Milvus
 Mixtral
 Mompel
@@ -73,7 +72,6 @@ Pytest
 Qin
 QinMaBMBL
 quantisations
-quantised
 recency
 reproducibility
 Saez

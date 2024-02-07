@@ -12,7 +12,7 @@
   <meta name="author" content="Nils Krehl" />
   <meta name="author" content="Qin Ma" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-02-06" />
+  <meta name="dcterms.date" content="2024-02-07" />
   <meta name="keywords" content="biomedicine, large language models, framework, retrieval-augmented generation, knowledge graph" />
   <title>A Platform for the Biomedical Application of Large Language Models</title>
   <style>
@@ -57,11 +57,11 @@
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-06" />
-  <meta name="citation_publication_date" content="2024-02-06" />
-  <meta property="article:published_time" content="2024-02-06" />
-  <meta name="dc.modified" content="2024-02-06T22:15:48+00:00" />
-  <meta property="article:modified_time" content="2024-02-06T22:15:48+00:00" />
+  <meta name="dc.date" content="2024-02-07" />
+  <meta name="citation_publication_date" content="2024-02-07" />
+  <meta property="article:published_time" content="2024-02-07" />
+  <meta name="dc.modified" content="2024-02-07T14:00:55+00:00" />
+  <meta property="article:modified_time" content="2024-02-07T14:00:55+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -100,9 +100,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -119,10 +119,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/7f136e2a7dd0717c8324250eb9305b0b2b822621/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/27ac83401be03eeedf940576196755db6005ed01/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/7f136e2a7dd0717c8324250eb9305b0b2b822621">biocypher/biochatter-paper@7f136e2</a>
-on February 6, 2024.
+from <a href="https://github.com/biocypher/biochatter-paper/tree/27ac83401be03eeedf940576196755db6005ed01">biocypher/biochatter-paper@27ac834</a>
+on February 7, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -309,16 +309,15 @@ Firstly, the biomedical domain has its own tasks and requirements, and creating 
 Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs <span class="citation" data-cites="KONKs6Pw LE2GwIqT">[<a href="#ref-LE2GwIqT" role="doc-biblioref">22</a>,<a href="#ref-KONKs6Pw" role="doc-biblioref">27</a>]</span>.
 Thirdly, we aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination <span class="citation" data-cites="yT66jV6G">[<a href="#ref-yT66jV6G" role="doc-biblioref">28</a>]</span>.
 To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).</p>
-<p>Current results confirm the prevailing opinion of OpenAI’s leading role in LLM performance (Table <span class="citation" data-cites="tab:benchmark">[<a href="#ref-tab:benchmark" role="doc-biblioref"><strong>tab:benchmark?</strong></a>]</span>).
+<p>Current results confirm the prevailing opinion of OpenAI’s leading role in LLM performance (Figure).
 Since the benchmark datasets were created to specifically cover functions relevant in BioChatter’s application domain, the benchmark results are primarily a measure for the LLMs’ usefulness in our applications.
-However, they generally reflect the results from general-purpose benchmarks (refs).
-OpenAI’s GPT models (gpt-3.5-turbo and gpt-4) lead by some margin, and Meta’s LLaMA2 is in second position.
-LLaMA2 in its 70B (70 billion parameters) version shows better performance than the smaller (7B and 13B) variants, but not for all quantisations (reductions in model size due to the reduction of bits representing each parameter).
-The 2- and 3-bit quantisations of the 70B model show worse performance than the 7B model; the 4-bit quantised 70B model performs best among all open-source models, roughly doubling the performance of the 3-bit 70B model.
-The Mixtral 8x7B model (46.7 billion parameters), a generally well-performing current open-source model, shows worse performance than all LLaMA2 models in our benchmark.
-We will update the benchmark (<a href="https://biochatter.org/benchmark/">https://biochatter.org/benchmark/</a>) as new models, benchmark datasets, and BioChatter functionalities are released.</p>
-<!-- insert table -->
-<p>{#tab:benchmark}</p>
+OpenAI’s GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks (Figure).
+Of note, performance in open-source models appears to depend on their quantisation level, i.e., the number of bits used to represent the model’s parameters.
+For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models perform worse (Figure).
+We continuously extend benchmark data and BioChatter functionalities, add new models, and update the benchmark correspondingly (<a href="https://biochatter.org/benchmark/">https://biochatter.org/benchmark/</a>).</p>
+<p>To evaluate the benefit of BioChatter functionality, we compare the performance of models with and without the use of BioChatter’s prompt engine for KG querying.
+The models without prompt engine still have access to the BioCypher schema definition, which details the KG structure, but it does not use the multi-step procedure available through BioChatter.
+Consequently, the models without prompt engine show a lower performance in creating correct queries than the models with prompt engine (Figure).</p>
 <h3 id="knowledge-graphs">Knowledge Graphs</h3>
 <p>Knowledge graphs (KGs) are a powerful tool to represent and query knowledge in a structured manner.
 With BioCypher <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">14</a>]</span>, we have developed a framework to create KGs from biomedical data in a user-friendly manner while also semantically grounding the data in ontologies.
@@ -530,7 +529,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Mixtral of Experts</strong> <div class="csl-block">Albert Q Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Emma Bou Hanna, Florian Bressand, … William El Sayed</div> <em>arXiv</em> (2024) <a href="https://doi.org/gtc2g3">https://doi.org/gtc2g3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2401.04088">10.48550/arxiv.2401.04088</a></div></div>
 </div>
 <div id="ref-mGEvmJGA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-02-06) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>xorbitsai/inference</strong> <div class="csl-block">Xorbits</div> (2024-02-07) <a href="https://github.com/xorbitsai/inference">https://github.com/xorbitsai/inference</a></div>
 </div>
 <div id="ref-PDhRVYjU" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">18. </div><div class="csl-right-inline"><a href="https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/">https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/</a></div>
@@ -557,7 +556,7 @@ All authors read and approved the final manuscript.</p>
 <div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4</strong> <div class="csl-block">Sondos Mahmoud Bsharat, Aidar Myrzakhan, Zhiqiang Shen</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtdnfg">https://doi.org/gtdnfg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2312.16171">10.48550/arxiv.2312.16171</a></div></div>
 </div>
 <div id="ref-14upAJPXR" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-02-06) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>pytest-dev/pytest</strong> <div class="csl-block">pytest-dev</div> (2024-02-07) <a href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></div>
 </div>
 <div id="ref-KONKs6Pw" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Large language models encode clinical knowledge</strong> <div class="csl-block">Karan Singhal, Shekoofeh Azizi, Tao Tu, SSara Mahdavi, Jason Wei, Hyung Won Chung, Nathan Scales, Ajay Tanwani, Heather Cole-Lewis, Stephen Pfohl, … Vivek Natarajan</div> <em>Nature</em> (2023-07-12) <a href="https://doi.org/gsgp8c">https://doi.org/gsgp8c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-023-06291-2">10.1038/s41586-023-06291-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37438534">37438534</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10396962">PMC10396962</a></div></div>
