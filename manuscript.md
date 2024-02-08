@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-08" />
   <meta name="citation_publication_date" content="2024-02-08" />
   <meta property="article:published_time" content="2024-02-08" />
-  <meta name="dc.modified" content="2024-02-08T17:45:33+00:00" />
-  <meta property="article:modified_time" content="2024-02-08T17:45:33+00:00" />
+  <meta name="dc.modified" content="2024-02-08T18:01:32+00:00" />
+  <meta property="article:modified_time" content="2024-02-08T18:01:32+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/))
 was automatically generated
-from [biocypher/biochatter-paper@9150bd3](https://github.com/biocypher/biochatter-paper/tree/9150bd3a734f37d567becffb7056c765937687f4)
+from [biocypher/biochatter-paper@430416f](https://github.com/biocypher/biochatter-paper/tree/430416fe01350562f748be3ea9919a74b32554fc)
 on February 8, 2024.
 </em></small>
 
@@ -292,7 +292,7 @@ Functionalities include:
 
 - **benchmarking** of LLMs, prompts, and other components
 
-- **knowledge graph querying** with automatic integration of any KG created in the BioCypher framework [@biocypher]
+- **knowledge graph (KG) querying** with automatic integration of any KG created in the BioCypher framework [@biocypher]
 
 - **retrieval-augmented generation** (RAG) using vector database embeddings of user-provided literature
 
@@ -363,7 +363,7 @@ The general instructions for both variants are the same, otherwise.
 
 ### Knowledge Graphs
 
-Knowledge graphs (KGs) are a powerful tool to represent and query knowledge in a structured manner.
+KGs are a powerful tool to represent and query knowledge in a structured manner.
 With BioCypher [@biocypher], we have developed a framework to create KGs from biomedical data in a user-friendly manner while also semantically grounding the data in ontologies.
 BioChatter is an extension of the BioCypher ecosystem, elevating its user-friendliness further by allowing natural language interactions with the data; any BioCypher KG is automatically compatible with BioChatter.
 We use information generated in the build process of BioCypher KGs to tune BioChatter's understanding of the data structures and contents, thereby increasing the efficiency of LLM-based KG querying (see Methods).
@@ -407,7 +407,7 @@ We prevent data leakage from the benchmark datasets into the training data of ne
 The living benchmark will be updated with new questions and tasks as they arise in the community.
 
 We facilitate access to LLMs by allowing the use of both proprietary and open-source models, and we provide a flexible deployment framework for the latter.
-Proprietary models are currently the most economic solution for accessing state-of-the-art models, and as such primarily suited for users just starting out or lacking the resources to deploy their own models.
+Proprietary models are currently the most economical solution for accessing state-of-the-art models, and as such primarily suited for users just starting out or lacking the resources to deploy their own models.
 In contrast, open-source models are quickly catching up in terms of performance [@biollmbench], and they are essential for the sustainability of the field [@doi:10.1038/d41586-024-00029-4].
 We allow self-hosting of open-source models on any scale, from dedicated hardware with GPUs, to local deployment on end-user laptops, to browser-based deployment using web technology.
 
@@ -616,7 +616,7 @@ KG functionality and select how many results we want to retrieve.
 
 Returning to the conversation and enabling the KG functionality for the current
 chat (directly above the send button), we can then ask the model about the KG.
-The languange model we use is `gpt-3.5-turbo`. The full conversation is pasted
+The language model we use is `gpt-3.5-turbo`. The full conversation is pasted
 below, including the queries generated by BioChatter.
 
 ![KG Conversation](images/kg-demo.png)

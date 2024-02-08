@@ -17,7 +17,7 @@ BioChatter’s
 BioCypher
 Bioinformatics
 biomarker
-biomedicine
+Biomedicine
 Cankun
 CFTR
 CFTR’s
@@ -46,7 +46,7 @@ Feng
 fengsh
 frontend
 frontends
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
@@ -67,7 +67,6 @@ Jupyter
 KGs
 Krehl
 LangChain
-languange
 leaderboard
 leaderboards
 LLM
