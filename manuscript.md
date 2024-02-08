@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-08" />
   <meta name="citation_publication_date" content="2024-02-08" />
   <meta property="article:published_time" content="2024-02-08" />
-  <meta name="dc.modified" content="2024-02-08T15:48:10+00:00" />
-  <meta property="article:modified_time" content="2024-02-08T15:48:10+00:00" />
+  <meta name="dc.modified" content="2024-02-08T15:56:02+00:00" />
+  <meta property="article:modified_time" content="2024-02-08T15:56:02+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9b10cf930dea774d75d138aec171650812df96c8/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9b10cf930dea774d75d138aec171650812df96c8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9b10cf930dea774d75d138aec171650812df96c8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f1bb3c4149f85ff822c9d2b5b4a0335f5322d28d/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f1bb3c4149f85ff822c9d2b5b4a0335f5322d28d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f1bb3c4149f85ff822c9d2b5b4a0335f5322d28d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/9b10cf930dea774d75d138aec171650812df96c8/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/f1bb3c4149f85ff822c9d2b5b4a0335f5322d28d/))
 was automatically generated
-from [biocypher/biochatter-paper@9b10cf9](https://github.com/biocypher/biochatter-paper/tree/9b10cf930dea774d75d138aec171650812df96c8)
+from [biocypher/biochatter-paper@f1bb3c4](https://github.com/biocypher/biochatter-paper/tree/f1bb3c4149f85ff822c9d2b5b4a0335f5322d28d)
 on February 8, 2024.
 </em></small>
 
@@ -358,7 +358,7 @@ Some smaller models perform better than larger ones, even within the same model 
 B) Comparison of the two benchmark tasks for KG querying show the superior performance of BioChatter's prompt engine (0.813±0.15 vs 0.459±0.13, p = 1.3e-20).
 The BioChatter variant involves a multi-step procedure of constructing the query, while the "naive" version only receives the complete schema definition of the BioCypher KG (which BioChatter also uses as a basis for the prompt engine).
 The general instructions for both variants are the same, otherwise.
-](images/biochatter-benchmark.png "Benchmark results"){#fig:benchmark}
+](images/biochatter_benchmark.png "Benchmark results"){#fig:benchmark}
 
 ### Knowledge Graphs
 
@@ -461,7 +461,7 @@ We invite all interested researchers to select the framework that best suits the
 
 The benchmarking framework implements a matrix of component combinations using the parameterisation feature of Pytest [@pytest].
 This allows the automated evaluation of all possible combinations of components, such as LLMs, prompts, and datasets.
-We ran the benchmarks on a MacBook Pro with an M3 Max chip with 40-core GPU and 128GB or RAM.
+We ran the benchmarks on a MacBook Pro with an M3 Max chip with 40-core GPU and 128GB of RAM.
 As a default, we ran each test five times to account for the stochastic nature of LLMs.
 We generally set the temperature to the lowest value possible for each model to decrease fluctuation.
 
