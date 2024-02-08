@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-08" />
   <meta name="citation_publication_date" content="2024-02-08" />
   <meta property="article:published_time" content="2024-02-08" />
-  <meta name="dc.modified" content="2024-02-08T17:27:35+00:00" />
-  <meta property="article:modified_time" content="2024-02-08T17:27:35+00:00" />
+  <meta name="dc.modified" content="2024-02-08T17:45:33+00:00" />
+  <meta property="article:modified_time" content="2024-02-08T17:45:33+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/9150bd3a734f37d567becffb7056c765937687f4/))
 was automatically generated
-from [biocypher/biochatter-paper@fa211c5](https://github.com/biocypher/biochatter-paper/tree/fa211c587abc5f7ea0e4687951a632ecd49f71b0)
+from [biocypher/biochatter-paper@9150bd3](https://github.com/biocypher/biochatter-paper/tree/9150bd3a734f37d567becffb7056c765937687f4)
 on February 8, 2024.
 </em></small>
 
@@ -339,7 +339,7 @@ To achieve this goal, we implemented an encrypted pipeline that contains the ben
 
 Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Figure @fig:benchmark A).
 Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure for the LLMs' usefulness in our applications.
-OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks (Sup Figure).
+OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks.
 Of note, performance in open-source models appears to depend on their quantisation level, i.e., the bit precision used to represent the model's parameters.
 For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models appear to perform worse (Figure @fig:benchmark A).
 

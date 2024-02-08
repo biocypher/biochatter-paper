@@ -11,13 +11,13 @@ Badia
 Bao
 Baumbach
 benchmarked
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioinformatics
 biomarker
-Biomedicine
+biomedicine
 Cankun
 CFTR
 CFTR’s
