@@ -63,6 +63,7 @@ content/20.results.md:31:LLMs
 content/20.results.md:33:LLM
 content/20.results.md:33:LLM
 content/20.results.md:35:biocypher
+content/20.results.md:35:biocypher
 content/20.results.md:37:LLM
 content/20.results.md:39:BioChatter
 content/20.results.md:39:LLMs

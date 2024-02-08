@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-08" />
   <meta name="citation_publication_date" content="2024-02-08" />
   <meta property="article:published_time" content="2024-02-08" />
-  <meta name="dc.modified" content="2024-02-08T17:09:34+00:00" />
-  <meta property="article:modified_time" content="2024-02-08T17:09:34+00:00" />
+  <meta name="dc.modified" content="2024-02-08T17:23:03+00:00" />
+  <meta property="article:modified_time" content="2024-02-08T17:23:03+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/488688bd67908d1484c477378a28c1935a214932/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/488688bd67908d1484c477378a28c1935a214932/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/488688bd67908d1484c477378a28c1935a214932/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/488688bd67908d1484c477378a28c1935a214932/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/fa211c587abc5f7ea0e4687951a632ecd49f71b0/))
 was automatically generated
-from [biocypher/biochatter-paper@488688b](https://github.com/biocypher/biochatter-paper/tree/488688bd67908d1484c477378a28c1935a214932)
+from [biocypher/biochatter-paper@fa211c5](https://github.com/biocypher/biochatter-paper/tree/fa211c587abc5f7ea0e4687951a632ecd49f71b0)
 on February 8, 2024.
 </em></small>
 
@@ -300,7 +300,7 @@ Functionalities include:
 
 - **fact-checking** of LLM responses using a second LLM
 
-In the following, we briefly describe these components, which are demonstrated in our web apps (https://chat.biocypher.org).
+In the following, we briefly describe these components, which are demonstrated in our web apps ([https://chat.biocypher.org](https://chat.biocypher.org)).
 
 ### Question Answering and LLM Connectivity
 
@@ -434,7 +434,7 @@ While we focus on the biomedical field, the concept of our frameworks can easily
 Our Python library is developed openly on GitHub ([https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)) and can be integrated into any number of user interface solutions.
 We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool integrations, prompt engineering, benchmarking, and any other feature.
 
-## (Supplementary / Online) Methods
+## (Supplementary / Online) Methods {.page_break_before}
 
 BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub ([https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)).
 We provide documentation at [https://biochatter.org](https://biochatter.org), including a tutorial and API reference.
@@ -585,7 +585,7 @@ JSR reports funding from GSK, Pfizer and Sanofi and fees/honoraria from Travere 
 <div id="refs"></div>
 
 
-## Supplementary Materials
+## Supplementary Materials {.page_break_before}
 
 ### Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation
 
@@ -894,7 +894,7 @@ Potential Therapeutic Target: Some research suggests that modulating CFTR activi
 It's important to note that the understanding of the role of CFTR in cancer, including ovarian cancer, is an evolving field, and new research findings may have emerged since my last update in January 2022. To get the most up-to-date information on this topic, I recommend consulting recent scientific literature and speaking with medical experts or researchers actively working in the field of ovarian cancer and CFTR biology.
 
 
-## The BioChatter Consortium
+### The BioChatter Consortium
 
 The BioChatter Consortium is a community of researchers and developers who are interested in the application of LLMs to biomedical research.
 We list here alphabetically all members of the consortium who have contributed to the development of the BioChatter framework.

@@ -15,7 +15,7 @@ benchmarking
 BioChatter
 BioChatter’s
 BioCypher
-Bioinformatics
+bioinformatics
 biomarker
 Biomedicine
 Cankun
