@@ -11,13 +11,13 @@ Badia
 Bao
 Baumbach
 benchmarked
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
-bioinformatics
+Bioinformatics
 biomarker
-biomedicine
+Biomedicine
 Cankun
 CFTR
 CFTR’s
@@ -127,7 +127,7 @@ synergise
 TCF
 tradeoff
 Trang
-transmembrane
+Transmembrane
 Travere
 Triomflaan
 Tsuda
