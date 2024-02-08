@@ -14,7 +14,7 @@ benchmarking
 BioChatter
 BioChatter’s
 BioCypher
-Bioinformatics
+bioinformatics
 biomarker
 Biomedicine
 Cankun
@@ -40,6 +40,7 @@ EBI
 embeddings
 EMBL
 ensembling
+expectedly
 Feng
 fengsh
 frontend

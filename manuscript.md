@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-08" />
   <meta name="citation_publication_date" content="2024-02-08" />
   <meta property="article:published_time" content="2024-02-08" />
-  <meta name="dc.modified" content="2024-02-08T14:11:07+00:00" />
-  <meta property="article:modified_time" content="2024-02-08T14:11:07+00:00" />
+  <meta name="dc.modified" content="2024-02-08T15:25:42+00:00" />
+  <meta property="article:modified_time" content="2024-02-08T15:25:42+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b5019433ead529cc8d4e6252a548b5dacfcda5c6/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b5019433ead529cc8d4e6252a548b5dacfcda5c6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b5019433ead529cc8d4e6252a548b5dacfcda5c6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/b5019433ead529cc8d4e6252a548b5dacfcda5c6/))
 was automatically generated
-from [biocypher/biochatter-paper@ddcfe62](https://github.com/biocypher/biochatter-paper/tree/ddcfe6242fe9ffde528d3b9da6a652c091dc1403)
+from [biocypher/biochatter-paper@b501943](https://github.com/biocypher/biochatter-paper/tree/b5019433ead529cc8d4e6252a548b5dacfcda5c6)
 on February 8, 2024.
 </em></small>
 
@@ -351,8 +351,12 @@ Consequently, the models without prompt engine show a lower performance in creat
 ![
 **Benchmark results.**
 A) Performance of different LLMs on the BioChatter benchmark datasets.
-B) Performance of different LLMs with and without the use of BioChatter's prompt engine for KG querying.
-](images/benchmark_results.png "Benchmark results"){#fig:benchmark}
+While the closed-source models from OpenAI show consistently highest performance, some open-source models are comparable.
+However, the measured performance does not correlate intuitively with the size and quantisation (bit-precision) of the models.
+Some smaller models perform better than larger ones, even within the same model family; while very low bit-precision (2-bit) expectedly yields worse performance, the same is true for the high end (8-bit).
+*: Of note, many characteristics of OpenAI models are not public, and thus their bit-precision (as well as the exact size of GPT4) is subject to speculation.
+B) Comparison of the two benchmark tasks for KG querying show the superior performance of BioChatter's prompt engine. The BioChatter variant involves a multi-step procedure of constructing the query, while the "naive" version only receives the complete schema definition of the BioCypher KG (which BioChatter also uses as a basis for the prompt engine). The general instructions for both variants are the same, otherwise.
+](images/biochatter-benchmark.png "Benchmark results"){#fig:benchmark}
 
 ### Knowledge Graphs
 
