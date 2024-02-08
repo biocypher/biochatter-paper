@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-08" />
   <meta name="citation_publication_date" content="2024-02-08" />
   <meta property="article:published_time" content="2024-02-08" />
-  <meta name="dc.modified" content="2024-02-08T11:47:15+00:00" />
-  <meta property="article:modified_time" content="2024-02-08T11:47:15+00:00" />
+  <meta name="dc.modified" content="2024-02-08T14:11:07+00:00" />
+  <meta property="article:modified_time" content="2024-02-08T14:11:07+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -62,7 +62,7 @@ header-includes: |
   <meta name="twitter:creator" content="@None" />
   <meta name="citation_author" content="Nils Krehl" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
-  <meta name="citation_author_orcid" content="TBD" />
+  <meta name="citation_author_orcid" content="0009-0003-1780-6123" />
   <meta name="citation_author" content="Qin Ma" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA" />
   <meta name="citation_author_orcid" content="0000-0002-3264-8392" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/318bdae83a5b0203c89afa0acfe30025f223b7ca/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/318bdae83a5b0203c89afa0acfe30025f223b7ca/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/318bdae83a5b0203c89afa0acfe30025f223b7ca/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/318bdae83a5b0203c89afa0acfe30025f223b7ca/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/ddcfe6242fe9ffde528d3b9da6a652c091dc1403/))
 was automatically generated
-from [biocypher/biochatter-paper@318bdae](https://github.com/biocypher/biochatter-paper/tree/318bdae83a5b0203c89afa0acfe30025f223b7ca)
+from [biocypher/biochatter-paper@ddcfe62](https://github.com/biocypher/biochatter-paper/tree/ddcfe6242fe9ffde528d3b9da6a652c091dc1403)
 on February 8, 2024.
 </em></small>
 
@@ -178,7 +178,7 @@ on February 8, 2024.
 + **Nils Krehl**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [TBD](https://orcid.org/TBD)
+    [0009-0003-1780-6123](https://orcid.org/0009-0003-1780-6123)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [nilskre](https://github.com/nilskre)
     <br>
@@ -224,7 +224,7 @@ Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
 
 Authors between consortium and last author are ordered alphabetically.
 
-## Abstract {.page_break_before}
+## Abstract
 
 Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
@@ -233,7 +233,7 @@ We focus on robust and user-friendly implementation, including ways to deploy pr
 We demonstrate use cases via two multi-purpose web apps (https://chat.biocypher.org), and provide documentation, support, and an open community.
 
 
-## Introduction {.page_break_before}
+## Introduction
 
 Despite technological advances, major challenges remain to understand biological and biomedical systems [@gallagher-infinite;@dl-bioscience].
 We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation [@dl-bioscience].
@@ -329,23 +329,30 @@ To circumvent this issue, we focus on specific biomedical tasks and datasets.
 For advanced assessment, we employ automated validation of the model's responses by a second LLM.
 For transparent and reproducible evaluation of LLMs, we implement a benchmarking framework that allows the comparison of models, prompt sets, and all other components of the pipeline.
 Built on the generic Pytest framework [@pytest], it allows the automated evaluation of a matrix of all possible combinations of components.
-The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets.
+The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets and BioChatter capabilities ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
+
 We create a bespoke biomedical benchmark for multiple reasons: 
-Firstly, the biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components [@biollmbench].
-Secondly, we aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard};@{https://crfm.stanford.edu/helm/lite/latest/}].
-Thirdly, we aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination [@doi:10.48550/arXiv.2310.18018].
+1) The biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components [@biollmbench].
+2) We aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard};@{https://crfm.stanford.edu/helm/lite/latest/}].
+3) We aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination [@doi:10.48550/arXiv.2310.18018].
 To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).
 
-Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Figure).
+Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Figure @fig:benchmark A).
 Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure for the LLMs' usefulness in our applications.
-OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks (Figure).
-Of note, performance in open-source models appears to depend on their quantisation level, i.e., the number of bits used to represent the model's parameters.
-For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models perform worse (Figure).
-We continuously extend benchmark data and BioChatter functionalities, add new models, and update the benchmark correspondingly ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
+OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks (Sup Figure).
+Of note, performance in open-source models appears to depend on their quantisation level, i.e., the bit precision used to represent the model's parameters.
+For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models appear to perform worse (Figure @fig:benchmark A).
 
 To evaluate the benefit of BioChatter functionality, we compare the performance of models with and without the use of BioChatter's prompt engine for KG querying.
 The models without prompt engine still have access to the BioCypher schema definition, which details the KG structure, but it does not use the multi-step procedure available through BioChatter.
-Consequently, the models without prompt engine show a lower performance in creating correct queries than the models with prompt engine (Figure).
+Consequently, the models without prompt engine show a lower performance in creating correct queries than the models with prompt engine (X vs Y, p = etc, Figure @fig:benchmark B).
+
+<!-- Figure 3 -->
+![
+**Benchmark results.**
+A) Performance of different LLMs on the BioChatter benchmark datasets.
+B) Performance of different LLMs with and without the use of BioChatter's prompt engine for KG querying.
+](images/benchmark_results.png "Benchmark results"){#fig:benchmark}
 
 ### Knowledge Graphs
 
@@ -354,7 +361,7 @@ With BioCypher [@biocypher], we have developed a framework to create KGs from bi
 BioChatter is an extension of the BioCypher ecosystem, elevating its user-friendliness further by allowing natural language interactions with the data; any BioCypher KG is automatically compatible with BioChatter.
 We use information generated in the build process of BioCypher KGs to tune BioChatter's understanding of the data structures and contents, thereby increasing the efficiency of LLM-based KG querying (see Methods).
 In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's reasoning, which can be used to ground the model's responses in the context of the KG via in-context learning / retrieval-augmented generation (see below).
-We demonstrate the user experience of KG-driven interaction in Supplementary Note 1 and on our website ([https://biochatter.org/vignette-kg/](https://biochatter.org/vignette-kg/)).
+We demonstrate the user experience of KG-driven interaction in [Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-kg/](https://biochatter.org/vignette-kg/)).
 
 ### Retrieval-Augmented Generation
 
@@ -364,7 +371,7 @@ Briefly, RAG relies on injection of information into the model prompt of a pre-t
 While this can be done by processing structured knowledge, for instance from KGs, it is often more efficient to use a semantic search engine to retrieve relevant information from unstructured data sources such as literature.
 To this end, we allow the management and integration of vector databases in the BioChatter framework.
 The user is able to connect to a vector database, embed an arbitrary number of documents, and then use semantic search to improve the model prompts by adding text fragments relevant to the given question (see Methods).
-We demonstrate the user experience of RAG in Supplementary Note 2 and on our website ([https://biochatter.org/vignette-rag/](https://biochatter.org/vignette-rag/)).
+We demonstrate the user experience of RAG in [Supplementary Note 2: Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-rag/](https://biochatter.org/vignette-rag/)).
 
 ### Model Chaining and Fact Checking
 
@@ -422,8 +429,8 @@ We develop under the permissive MIT licence and encourage contributions and sugg
 
 ## (Supplementary / Online) Methods
 
-BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (https://github.com/biocypher/biochatter).
-We provide documentation at https://biocypher.github.io/biochatter, including a tutorial and API reference.
+BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub ([https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)).
+We provide documentation at [https://biochatter.org](https://biochatter.org), including a tutorial and API reference.
 All packages are developed openly and according to modern standards of software development [@doi:10.1038/s41597-020-0486-7]; we use the permissive MIT licence to encourage downstream use and development.
 We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
 
@@ -431,16 +438,16 @@ We include a code of conduct and contributor guidelines to offer accessibility a
 
 To demonstrate basic and advanced use cases of the framework, we provide two web apps, BioChatter Light and BioChatter Next.
 
-BioChatter Light is a web app based on the Streamlit framework (version 1.21.0, https://streamlit.io), which is written in Python and can be deployed locally or on a server (https://github.com/biocypher/biochatter-light).
+BioChatter Light is a web app based on the Streamlit framework (version 1.21.0, [https://streamlit.io](https://streamlit.io)), which is written in Python and can be deployed locally or on a server ([https://github.com/biocypher/biochatter-light](https://github.com/biocypher/biochatter-light)).
 The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
-This framework is suited for rapid prototyping of bespoke solutions for specific use cases.
+This framework is suitable for rapid prototyping of bespoke solutions for specific use cases.
 For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
 
-BioChatter Next (https://github.com/biocypher/biochatter-next) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web).
+BioChatter Next ([https://github.com/biocypher/biochatter-next](https://github.com/biocypher/biochatter-next)) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web ([https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)).
 It is written combining Typescript and Python and utilises Next.js (v13.4.9) for a sleek frontend and Flask (v3.0.0) as backend.
 It demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
 However, this comes at the cost of increased complexity and development time.
-To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at https://github.com/biocypher/biochatter-server and as a Docker image in our Docker Hub organisation (https://hub.docker.com/repository/docker/biocypher/biochatter-server).
+To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at [https://github.com/biocypher/biochatter-server](https://github.com/biocypher/biochatter-server) and as a Docker image in our Docker Hub organisation ([https://hub.docker.com/repository/docker/biocypher/biochatter-server](https://hub.docker.com/repository/docker/biocypher/biochatter-server)).
 
 We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter server or library in their existing solutions.
 
@@ -448,7 +455,7 @@ We invite all interested researchers to select the framework that best suits the
 
 The benchmarking framework implements a matrix of component combinations using the parameterisation feature of Pytest [@pytest].
 This allows the automated evaluation of all possible combinations of components, such as LLMs, prompts, and datasets.
-We ran the benchmarks on a MacBook Pro Max with an M3 Max chip with 40-core GPU and 128GB or RAM.
+We ran the benchmarks on a MacBook Pro with an M3 Max chip with 40-core GPU and 128GB or RAM.
 As a default, we ran each test five times to account for the stochastic nature of LLMs.
 We generally set the temperature to the lowest value possible for each model to decrease fluctuation.
 
@@ -476,8 +483,8 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 
 - **sentiment and behaviour**: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.
 
-The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information is available at [https://biocypher.github.io/biochatter/benchmarking](https://biocypher.github.io/biochatter/benchmarking).
-The benchmark is updated upon the release of new models and extensions to the datasets, available at [https://biocypher.github.io/biochatter/benchmark](https://biocypher.github.io/biochatter/benchmark).
+The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information is available at [https://biochatter.org/benchmarking](https://biochatter.org/benchmarking).
+The benchmark is updated upon the release of new models and extensions to the datasets, available at [https://biochatter.org/benchmark](https://biochatter.org/benchmark).
 
 To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
 The encryption is performed using a hybrid encryption scheme, where the data are encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
@@ -494,6 +501,7 @@ This information is used by BioChatter to tune its understanding of the KG, whic
 By understanding the context of the KG, the exact contents, and the exact spelling of all identifiers and properties, we effectively support the LLM in generating correct queries.
 To illustrate the usage of this feature, we provide a demonstration repository at [https://github.com/biocypher/pole](https://github.com/biocypher/pole) including a KG build procedure and web app, which can be run using a single Docker Compose command.
 The pole KG can also be used in conjunction with the BioChatter Next app by using the `docker-compose-incl-kg.yaml` file to build the application locally.
+A demonstration of this use case is available in [Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-kg/](https://biochatter.org/vignette-kg/)).
 
 ### Retrieval-Augmented Generation
 
@@ -519,11 +527,13 @@ To demonstrate the use of the API, we add a “Retrieval-Augmented Generation”
 This contextual information is transparently displayed.
 Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the BioChatter Light app in one Docker Compose workflow.
 
+An example use case of this functionality is available in [Supplementary Note 2: Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-rag/](https://biochatter.org/vignette-rag/)).
+
 ### Deployment of Open-Source Models
 
 To facilitate access to open-source models, we adopt a flexible deployment framework based on the Xorbits Inference API [@{https://github.com/xorbitsai/inference}].
 Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub [@{https://huggingface.co/}] can be added using the intuitive graphical user interface.
-We use Xorbits Inference version 0.8.4 to deploy the benchmarked models, and we provide a Docker Compose repository to deploy the app on a Linux server with Nvidia GPUs ([https://github.com/biocypher/xinference-docker-builtin/](https://github.com/biocypher/xinference-docker-builtin/)).
+We used Xorbits Inference version 0.8.4 to deploy the benchmarked models, and we provide a Docker Compose repository to deploy the app on a Linux server with Nvidia GPUs ([https://github.com/biocypher/xinference-docker-builtin/](https://github.com/biocypher/xinference-docker-builtin/)).
 This Compose uses the multi-architecture image (for ARM64 and AMD64 chips) we provide on our Docker Hub organisation ([https://hub.docker.com/repository/docker/biocypher/xinference-builtin](https://hub.docker.com/repository/docker/biocypher/xinference-builtin)).
 On Mac OS with Apple Silicon chips, Docker does not have access to the GPU driver, and as such, Xinference needs to be deployed natively.
 
@@ -567,6 +577,328 @@ JSR reports funding from GSK, Pfizer and Sanofi and fees/honoraria from Travere 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 
+
+## Supplementary Materials
+
+### Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation
+
+This vignette demonstrates the KG module of BioChatter as used by the BioChatter
+Next application. It is available online (including video and more information)
+at [https://biochatter.org/vignette-kg/](https://biochatter.org/vignette-kg/).
+We connect to a BioCypher knowledge graph (KG) to retrieve relevant information
+for a given question. We then use the retrieved information to generate a
+response to the question. The application can connect to any real-world
+BioCypher KG by providing the connection details in the `KG Settings` dialog.
+
+###### Background
+
+For the demonstration purposes of this vignette, we include a demo KG based on
+an open-source dataset of crime statistics in Manchester, because it allows us
+to redistribute the KG due to its small size and public domain licence, and
+because it is easily understood. This is the schema of the demo KG:
+
+![Pole KG schema](images/pole-schema.png)
+
+###### Usage
+
+In BioChatter Next, we first activate the KG functionality by clicking on the
+`KG Settings` button in the sidebar. In the settings dialog, we can activate the
+KG functionality and select how many results we want to retrieve.
+
+![KG Settings](images/kg-settings.png)
+
+Returning to the conversation and enabling the KG functionality for the current
+chat (directly above the send button), we can then ask the model about the KG.
+The languange model we use is `gpt-3.5-turbo`. The full conversation is pasted
+below, including the queries generated by BioChatter.
+
+![KG Conversation](images/kg-demo.png)
+
+In the background, the RagAgent module of BioChatter receives the question and
+generates a query to retrieve the desired information. This is then passed back
+to the primary model, which includes it in its answer generation.
+
+###### Conclusion
+
+The native integration of BioCypher KGs into the BioChatter framework allows for
+a seamless integration of KGs into the conversational AI. This in turn
+facilitates knowledge accessibility in a wide range of application domains.
+
+###### Note: the apparent inability of GPT to understand certain directionalities, and how BioChatter compensates for this
+
+Interestingly, while `gpt-3.5-turbo` mostly does a formidable job at translating
+natural language questions into Cypher queries, it is remarkably obtuse in
+certain instances. For instance, for the relationship `INVESTIGATED_BY`, which
+connects a `Crime` to an `Officer`, GPT consistently fails to understand that
+the relationship implies that the `Officer` is the one who investigates the
+`Crime`. Instead, it consistently interprets the relationship as if the `Crime`
+investigates the `Officer`: it consistently proposes the query `MATCH
+(o:Officer)-[:INVESTIGATED_BY]->(c:Crime) RETURN c, o` instead of the correct
+`MATCH (c:Crime)-[:INVESTIGATED_BY]->(o:Officer) RETURN c, o`. We were not able
+to change this behaviour with any contextual prompt instructions.
+
+For this reason, the BioChatter `prompts.py` module uses the knowledge we have
+about the directionality of edges in the BioCypher KG to only propose options
+for patterns that actually exist in the KG. In the instance of
+`INVESTIGATED_BY`, this is the corresponding YAML definition in BioCypher:
+
+```yaml
+investigated by:
+    is_a: [fact, core]
+    represented_as: edge
+    label_as_edge: INVESTIGATED_BY
+    input_label: INVESTIGATED_BY
+    source: crime
+    target: officer
+```
+
+The presence of the `source` and `target` annotations allows us to provide only
+the correct options to the LLM, which in turn allows the LLM to generate the
+correct query.
+
+Strikingly, this even applies to `GPT-4` and `ChatGPT`, which we used to
+generate the Schema diagram above. The model immediately proposed a correct
+Mermaid diagram for most of the entire schema definition YAML file, except for
+the relationship between `Crime` and `Officer`, which it reversed. Via the YAML
+we provide in the prompt, GPT has access to the correct directionality, but it
+still fails to understand it.
+
+```
+graph LR;
+    Person(:Person) -- KNOWS --> Person
+    Person -- FAMILY_REL --> Person
+    Person -- LIVES_AT --> Location(:Location)
+    Person -- PARTY_TO --> Crime(:Crime)
+    Person -- MADE_CALL --> PhoneCall(:PhoneCall)
+    Person -- RECEIVED_CALL --> PhoneCall
+    Officer(:Officer) -- INVESTIGATED_BY --> Crime
+    Crime -- OCCURRED_AT --> Location
+    Object(:Object) -- INVOLVED_IN --> Crime
+
+    classDef node fill:#f9f,stroke:#333,stroke-width:2px;
+    class Person,Officer,Location,Crime,PhoneCall,Object node;
+```
+
+Here is the [full
+chat](https://chat.openai.com/share/8e3b8ed6-c8a2-4460-a1ad-fe637e4c3db1) for
+reference.
+
+#### Conversation
+
+The boxes below the BioChatter responses in the conversation show the queries
+generated by the RagAgent module.
+
+##### Message From You
+How many crimes happened in total?
+
+##### Message From BioChatter
+According to the provided statement, the total number of crimes is 28,762. This information suggests that there have been 28,762 reported crimes in the given context. However, without additional information or context, it is difficult to determine the specific time period, location, or nature of these crimes. It's important to note that crime statistics can vary depending on the source, methodology, and reporting practices. Therefore, it is always advisable to consult official crime reports or local law enforcement agencies for the most accurate and up-to-date information on crime statistics.
+
+```note
+MATCH (c:Crime)
+RETURN count(c) AS numberOfCrimes
+```
+
+##### Message From You
+Where happened most crimes?
+
+##### Message From BioChatter
+Based on the provided statement, it appears that the location with the highest number of crimes is a parking area, with a total of 811 reported crimes. However, without additional context or information, it is difficult to determine the consistency or inconsistency of this statement with other available information. It is important to note that crime rates and locations can vary significantly depending on various factors such as the region, city, neighborhood, and specific time period being considered. To provide a more comprehensive analysis, it would be helpful to have access to a broader dataset or additional information about the specific location and its crime statistics.
+
+```note
+MATCH (c:Crime)-[:OCCURRED_AT]->(l:Location)
+RETURN l.address AS location, COUNT(c) AS crimeCount
+ORDER BY crimeCount DESC
+```
+
+##### Message From You
+Who were the top 3 offenders?
+
+##### Message From BioChatter
+Based on the provided information, the top three offenders are:
+
+1. Phillip Williamson: According to the information given, Phillip Williamson has committed 5 crimes.
+
+2. Jessica Kelly: The information states that Jessica Kelly has also committed 5 crimes.
+
+3. Brian Morales: The data indicates that Brian Morales has committed 4 crimes.
+
+These three individuals, Phillip Williamson, Jessica Kelly, and Brian Morales, are the top offenders based on the number of crimes they have committed.
+
+```note
+MATCH (p:Person)-[:PARTY_TO]->(c:Crime)
+RETURN p.name, p.surname, COUNT(c) AS num_crimes
+ORDER BY num_crimes DESC
+LIMIT 3
+```
+
+### Supplementary Note 2: Retrieval-Augmented Generation
+
+This vignette demonstrates the RAG module of BioChatter as used by the
+BioChatter Next application. This basic use case involves an LLM manuscript
+reading assistant and a vector database with embedded scientific manuscripts
+[@doi:10.1016/j.drup.2022.100905;@doi:10.20892/j.issn.2095-3941.2019.0284;@doi:10.1038/s41568-023-00612-3;@doi:10.1111/jebm.12434].
+The manuscripts are recent reviews on the topic of ABC transporters (active
+transport proteins that often serve as efflux pumps in many tissues, with a
+major function of clearing exogenous substances) in drug resistance phenomena,
+which we currently investigate in our [DECIDER](https://deciderproject.eu)
+cohort.  Manuscripts such as these can be absent from the knowledge base of LLMs
+for various reasons, such as their recency or the fact that they are not open
+access. RAG opens up the possibility to retrieve relevant information from these
+manuscripts, and to inject it into the LLM's generation process.
+
+#### Usage
+
+In BioChatter Next, we first activate the RAG functionality by clicking on the
+`RAG Settings` button in the sidebar. In the settings dialog, we can activate
+the functionality and upload an arbitrary number of documents, which is only
+limited by the scale of the vector database system. In this case, and for
+demonstration purposes, we uploaded the four manuscripts, which leads to the
+state shown in the screenshot below.
+
+![RAG Settings](images/rag-settings.png)
+
+Note that we chose to split the documents into fragments of 1000 characters
+each. We could have split by tokens instead, or changed the fragment length and
+overlap. Fragment length, overlap, and splitting by tokens or characters are
+decisions that should be made in tandem with the choice of LLM model, and with
+the number of fragments that should be retrieved for each query. Most
+importantly, the total text length should not exceed the input context length
+of the model. Here, we choose to inject 10 fragments per query.
+
+We can now start a new conversation (using the `New Persona` button in the
+sidebar), for which we select the `Research manuscript helper (RAG)` persona,
+which includes suitable contextual prompts. Upon activating the RAG in the chat
+(to signal that we wish to perform RAG for our question), we can enter into a
+dialogue with the assistant. We use `gpt-3.5-turbo` in this example, which is a
+very affordable model.
+
+![RAG Conversation](images/rag-demo.png)
+
+#### Comparison with ChatGPT
+
+We can ask ChatGPT 4 the same question (only subscription access).  By employing
+web search, ChatGPT 4 is able to find the same study that was the RAG result we
+were asked about in our follow-up question (Xu et al. 2015); however, the answer
+is not as detailed as the answer provided by the RAG process, and includes fewer
+mentions of explicit studies. While it includes sensible information, there is
+no way of validating most of the claims made by the model.  You can read the
+full answer
+[here](https://chat.openai.com/share/549f5bf7-b39c-42a4-9483-d07dcbf5b2d9).
+Overall, the quality of ChatGPT 4 is comparable to the RAG output, but the user
+has less control over the knowledge used, and the answer cannot include
+information that is not easily found on the web (for instance due to access
+restrictions). Of note, we used `gpt-3.5-turbo` in this example, which is less
+recent and much less expensive than GPT-4.
+
+Asking the naive ChatGPT 3.5 (free access), the same question yields a very
+different answer. The free version of ChatGPT cannot search the internet, and
+does not provide any citations for the general answer it provides. You can read
+the full answer
+[here](https://chat.openai.com/share/810075aa-69fe-4c06-859d-229e250f4c41). The
+three full conversations are copied below. 
+
+#### Conclusion
+
+In conclusion, the RAG procedure we implement is able to dramatically improve
+the quality of GPT-3 answers, making them comparable to GPT-4 with web search,
+and even surpassing it in some aspects. We invite you to try it out yourself, as
+we provide an instance of BioChatter Next, including GPT access and a vector
+database instance, free of charge at
+[https://next.biochatter.org](https://next.biochatter.org).
+
+#### Conversations
+
+##### BioChatter RAG
+
+###### Contextual Prompt
+You are an assistant to a biomedical researcher.
+
+###### Contextual Prompt
+You have access to text fragments from one or multiple scientific manuscripts, which were retrieved by their semantic similarity to the user's question.
+
+###### Contextual Prompt
+Your task is to help the user understand the manuscripts and their relevance to their questions. Be concise in your explanations, provide quotes from the manuscripts where appropriate, and be open about limitations in cases where the text does not contain pertinent information.
+
+###### Message From You
+What is known about the CFTR protein in resistance to ovarian cancer?
+
+###### Message From BioChatter
+Based on the provided information, there are several studies that suggest a potential role of the CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) protein in resistance to ovarian cancer. Here are some key findings from the referenced manuscripts:
+
+1. Gene expression profiling of ovarian tumors before and after chemotherapy revealed molecular signatures of chemoresistant tumors (M, et al., 2006). This study did not specifically mention CFTR, but it provides insights into the molecular changes associated with chemoresistance.
+
+2. ABCF2 expression, which is related to CFTR, was investigated in clear cell adenocarcinoma of the ovary. The study found a relationship between ABCF2 expression and response to chemotherapy or prognosis (Tsuda H, et al., 2010).
+
+3. Alterations in gene copy numbers, including CFTR, were identified as a mechanism for acquired drug resistance in cancer (Yasui K, et al., 2004).
+
+4. ABCF2, an Nrf2 target gene related to CFTR, was found to contribute to cisplatin resistance in ovarian cancer cells (Bao L, et al., 2017).
+
+5. CFTR was not specifically mentioned in the context of ovarian cancer, but a study on hepatocellular carcinoma found that silencing circ-TCF4.85 inhibited cancer progression through microRNA-486-5p-targeted inhibition of ABCF2 (Gao J, et al., 2020).
+
+6. Constitutive activation of nuclear factor κB (NF-κB) was associated with CFTR expression and promoted cancer progression and poor prognosis in cervical cancer (Wu Z, et al., 2013).
+
+7. High levels of CFTR expression were associated with tumor aggression in ovarian cancer, and knockdown of CFTR suppressed ovarian cancer cell proliferation (Xu J, et al., 2015).
+
+It is important to note that while these studies suggest a potential association between CFTR and resistance to ovarian cancer, the exact mechanisms and clinical implications are still being investigated. Further research is needed to fully understand the role of CFTR in ovarian cancer resistance.
+
+###### Message From You
+Tell me more about the studies of aggression and knockdown of CFTR in vivo.
+
+###### Message From BioChatter
+Based on the provided information, there are two relevant studies regarding the aggression and knockdown of CFTR in ovarian cancer:
+
+1. The study by Wu et al. (2013) investigated the constitutive activation of nuclear factor κB (NF-κB) and its contribution to CFTR expression, cancer progression, and poor prognosis in cervical cancer. Although this study is not specific to ovarian cancer, it provides insights into the role of CFTR and NF-κB in promoting cancer progression.
+
+2. The study by Xu et al. (2015) focused specifically on ovarian cancer and found that high levels of CFTR expression were associated with tumor aggression. They also demonstrated that knockdown of CFTR suppressed the proliferation of ovarian cancer cells in vitro and in vivo. This study suggests that CFTR may play a role in promoting ovarian cancer growth.
+
+These studies provide evidence for the involvement of CFTR in cancer aggression and suggest that targeting CFTR could be a potential therapeutic strategy. However, it is important to note that these studies focus on different types of cancer (cervical and ovarian), and the specific mechanisms underlying CFTR's role in ovarian cancer aggression and its knockdown effects are not fully elucidated.
+
+It is worth mentioning that the other references provided in the text fragments are not directly related to the aggression and knockdown of CFTR in ovarian cancer. They discuss topics such as the structure and function of ABC transporters, drug resistance, and inflammation in different contexts.
+
+##### ChatGPT 4
+
+###### Anonymous
+What is known about the CFTR protein in resistance to ovarian cancer?
+
+###### ChatGPT
+The CFTR protein, known as the cystic fibrosis transmembrane conductance regulator, plays a significant role in ovarian cancer. Research has shown that CFTR is expressed more in ovarian cancer tissues compared to benign ovarian tumors and normal ovaries. This overexpression of CFTR is associated with more advanced stages of ovarian cancer, poor histopathological grade, and higher serum Ca-125 levels, which are all markers of more aggressive disease. Interestingly, the serous type of ovarian cancer shows stronger CFTR staining compared to other types.
+
+Moreover, the role of CFTR extends beyond its traditional function as an ion channel. It interacts with various intracellular signaling pathways that are crucial in cancer progression. For example, in ovarian cancer, CFTR overexpression is linked to interactions with the c-Src signaling pathway, which is involved in cellular growth.
+
+The implications of CFTR expression in ovarian cancer are significant. In studies where CFTR was downregulated, there was a decrease in cell invasion, migration, proliferation, adhesion, and colony formation in vitro. In vivo experiments also showed that the tumorigenic abilities of ovarian cancer cells were significantly repressed when CFTR expression was reduced.
+
+These findings highlight the complex role of CFTR in ovarian cancer and suggest that it could be a potential target for therapeutic intervention. However, it is important to note that the role of CFTR in cancer is multifaceted and varies among different types of cancers. Therefore, a detailed understanding of its function in specific cancer types, like ovarian cancer, is crucial for developing targeted treatments​​​​ ([https://pubmed.ncbi.nlm.nih.gov/25738998/](https://pubmed.ncbi.nlm.nih.gov/25738998/), [https://jmhg.springeropen.com/articles/10.1186/s43042-022-00308-7](https://jmhg.springeropen.com/articles/10.1186/s43042-022-00308-7)).
+
+##### ChatGPT 3.5
+
+###### Anonymous
+What is known about the CFTR protein in resistance to ovarian cancer?
+
+###### ChatGPT
+As of my last knowledge update in January 2022, there is limited direct information about the CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) protein's role in resistance to ovarian cancer. CFTR is primarily associated with cystic fibrosis, a genetic disorder that affects the lungs and other organs. However, some research suggests potential links between CFTR and cancer, including ovarian cancer, although the mechanisms are not fully understood.
+
+Here are some key points to consider:
+
+CFTR Expression: Studies have shown that CFTR is expressed in various tissues, including the female reproductive system. Abnormal CFTR expression or function could potentially impact the development or progression of ovarian cancer. Research is ongoing to understand the role of CFTR in cancer biology.
+CFTR Mutations: Certain mutations in the CFTR gene have been associated with an increased risk of cancer, although the evidence for ovarian cancer specifically is limited. Mutations in CFTR are more commonly known for their role in cystic fibrosis. Individuals with cystic fibrosis have an increased risk of various cancers, including gastrointestinal cancers, but the link to ovarian cancer is not well-established.
+Ion Transport and Cancer: CFTR is involved in ion transport across cell membranes, and this function could potentially influence cellular processes relevant to cancer. Changes in ion transport can affect cell proliferation, apoptosis, and other cellular functions that are important in cancer development and progression.
+Potential Therapeutic Target: Some research suggests that modulating CFTR activity or expression could be a potential target for cancer therapy, including ovarian cancer. However, more research is needed to determine the feasibility and effectiveness of such approaches.
+It's important to note that the understanding of the role of CFTR in cancer, including ovarian cancer, is an evolving field, and new research findings may have emerged since my last update in January 2022. To get the most up-to-date information on this topic, I recommend consulting recent scientific literature and speaking with medical experts or researchers actively working in the field of ovarian cancer and CFTR biology.
+
+
+## The BioChatter Consortium
+
+The BioChatter Consortium is a community of researchers and developers who are interested in the application of LLMs to biomedical research.
+We list here alphabetically all members of the consortium who have contributed to the development of the BioChatter framework.
+
+- Adrian Diaz (Artificial Intelligence Lab, ULB-VUB, La Plaine Campus, Triomflaan, 1050 Brussels, Belgium)
+- Aurelien Dugourd (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
+- Emma Verkinderen (Artificial Intelligence Lab, ULB-VUB, La Plaine Campus, Triomflaan, 1050 Brussels, Belgium)
+- Fernando M. Delgado-Chaves (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany)
+- Megan McNutt (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
+- Trang T. Le (Bristol Myers Squibb, 250 Water St, Cambridge, MA 02141, USA)
+- Yuyao Song (European Molecular Biology Laboratory-European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, Hinxton, United Kingdom)
 
 [@biocypher]: doi:10.1038/s41587-023-01848-y
 [@langchain]: https://python.langchain.com
