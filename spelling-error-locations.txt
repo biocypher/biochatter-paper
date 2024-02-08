@@ -551,11 +551,12 @@ content/80.supplement-consortium.md:1:BioChatter
 content/80.supplement-consortium.md:3:BioChatter
 content/80.supplement-consortium.md:3:LLMs
 content/80.supplement-consortium.md:4:BioChatter
-content/80.supplement-consortium.md:6:Diaz
-content/80.supplement-consortium.md:6:Plaine
-content/80.supplement-consortium.md:6:Triomflaan
-content/80.supplement-consortium.md:6:ULB
-content/80.supplement-consortium.md:6:VUB
+content/80.supplement-consortium.md:6:Adrián
+content/80.supplement-consortium.md:6:Bioinformatics
+content/80.supplement-consortium.md:6:Díaz
+content/80.supplement-consortium.md:6:Interuniversity
+content/80.supplement-consortium.md:6:Universiteit
+content/80.supplement-consortium.md:6:Vrije
 content/80.supplement-consortium.md:7:Aurelien
 content/80.supplement-consortium.md:7:Biomedicine
 content/80.supplement-consortium.md:7:Dugourd
