@@ -1,0 +1,1175 @@
+This manuscript
+(\href{https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/}{permalink})
+was automatically generated
+from \href{https://github.com/biocypher/biochatter-paper/tree/430416fe01350562f748be3ea9919a74b32554fc}{biocypher/biochatter-paper@430416f}
+on February 8, 2024.
+
+\hypertarget{authors}{%
+\subsection{Authors}\label{authors}}
+
+\begin{itemize}
+\item
+  \textbf{Sebastian Lobentanzer}
+  \textsuperscript{\protect\hyperlink{correspondence}{✉}}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0003-3399-6695}{0000-0003-3399-6695}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/slobentanzer}{slobentanzer}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/slobentanzer}{slobentanzer}
+  Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+\item
+  \textbf{Shaohong Feng}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0009-0000-8124-3626}{0009-0000-8124-3626}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/fengsh27}{fengsh27}
+  Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+\item
+  \textbf{The BioChatter Consortium}
+\item
+  \textbf{Andreas Maier}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0003-4408-0068}{0000-0003-4408-0068}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/andimajore}{andimajore}
+  Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany
+\item
+  \textbf{Cankun Wang}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-0225-9855}{0000-0002-0225-9855}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/Wang-Cankun}{Wang-Cankun}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/Wang-Cankun}{Wang-Cankun}
+  Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+\item
+  \textbf{Jan Baumbach}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-0282-0462}{0000-0002-0282-0462}
+  Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany; Computational Biomedicine Lab, Department of Mathematics and Computer Science, University of Southern Denmark, Odense, Denmark
+\item
+  \textbf{Nils Krehl}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0009-0003-1780-6123}{0009-0003-1780-6123}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/nilskre}{nilskre}
+  Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+\item
+  \textbf{Qin Ma}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-3264-8392}{0000-0002-3264-8392}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/maqin2001}{maqin2001}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/QinMaBMBL}{QinMaBMBL}
+  Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA
+\item
+  \textbf{Julio Saez-Rodriguez}
+  \textsuperscript{\protect\hyperlink{correspondence}{✉}}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-8552-8976}{0000-0002-8552-8976}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/saezrodriguez}{saezrodriguez}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/saezlab}{saezlab}
+  Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+\end{itemize}
+
+\leavevmode\vadjust pre{\hypertarget{correspondence}{}}%
+✉ --- Correspondence possible via \href{https://github.com/biocypher/biochatter-paper/issues}{GitHub Issues}
+or email to
+Sebastian Lobentanzer \textless sebastian.lobentanzer@gmail.com\textgreater,
+Julio Saez-Rodriguez \textless pub.saez@uni-heidelberg.de\textgreater.
+
+Authors between consortium and last author are ordered alphabetically.
+
+\hypertarget{abstract}{%
+\subsection{Abstract}\label{abstract}}
+
+Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
+To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
+Based on open-source software packages, we synergise the many functionalities that are currently developing around LLMs, such as knowledge integration / retrieval-augmented generation, model chaining, and benchmarking, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedicine.
+We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
+We demonstrate use cases via two multi-purpose web apps (https://chat.biocypher.org), and provide documentation, support, and an open community.
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Despite technological advances, major challenges remain to understand biological and biomedical systems {[}\protect\hyperlink{ref-195HIa77n}{1},\protect\hyperlink{ref-1AZn5l2ah}{2}{]}.
+We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation {[}\protect\hyperlink{ref-1AZn5l2ah}{2}{]}.
+One reason for this challenge may be the inherent limitation of human knowledge {[}\protect\hyperlink{ref-q5vfV9nk}{3}{]}: Even seasoned domain experts cannot know the implications of every gene, molecule, symptom, or biomarker.
+In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.
+
+Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters {[}\protect\hyperlink{ref-JIjeWPOb}{4},\protect\hyperlink{ref-IzWFZmuQ}{5},\protect\hyperlink{ref-17lpGtuH5}{6}{]}.
+Trained correctly, they can recall and combine virtually limitless knowledge from their training set.
+ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as research tasks {[}\protect\hyperlink{ref-viLUfCLq}{7},\protect\hyperlink{ref-ae7XiPvs}{8},\protect\hyperlink{ref-wo7jyZHW}{9}{]}.
+However, the current, predominantly manual, way of interacting with LLMs is virtually non-reproducible, and their behaviour can be erratic.
+For instance, they are known to confabulate: they make up facts as they go along, and, to make matters worse, are convinced - and convincing - regarding the truth of their confabulations {[}\protect\hyperlink{ref-wo7jyZHW}{9},\protect\hyperlink{ref-elx4isXx}{10}{]}.
+While current efforts towards Artificial General Intelligence manage to ameliorate some of the shortcomings by ensembling multiple models {[}\protect\hyperlink{ref-UEmjXz02}{11}{]} with long-term memory stores {[}\protect\hyperlink{ref-gy4YOpGJ}{12}{]}, the current generation of AI does not inspire adequate trust to be applied to biomedical problems without supervision {[}\protect\hyperlink{ref-elx4isXx}{10}{]}.
+Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues {[}\protect\hyperlink{ref-fliCQWwF}{13}{]}.
+
+Computational biomedicine involves many tasks that could be assisted by LLMs, such as the interpretation of experimental results, the design of experiments, the evaluation of literature, and the exploration of web resources.
+To improve and accelerate these tasks, we have developed BioChatter, a platform for communicating with LLMs specifically tuned to biomedical research (Figure \ref{fig:overview}).
+The platform guides the human researcher intuitively through the interaction with the model, while counteracting the problematic behaviours of the LLM.
+Since the interaction is mainly based on plain text (in any language), it can be used by virtually any researcher.
+
+\begin{figure}
+\hypertarget{fig:overview}{%
+\centering
+\includegraphics{images/biochatter_overview.png}
+\caption{\textbf{The BioChatter composable platform architecture (simplified).}
+Many questions arise in daily biomedical research practice, for instance, interpretation of experimental results or the use of a web resource (top left).
+BioChatter's main response circuit (blue) composes a number of specifically engineered prompts and passes them (and a conversation history) to the primary LLM, which generates a response for the user based on all inputs.
+This response is simultaneously used to prompt the secondary circuit (orange), which fulfils auxiliary tasks to complement the primary response.
+In particular, using search, the secondary circuit queries a database as a prior knowledge repository and compares annotations to the primary response, or uses the knowledge to perform Retrieval-Augmented Generation (RAG).
+A knowledge graph such as BioCypher {[}\protect\hyperlink{ref-tr1XjZ1R}{14}{]} can similarly serve as knowledge resource or long-term memory extension of the model.
+Further, an independent LLM receives the primary response for fact-checking, which can be supplemented with context-specific information by a RAG process.
+The platform is composable in most aspects, allowing arbitrary extensions to other, specialised models for additional tasks orchestrated by the primary LLM.}\label{fig:overview}
+}
+\end{figure}
+
+\hypertarget{results}{%
+\subsection{Results}\label{results}}
+
+BioChatter (https://github.com/biocypher/biochatter) is a python framework that provides an easy-to-use interface to interact with LLMs and auxiliary technologies via an intuitive API (application programming interface).
+This way, its functionality can be integrated into any number of user interfaces, such as web apps, command line interfaces, or Jupyter notebooks (Figure \ref{fig:architecture}).
+
+\begin{figure}
+\hypertarget{fig:architecture}{%
+\centering
+\includegraphics{images/biochatter_architecture.png}
+\caption{\textbf{The BioChatter framework architecture.}
+A) The BioChatter framework components (blue) connect to knowledge graphs and vector databases (orange).
+Users (green) can interact with the framework via its Python API, via the lightweight Python frontend using Streamlit (BioChatter Light), or via a fully featured web app with client-server architecture (BioChatter Next).
+Developers can write simple frontends using the Streamlit framework, or integrate the REST API provided by the BioChatter Server into their own bespoke solutions.
+B) Different use cases of BioChatter on a spectrum of tradeoff between simplicity/economy (left) and security (right).
+Economical and simple solutions involve proprietary services that can be used with low effort but are subject to data privacy concerns.
+Increasingly secure solutions require more effort to set up and maintain, but allow the user to retain more control over their data.
+Fully local solutions are available given sufficient hardware (starting with contemporary laptops), but are not highly scalable.}\label{fig:architecture}
+}
+\end{figure}
+
+The framework is designed to be composable, meaning that any of its components can be exchanged with other implementations (Figure \ref{fig:overview}).
+Functionalities include:
+
+\begin{itemize}
+\item
+  \textbf{basic question answering} with LLMs hosted by providers (such as OpenAI) as well as locally deployed open-source models
+\item
+  \textbf{reproducible prompt engineering} to guide the LLM towards a specific task or behaviour
+\item
+  \textbf{benchmarking} of LLMs, prompts, and other components
+\item
+  \textbf{knowledge graph (KG) querying} with automatic integration of any KG created in the BioCypher framework {[}\protect\hyperlink{ref-tr1XjZ1R}{14}{]}
+\item
+  \textbf{retrieval-augmented generation} (RAG) using vector database embeddings of user-provided literature
+\item
+  \textbf{model chaining} to orchestrate multiple LLMs and other models in a single conversation using the LangChain framework {[}\protect\hyperlink{ref-UEmjXz02}{11}{]}
+\item
+  \textbf{fact-checking} of LLM responses using a second LLM
+\end{itemize}
+
+In the following, we briefly describe these components, which are demonstrated in our web apps (\url{https://chat.biocypher.org}).
+
+\hypertarget{question-answering-and-llm-connectivity}{%
+\subsubsection{Question Answering and LLM Connectivity}\label{question-answering-and-llm-connectivity}}
+
+The core functionality of BioChatter is to interact with LLMs.
+The framework supports both leading proprietary models such as the GPT series from OpenAI as well as open-source models such as LLaMA2 {[}\protect\hyperlink{ref-SgpSThMj}{15}{]} and Mixtral 8x7B {[}\protect\hyperlink{ref-1B6emxNKq}{16}{]} via a flexible open-source deployment framework {[}\protect\hyperlink{ref-mGEvmJGA}{17}{]} (see Methods).
+Currently, the most powerful conversational AI platform, ChatGPT (OpenAI), is surrounded by data privacy concerns {[}\protect\hyperlink{ref-PDhRVYjU}{18}{]}.
+We address this issue in two ways.
+Firstly, we provide access to the different OpenAI models through their API, which is subject to different, more stringent data protection than the web interface {[}\protect\hyperlink{ref-C5Z1X3MG}{19}{]}, most importantly by disallowing reuse of user inputs for subsequent model training.
+Secondly, we aim to preferentially support open-source LLMs to facilitate more transparency in their application and increase data privacy by being able to run a model locally on dedicated hardware and end-user devices {[}\protect\hyperlink{ref-17E1dWalv}{20}{]}.
+By building on LangChain {[}\protect\hyperlink{ref-UEmjXz02}{11}{]}, we support dozens of LLM providers, such as the Xorbits Inference and Hugging Face APIs {[}\protect\hyperlink{ref-mGEvmJGA}{17}{]}, which can be used to query any of the more than 100 000 open-source models on Hugging Face Hub {[}\protect\hyperlink{ref-NicesiwN}{21}{]}, for instance those on its LLM leaderboard {[}\protect\hyperlink{ref-LE2GwIqT}{22}{]}.
+Although OpenAI's models currently vastly outperform any alternatives in terms of both LLM performance and API convenience, we expect many open-source developments in this area in the future {[}\protect\hyperlink{ref-uYvzQA7w}{23}{]}.
+Therefore, we support plug-and-play exchange of models to enhance biomedical AI-readiness, and we implement a bespoke benchmarking framework for the biomedical application of LLMs.
+
+\hypertarget{prompt-engineering}{%
+\subsubsection{Prompt Engineering}\label{prompt-engineering}}
+
+An essential property of LLMs is their sensitivity to the prompt, i.e., the initial input that guides the model towards a specific task or behaviour.
+Prompt engineering is an emerging discipline of practical AI, and as such there are no established best practices {[}\protect\hyperlink{ref-UNYcEMOH}{24},\protect\hyperlink{ref-1AogcQAl1}{25}{]}.
+Current approaches are mostly trial-and-error-based manual engineering, which is not reproducible and changes with every new model {[}\protect\hyperlink{ref-uYvzQA7w}{23}{]}.
+To address this issue, we include a prompt engineering framework in BioChatter that allows the preservation of prompt sets for specific tasks, which can be shared and reused by the community.
+In addition, to facilitate the scaling of prompt engineering, we integrate this framework in the benchmarking pipeline, which allows the automated evaluation of prompt sets as new models are published.
+
+\hypertarget{benchmarking}{%
+\subsubsection{Benchmarking}\label{benchmarking}}
+
+The increasing generality of LLMs poses challenges for their comprehensive evaluation.
+To circumvent this issue, we focus on specific biomedical tasks and datasets.
+For advanced assessment, we employ automated validation of the model's responses by a second LLM.
+For transparent and reproducible evaluation of LLMs, we implement a benchmarking framework that allows the comparison of models, prompt sets, and all other components of the pipeline.
+Built on the generic Pytest framework {[}\protect\hyperlink{ref-14upAJPXR}{26}{]}, it allows the automated evaluation of a matrix of all possible combinations of components.
+The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets and BioChatter capabilities (\url{https://biochatter.org/benchmark/}).
+
+We create a bespoke biomedical benchmark for multiple reasons:
+1) The biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components {[}\protect\hyperlink{ref-uYvzQA7w}{23}{]}.
+2) We aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs {[}\protect\hyperlink{ref-LE2GwIqT}{22},\protect\hyperlink{ref-KONKs6Pw}{27},\protect\hyperlink{ref-foK1oImy}{28}{]}.
+3) We aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination {[}\protect\hyperlink{ref-yT66jV6G}{29}{]}.
+To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).
+
+Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Figure \ref{fig:benchmark} A).
+Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure for the LLMs' usefulness in our applications.
+OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks.
+Of note, performance in open-source models appears to depend on their quantisation level, i.e., the bit precision used to represent the model's parameters.
+For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models appear to perform worse (Figure \ref{fig:benchmark} A).
+
+To evaluate the benefit of BioChatter functionality, we compare the performance of models with and without the use of BioChatter's prompt engine for KG querying.
+The models without prompt engine still have access to the BioCypher schema definition, which details the KG structure, but it does not use the multi-step procedure available through BioChatter.
+Consequently, the models without prompt engine show a lower performance in creating correct queries than the same models with prompt engine (0.459±0.13 vs 0.813±0.15, unpaired t-test p = 1.3e-20, Figure \ref{fig:benchmark} B).
+
+\begin{figure}
+\hypertarget{fig:benchmark}{%
+\centering
+\includegraphics{images/biochatter_benchmark.png}
+\caption{\textbf{Benchmark results.}
+A) Performance of different LLMs (indicated by colour) on the BioChatter benchmark datasets; the y-axis value indicates the average performance across all tasks for each model/size.
+While the closed-source models from OpenAI show consistently highest performance, some open-source models perform comparably.
+However, the measured performance does not correlate intuitively with size (indicated by point size) and quantisation (bit-precision) of the models.
+Some smaller models perform better than larger ones, even within the same model family; while very low bit-precision (2-bit) expectedly yields worse performance, the same is true for the high end (8-bit).
+*: Of note, many characteristics of OpenAI models are not public, and thus their bit-precision (as well as the exact size of GPT4) is subject to speculation.
+B) Comparison of the two benchmark tasks for KG querying show the superior performance of BioChatter's prompt engine (0.813±0.15 vs 0.459±0.13, unpaired t-test p = 1.3e-20).
+The test includes all models, sizes, and quantisation levels, and the performance is measured as the average of the two tasks.
+The BioChatter variant involves a multi-step procedure of constructing the query, while the ``naive'' version only receives the complete schema definition of the BioCypher KG (which BioChatter also uses as a basis for the prompt engine).
+The general instructions for both variants are the same, otherwise.}\label{fig:benchmark}
+}
+\end{figure}
+
+\hypertarget{knowledge-graphs}{%
+\subsubsection{Knowledge Graphs}\label{knowledge-graphs}}
+
+KGs are a powerful tool to represent and query knowledge in a structured manner.
+With BioCypher {[}\protect\hyperlink{ref-tr1XjZ1R}{14}{]}, we have developed a framework to create KGs from biomedical data in a user-friendly manner while also semantically grounding the data in ontologies.
+BioChatter is an extension of the BioCypher ecosystem, elevating its user-friendliness further by allowing natural language interactions with the data; any BioCypher KG is automatically compatible with BioChatter.
+We use information generated in the build process of BioCypher KGs to tune BioChatter's understanding of the data structures and contents, thereby increasing the efficiency of LLM-based KG querying (see Methods).
+In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's reasoning, which can be used to ground the model's responses in the context of the KG via in-context learning / retrieval-augmented generation (see below).
+We demonstrate the user experience of KG-driven interaction in \protect\hyperlink{supplementary-note-1-knowledge-graph-retrieval-augmented-generation}{Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation} and on our website (\url{https://biochatter.org/vignette-kg/}).
+
+\hypertarget{retrieval-augmented-generation}{%
+\subsubsection{Retrieval-Augmented Generation}\label{retrieval-augmented-generation}}
+
+LLM confabulation is a major issue for biomedical applications, where the consequences of incorrect information can be severe.
+One popular way of addressing this issue is to apply ``in-context learning,'' which is also more recently referred to as ``retrieval-augmented generation'' (RAG) {[}\protect\hyperlink{ref-1BzQcjRCZ}{30}{]}.
+Briefly, RAG relies on injection of information into the model prompt of a pre-trained model, and as such does not require retraining / fine-tuning; once created, any RAG prompt can be used with any LLM.
+While this can be done by processing structured knowledge, for instance from KGs, it is often more efficient to use a semantic search engine to retrieve relevant information from unstructured data sources such as literature.
+To this end, we allow the management and integration of vector databases in the BioChatter framework.
+The user is able to connect to a vector database, embed an arbitrary number of documents, and then use semantic search to improve the model prompts by adding text fragments relevant to the given question (see Methods).
+We demonstrate the user experience of RAG in \protect\hyperlink{supplementary-note-2-retrieval-augmented-generation}{Supplementary Note 2: Retrieval-Augmented Generation} and on our website (\url{https://biochatter.org/vignette-rag/}).
+
+\hypertarget{model-chaining-and-fact-checking}{%
+\subsubsection{Model Chaining and Fact Checking}\label{model-chaining-and-fact-checking}}
+
+LLMs cannot only seamlessly interact with human users, but also with other LLMs as well as many other types of models.
+They understand API calls and can therefore theoretically orchestrate complex multi-step tasks {[}\protect\hyperlink{ref-hHuKg12k}{31},\protect\hyperlink{ref-lmJHElQl}{32}{]}.
+However, implementation is not trivial and the complex process can lead to unpredictable behaviours.
+We aim to improve the stability of model chaining in biomedical applications by developing bespoke approaches for common biomedical tasks, such as interpretation and design of experiments, evaluating literature, and exploring web resources.
+While we focus on reusing existing open-source frameworks such as LangChain {[}\protect\hyperlink{ref-UEmjXz02}{11}{]}, we also develop bespoke solutions where necessary to provide stability for the given application.
+As an example, we implement a fact-checking module that uses a second LLM to evaluate the factual correctness of the primary LLM's responses continuously during the conversation (see Methods).
+
+\hypertarget{discussion}{%
+\subsection{Discussion}\label{discussion}}
+
+The fast pace of developments around current-generation LLMs poses a great challenge to society as a whole and the biomedical community in particular {[}\protect\hyperlink{ref-BXdkfGlr}{33},\protect\hyperlink{ref-3cvgHyjq}{34},\protect\hyperlink{ref-kWGPJCV0}{35}{]}.
+While the potential of these models is enormous, their application is not straightforward, and their use requires a certain level of expertise {[}\protect\hyperlink{ref-TeDQ9cuh}{36}{]}.
+In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration {[}\protect\hyperlink{ref-JKZeMkVq}{37}{]}.
+Inspired by the productivity of open source libraries such as LangChain {[}\protect\hyperlink{ref-UEmjXz02}{11}{]}, we propose an open framework that allows biomedical researchers to focus on the application of LLMs as opposed to engineering challenges.
+To keep the framework effective and sustainable, we focus on reusing existing open-source libraries and tools, while adapting the advancements from the wider LLM community to the biomedical domain.
+The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond {[}\protect\hyperlink{ref-BXdkfGlr}{33}{]}.
+
+To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
+We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components (\url{https://biochatter.org/benchmark/}).
+Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters, such as model version and temperature {[}\protect\hyperlink{ref-uYvzQA7w}{23}{]}.
+As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs, and its results are a great starting point for delving deeper into the reasons why some models perform differently than expected.
+We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
+The living benchmark will be updated with new questions and tasks as they arise in the community.
+
+We facilitate access to LLMs by allowing the use of both proprietary and open-source models, and we provide a flexible deployment framework for the latter.
+Proprietary models are currently the most economical solution for accessing state-of-the-art models, and as such primarily suited for users just starting out or lacking the resources to deploy their own models.
+In contrast, open-source models are quickly catching up in terms of performance {[}\protect\hyperlink{ref-uYvzQA7w}{23}{]}, and they are essential for the sustainability of the field {[}\protect\hyperlink{ref-BXdkfGlr}{33}{]}.
+We allow self-hosting of open-source models on any scale, from dedicated hardware with GPUs, to local deployment on end-user laptops, to browser-based deployment using web technology.
+
+\hypertarget{limitations}{%
+\subsubsection{Limitations}\label{limitations}}
+
+The current generation of LLMs is not yet ready for unsupervised use in biomedical research.
+While we have taken steps to mitigate the risks of using LLMs, such as independent benchmarks, fact-checking, and knowledge graph querying, we cannot guarantee that the models will not produce harmful outputs.
+We see current LLMs, particularly in the scope of the BioCypher ecosystem, as helpful tools to assist human researchers, alleviating menial and repetitive tasks and helping with technical aspects such as query languages.
+They are not meant to replace human ingenuity and expertise, but to augment it with their complementary strengths.
+
+Depending on generic open-source libraries such as LangChain {[}\protect\hyperlink{ref-UEmjXz02}{11}{]} and Pytest {[}\protect\hyperlink{ref-14upAJPXR}{26}{]} allows us to focus on the biomedical domain but also introduces technical dependencies on these libraries.
+While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
+In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.
+
+\hypertarget{future-directions}{%
+\subsubsection{Future directions}\label{future-directions}}
+
+Multitask learners that can synthesise, for instance, language, vision, and molecular measurements, are an emerging field of research {[}\protect\hyperlink{ref-47ndFyxw}{38},\protect\hyperlink{ref-JbgxHZwW}{39},\protect\hyperlink{ref-43KJj9IS}{40}{]}.
+To remain accessible in the face of ever increasing complexity of these models, we will focus on the usability improvements that allow broad adoption in biomedical research.
+Autonomous agents for trivial tasks have already been developed on the basis of LLMs, and we expect this field to mature in the future {[}\protect\hyperlink{ref-lmJHElQl}{32}{]}.
+As research on agent behaviour progresses, we will integrate these developments into the BioChatter framework to allow the creation of helpful assistants for biomedical research.
+
+All framework developments will be performed in light of the ethical implications of LLMs, and we will continue to support the use of open-source models to increase transparency and data privacy.
+While we focus on the biomedical field, the concept of our frameworks can easily be extended to other scientific domains by adjusting domain-specific prompts and data inputs, which are accessible in a composable and user-friendly manner in our frameworks {[}\protect\hyperlink{ref-tr1XjZ1R}{14}{]}.
+Our Python library is developed openly on GitHub (\url{https://github.com/biocypher/biochatter}) and can be integrated into any number of user interface solutions.
+We develop under the permissive MIT licence and encourage contributions and suggestions from the community with regard to the addition of bioinformatics tool integrations, prompt engineering, benchmarking, and any other feature.
+
+\hypertarget{supplementary-online-methods}{%
+\subsection{(Supplementary / Online) Methods}\label{supplementary-online-methods}}
+
+BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub (\url{https://github.com/biocypher/biochatter}).
+We provide documentation at \url{https://biochatter.org}, including a tutorial and API reference.
+All packages are developed openly and according to modern standards of software development {[}\protect\hyperlink{ref-MMp6cQ1x}{41}{]}; we use the permissive MIT licence to encourage downstream use and development.
+We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
+
+\hypertarget{applications}{%
+\subsubsection{Applications}\label{applications}}
+
+To demonstrate basic and advanced use cases of the framework, we provide two web apps, BioChatter Light and BioChatter Next.
+
+BioChatter Light is a web app based on the Streamlit framework (version 1.21.0, \url{https://streamlit.io}), which is written in Python and can be deployed locally or on a server (\url{https://github.com/biocypher/biochatter-light}).
+The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
+This framework is suitable for rapid prototyping of bespoke solutions for specific use cases.
+For an up-to-date overview and preview of current functionality of the platform, please visit the \href{https://chat.biocypher.org}{online preview}.
+
+BioChatter Next (\url{https://github.com/biocypher/biochatter-next}) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web (\url{https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web}).
+It is written combining Typescript and Python and utilises Next.js (v13.4.9) for a sleek frontend and Flask (v3.0.0) as backend.
+It demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
+However, this comes at the cost of increased complexity and development time.
+To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at \url{https://github.com/biocypher/biochatter-server} and as a Docker image in our Docker Hub organisation (\url{https://hub.docker.com/repository/docker/biocypher/biochatter-server}).
+
+We invite all interested researchers to select the framework that best suits their needs, or use the BioChatter server or library in their existing solutions.
+
+\hypertarget{benchmarking-1}{%
+\subsubsection{Benchmarking}\label{benchmarking-1}}
+
+The benchmarking framework implements a matrix of component combinations using the parameterisation feature of Pytest {[}\protect\hyperlink{ref-14upAJPXR}{26}{]}.
+This allows the automated evaluation of all possible combinations of components, such as LLMs, prompts, and datasets.
+We ran the benchmarks on a MacBook Pro with an M3 Max chip with 40-core GPU and 128GB of RAM.
+As a default, we ran each test five times to account for the stochastic nature of LLMs.
+We generally set the temperature to the lowest value possible for each model to decrease fluctuation.
+
+The Pytest matrix uses a hash-based system to evaluate whether a model-dataset combination has been run before.
+Briefly, the hash is calculated from the dictionary representation of the test parameters, and the test is skipped if the combination of hash and model name is already present in the database.
+This allows automatic running of all tests that have been newly added or modified.
+The individual dimensions of the matrix are:
+
+\begin{itemize}
+\item
+  \textbf{LLMs}: Testing proprietary (OpenAI) and open-source models (commonly using the Xorbits Inference API and HuggingFace models) against the same set of tasks is the primary aim of our benchmarking framework. We facilitate the automation of testing by including a programmatic way of deploying open-source models.
+\item
+  \textbf{prompts}: Since model performance can dramatically rely on the used prompts, a set of prompts for each task with varying degrees of specificity and fixed as well as variable components is used to evaluate this variability.
+\item
+  \textbf{datasets}: We test various tasks using a set of datasets for each task in question-answer-style.
+\item
+  \textbf{data processing}: Some data processing steps can have great impact on the downstream performance of LLMs.
+  For instance, we test the conversion of numbers (which LLMs are notoriously bad at handling) to categorical text (e.g., low, medium, high).
+\item
+  \textbf{model quantisations}: We test a set of quantisations for each model (where available) to account for the trade-off between model size and performance.
+\item
+  \textbf{model parameters}: Where suitable, we test a set of parameters for each model, such as ``temperature,'' which determines the reproducibility of model responses.
+\item
+  \textbf{integrations}: We write dedicated tests for specific tasks that require integrations, for instance with knowledge graphs or vector databases.
+\item
+  \textbf{stochasticity}: To account for variability in model responses, we include a parameter to run each test multiple times and generate summary statistics.
+\item
+  \textbf{sentiment and behaviour}: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.
+\end{itemize}
+
+The Pytest framework is implemented at \url{https://github.com/biocypher/biochatter/blob/main/benchmark}, and more information is available at \url{https://biochatter.org/benchmarking}.
+The benchmark is updated upon the release of new models and extensions to the datasets, available at \url{https://biochatter.org/benchmark}.
+
+To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
+The encryption is performed using a hybrid encryption scheme, where the data are encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
+The datasets are stored in a dedicated encrypted pipeline that is only accessible to the workflow that executes the benchmark.
+These processes are implemented at \url{https://github.com/biocypher/llm-test-dataset} and accessed from the benchmark procedure in BioChatter.
+
+\hypertarget{knowledge-graphs-1}{%
+\subsubsection{Knowledge Graphs}\label{knowledge-graphs-1}}
+
+We utilise the close connection between BioChatter and the BioCypher framework {[}\protect\hyperlink{ref-tr1XjZ1R}{14}{]} to integrate knowledge graph (KG) queries into the BioChatter API.
+In the BioCypher KG creation, we use a configuration file to map KG contents to ontology terms, including information about each of the entities.
+For instance, we detail the properties of a node and the source and target classes of an edge.
+Additionally, during the KG build process, we enrich this information and save it to a YAML file and, optionally, directly to the KG.
+This information is used by BioChatter to tune its understanding of the KG, which allows the LLM to query the KG more efficiently.
+By understanding the context of the KG, the exact contents, and the exact spelling of all identifiers and properties, we effectively support the LLM in generating correct queries.
+To illustrate the usage of this feature, we provide a demonstration repository at \url{https://github.com/biocypher/pole} including a KG build procedure and web app, which can be run using a single Docker Compose command.
+The pole KG can also be used in conjunction with the BioChatter Next app by using the \texttt{docker-compose-incl-kg.yaml} file to build the application locally.
+A demonstration of this use case is available in \protect\hyperlink{supplementary-note-1-knowledge-graph-retrieval-augmented-generation}{Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation} and on our website (\url{https://biochatter.org/vignette-kg/}).
+
+\hypertarget{retrieval-augmented-generation-1}{%
+\subsubsection{Retrieval-Augmented Generation}\label{retrieval-augmented-generation-1}}
+
+While current LLMs possess extensive internal general knowledge, they may not know how to prioritise very specific scientific results, or they may not have had access to some research articles in their training data (e.g., due to their recency or licensing issues).
+To bridge this gap, we can provide additional information from relevant publications to the model via the prompt.
+However, we frequently cannot add entire publications to the prompt, since the input length of current models still is restricted; we need to isolate the information that is specifically relevant to the question given by the user.
+To find this information, we perform a semantic similarity search between the user's question and the contents of user-provided scientific articles (or other texts).
+The most efficient way to do this mapping is by using a vector database {[}\protect\hyperlink{ref-o6hUZE9J}{42}{]}.
+
+The contextual background information provided by the user (e.g., by uploading a scientific article of prior work related to the experiment to be interpreted) is split into pieces suitable to be digested by the LLM, which are individually embedded by the model.
+These embeddings (represented by vectors) are used to store the text fragments in a vector database; the storage as vectors allows fast and efficient retrieval of similar entities via the comparison of individual vectors.
+For example, the two sentences ``Amyloid beta levels are associated with Alzheimer's Disease stage.'' and ``One of the most important clinical markers of AD progression is the amount of deposited A-beta 42.'' would be closely associated in a vector database (given the embedding model is of sufficient quality, i.e., similar to GPT-3 or better), while traditional text-based similarity metrics probably would not identify them as highly similar.
+
+By comparing the user's question to prior knowledge in the vector database, we can extract the relevant pieces of information from the entire background.
+Even better, we can first use an LLM to generate an answer to the user's question and then use this answer to query the vector database for relevant information.
+Regardless of whether the initial answer is correct, it is likely that the ``fake answer'' is more semantically similar to the relevant pieces of information than the user's question {[}\protect\hyperlink{ref-o6hUZE9J}{42}{]}.
+Semantic search results (for instance, single sentences directly related to the topic of the question) are then sufficiently small to be added to the prompt.
+In this way, the model can learn from additional context without the need for retraining or fine-tuning.
+This method is sometimes described as in-context learning {[}\protect\hyperlink{ref-1BzQcjRCZ}{30}{]} or retrieval-augmented generation {[}\protect\hyperlink{ref-aiaYUZ1t}{43}{]}.
+
+To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the vectorstore\_host.py module), and for performing semantic search on the vector database and injecting the results into the prompt (in the vectorstore.py module).
+To demonstrate the use of the API, we add a ``Retrieval-Augmented Generation'' tab to the preview apps that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
+This contextual information is transparently displayed.
+Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the BioChatter Light app in one Docker Compose workflow.
+
+An example use case of this functionality is available in \protect\hyperlink{supplementary-note-2-retrieval-augmented-generation}{Supplementary Note 2: Retrieval-Augmented Generation} and on our website (\url{https://biochatter.org/vignette-rag/}).
+
+\hypertarget{deployment-of-open-source-models}{%
+\subsubsection{Deployment of Open-Source Models}\label{deployment-of-open-source-models}}
+
+To facilitate access to open-source models, we adopt a flexible deployment framework based on the Xorbits Inference API {[}\protect\hyperlink{ref-mGEvmJGA}{17}{]}.
+Xorbits Inference includes a large number of open-source models out of the box, and new models from Hugging Face Hub {[}\protect\hyperlink{ref-12p6amlLS}{44}{]} can be added using the intuitive graphical user interface.
+We used Xorbits Inference version 0.8.4 to deploy the benchmarked models, and we provide a Docker Compose repository to deploy the app on a Linux server with Nvidia GPUs (\url{https://github.com/biocypher/xinference-docker-builtin/}).
+This Compose uses the multi-architecture image (for ARM64 and AMD64 chips) we provide on our Docker Hub organisation (\url{https://hub.docker.com/repository/docker/biocypher/xinference-builtin}).
+On Mac OS with Apple Silicon chips, Docker does not have access to the GPU driver, and as such, Xinference needs to be deployed natively.
+
+\hypertarget{model-chaining}{%
+\subsubsection{Model Chaining}\label{model-chaining}}
+
+The ability of LLMs to control external software, including other LLMs, opens up a wide range of possibilities for the orchestration of complex tasks.
+A simple example is the implementation of a correcting agent, which receives the output of the primary model and checks it for factual correctness.
+If the agent detects an error, it can prompt the primary model to correct its output, or forward this correction to the user directly.
+Since this relies on the internal knowledge base of the correcting agent, the same caveats apply, as the correcting agent may confabulate as well.
+However, since the agent is independent of the primary model (being set up with dedicated prompts), it is less likely to confabulate in the same way.
+
+This approach can be extended to a more complex model chain, where the correcting agent, for example, can query a knowledge graph or a vector database to ground its responses in prior knowledge.
+These chains are easy to implement, and some are available out of the box in the LangChain framework {[}\protect\hyperlink{ref-UEmjXz02}{11}{]}.
+However, they can behave unpredictably, which increases with the number of links in the chain, and as such should be tightly controlled.
+They also add to the computational burden of the system, which is particularly relevant for deployments on end-user devices.
+
+\hypertarget{author-contributions}{%
+\subsection{Author Contributions}\label{author-contributions}}
+
+SL conceptualised and developed the platform and wrote the manuscript.
+AM implemented the local deployment functionality.
+NK implemented benchmarking procedures.
+CW architected the BioChatter Next server infrastructure.
+QM oversaw the development and deployment of the BioChatter Next server environment.
+SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the BioChatter Next server.
+JB provided guidance and supervision as well as hardware resources for local LLM use and contributed to performance benchmarking.
+JSR supervised the project, revised the manuscript, and acquired funding.
+All authors read and approved the final manuscript.
+
+\hypertarget{acknowledgements}{%
+\subsection{Acknowledgements}\label{acknowledgements}}
+
+We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
+
+This work was supported by funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 965193 (SL) and 101057619 (JB), the Swiss State Secretariat for Education, Research and Innovation (SERI) under contract No.~22.00115 (JB), award U54-AG075931 (QM) from the National Institutes of Health, award NSF1945971 (QM) from the National Science Foundation, and the Pelotonia Institute of Immuno-Oncology (PIIO).
+
+\hypertarget{conflict-of-interest}{%
+\subsection{Conflict of Interest}\label{conflict-of-interest}}
+
+JSR reports funding from GSK, Pfizer and Sanofi and fees/honoraria from Travere Therapeutics, Stadapharm, Pfizer, Grunenthal, and Astex Pharmaceuticals.
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-195HIa77n}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{\textbf{Study reveals cancer's `infinite' ability to evolve}
+\CSLBlock{James Gallagher} \emph{BBC News} (2023-04-12) \url{https://www.bbc.com/news/health-65252510}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1AZn5l2ah}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{\textbf{Current progress and open challenges for applying deep learning across the biosciences}
+\CSLBlock{Nicolae Sapoval, Amirali Aghazadeh, Michael G Nute, Dinler A Antunes, Advait Balaji, Richard Baraniuk, CJ Barberan, Ruth Dannenfelser, Chen Dun, Mohammadamin Edrisi, \ldots{} Todd J Treangen} \emph{Nature Communications} (2022-04-01) \url{https://doi.org/gp26xk}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-022-29268-7}{10.1038/s41467-022-29268-7} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35365602}{35365602} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8976012}{PMC8976012}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-q5vfV9nk}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{\textbf{Capacity limits of information processing in the brain}
+\CSLBlock{René Marois, Jason Ivanoff} \emph{Trends in Cognitive Sciences} (2005-06) \url{https://doi.org/d5gmqt}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.tics.2005.04.010}{10.1016/j.tics.2005.04.010} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/15925809}{15925809}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-JIjeWPOb}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{\textbf{PaLM: Scaling Language Modeling with Pathways}
+\CSLBlock{Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, \ldots{} Noah Fiedel} \emph{arXiv} (2022) \url{https://doi.org/kfxf}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2204.02311}{10.48550/arxiv.2204.02311}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-IzWFZmuQ}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{\textbf{LaMDA: Language Models for Dialog Applications}
+\CSLBlock{Romal Thoppilan, Daniel De Freitas, Jamie Hall, Noam Shazeer, Apoorv Kulshreshtha, Heng-Tze Cheng, Alicia Jin, Taylor Bos, Leslie Baker, Yu Du, \ldots{} Quoc Le} \emph{arXiv} (2022) \url{https://doi.org/kmfc}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2201.08239}{10.48550/arxiv.2201.08239}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-17lpGtuH5}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{\textbf{GPT-4 Technical Report}
+\CSLBlock{OpenAI, :, Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, \ldots{} Barret Zoph} \emph{arXiv} (2023) \url{https://doi.org/grx4cb}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2303.08774}{10.48550/arxiv.2303.08774}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-viLUfCLq}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{\textbf{Autonomous chemical research with large language models}
+\CSLBlock{Daniil A Boiko, Robert MacKnight, Ben Kline, Gabe Gomes} \emph{Nature} (2023-12-20) \url{https://doi.org/gs9v4v}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41586-023-06792-0}{10.1038/s41586-023-06792-0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/38123806}{38123806} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10733136}{PMC10733136}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ae7XiPvs}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{\textbf{Assessing GPT-4 for cell type annotation in single-cell RNA-seq analysis}
+\CSLBlock{Wenpin Hou, Zhicheng Ji} \emph{Cold Spring Harbor Laboratory} (2023-04-21) \url{https://doi.org/gsznzg}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2023.04.16.537094}{10.1101/2023.04.16.537094} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37131626}{37131626} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10153208}{PMC10153208}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-wo7jyZHW}{}}%
+\CSLLeftMargin{9. }%
+\CSLRightInline{\textbf{How will generative AI disrupt data science in drug discovery?}
+\CSLBlock{Jean-Philippe Vert} \emph{Nature Biotechnology} (2023-05-08) \url{https://doi.org/gsznzd}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41587-023-01789-6}{10.1038/s41587-023-01789-6} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37156917}{37156917}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-elx4isXx}{}}%
+\CSLLeftMargin{10. }%
+\CSLRightInline{\textbf{Foundation models for generalist medical artificial intelligence}
+\CSLBlock{Michael Moor, Oishi Banerjee, Zahra Shakeri Hossein Abad, Harlan M Krumholz, Jure Leskovec, Eric J Topol, Pranav Rajpurkar} \emph{Nature} (2023-04-12) \url{https://doi.org/gr4td4}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41586-023-05881-4}{10.1038/s41586-023-05881-4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37045921}{37045921}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-UEmjXz02}{}}%
+\CSLLeftMargin{11. }%
+\CSLRightInline{\textbf{🦜️🔗 Langchain} \url{https://python.langchain.com/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gy4YOpGJ}{}}%
+\CSLLeftMargin{12. }%
+\CSLRightInline{\textbf{AutoGPT Official}
+\CSLBlock{AutoGPT Official} (2024-01-29) \url{https://autogpt.net/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-fliCQWwF}{}}%
+\CSLLeftMargin{13. }%
+\CSLRightInline{\textbf{Towards Conversational Diagnostic AI}
+\CSLBlock{Tao Tu, Anil Palepu, Mike Schaekermann, Khaled Saab, Jan Freyberg, Ryutaro Tanno, Amy Wang, Brenna Li, Mohamed Amin, Nenad Tomasev, \ldots{} Vivek Natarajan} \emph{arXiv} (2024) \url{https://doi.org/gtdmpj}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2401.05654}{10.48550/arxiv.2401.05654}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-tr1XjZ1R}{}}%
+\CSLLeftMargin{14. }%
+\CSLRightInline{\textbf{Democratizing knowledge representation with BioCypher}
+\CSLBlock{Sebastian Lobentanzer, Patrick Aloy, Jan Baumbach, Balazs Bohar, Vincent J Carey, Pornpimol Charoentong, Katharina Danhauser, Tunca Doğan, Johann Dreo, Ian Dunham, \ldots{} Julio Saez-Rodriguez} \emph{Nature Biotechnology} (2023-06-19) \url{https://doi.org/gszqjr}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41587-023-01848-y}{10.1038/s41587-023-01848-y} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37337100}{37337100}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-SgpSThMj}{}}%
+\CSLLeftMargin{15. }%
+\CSLRightInline{\textbf{Llama 2: Open Foundation and Fine-Tuned Chat Models}
+\CSLBlock{Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, \ldots{} Thomas Scialom} \emph{arXiv} (2023) \url{https://doi.org/ktkj}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2307.09288}{10.48550/arxiv.2307.09288}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1B6emxNKq}{}}%
+\CSLLeftMargin{16. }%
+\CSLRightInline{\textbf{Mixtral of Experts}
+\CSLBlock{Albert Q Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Emma Bou Hanna, Florian Bressand, \ldots{} William El Sayed} \emph{arXiv} (2024) \url{https://doi.org/gtc2g3}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2401.04088}{10.48550/arxiv.2401.04088}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mGEvmJGA}{}}%
+\CSLLeftMargin{17. }%
+\CSLRightInline{\textbf{xorbitsai/inference}
+\CSLBlock{Xorbits} (2024-02-08) \url{https://github.com/xorbitsai/inference}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-PDhRVYjU}{}}%
+\CSLLeftMargin{18. }%
+\CSLRightInline{\url{https://www.reuters.com/technology/european-data-protection-board-discussing-ai-policy-thursday-meeting-2023-04-13/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-C5Z1X3MG}{}}%
+\CSLLeftMargin{19. }%
+\CSLRightInline{\textbf{Terms of use} \url{https://openai.com/policies/terms-of-use}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-17E1dWalv}{}}%
+\CSLLeftMargin{20. }%
+\CSLRightInline{\textbf{Why open-source generative AI models are an ethical way forward for science}
+\CSLBlock{Arthur Spirling} \emph{Nature} (2023-04-18) \url{https://doi.org/gsqx6v}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-023-01295-4}{10.1038/d41586-023-01295-4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37072520}{37072520}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-NicesiwN}{}}%
+\CSLLeftMargin{21. }%
+\CSLRightInline{\textbf{Hugging Face Hub documentation} \url{https://huggingface.co/docs/hub/index}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-LE2GwIqT}{}}%
+\CSLLeftMargin{22. }%
+\CSLRightInline{\textbf{Open LLM Leaderboard - a Hugging Face Space by HuggingFaceH4} \url{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-uYvzQA7w}{}}%
+\CSLLeftMargin{23. }%
+\CSLRightInline{\textbf{BioLLMBench: A Comprehensive Benchmarking of Large Language Models in Bioinformatics}
+\CSLBlock{Varuni Sarwal, Viorel Munteanu, Timur Suhodolschi, Dumitru Ciorba, Eleazar Eskin, Wei Wang, Serghei Mangul} \emph{Cold Spring Harbor Laboratory} (2023-12-20) \url{https://doi.org/gtbgvk}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2023.12.19.572483}{10.1101/2023.12.19.572483}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-UNYcEMOH}{}}%
+\CSLLeftMargin{24. }%
+\CSLRightInline{\textbf{A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT}
+\CSLBlock{Jules White, Quchen Fu, Sam Hays, Michael Sandborn, Carlos Olea, Henry Gilbert, Ashraf Elnashar, Jesse Spencer-Smith, Douglas C Schmidt} \emph{arXiv} (2023) \url{https://doi.org/grxct8}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2302.11382}{10.48550/arxiv.2302.11382}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1AogcQAl1}{}}%
+\CSLLeftMargin{25. }%
+\CSLRightInline{\textbf{Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4}
+\CSLBlock{Sondos Mahmoud Bsharat, Aidar Myrzakhan, Zhiqiang Shen} \emph{arXiv} (2023) \url{https://doi.org/gtdnfg}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2312.16171}{10.48550/arxiv.2312.16171}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-14upAJPXR}{}}%
+\CSLLeftMargin{26. }%
+\CSLRightInline{\textbf{pytest-dev/pytest}
+\CSLBlock{pytest-dev} (2024-02-08) \url{https://github.com/pytest-dev/pytest}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-KONKs6Pw}{}}%
+\CSLLeftMargin{27. }%
+\CSLRightInline{\textbf{Large language models encode clinical knowledge}
+\CSLBlock{Karan Singhal, Shekoofeh Azizi, Tao Tu, SSara Mahdavi, Jason Wei, Hyung Won Chung, Nathan Scales, Ajay Tanwani, Heather Cole-Lewis, Stephen Pfohl, \ldots{} Vivek Natarajan} \emph{Nature} (2023-07-12) \url{https://doi.org/gsgp8c}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41586-023-06291-2}{10.1038/s41586-023-06291-2} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37438534}{37438534} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10396962}{PMC10396962}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-foK1oImy}{}}%
+\CSLLeftMargin{28. }%
+\CSLRightInline{\textbf{Holistic Evaluation of Language Models (HELM)} \url{https://crfm.stanford.edu/helm/lite/latest/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-yT66jV6G}{}}%
+\CSLLeftMargin{29. }%
+\CSLRightInline{\textbf{NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark}
+\CSLBlock{Oscar Sainz, Jon Ander Campos, Iker García-Ferrero, Julen Etxaniz, Oier Lopez de Lacalle, Eneko Agirre} \emph{arXiv} (2023) \url{https://doi.org/gtbgvp}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2310.18018}{10.48550/arxiv.2310.18018}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1BzQcjRCZ}{}}%
+\CSLLeftMargin{30. }%
+\CSLRightInline{\textbf{HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face}
+\CSLBlock{Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang} \emph{arXiv} (2023) \url{https://doi.org/gskd97}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2303.17580}{10.48550/arxiv.2303.17580}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hHuKg12k}{}}%
+\CSLLeftMargin{31. }%
+\CSLRightInline{\textbf{Gorilla: Large Language Model Connected with Massive APIs}
+\CSLBlock{Shishir G Patil, Tianjun Zhang, Xin Wang, Joseph E Gonzalez} \emph{arXiv} (2023) \url{https://doi.org/gtbgvm}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2305.15334}{10.48550/arxiv.2305.15334}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lmJHElQl}{}}%
+\CSLLeftMargin{32. }%
+\CSLRightInline{\textbf{A Survey on Large Language Model based Autonomous Agents}
+\CSLBlock{Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, Jiakai Tang, Xu Chen, Yankai Lin, \ldots{} Ji-Rong Wen} \emph{arXiv} (2023) \url{https://doi.org/gsv93m}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2308.11432}{10.48550/arxiv.2308.11432}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-BXdkfGlr}{}}%
+\CSLLeftMargin{33. }%
+\CSLRightInline{\textbf{There are holes in Europe's AI Act --- and researchers can help to fill them}
+\CSLBlock{Nature} (2024-01-10) \url{https://doi.org/gtdnfb}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-024-00029-4}{10.1038/d41586-024-00029-4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/38200306}{38200306}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-3cvgHyjq}{}}%
+\CSLLeftMargin{34. }%
+\CSLRightInline{\textbf{Is AI leading to a reproducibility crisis in science?}
+\CSLBlock{Philip Ball} \emph{Nature} (2023-12-05) \url{https://doi.org/gs8bmk}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-023-03817-6}{10.1038/d41586-023-03817-6} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/38052897}{38052897}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kWGPJCV0}{}}%
+\CSLLeftMargin{35. }%
+\CSLRightInline{\textbf{Generative AI could revolutionize health care --- but not if control is ceded to big tech}
+\CSLBlock{Augustin Toma, Senthujan Senkaiahliyan, Patrick R Lawler, Barry Rubin, Bo Wang} \emph{Nature} (2023-11-30) \url{https://doi.org/gtdnd9}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-023-03803-y}{10.1038/d41586-023-03803-y} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/38036861}{38036861}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-TeDQ9cuh}{}}%
+\CSLLeftMargin{36. }%
+\CSLRightInline{\textbf{The perpetual motion machine of AI-generated data and the distraction of ChatGPT as a `scientist'}
+\CSLBlock{Jennifer Listgarten} \emph{Nature Biotechnology} (2024-01-25) \url{https://doi.org/gtf6xh}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41587-023-02103-0}{10.1038/s41587-023-02103-0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/38273064}{38273064}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-JKZeMkVq}{}}%
+\CSLLeftMargin{37. }%
+\CSLRightInline{\textbf{Scientific Utopia}
+\CSLBlock{Brian A Nosek, Jeffrey R Spies, Matt Motyl} \emph{Perspectives on Psychological Science} (2012-11) \url{https://doi.org/f4fc2k}
+\CSLBlock{DOI: \href{https://doi.org/10.1177/1745691612459058}{10.1177/1745691612459058} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26168121}{26168121} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10540222}{PMC10540222}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-47ndFyxw}{}}%
+\CSLLeftMargin{38. }%
+\CSLRightInline{\textbf{Git-Theta: A Git Extension for Collaborative Development of Machine Learning Models}
+\CSLBlock{Nikhil Kandpal, Brian Lester, Mohammed Muqeeth, Anisha Mascarenhas, Monty Evans, Vishal Baskaran, Tenghao Huang, Haokun Liu, Colin Raffel} \emph{arXiv} (2023) \url{https://doi.org/gtdnfd}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2306.04529}{10.48550/arxiv.2306.04529}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-JbgxHZwW}{}}%
+\CSLLeftMargin{39. }%
+\CSLRightInline{\textbf{Crosslingual Generalization through Multitask Finetuning}
+\CSLBlock{Niklas Muennighoff, Thomas Wang, Lintang Sutawika, Adam Roberts, Stella Biderman, Teven Le Scao, MSaiful Bari, Sheng Shen, Zheng-Xin Yong, Hailey Schoelkopf, \ldots{} Colin Raffel} \emph{arXiv} (2022) \url{https://doi.org/gtdnfc}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2211.01786}{10.48550/arxiv.2211.01786}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-43KJj9IS}{}}%
+\CSLLeftMargin{40. }%
+\CSLRightInline{\textbf{MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning}
+\CSLBlock{Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny} \emph{arXiv} (2023) \url{https://doi.org/gtdnff}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2310.09478}{10.48550/arxiv.2310.09478}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-MMp6cQ1x}{}}%
+\CSLLeftMargin{41. }%
+\CSLRightInline{\textbf{The TRUST Principles for digital repositories}
+\CSLBlock{Dawei Lin, Jonathan Crabtree, Ingrid Dillo, Robert R Downs, Rorie Edmunds, David Giaretta, Marisa De Giusti, Hervé L'Hours, Wim Hugo, Reyna Jenkyns, \ldots{} John Westbrook} \emph{Scientific Data} (2020-05-14) \url{https://doi.org/ggwrtj}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41597-020-0486-7}{10.1038/s41597-020-0486-7} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32409645}{32409645} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7224370}{PMC7224370}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-o6hUZE9J}{}}%
+\CSLLeftMargin{42. }%
+\CSLRightInline{\textbf{Large Language Models for Information Retrieval: A Survey}
+\CSLBlock{Yutao Zhu, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Haonan Chen, Zhicheng Dou, Ji-Rong Wen} \emph{arXiv} (2023) \url{https://doi.org/gtbgvn}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2308.07107}{10.48550/arxiv.2308.07107}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-aiaYUZ1t}{}}%
+\CSLLeftMargin{43. }%
+\CSLRightInline{\textbf{Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks}
+\CSLBlock{Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, \ldots{} Douwe Kiela} \emph{Advances in Neural Information Processing Systems} (2020) \url{https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-12p6amlLS}{}}%
+\CSLLeftMargin{44. }%
+\CSLRightInline{\textbf{Hugging Face -- The AI community building the future.} (2024-02-05) \url{https://huggingface.co/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-19HQJNP46}{}}%
+\CSLLeftMargin{45. }%
+\CSLRightInline{\textbf{ABC transporters affects tumor immune microenvironment to regulate cancer immunotherapy and multidrug resistance}
+\CSLBlock{Jingyi Fan, Kenneth Kin Wah To, Zhe-Sheng Chen, Liwu Fu} \emph{Drug Resistance Updates} (2023-01) \url{https://doi.org/gtg7tg}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.drup.2022.100905}{10.1016/j.drup.2022.100905} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36463807}{36463807}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jwL7pDi7}{}}%
+\CSLLeftMargin{46. }%
+\CSLRightInline{\textbf{ABC transporters and the hallmarks of cancer: roles in cancer aggressiveness beyond multidrug resistance}
+\CSLBlock{Wanjiru Muriithi, Lucy Wanjiku Macharia, Carlos Pilotto Heming, Juliana Lima Echevarria, Atunga Nyachieo, Paulo Niemeyer Filho, Vivaldo Moura Neto} \emph{Cancer Biology and Medicine} (2020) \url{https://doi.org/gtg7tj}
+\CSLBlock{DOI: \href{https://doi.org/10.20892/j.issn.2095-3941.2019.0284}{10.20892/j.issn.2095-3941.2019.0284} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32587767}{32587767} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7309456}{PMC7309456}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1FZo9NpKt}{}}%
+\CSLLeftMargin{47. }%
+\CSLRightInline{\textbf{Advances in the structure, mechanism and targeting of chemoresistance-linked ABC transporters}
+\CSLBlock{Andaleeb Sajid, Hadiar Rahman, Suresh V Ambudkar} \emph{Nature Reviews Cancer} (2023-09-15) \url{https://doi.org/gss2df}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41568-023-00612-3}{10.1038/s41568-023-00612-3} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37714963}{37714963}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-115NnruMc}{}}%
+\CSLLeftMargin{48. }%
+\CSLRightInline{\textbf{ATP‐binding cassette (ABC) transporters in cancer: A review of recent updates}
+\CSLBlock{Jing‐Quan Wang, Zhuo‐Xun Wu, Yuqi Yang, Qiu‐Xu Teng, Yi‐Dong Li, Zi‐Ning Lei, Khushboo A Jani, Neeraj Kaushal, Zhe‐Sheng Chen} \emph{Journal of Evidence-Based Medicine} (2021-08-13) \url{https://doi.org/gtg7th}
+\CSLBlock{DOI: \href{https://doi.org/10.1111/jebm.12434}{10.1111/jebm.12434} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34388310}{34388310}}}
+
+\end{CSLReferences}
+
+\hypertarget{supplementary-materials}{%
+\subsection{Supplementary Materials}\label{supplementary-materials}}
+
+\hypertarget{supplementary-note-1-knowledge-graph-retrieval-augmented-generation}{%
+\subsubsection{Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation}\label{supplementary-note-1-knowledge-graph-retrieval-augmented-generation}}
+
+This vignette demonstrates the KG module of BioChatter as used by the BioChatter
+Next application. It is available online (including video and more information)
+at \url{https://biochatter.org/vignette-kg/}.
+We connect to a BioCypher knowledge graph (KG) to retrieve relevant information
+for a given question. We then use the retrieved information to generate a
+response to the question. The application can connect to any real-world
+BioCypher KG by providing the connection details in the \texttt{KG\ Settings} dialog.
+
+Background
+
+For the demonstration purposes of this vignette, we include a demo KG based on
+an open-source dataset of crime statistics in Manchester, because it allows us
+to redistribute the KG due to its small size and public domain licence, and
+because it is easily understood. This is the schema of the demo KG:
+
+\begin{fignos:no-prefix-figure-caption}
+
+\begin{figure}
+\centering
+\includegraphics{images/pole-schema.png}
+\caption{Pole KG schema}
+\end{figure}
+
+\end{fignos:no-prefix-figure-caption}
+
+Usage
+
+In BioChatter Next, we first activate the KG functionality by clicking on the
+\texttt{KG\ Settings} button in the sidebar. In the settings dialog, we can activate the
+KG functionality and select how many results we want to retrieve.
+
+\begin{fignos:no-prefix-figure-caption}
+
+\begin{figure}
+\centering
+\includegraphics{images/kg-settings.png}
+\caption{KG Settings}
+\end{figure}
+
+\end{fignos:no-prefix-figure-caption}
+
+Returning to the conversation and enabling the KG functionality for the current
+chat (directly above the send button), we can then ask the model about the KG.
+The language model we use is \texttt{gpt-3.5-turbo}. The full conversation is pasted
+below, including the queries generated by BioChatter.
+
+\begin{fignos:no-prefix-figure-caption}
+
+\begin{figure}
+\centering
+\includegraphics{images/kg-demo.png}
+\caption{KG Conversation}
+\end{figure}
+
+\end{fignos:no-prefix-figure-caption}
+
+In the background, the RagAgent module of BioChatter receives the question and
+generates a query to retrieve the desired information. This is then passed back
+to the primary model, which includes it in its answer generation.
+
+Conclusion
+
+The native integration of BioCypher KGs into the BioChatter framework allows for
+a seamless integration of KGs into the conversational AI. This in turn
+facilitates knowledge accessibility in a wide range of application domains.
+
+Note: the apparent inability of GPT to understand certain directionalities, and how BioChatter compensates for this
+
+Interestingly, while \texttt{gpt-3.5-turbo} mostly does a formidable job at translating
+natural language questions into Cypher queries, it is remarkably obtuse in
+certain instances. For instance, for the relationship \texttt{INVESTIGATED\_BY}, which
+connects a \texttt{Crime} to an \texttt{Officer}, GPT consistently fails to understand that
+the relationship implies that the \texttt{Officer} is the one who investigates the
+\texttt{Crime}. Instead, it consistently interprets the relationship as if the \texttt{Crime}
+investigates the \texttt{Officer}: it consistently proposes the query \texttt{MATCH\ (o:Officer)-{[}:INVESTIGATED\_BY{]}-\textgreater{}(c:Crime)\ RETURN\ c,\ o} instead of the correct
+\texttt{MATCH\ (c:Crime)-{[}:INVESTIGATED\_BY{]}-\textgreater{}(o:Officer)\ RETURN\ c,\ o}. We were not able
+to change this behaviour with any contextual prompt instructions.
+
+For this reason, the BioChatter \texttt{prompts.py} module uses the knowledge we have
+about the directionality of edges in the BioCypher KG to only propose options
+for patterns that actually exist in the KG. In the instance of
+\texttt{INVESTIGATED\_BY}, this is the corresponding YAML definition in BioCypher:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{investigated by}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{is\_a}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{fact}\KeywordTok{,}\AttributeTok{ core}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{represented\_as}\KeywordTok{:}\AttributeTok{ edge}
+\AttributeTok{    }\FunctionTok{label\_as\_edge}\KeywordTok{:}\AttributeTok{ INVESTIGATED\_BY}
+\AttributeTok{    }\FunctionTok{input\_label}\KeywordTok{:}\AttributeTok{ INVESTIGATED\_BY}
+\AttributeTok{    }\FunctionTok{source}\KeywordTok{:}\AttributeTok{ crime}
+\AttributeTok{    }\FunctionTok{target}\KeywordTok{:}\AttributeTok{ officer}
+\end{Highlighting}
+\end{Shaded}
+
+The presence of the \texttt{source} and \texttt{target} annotations allows us to provide only
+the correct options to the LLM, which in turn allows the LLM to generate the
+correct query.
+
+Strikingly, this even applies to \texttt{GPT-4} and \texttt{ChatGPT}, which we used to
+generate the Schema diagram above. The model immediately proposed a correct
+Mermaid diagram for most of the entire schema definition YAML file, except for
+the relationship between \texttt{Crime} and \texttt{Officer}, which it reversed. Via the YAML
+we provide in the prompt, GPT has access to the correct directionality, but it
+still fails to understand it.
+
+\begin{verbatim}
+graph LR;
+    Person(:Person) -- KNOWS --> Person
+    Person -- FAMILY_REL --> Person
+    Person -- LIVES_AT --> Location(:Location)
+    Person -- PARTY_TO --> Crime(:Crime)
+    Person -- MADE_CALL --> PhoneCall(:PhoneCall)
+    Person -- RECEIVED_CALL --> PhoneCall
+    Officer(:Officer) -- INVESTIGATED_BY --> Crime
+    Crime -- OCCURRED_AT --> Location
+    Object(:Object) -- INVOLVED_IN --> Crime
+
+    classDef node fill:#f9f,stroke:#333,stroke-width:2px;
+    class Person,Officer,Location,Crime,PhoneCall,Object node;
+\end{verbatim}
+
+Here is the \href{https://chat.openai.com/share/8e3b8ed6-c8a2-4460-a1ad-fe637e4c3db1}{full
+chat} for
+reference.
+
+\hypertarget{conversation}{%
+\paragraph{Conversation}\label{conversation}}
+
+The boxes below the BioChatter responses in the conversation show the queries
+generated by the RagAgent module.
+
+\hypertarget{message-from-you}{%
+\subparagraph{Message From You}\label{message-from-you}}
+
+How many crimes happened in total?
+
+\hypertarget{message-from-biochatter}{%
+\subparagraph{Message From BioChatter}\label{message-from-biochatter}}
+
+According to the provided statement, the total number of crimes is 28,762. This information suggests that there have been 28,762 reported crimes in the given context. However, without additional information or context, it is difficult to determine the specific time period, location, or nature of these crimes. It's important to note that crime statistics can vary depending on the source, methodology, and reporting practices. Therefore, it is always advisable to consult official crime reports or local law enforcement agencies for the most accurate and up-to-date information on crime statistics.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{MATCH (c:Crime)}
+\NormalTok{RETURN count(c) AS numberOfCrimes}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{message-from-you-1}{%
+\subparagraph{Message From You}\label{message-from-you-1}}
+
+Where happened most crimes?
+
+\hypertarget{message-from-biochatter-1}{%
+\subparagraph{Message From BioChatter}\label{message-from-biochatter-1}}
+
+Based on the provided statement, it appears that the location with the highest number of crimes is a parking area, with a total of 811 reported crimes. However, without additional context or information, it is difficult to determine the consistency or inconsistency of this statement with other available information. It is important to note that crime rates and locations can vary significantly depending on various factors such as the region, city, neighborhood, and specific time period being considered. To provide a more comprehensive analysis, it would be helpful to have access to a broader dataset or additional information about the specific location and its crime statistics.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{MATCH (c:Crime){-}[:OCCURRED\_AT]{-}\textgreater{}(l:Location)}
+\NormalTok{RETURN l.address AS location, COUNT(c) AS crimeCount}
+\NormalTok{ORDER BY crimeCount DESC}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{message-from-you-2}{%
+\subparagraph{Message From You}\label{message-from-you-2}}
+
+Who were the top 3 offenders?
+
+\hypertarget{message-from-biochatter-2}{%
+\subparagraph{Message From BioChatter}\label{message-from-biochatter-2}}
+
+Based on the provided information, the top three offenders are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Phillip Williamson: According to the information given, Phillip Williamson has committed 5 crimes.
+\item
+  Jessica Kelly: The information states that Jessica Kelly has also committed 5 crimes.
+\item
+  Brian Morales: The data indicates that Brian Morales has committed 4 crimes.
+\end{enumerate}
+
+These three individuals, Phillip Williamson, Jessica Kelly, and Brian Morales, are the top offenders based on the number of crimes they have committed.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{MATCH (p:Person){-}[:PARTY\_TO]{-}\textgreater{}(c:Crime)}
+\NormalTok{RETURN p.name, p.surname, COUNT(c) AS num\_crimes}
+\NormalTok{ORDER BY num\_crimes DESC}
+\NormalTok{LIMIT 3}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{supplementary-note-2-retrieval-augmented-generation}{%
+\subsubsection{Supplementary Note 2: Retrieval-Augmented Generation}\label{supplementary-note-2-retrieval-augmented-generation}}
+
+This vignette demonstrates the RAG module of BioChatter as used by the
+BioChatter Next application. This basic use case involves an LLM manuscript
+reading assistant and a vector database with embedded scientific manuscripts
+{[}\protect\hyperlink{ref-19HQJNP46}{45},\protect\hyperlink{ref-jwL7pDi7}{46},\protect\hyperlink{ref-1FZo9NpKt}{47},\protect\hyperlink{ref-115NnruMc}{48}{]}.
+The manuscripts are recent reviews on the topic of ABC transporters (active
+transport proteins that often serve as efflux pumps in many tissues, with a
+major function of clearing exogenous substances) in drug resistance phenomena,
+which we currently investigate in our \href{https://deciderproject.eu}{DECIDER}
+cohort. Manuscripts such as these can be absent from the knowledge base of LLMs
+for various reasons, such as their recency or the fact that they are not open
+access. RAG opens up the possibility to retrieve relevant information from these
+manuscripts, and to inject it into the LLM's generation process.
+
+\hypertarget{usage-1}{%
+\paragraph{Usage}\label{usage-1}}
+
+In BioChatter Next, we first activate the RAG functionality by clicking on the
+\texttt{RAG\ Settings} button in the sidebar. In the settings dialog, we can activate
+the functionality and upload an arbitrary number of documents, which is only
+limited by the scale of the vector database system. In this case, and for
+demonstration purposes, we uploaded the four manuscripts, which leads to the
+state shown in the screenshot below.
+
+\begin{fignos:no-prefix-figure-caption}
+
+\begin{figure}
+\centering
+\includegraphics{images/rag-settings.png}
+\caption{RAG Settings}
+\end{figure}
+
+\end{fignos:no-prefix-figure-caption}
+
+Note that we chose to split the documents into fragments of 1000 characters
+each. We could have split by tokens instead, or changed the fragment length and
+overlap. Fragment length, overlap, and splitting by tokens or characters are
+decisions that should be made in tandem with the choice of LLM model, and with
+the number of fragments that should be retrieved for each query. Most
+importantly, the total text length should not exceed the input context length
+of the model. Here, we choose to inject 10 fragments per query.
+
+We can now start a new conversation (using the \texttt{New\ Persona} button in the
+sidebar), for which we select the \texttt{Research\ manuscript\ helper\ (RAG)} persona,
+which includes suitable contextual prompts. Upon activating the RAG in the chat
+(to signal that we wish to perform RAG for our question), we can enter into a
+dialogue with the assistant. We use \texttt{gpt-3.5-turbo} in this example, which is a
+very affordable model.
+
+\begin{fignos:no-prefix-figure-caption}
+
+\begin{figure}
+\centering
+\includegraphics{images/rag-demo.png}
+\caption{RAG Conversation}
+\end{figure}
+
+\end{fignos:no-prefix-figure-caption}
+
+\hypertarget{comparison-with-chatgpt}{%
+\paragraph{Comparison with ChatGPT}\label{comparison-with-chatgpt}}
+
+We can ask ChatGPT 4 the same question (only subscription access). By employing
+web search, ChatGPT 4 is able to find the same study that was the RAG result we
+were asked about in our follow-up question (Xu et al.~2015); however, the answer
+is not as detailed as the answer provided by the RAG process, and includes fewer
+mentions of explicit studies. While it includes sensible information, there is
+no way of validating most of the claims made by the model. You can read the
+full answer
+\href{https://chat.openai.com/share/549f5bf7-b39c-42a4-9483-d07dcbf5b2d9}{here}.
+Overall, the quality of ChatGPT 4 is comparable to the RAG output, but the user
+has less control over the knowledge used, and the answer cannot include
+information that is not easily found on the web (for instance due to access
+restrictions). Of note, we used \texttt{gpt-3.5-turbo} in this example, which is less
+recent and much less expensive than GPT-4.
+
+Asking the naive ChatGPT 3.5 (free access), the same question yields a very
+different answer. The free version of ChatGPT cannot search the internet, and
+does not provide any citations for the general answer it provides. You can read
+the full answer
+\href{https://chat.openai.com/share/810075aa-69fe-4c06-859d-229e250f4c41}{here}. The
+three full conversations are copied below.
+
+\hypertarget{conclusion-1}{%
+\paragraph{Conclusion}\label{conclusion-1}}
+
+In conclusion, the RAG procedure we implement is able to dramatically improve
+the quality of GPT-3 answers, making them comparable to GPT-4 with web search,
+and even surpassing it in some aspects. We invite you to try it out yourself, as
+we provide an instance of BioChatter Next, including GPT access and a vector
+database instance, free of charge at
+\url{https://next.biochatter.org}.
+
+\hypertarget{conversations}{%
+\paragraph{Conversations}\label{conversations}}
+
+\hypertarget{biochatter-rag}{%
+\subparagraph{BioChatter RAG}\label{biochatter-rag}}
+
+Contextual Prompt
+
+You are an assistant to a biomedical researcher.
+
+Contextual Prompt
+
+You have access to text fragments from one or multiple scientific manuscripts, which were retrieved by their semantic similarity to the user's question.
+
+Contextual Prompt
+
+Your task is to help the user understand the manuscripts and their relevance to their questions. Be concise in your explanations, provide quotes from the manuscripts where appropriate, and be open about limitations in cases where the text does not contain pertinent information.
+
+Message From You
+
+What is known about the CFTR protein in resistance to ovarian cancer?
+
+Message From BioChatter
+
+Based on the provided information, there are several studies that suggest a potential role of the CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) protein in resistance to ovarian cancer. Here are some key findings from the referenced manuscripts:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Gene expression profiling of ovarian tumors before and after chemotherapy revealed molecular signatures of chemoresistant tumors (M, et al., 2006). This study did not specifically mention CFTR, but it provides insights into the molecular changes associated with chemoresistance.
+\item
+  ABCF2 expression, which is related to CFTR, was investigated in clear cell adenocarcinoma of the ovary. The study found a relationship between ABCF2 expression and response to chemotherapy or prognosis (Tsuda H, et al., 2010).
+\item
+  Alterations in gene copy numbers, including CFTR, were identified as a mechanism for acquired drug resistance in cancer (Yasui K, et al., 2004).
+\item
+  ABCF2, an Nrf2 target gene related to CFTR, was found to contribute to cisplatin resistance in ovarian cancer cells (Bao L, et al., 2017).
+\item
+  CFTR was not specifically mentioned in the context of ovarian cancer, but a study on hepatocellular carcinoma found that silencing circ-TCF4.85 inhibited cancer progression through microRNA-486-5p-targeted inhibition of ABCF2 (Gao J, et al., 2020).
+\item
+  Constitutive activation of nuclear factor κB (NF-κB) was associated with CFTR expression and promoted cancer progression and poor prognosis in cervical cancer (Wu Z, et al., 2013).
+\item
+  High levels of CFTR expression were associated with tumor aggression in ovarian cancer, and knockdown of CFTR suppressed ovarian cancer cell proliferation (Xu J, et al., 2015).
+\end{enumerate}
+
+It is important to note that while these studies suggest a potential association between CFTR and resistance to ovarian cancer, the exact mechanisms and clinical implications are still being investigated. Further research is needed to fully understand the role of CFTR in ovarian cancer resistance.
+
+Message From You
+
+Tell me more about the studies of aggression and knockdown of CFTR in vivo.
+
+Message From BioChatter
+
+Based on the provided information, there are two relevant studies regarding the aggression and knockdown of CFTR in ovarian cancer:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The study by Wu et al.~(2013) investigated the constitutive activation of nuclear factor κB (NF-κB) and its contribution to CFTR expression, cancer progression, and poor prognosis in cervical cancer. Although this study is not specific to ovarian cancer, it provides insights into the role of CFTR and NF-κB in promoting cancer progression.
+\item
+  The study by Xu et al.~(2015) focused specifically on ovarian cancer and found that high levels of CFTR expression were associated with tumor aggression. They also demonstrated that knockdown of CFTR suppressed the proliferation of ovarian cancer cells in vitro and in vivo. This study suggests that CFTR may play a role in promoting ovarian cancer growth.
+\end{enumerate}
+
+These studies provide evidence for the involvement of CFTR in cancer aggression and suggest that targeting CFTR could be a potential therapeutic strategy. However, it is important to note that these studies focus on different types of cancer (cervical and ovarian), and the specific mechanisms underlying CFTR's role in ovarian cancer aggression and its knockdown effects are not fully elucidated.
+
+It is worth mentioning that the other references provided in the text fragments are not directly related to the aggression and knockdown of CFTR in ovarian cancer. They discuss topics such as the structure and function of ABC transporters, drug resistance, and inflammation in different contexts.
+
+\hypertarget{chatgpt-4}{%
+\subparagraph{ChatGPT 4}\label{chatgpt-4}}
+
+Anonymous
+
+What is known about the CFTR protein in resistance to ovarian cancer?
+
+ChatGPT
+
+The CFTR protein, known as the cystic fibrosis transmembrane conductance regulator, plays a significant role in ovarian cancer. Research has shown that CFTR is expressed more in ovarian cancer tissues compared to benign ovarian tumors and normal ovaries. This overexpression of CFTR is associated with more advanced stages of ovarian cancer, poor histopathological grade, and higher serum Ca-125 levels, which are all markers of more aggressive disease. Interestingly, the serous type of ovarian cancer shows stronger CFTR staining compared to other types.
+
+Moreover, the role of CFTR extends beyond its traditional function as an ion channel. It interacts with various intracellular signaling pathways that are crucial in cancer progression. For example, in ovarian cancer, CFTR overexpression is linked to interactions with the c-Src signaling pathway, which is involved in cellular growth.
+
+The implications of CFTR expression in ovarian cancer are significant. In studies where CFTR was downregulated, there was a decrease in cell invasion, migration, proliferation, adhesion, and colony formation in vitro. In vivo experiments also showed that the tumorigenic abilities of ovarian cancer cells were significantly repressed when CFTR expression was reduced.
+
+These findings highlight the complex role of CFTR in ovarian cancer and suggest that it could be a potential target for therapeutic intervention. However, it is important to note that the role of CFTR in cancer is multifaceted and varies among different types of cancers. Therefore, a detailed understanding of its function in specific cancer types, like ovarian cancer, is crucial for developing targeted treatments\hspace{0pt}\hspace{0pt}\hspace{0pt}\hspace{0pt} (\url{https://pubmed.ncbi.nlm.nih.gov/25738998/}, \url{https://jmhg.springeropen.com/articles/10.1186/s43042-022-00308-7}).
+
+\hypertarget{chatgpt-3.5}{%
+\subparagraph{ChatGPT 3.5}\label{chatgpt-3.5}}
+
+Anonymous
+
+What is known about the CFTR protein in resistance to ovarian cancer?
+
+ChatGPT
+
+As of my last knowledge update in January 2022, there is limited direct information about the CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) protein's role in resistance to ovarian cancer. CFTR is primarily associated with cystic fibrosis, a genetic disorder that affects the lungs and other organs. However, some research suggests potential links between CFTR and cancer, including ovarian cancer, although the mechanisms are not fully understood.
+
+Here are some key points to consider:
+
+CFTR Expression: Studies have shown that CFTR is expressed in various tissues, including the female reproductive system. Abnormal CFTR expression or function could potentially impact the development or progression of ovarian cancer. Research is ongoing to understand the role of CFTR in cancer biology.
+CFTR Mutations: Certain mutations in the CFTR gene have been associated with an increased risk of cancer, although the evidence for ovarian cancer specifically is limited. Mutations in CFTR are more commonly known for their role in cystic fibrosis. Individuals with cystic fibrosis have an increased risk of various cancers, including gastrointestinal cancers, but the link to ovarian cancer is not well-established.
+Ion Transport and Cancer: CFTR is involved in ion transport across cell membranes, and this function could potentially influence cellular processes relevant to cancer. Changes in ion transport can affect cell proliferation, apoptosis, and other cellular functions that are important in cancer development and progression.
+Potential Therapeutic Target: Some research suggests that modulating CFTR activity or expression could be a potential target for cancer therapy, including ovarian cancer. However, more research is needed to determine the feasibility and effectiveness of such approaches.
+It's important to note that the understanding of the role of CFTR in cancer, including ovarian cancer, is an evolving field, and new research findings may have emerged since my last update in January 2022. To get the most up-to-date information on this topic, I recommend consulting recent scientific literature and speaking with medical experts or researchers actively working in the field of ovarian cancer and CFTR biology.
+
+\hypertarget{the-biochatter-consortium}{%
+\subsubsection{The BioChatter Consortium}\label{the-biochatter-consortium}}
+
+The BioChatter Consortium is a community of researchers and developers who are interested in the application of LLMs to biomedical research.
+We list here alphabetically all members of the consortium who have contributed to the development of the BioChatter framework.
+
+\begin{itemize}
+\tightlist
+\item
+  Adrián G. Díaz (Interuniversity Institute of Bioinformatics in Brussels, Brussels, Belgium and Structural Biology Brussels, Vrije Universiteit Brussels, Brussels, Belgium)
+\item
+  Aurelien Dugourd (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
+\item
+  Emma Verkinderen (Artificial Intelligence Lab, ULB-VUB, La Plaine Campus, Triomflaan, 1050 Brussels, Belgium)
+\item
+  Fernando M. Delgado-Chaves (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany)
+\item
+  Megan McNutt (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
+\item
+  Trang T. Le (Bristol Myers Squibb, 250 Water St, Cambridge, MA 02141, USA)
+\item
+  Yuyao Song (European Molecular Biology Laboratory-European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, Hinxton, United Kingdom)
+\end{itemize}

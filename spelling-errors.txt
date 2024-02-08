@@ -15,9 +15,9 @@ benchmarking
 BioChatter
 BioChatter’s
 BioCypher
-Bioinformatics
+bioinformatics
 biomarker
-Biomedicine
+biomedicine
 Cankun
 CFTR
 CFTR’s
@@ -46,7 +46,7 @@ Feng
 fengsh
 frontend
 frontends
-gpt
+GPT
 GPUs
 Grunenthal
 GSK
