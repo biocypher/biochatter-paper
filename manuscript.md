@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-09" />
   <meta name="citation_publication_date" content="2024-02-09" />
   <meta property="article:published_time" content="2024-02-09" />
-  <meta name="dc.modified" content="2024-02-09T11:35:36+00:00" />
-  <meta property="article:modified_time" content="2024-02-09T11:35:36+00:00" />
+  <meta name="dc.modified" content="2024-02-09T17:08:59+00:00" />
+  <meta property="article:modified_time" content="2024-02-09T17:08:59+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/))
 was automatically generated
-from [biocypher/biochatter-paper@d7c7663](https://github.com/biocypher/biochatter-paper/tree/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2)
+from [biocypher/biochatter-paper@af454b5](https://github.com/biocypher/biochatter-paper/tree/af454b5726c0025f559bd1257d668dfed2e84c08)
 on February 9, 2024.
 </em></small>
 
@@ -235,7 +235,7 @@ We demonstrate use cases via two multi-purpose web apps (https://chat.biocypher.
 
 ## Introduction
 
-Despite technological advances, major challenges remain to understand biological and biomedical systems [@gallagher-infinite;@dl-bioscience].
+Despite technological advances, understanding biological and biomedical systems still poses major challenges [@gallagher-infinite;@dl-bioscience].
 We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation [@dl-bioscience].
 One reason for this challenge may be the inherent limitation of human knowledge [@doi:10.1016/j.tics.2005.04.010]: Even seasoned domain experts cannot know the implications of every gene, molecule, symptom, or biomarker.
 In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.
@@ -283,7 +283,7 @@ Increasingly secure solutions require more effort to set up and maintain, but al
 Fully local solutions are available given sufficient hardware (starting with contemporary laptops), but are not highly scalable.
 ](images/biochatter_architecture.png "Architecture"){#fig:architecture}
 
-The framework is designed to be composable, meaning that any of its components can be exchanged with other implementations (Figure @fig:overview).
+The framework is designed to be modular, meaning that any of its components can be exchanged with other implementations (Figure @fig:overview).
 Functionalities include:
 
 - **basic question answering** with LLMs hosted by providers (such as OpenAI) as well as locally deployed open-source models
@@ -480,7 +480,7 @@ The individual dimensions of the matrix are:
 - **data processing**: Some data processing steps can have great impact on the downstream performance of LLMs. 
 For instance, we test the conversion of numbers (which LLMs are notoriously bad at handling) to categorical text (e.g., low, medium, high).
 
-- **model quantisations**: We test a set of quantisations for each model (where available) to account for the trade-off between model size and performance.
+- **model quantisations**: We test a set of quantisations for each model (where available) to account for the trade-off between model size, inference speed, and performance.
 
 - **model parameters**: Where suitable, we test a set of parameters for each model, such as "temperature," which determines the reproducibility of model responses.
 
@@ -532,7 +532,7 @@ This method is sometimes described as in-context learning [@doi:10.48550/arxiv.2
 To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the vectorstore_host.py module), and for performing semantic search on the vector database and injecting the results into the prompt (in the vectorstore.py module).
 To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the preview apps that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed.
-Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus server, including a way to start the server in conjunction with a BioCypher knowledge graph and the BioChatter Light app in one Docker Compose workflow.
+Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus service, including a way to start the service in conjunction with a BioCypher knowledge graph and the BioChatter Light app in one Docker Compose workflow.
 
 An example use case of this functionality is available in [Supplementary Note 2: Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-rag/](https://biochatter.org/vignette-rag/)).
 

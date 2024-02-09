@@ -48,7 +48,6 @@ content/20.results.md:11:Streamlit
 content/20.results.md:12:BioChatter
 content/20.results.md:12:tradeoff
 content/20.results.md:15:scalable
-content/20.results.md:18:composable
 content/20.results.md:21:LLMs
 content/20.results.md:21:OpenAI
 content/20.results.md:23:LLM

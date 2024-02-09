@@ -15,9 +15,9 @@ benchmarking
 BioChatter
 BioChatter’s
 BioCypher
-Bioinformatics
+bioinformatics
 biomarker
-biomedicine
+Biomedicine
 Cankun
 CFTR
 CFTR’s
