@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-08'
+date-meta: '2024-02-09'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-08" />
-  <meta name="citation_publication_date" content="2024-02-08" />
-  <meta property="article:published_time" content="2024-02-08" />
-  <meta name="dc.modified" content="2024-02-08T18:01:36+00:00" />
-  <meta property="article:modified_time" content="2024-02-08T18:01:36+00:00" />
+  <meta name="dc.date" content="2024-02-09" />
+  <meta name="citation_publication_date" content="2024-02-09" />
+  <meta property="article:published_time" content="2024-02-09" />
+  <meta name="dc.modified" content="2024-02-09T11:35:36+00:00" />
+  <meta property="article:modified_time" content="2024-02-09T11:35:36+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/430416fe01350562f748be3ea9919a74b32554fc/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2/))
 was automatically generated
-from [biocypher/biochatter-paper@430416f](https://github.com/biocypher/biochatter-paper/tree/430416fe01350562f748be3ea9919a74b32554fc)
-on February 8, 2024.
+from [biocypher/biochatter-paper@d7c7663](https://github.com/biocypher/biochatter-paper/tree/d7c7663f0c8cd4ac4a49002bf247ba3bc31766a2)
+on February 9, 2024.
 </em></small>
 
 
@@ -340,7 +340,7 @@ To achieve this goal, we implemented an encrypted pipeline that contains the ben
 Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Figure @fig:benchmark A).
 Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure for the LLMs' usefulness in our applications.
 OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks.
-Of note, performance in open-source models appears to depend on their quantisation level, i.e., the bit precision used to represent the model's parameters.
+Of note, performance in open-source models appears to depend on their quantisation level, i.e., the bit-precision used to represent the model's parameters.
 For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models appear to perform worse (Figure @fig:benchmark A).
 
 To evaluate the benefit of BioChatter functionality, we compare the performance of models with and without the use of BioChatter's prompt engine for KG querying.
