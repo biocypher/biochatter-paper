@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-09'
+date-meta: '2024-02-10'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-09" />
-  <meta name="citation_publication_date" content="2024-02-09" />
-  <meta property="article:published_time" content="2024-02-09" />
-  <meta name="dc.modified" content="2024-02-09T17:08:59+00:00" />
-  <meta property="article:modified_time" content="2024-02-09T17:08:59+00:00" />
+  <meta name="dc.date" content="2024-02-10" />
+  <meta name="citation_publication_date" content="2024-02-10" />
+  <meta property="article:published_time" content="2024-02-10" />
+  <meta name="dc.modified" content="2024-02-10T13:25:42+00:00" />
+  <meta property="article:modified_time" content="2024-02-10T13:25:42+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/af454b5726c0025f559bd1257d668dfed2e84c08/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/))
 was automatically generated
-from [biocypher/biochatter-paper@af454b5](https://github.com/biocypher/biochatter-paper/tree/af454b5726c0025f559bd1257d668dfed2e84c08)
-on February 9, 2024.
+from [biocypher/biochatter-paper@8805d7d](https://github.com/biocypher/biochatter-paper/tree/8805d7dd794d5e4358f239bc2b4d9f7859c42072)
+on February 10, 2024.
 </em></small>
 
 
@@ -394,7 +394,7 @@ As an example, we implement a fact-checking module that uses a second LLM to eva
 
 The fast pace of developments around current-generation LLMs poses a great challenge to society as a whole and the biomedical community in particular [@doi:10.1038/d41586-024-00029-4;@doi:10.1038/d41586-023-03817-6;@doi:10.1038/d41586-023-03803-y].
 While the potential of these models is enormous, their application is not straightforward, and their use requires a certain level of expertise [@doi:10.1038/s41587-023-02103-0].
-In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration [@doi:10.1177/1745691612459058].
+In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration [@doi:10.1177/1745691612459058;@doi:10.1038/d41586-024-00322-2].
 Inspired by the productivity of open source libraries such as LangChain [@langchain], we propose an open framework that allows biomedical researchers to focus on the application of LLMs as opposed to engineering challenges.
 To keep the framework effective and sustainable, we focus on reusing existing open-source libraries and tools, while adapting the advancements from the wider LLM community to the biomedical domain.
 The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond [@doi:10.1038/d41586-024-00029-4].
@@ -908,7 +908,6 @@ We list here alphabetically all members of the consortium who have contributed t
 - Yuyao Song (European Molecular Biology Laboratory-European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, Hinxton, United Kingdom)
 
 [@biocypher]: doi:10.1038/s41587-023-01848-y
-[@langchain]: https://python.langchain.com
 [@pytest]: https://github.com/pytest-dev/pytest
 [@biollmbench]: doi:10.1101/2023.12.19.572483
 [@dl-bioscience]: doi:10.1038/s41467-022-29268-7
