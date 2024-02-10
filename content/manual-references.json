@@ -125,5 +125,26 @@
     "volume": "33",
     "URL": "https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf",
     "publisher": "Curran Associates, Inc."
+  },
+  {
+    "id": "langchain",
+    "type": "webpage",
+    "URL": "https://github.com/langchain-ai/langchain",
+    "title": "LangChain",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          17
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Harrison",
+        "family": "Chase"
+      }
+    ]
   }
 ]
