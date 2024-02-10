@@ -17,7 +17,7 @@ BioChatter’s
 BioCypher
 bioinformatics
 biomarker
-Biomedicine
+biomedicine
 Cankun
 CFTR
 CFTR’s
@@ -126,7 +126,7 @@ synergise
 TCF
 tradeoff
 Trang
-Transmembrane
+transmembrane
 Travere
 Triomflaan
 Tsuda

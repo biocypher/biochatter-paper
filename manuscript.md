@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-10" />
   <meta name="citation_publication_date" content="2024-02-10" />
   <meta property="article:published_time" content="2024-02-10" />
-  <meta name="dc.modified" content="2024-02-10T13:25:42+00:00" />
-  <meta property="article:modified_time" content="2024-02-10T13:25:42+00:00" />
+  <meta name="dc.modified" content="2024-02-10T13:39:15+00:00" />
+  <meta property="article:modified_time" content="2024-02-10T13:39:15+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/775b2693eeb18d0f005034514965c803e715b2b1/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/775b2693eeb18d0f005034514965c803e715b2b1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/775b2693eeb18d0f005034514965c803e715b2b1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/8805d7dd794d5e4358f239bc2b4d9f7859c42072/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/775b2693eeb18d0f005034514965c803e715b2b1/))
 was automatically generated
-from [biocypher/biochatter-paper@8805d7d](https://github.com/biocypher/biochatter-paper/tree/8805d7dd794d5e4358f239bc2b4d9f7859c42072)
+from [biocypher/biochatter-paper@775b269](https://github.com/biocypher/biochatter-paper/tree/775b2693eeb18d0f005034514965c803e715b2b1)
 on February 10, 2024.
 </em></small>
 
@@ -491,7 +491,10 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 - **sentiment and behaviour**: To assess whether the models exhibit the desired behaviour patterns for each of the personas, we let a second LLM evaluate the responses based on a set of criteria, including professionalism and politeness.
 
 The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information is available at [https://biochatter.org/benchmarking](https://biochatter.org/benchmarking).
-The benchmark is updated upon the release of new models and extensions to the datasets, available at [https://biochatter.org/benchmark](https://biochatter.org/benchmark).
+The benchmark is updated upon the release of new models and extensions to the datasets, and continuously available at [https://biochatter.org/benchmark](https://biochatter.org/benchmark).
+The living benchmark process is inspired by test-driven development, meaning test cases are created based on specific features or behaviors that are desired.
+When a model doesn't initially produce the optimal response, which is often the case, adjustments are made to various elements of the framework, including prompts or functions, to enhance the model's effectiveness.
+Monitoring the model's performance on these tests over time allows us to assess the framework's reliability and pinpoint areas that need improvement.
 
 To prevent leakage of benchmarking data (and subsequent contamination of future LLMs), we implement an encryption routine on the benchmark datasets.
 The encryption is performed using a hybrid encryption scheme, where the data are encrypted with a symmetric key, which is in turn encrypted with an asymmetric key.
