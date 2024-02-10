@@ -15,9 +15,11 @@ benchmarking
 BioChatter
 BioChatter’s
 BioCypher
-bioinformatics
+Bioinformatics
 biomarker
 biomedicine
+Brussel
+Bruxelles
 Cankun
 CFTR
 CFTR’s
@@ -69,6 +71,7 @@ Krehl
 LangChain
 leaderboard
 leaderboards
+Libre
 LLM
 LLM’s
 LLMs
@@ -95,7 +98,6 @@ parameterisation
 Pau
 Pelotonia
 PIIO
-Plaine
 pre
 programme
 py
@@ -128,17 +130,15 @@ tradeoff
 Trang
 transmembrane
 Travere
-Triomflaan
 Tsuda
 tumorigenic
-ULB
+Université
 Universiteit
 vectorstore
 Verkinderen
 vitro
 vivo
 Vrije
-VUB
 Wellcome
 Xinference
 Xorbits
