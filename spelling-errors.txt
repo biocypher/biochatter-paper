@@ -12,14 +12,14 @@ Bao
 Baumbach
 Beier
 benchmarked
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
-bioinformatics
+Bioinformatics
 biomarker
-Biomedicine
+biomedicine
 BioSC
 Brussel
 Bruxelles
@@ -136,7 +136,7 @@ TCF
 TODO
 tradeoff
 Trang
-transmembrane
+Transmembrane
 Travere
 Tsuda
 tumorigenic
