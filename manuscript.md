@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-10'
+date-meta: '2024-02-13'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-10" />
-  <meta name="citation_publication_date" content="2024-02-10" />
-  <meta property="article:published_time" content="2024-02-10" />
-  <meta name="dc.modified" content="2024-02-10T13:47:37+00:00" />
-  <meta property="article:modified_time" content="2024-02-10T13:47:37+00:00" />
+  <meta name="dc.date" content="2024-02-13" />
+  <meta name="citation_publication_date" content="2024-02-13" />
+  <meta property="article:published_time" content="2024-02-13" />
+  <meta name="dc.modified" content="2024-02-13T23:28:27+00:00" />
+  <meta property="article:modified_time" content="2024-02-13T23:28:27+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/2b912f193eb1208d2acf42a08d9155f6605588bf/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/2b912f193eb1208d2acf42a08d9155f6605588bf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/2b912f193eb1208d2acf42a08d9155f6605588bf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/7e787d7af4cafcbacec47aa71dd6ebdbe7ceddf2/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7e787d7af4cafcbacec47aa71dd6ebdbe7ceddf2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7e787d7af4cafcbacec47aa71dd6ebdbe7ceddf2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/2b912f193eb1208d2acf42a08d9155f6605588bf/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/7e787d7af4cafcbacec47aa71dd6ebdbe7ceddf2/))
 was automatically generated
-from [biocypher/biochatter-paper@2b912f1](https://github.com/biocypher/biochatter-paper/tree/2b912f193eb1208d2acf42a08d9155f6605588bf)
-on February 10, 2024.
+from [biocypher/biochatter-paper@7e787d7](https://github.com/biocypher/biochatter-paper/tree/7e787d7af4cafcbacec47aa71dd6ebdbe7ceddf2)
+on February 13, 2024.
 </em></small>
 
 
@@ -226,7 +226,7 @@ Authors between consortium and last author are ordered alphabetically.
 
 ## Abstract
 
-Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
+Current-generation Large Language Models (LLMs) have stirred enormous interest in recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
 Based on open-source software packages, we synergise the many functionalities that are currently developing around LLMs, such as knowledge integration / retrieval-augmented generation, model chaining, and benchmarking, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedicine.
 We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
@@ -238,7 +238,7 @@ We demonstrate use cases via two multi-purpose web apps (https://chat.biocypher.
 Despite technological advances, understanding biological and biomedical systems still poses major challenges [@gallagher-infinite;@dl-bioscience].
 We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation [@dl-bioscience].
 One reason for this challenge may be the inherent limitation of human knowledge [@doi:10.1016/j.tics.2005.04.010]: Even seasoned domain experts cannot know the implications of every gene, molecule, symptom, or biomarker.
-In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.
+In addition, biological events are context-dependent, for instance, with respect to a cell type or specific disease.
 
 Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311;@doi:10.48550/arxiv.2201.08239;@doi:10.48550/arxiv.2303.08774].
 Trained correctly, they can recall and combine virtually limitless knowledge from their training set.
@@ -249,7 +249,7 @@ While current efforts towards Artificial General Intelligence manage to ameliora
 Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues [@doi:10.48550/arXiv.2401.05654].
 
 Computational biomedicine involves many tasks that could be assisted by LLMs, such as the interpretation of experimental results, the design of experiments, the evaluation of literature, and the exploration of web resources.
-To improve and accelerate these tasks, we have developed BioChatter, a platform for communicating with LLMs specifically tuned to biomedical research (Figure @fig:overview).
+To improve and accelerate these tasks, we have developed BioChatter, a platform optimised for communicating with LLMs in biomedical research (Figure @fig:overview).
 The platform guides the human researcher intuitively through the interaction with the model, while counteracting the problematic behaviours of the LLM.
 Since the interaction is mainly based on plain text (in any language), it can be used by virtually any researcher.
 
@@ -268,8 +268,8 @@ The platform is composable in most aspects, allowing arbitrary extensions to oth
 
 ## Results
 
-BioChatter (https://github.com/biocypher/biochatter) is a python framework that provides an easy-to-use interface to interact with LLMs and auxiliary technologies via an intuitive API (application programming interface).
-This way, its functionality can be integrated into any number of user interfaces, such as web apps, command line interfaces, or Jupyter notebooks (Figure @fig:architecture).
+BioChatter ([https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)) is a Python framework that provides an easy-to-use interface to interact with LLMs and auxiliary technologies via an intuitive API (application programming interface).
+This way, its functionality can be integrated into any number of user interfaces, such as web apps, command-line interfaces, or Jupyter notebooks (Figure @fig:architecture).
 
 <!-- Figure 2 -->
 ![
@@ -278,7 +278,7 @@ A) The BioChatter framework components (blue) connect to knowledge graphs and ve
 Users (green) can interact with the framework via its Python API, via the lightweight Python frontend using Streamlit (BioChatter Light), or via a fully featured web app with client-server architecture (BioChatter Next).
 Developers can write simple frontends using the Streamlit framework, or integrate the REST API provided by the BioChatter Server into their own bespoke solutions.
 B) Different use cases of BioChatter on a spectrum of tradeoff between simplicity/economy (left) and security (right). 
-Economical and simple solutions involve proprietary services that can be used with low effort but are subject to data privacy concerns.
+Economical and simple solutions involve proprietary services that can be used with little effort but are subject to data privacy concerns.
 Increasingly secure solutions require more effort to set up and maintain, but allow the user to retain more control over their data.
 Fully local solutions are available given sufficient hardware (starting with contemporary laptops), but are not highly scalable.
 ](images/biochatter_architecture.png "Architecture"){#fig:architecture}
@@ -286,7 +286,7 @@ Fully local solutions are available given sufficient hardware (starting with con
 The framework is designed to be modular, meaning that any of its components can be exchanged with other implementations (Figure @fig:overview).
 Functionalities include:
 
-- **basic question answering** with LLMs hosted by providers (such as OpenAI) as well as locally deployed open-source models
+- **basic question-answering** with LLMs hosted by providers (such as OpenAI) as well as locally deployed open-source models
 
 - **reproducible prompt engineering** to guide the LLM towards a specific task or behaviour
 
@@ -312,15 +312,15 @@ Firstly, we provide access to the different OpenAI models through their API, whi
 Secondly, we aim to preferentially support open-source LLMs to facilitate more transparency in their application and increase data privacy by being able to run a model locally on dedicated hardware and end-user devices [@doi:10.1038/d41586-023-01295-4].
 By building on LangChain [@langchain], we support dozens of LLM providers, such as the Xorbits Inference and Hugging Face APIs [@{https://github.com/xorbitsai/inference}], which can be used to query any of the more than 100 000 open-source models on Hugging Face Hub [@{https://huggingface.co/docs/hub/index}], for instance those on its LLM leaderboard [@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}].
 Although OpenAI’s models currently vastly outperform any alternatives in terms of both LLM performance and API convenience, we expect many open-source developments in this area in the future [@biollmbench].
-Therefore, we support plug-and-play exchange of models to enhance biomedical AI-readiness, and we implement a bespoke benchmarking framework for the biomedical application of LLMs.
+Therefore, we support plug-and-play exchange of models to enhance biomedical AI readiness, and we implement a bespoke benchmarking framework for the biomedical application of LLMs.
 
 ### Prompt Engineering
 
 An essential property of LLMs is their sensitivity to the prompt, i.e., the initial input that guides the model towards a specific task or behaviour.
-Prompt engineering is an emerging discipline of practical AI, and as such there are no established best practices [@doi:10.48550/arXiv.2302.11382;@doi:10.48550/arXiv.2312.16171].
+Prompt engineering is an emerging discipline of practical AI, and as such, there are no established best practices [@doi:10.48550/arXiv.2302.11382;@doi:10.48550/arXiv.2312.16171].
 Current approaches are mostly trial-and-error-based manual engineering, which is not reproducible and changes with every new model [@biollmbench].
 To address this issue, we include a prompt engineering framework in BioChatter that allows the preservation of prompt sets for specific tasks, which can be shared and reused by the community.
-In addition, to facilitate the scaling of prompt engineering, we integrate this framework in the benchmarking pipeline, which allows the automated evaluation of prompt sets as new models are published.
+In addition, to facilitate the scaling of prompt engineering, we integrate this framework into the benchmarking pipeline, which allows the automated evaluation of prompt sets as new models are published.
 
 ### Benchmarking
 
@@ -333,29 +333,29 @@ The results are stored and displayed on our website for simple comparison, and t
 
 We create a bespoke biomedical benchmark for multiple reasons: 
 1) The biomedical domain has its own tasks and requirements, and creating a bespoke benchmark allows us to be more precise in the evaluation of components [@biollmbench].
-2) We aim to create benchmark datasets that are complementary to the existing, general purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard};@{https://crfm.stanford.edu/helm/lite/latest/}].
-3) We aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general purpose benchmarks, also called memorisation or contamination [@doi:10.48550/arXiv.2310.18018].
+2) We aim to create benchmark datasets that are complementary to the existing, general-purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard};@{https://crfm.stanford.edu/helm/lite/latest/}].
+3) We aim to prevent leakage of the benchmark data into the training data of the models, which is a known issue in the general-purpose benchmarks, also called memorisation or contamination [@doi:10.48550/arXiv.2310.18018].
 To achieve this goal, we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).
 
 Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Figure @fig:benchmark A).
-Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure for the LLMs' usefulness in our applications.
+Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure of the LLMs' usefulness in our applications.
 OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks.
 Of note, performance in open-source models appears to depend on their quantisation level, i.e., the bit-precision used to represent the model's parameters.
 For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models appear to perform worse (Figure @fig:benchmark A).
 
 To evaluate the benefit of BioChatter functionality, we compare the performance of models with and without the use of BioChatter's prompt engine for KG querying.
-The models without prompt engine still have access to the BioCypher schema definition, which details the KG structure, but it does not use the multi-step procedure available through BioChatter.
-Consequently, the models without prompt engine show a lower performance in creating correct queries than the same models with prompt engine (0.459±0.13 vs 0.813±0.15, unpaired t-test p = 1.3e-20, Figure @fig:benchmark B).
+The models without prompt engine still have access to the BioCypher schema definition, which details the KG structure, but they do not use the multi-step procedure available through BioChatter.
+Consequently, the models without prompt engine show a lower performance in creating correct queries than the same models with prompt engine (0.459±0.13 vs. 0.813±0.15, unpaired t-test p = 1.3e-20, Figure @fig:benchmark B).
 
 <!-- Figure 3 -->
 ![
 **Benchmark results.**
 A) Performance of different LLMs (indicated by colour) on the BioChatter benchmark datasets; the y-axis value indicates the average performance across all tasks for each model/size.
-While the closed-source models from OpenAI show consistently highest performance, some open-source models perform comparably.
+While the closed-source models from OpenAI mostly show highest performance, some open-source models perform comparably.
 However, the measured performance does not correlate intuitively with size (indicated by point size) and quantisation (bit-precision) of the models.
 Some smaller models perform better than larger ones, even within the same model family; while very low bit-precision (2-bit) expectedly yields worse performance, the same is true for the high end (8-bit).
 *: Of note, many characteristics of OpenAI models are not public, and thus their bit-precision (as well as the exact size of GPT4) is subject to speculation.
-B) Comparison of the two benchmark tasks for KG querying show the superior performance of BioChatter's prompt engine (0.813±0.15 vs 0.459±0.13, unpaired t-test p = 1.3e-20).
+B) Comparison of the two benchmark tasks for KG querying show the superior performance of BioChatter's prompt engine (0.813±0.15 vs. 0.459±0.13, unpaired t-test p = 1.3e-20).
 The test includes all models, sizes, and quantisation levels, and the performance is measured as the average of the two tasks.
 The BioChatter variant involves a multi-step procedure of constructing the query, while the "naive" version only receives the complete schema definition of the BioCypher KG (which BioChatter also uses as a basis for the prompt engine).
 The general instructions for both variants are the same, otherwise.
@@ -374,8 +374,8 @@ We demonstrate the user experience of KG-driven interaction in [Supplementary No
 
 LLM confabulation is a major issue for biomedical applications, where the consequences of incorrect information can be severe.
 One popular way of addressing this issue is to apply "in-context learning," which is also more recently referred to as "retrieval-augmented generation" (RAG) [@doi:10.48550/arxiv.2303.17580].
-Briefly, RAG relies on injection of information into the model prompt of a pre-trained model, and as such does not require retraining / fine-tuning; once created, any RAG prompt can be used with any LLM.
-While this can be done by processing structured knowledge, for instance from KGs, it is often more efficient to use a semantic search engine to retrieve relevant information from unstructured data sources such as literature.
+Briefly, RAG relies on injection of information into the model prompt of a pre-trained model and, as such, does not require retraining / fine-tuning; once created, any RAG prompt can be used with any LLM.
+While this can be done by processing structured knowledge, for instance, from KGs, it is often more efficient to use a semantic search engine to retrieve relevant information from unstructured data sources such as literature.
 To this end, we allow the management and integration of vector databases in the BioChatter framework.
 The user is able to connect to a vector database, embed an arbitrary number of documents, and then use semantic search to improve the model prompts by adding text fragments relevant to the given question (see Methods).
 We demonstrate the user experience of RAG in [Supplementary Note 2: Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-rag/](https://biochatter.org/vignette-rag/)).
@@ -401,13 +401,13 @@ The transparency we emphasise at every step of the framework is essential to a s
 
 To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
-Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters, such as model version and temperature [@biollmbench].
+Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters such as model version and temperature [@biollmbench].
 As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs, and its results are a great starting point for delving deeper into the reasons why some models perform differently than expected.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
 The living benchmark will be updated with new questions and tasks as they arise in the community.
 
 We facilitate access to LLMs by allowing the use of both proprietary and open-source models, and we provide a flexible deployment framework for the latter.
-Proprietary models are currently the most economical solution for accessing state-of-the-art models, and as such primarily suited for users just starting out or lacking the resources to deploy their own models.
+Proprietary models are currently the most economical solution for accessing state-of-the-art models and, as such, they are suitable for users just starting out or lacking the resources to deploy their own models.
 In contrast, open-source models are quickly catching up in terms of performance [@biollmbench], and they are essential for the sustainability of the field [@doi:10.1038/d41586-024-00029-4].
 We allow self-hosting of open-source models on any scale, from dedicated hardware with GPUs, to local deployment on end-user laptops, to browser-based deployment using web technology.
 
@@ -439,7 +439,7 @@ We develop under the permissive MIT licence and encourage contributions and sugg
 BioChatter is a Python library, supporting Python 3.10-3.12, which we ensure with a continuous integration pipeline on GitHub ([https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)).
 We provide documentation at [https://biochatter.org](https://biochatter.org), including a tutorial and API reference.
 All packages are developed openly and according to modern standards of software development [@doi:10.1038/s41597-020-0486-7]; we use the permissive MIT licence to encourage downstream use and development.
-We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all that are interested in contributing to the framework.
+We include a code of conduct and contributor guidelines to offer accessibility and inclusivity to all who are interested in contributing to the framework.
 
 ### Applications
 
@@ -448,7 +448,7 @@ To demonstrate basic and advanced use cases of the framework, we provide two web
 BioChatter Light is a web app based on the Streamlit framework (version 1.21.0, [https://streamlit.io](https://streamlit.io)), which is written in Python and can be deployed locally or on a server ([https://github.com/biocypher/biochatter-light](https://github.com/biocypher/biochatter-light)).
 The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
 This framework is suitable for rapid prototyping of bespoke solutions for specific use cases.
-For an up-to-date overview and preview of current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
+For an up-to-date overview and preview of the current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
 
 BioChatter Next ([https://github.com/biocypher/biochatter-next](https://github.com/biocypher/biochatter-next)) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web ([https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)).
 It is written combining Typescript and Python and utilises Next.js (v13.4.9) for a sleek frontend and Flask (v3.0.0) as backend.
@@ -468,7 +468,7 @@ We generally set the temperature to the lowest value possible for each model to 
 
 The Pytest matrix uses a hash-based system to evaluate whether a model-dataset combination has been run before.
 Briefly, the hash is calculated from the dictionary representation of the test parameters, and the test is skipped if the combination of hash and model name is already present in the database.
-This allows automatic running of all tests that have been newly added or modified.
+This allows running all tests that have been newly added or modified automatically.
 The individual dimensions of the matrix are:
 
 - **LLMs**: Testing proprietary (OpenAI) and open-source models (commonly using the Xorbits Inference API and HuggingFace models) against the same set of tasks is the primary aim of our benchmarking framework. We facilitate the automation of testing by including a programmatic way of deploying open-source models.
@@ -492,6 +492,8 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 
 The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information is available at [https://biochatter.org/benchmarking](https://biochatter.org/benchmarking).
 The benchmark is updated upon the release of new models and extensions to the datasets, and continuously available at [https://biochatter.org/benchmark](https://biochatter.org/benchmark).
+<!-- TODO link -->
+We will run the benchmark on new models and variants (including fine-tuned models) upon requests from the community, which can be made on GitHub using our issue template (TODO link).
 The living benchmark process is inspired by test-driven development, meaning test cases are created based on specific features or behaviors that are desired.
 When a model doesn't initially produce the optimal response, which is often the case, adjustments are made to various elements of the framework, including prompts or functions, to enhance the model's effectiveness.
 Monitoring the model's performance on these tests over time allows us to assess the framework's reliability and pinpoint areas that need improvement.
@@ -517,7 +519,7 @@ A demonstration of this use case is available in [Supplementary Note 1: Knowledg
 
 While current LLMs possess extensive internal general knowledge, they may not know how to prioritise very specific scientific results, or they may not have had access to some research articles in their training data (e.g., due to their recency or licensing issues).
 To bridge this gap, we can provide additional information from relevant publications to the model via the prompt.
-However, we frequently cannot add entire publications to the prompt, since the input length of current models still is restricted; we need to isolate the information that is specifically relevant to the question given by the user.
+However, we frequently cannot add entire publications to the prompt, since the input length of current models is still restricted; we need to isolate the information that is specifically relevant to the question given by the user.
 To find this information, we perform a semantic similarity search between the user’s question and the contents of user-provided scientific articles (or other texts).
 The most efficient way to do this mapping is by using a vector database [@doi:10.48550/arxiv.2308.07107].
 
@@ -532,7 +534,9 @@ Semantic search results (for instance, single sentences directly related to the 
 In this way, the model can learn from additional context without the need for retraining or fine-tuning.
 This method is sometimes described as in-context learning [@doi:10.48550/arxiv.2303.17580] or retrieval-augmented generation [@rag].
 
-To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the vectorstore_host.py module), and for performing semantic search on the vector database and injecting the results into the prompt (in the vectorstore.py module).
+To provide access to this functionality in BioChatter, we implement classes for the connection to, and management of, vector database systems (in the `vectorstore.py` module), and for performing semantic search on the vector database and injecting the results into the prompt (in the `vectorstore_agent.py` module).
+An analogous implementation for KG retrieval is available in the `database_agent.py` module.
+Both retrieval mechanisms are integrated and provided to the BioChatter API via the `rag_agent.py` module.
 To demonstrate the use of the API, we add a “Retrieval-Augmented Generation” tab to the preview apps that allows the upload of text documents to be added to a vector database, which then can be queried to add contextual information to the prompt sent to the primary model.
 This contextual information is transparently displayed.
 Since this functionality requires a connection to a vector database system, we provide connectivity to a Milvus service, including a way to start the service in conjunction with a BioCypher knowledge graph and the BioChatter Light app in one Docker Compose workflow.
@@ -557,7 +561,7 @@ However, since the agent is independent of the primary model (being set up with 
 
 This approach can be extended to a more complex model chain, where the correcting agent, for example, can query a knowledge graph or a vector database to ground its responses in prior knowledge.
 These chains are easy to implement, and some are available out of the box in the LangChain framework [@langchain].
-However, they can behave unpredictably, which increases with the number of links in the chain, and as such should be tightly controlled.
+However, they can behave unpredictably, which increases with the number of links in the chain and, as such, should be tightly controlled.
 They also add to the computational burden of the system, which is particularly relevant for deployments on end-user devices.
 
 ## Author Contributions {.page_break_before}
@@ -907,7 +911,9 @@ We list here alphabetically all members of the consortium who have contributed t
 - Emma Verkinderen (Interuniversity Institute of Bioinformatics in Brussels, Université Libre de Bruxelles-Vrije Universiteit Brussel, 1050, Brussels, Belgium)
 - Fernando M. Delgado-Chaves (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany)
 - Megan McNutt (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
+- Sebastian Beier (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
 - Trang T. Le (Bristol Myers Squibb, 250 Water St, Cambridge, MA 02141, USA)
+- Xiao-Ran Zhou (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
 - Yuyao Song (European Molecular Biology Laboratory-European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, Hinxton, United Kingdom)
 
 [@biocypher]: doi:10.1038/s41587-023-01848-y
