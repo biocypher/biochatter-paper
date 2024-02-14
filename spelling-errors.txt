@@ -12,14 +12,14 @@ Bao
 Baumbach
 Beier
 benchmarked
-benchmarking
+Benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
-bioinformatics
+Bioinformatics
 biomarker
-biomedicine
+Biomedicine
 BioSC
 Brussel
 Bruxelles
