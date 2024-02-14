@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-14" />
   <meta name="citation_publication_date" content="2024-02-14" />
   <meta property="article:published_time" content="2024-02-14" />
-  <meta name="dc.modified" content="2024-02-14T01:35:41+00:00" />
-  <meta property="article:modified_time" content="2024-02-14T01:35:41+00:00" />
+  <meta name="dc.modified" content="2024-02-14T12:32:28+00:00" />
+  <meta property="article:modified_time" content="2024-02-14T12:32:28+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/9269e829a2de28e6a0ed56d32db9e53ae3bd5fed/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9269e829a2de28e6a0ed56d32db9e53ae3bd5fed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/9269e829a2de28e6a0ed56d32db9e53ae3bd5fed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/9269e829a2de28e6a0ed56d32db9e53ae3bd5fed/))
 was automatically generated
-from [biocypher/biochatter-paper@3bb6f7e](https://github.com/biocypher/biochatter-paper/tree/3bb6f7e17725d9a834457ba7de625c66bf2c70b7)
+from [biocypher/biochatter-paper@9269e82](https://github.com/biocypher/biochatter-paper/tree/9269e829a2de28e6a0ed56d32db9e53ae3bd5fed)
 on February 14, 2024.
 </em></small>
 
@@ -518,9 +518,14 @@ In the BioCypher KG creation, we use a configuration file to map KG contents to 
 For instance, we detail the properties of a node and the source and target classes of an edge.
 Additionally, during the KG build process, we enrich this information and save it to a YAML file and, optionally, directly to the KG.
 This information is used by BioChatter to tune its understanding of the KG, which allows the LLM to query the KG more efficiently.
+
 By understanding the context of the KG, the exact contents, and the exact spelling of all identifiers and properties, we effectively support the LLM in generating correct queries.
-To illustrate the usage of this feature, we provide a demonstration repository at [https://github.com/biocypher/pole](https://github.com/biocypher/pole) including a KG build procedure and web app, which can be run using a single Docker Compose command.
-The pole KG can also be used in conjunction with the BioChatter Next app by using the `docker-compose-incl-kg.yaml` file to build the application locally.
+The query generation process is broken up into multiple steps by BioChatter: recognising entities and relationships according to the user's question, estimating properties to be used in the query, and generating a syntactically correct query in the query language of the database, based on the results from the previous steps and constraints given by the KG schema information.
+This procedure is implemented in the `prompts.py` module.
+To evaluate the quality of this process, we dedicate a module in the benchmark to the query generation process with a range of questions and KG schemata. 
+
+To illustrate the usage of this feature, we provide a demonstration repository at [https://github.com/biocypher/pole](https://github.com/biocypher/pole) including a KG build procedure and an instance of BioChatter Light, which can be run using a single Docker Compose command.
+The pole KG can also be used in conjunction with the BioChatter Next app by using the `docker-compose.yaml` file to build the application locally.
 A demonstration of this use case is available in [Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-kg/](https://biochatter.org/vignette-kg/)).
 
 ### Retrieval-Augmented Generation
