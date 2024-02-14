@@ -12,14 +12,14 @@ Bao
 Baumbach
 Beier
 benchmarked
-benchmarking
+Benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
-Bioinformatics
+bioinformatics
 biomarker
-biomedicine
+Biomedicine
 BioSC
 Brussel
 Bruxelles
@@ -54,7 +54,7 @@ Forschungszentrum
 frontend
 frontends
 Geosciences
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
@@ -70,6 +70,7 @@ integrations
 Interuniversity
 intracellular
 JB
+jittered
 js
 JSR
 Jülich
@@ -101,6 +102,7 @@ Odense
 ontologies
 OpenAI
 OpenAI’s
+openhermes
 overexpression
 parameterisation
 Pau

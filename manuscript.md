@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-13'
+date-meta: '2024-02-14'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-13" />
-  <meta name="citation_publication_date" content="2024-02-13" />
-  <meta property="article:published_time" content="2024-02-13" />
-  <meta name="dc.modified" content="2024-02-13T23:33:09+00:00" />
-  <meta property="article:modified_time" content="2024-02-13T23:33:09+00:00" />
+  <meta name="dc.date" content="2024-02-14" />
+  <meta name="citation_publication_date" content="2024-02-14" />
+  <meta property="article:published_time" content="2024-02-14" />
+  <meta name="dc.modified" content="2024-02-14T00:59:54+00:00" />
+  <meta property="article:modified_time" content="2024-02-14T00:59:54+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ba8642c63b9089ee0295506b39f989b9c519664a/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ba8642c63b9089ee0295506b39f989b9c519664a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ba8642c63b9089ee0295506b39f989b9c519664a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/ba8642c63b9089ee0295506b39f989b9c519664a/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/))
 was automatically generated
-from [biocypher/biochatter-paper@ba8642c](https://github.com/biocypher/biochatter-paper/tree/ba8642c63b9089ee0295506b39f989b9c519664a)
-on February 13, 2024.
+from [biocypher/biochatter-paper@fc9e021](https://github.com/biocypher/biochatter-paper/tree/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b)
+on February 14, 2024.
 </em></small>
 
 
@@ -340,22 +340,26 @@ To achieve this goal, we implemented an encrypted pipeline that contains the ben
 Current results confirm the prevailing opinion of OpenAI's leading role in LLM performance (Figure @fig:benchmark A).
 Since the benchmark datasets were created to specifically cover functions relevant in BioChatter's application domain, the benchmark results are primarily a measure of the LLMs' usefulness in our applications.
 OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall performance and consistency, but several open-source models reach high performance in specific tasks.
-Of note, performance in open-source models appears to depend on their quantisation level, i.e., the bit-precision used to represent the model's parameters.
-For models that offer quantisation options, 4- and 5-bit models perform best, while 2- and 8-bit models appear to perform worse (Figure @fig:benchmark A).
+Remarkably, while the newer version (0125) of gpt-3.5-turbo outperforms the previous version (0613) of gpt-4, version 0125 of gpt-4 shows a significant drop in performance.
+The performance of open-source models appears to depend on their quantisation level, i.e., the bit-precision used to represent the model's parameters.
+For models that offer quantisation options, performance apparently plateaus or even decreases after the 4- or 5-bit mark (Figure @fig:benchmark A).
+There is no apparent correlation between model size and performance (Pearson's r = 0.171).
 
 To evaluate the benefit of BioChatter functionality, we compare the performance of models with and without the use of BioChatter's prompt engine for KG querying.
 The models without prompt engine still have access to the BioCypher schema definition, which details the KG structure, but they do not use the multi-step procedure available through BioChatter.
-Consequently, the models without prompt engine show a lower performance in creating correct queries than the same models with prompt engine (0.459±0.13 vs. 0.813±0.15, unpaired t-test P < 0.001, Figure @fig:benchmark B).
+Consequently, the models without prompt engine show a lower performance in creating correct queries than the same models with prompt engine (0.444±0.11 vs. 0.818±0.11, unpaired t-test P < 0.001, Figure @fig:benchmark B).
 
 <!-- Figure 3 -->
 ![
 **Benchmark results.**
 A) Performance of different LLMs (indicated by colour) on the BioChatter benchmark datasets; the y-axis value indicates the average performance across all tasks for each model/size.
-While the closed-source models from OpenAI mostly show highest performance, some open-source models perform comparably.
-However, the measured performance does not correlate intuitively with size (indicated by point size) and quantisation (bit-precision) of the models.
+X-axis jittered for better visibility.
+While the closed-source models from OpenAI mostly show highest performance, open-source models can perform comparably, but show high variance.
+Measured performance does not correlate intuitively with size (indicated by point size) and quantisation (bit-precision) of the models.
 Some smaller models perform better than larger ones, even within the same model family; while very low bit-precision (2-bit) expectedly yields worse performance, the same is true for the high end (8-bit).
+Remarkably, while the newer (0125) version of GPT-3.5-turbo outperforms the previous version (0613) of GPT-4, the newer version of GPT-4 shows a significant drop in performance.
 *: Of note, many characteristics of OpenAI models are not public, and thus their bit-precision (as well as the exact size of GPT4) is subject to speculation.
-B) Comparison of the two benchmark tasks for KG querying show the superior performance of BioChatter's prompt engine (0.813±0.15 vs. 0.459±0.13, unpaired t-test P < 0.001).
+B) Comparison of the two benchmark tasks for KG querying show the superior performance of BioChatter's prompt engine (0.818±0.11 vs. 0.444±0.11, unpaired t-test P < 0.001).
 The test includes all models, sizes, and quantisation levels, and the performance is measured as the average of the two tasks.
 The BioChatter variant involves a multi-step procedure of constructing the query, while the "naive" version only receives the complete schema definition of the BioCypher KG (which BioChatter also uses as a basis for the prompt engine).
 The general instructions for both variants are the same, otherwise.
@@ -402,6 +406,9 @@ To account for the requirements of biomedical research workflows, we take partic
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
 Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters such as model version and temperature [@biollmbench].
 As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs, and its results are a great starting point for delving deeper into the reasons why some models perform differently than expected.
+For instance, the benchmark allowed immediate flagging of the drop in performance from the older (0613) to the newer (0125) version of gpt-4.
+It also identified a range of pre-trained open-source models suitable for our uses, most notably, the openhermes-2.5 model in 4- or 5-bit quantisation.
+Notably, this model is a fine-tuned (on GPT-4-generated data) variant of Mistral 7B v0.1, whose vanilla variants perform considerably worse in our benchmarks.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
 The living benchmark will be updated with new questions and tasks as they arise in the community.
 
@@ -420,6 +427,7 @@ They are not meant to replace human ingenuity and expertise but to augment it wi
 Depending on generic open-source libraries such as LangChain [@langchain] and Pytest [@pytest] allows us to focus on the biomedical domain but also introduces technical dependencies on these libraries.
 While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
 In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.
+For the continued relevance of our framework, it is essential that its components, such as the benchmark, are maintained as the field evolves.
 
 ### Future directions
 
