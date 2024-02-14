@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-14" />
   <meta name="citation_publication_date" content="2024-02-14" />
   <meta property="article:published_time" content="2024-02-14" />
-  <meta name="dc.modified" content="2024-02-14T00:59:54+00:00" />
-  <meta property="article:modified_time" content="2024-02-14T00:59:54+00:00" />
+  <meta name="dc.modified" content="2024-02-14T01:06:33+00:00" />
+  <meta property="article:modified_time" content="2024-02-14T01:06:33+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/))
 was automatically generated
-from [biocypher/biochatter-paper@fc9e021](https://github.com/biocypher/biochatter-paper/tree/fc9e021f98886b17d8f8cbe7f8cc6a81c7c8047b)
+from [biocypher/biochatter-paper@0547deb](https://github.com/biocypher/biochatter-paper/tree/0547deb72c0ddf4de3fef7304f1697231e447630)
 on February 14, 2024.
 </em></small>
 
@@ -325,8 +325,8 @@ In addition, to facilitate the scaling of prompt engineering, we integrate this 
 ### Benchmarking
 
 The increasing generality of LLMs poses challenges for their comprehensive evaluation.
-To circumvent this issue, we focus on specific biomedical tasks and datasets.
-For advanced assessment, we employ automated validation of the model's responses by a second LLM.
+Specifically, their ability to aid in a multitude of tasks and their great freedom in formatting the answers challenge their evaluation by traditional methods.
+To circumvent this issue, we focus on specific biomedical tasks and datasets and employ automated validation of the model's responses by a second LLM for advanced assessments.
 For transparent and reproducible evaluation of LLMs, we implement a benchmarking framework that allows the comparison of models, prompt sets, and all other components of the pipeline.
 The generic Pytest framework [@pytest] allows for the automated evaluation of a matrix of all possible combinations of components.
 The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets and BioChatter capabilities ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
