@@ -12,12 +12,12 @@ Bao
 Baumbach
 Beier
 benchmarked
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
-Bioinformatics
+bioinformatics
 biomarker
 biomedicine
 BioSC
@@ -54,10 +54,11 @@ Forschungszentrum
 frontend
 frontends
 Geosciences
-gpt
+GPT
 GPUs
 Grunenthal
 GSK
+HADEA
 hepatocellular
 Hinxton
 histopathological
