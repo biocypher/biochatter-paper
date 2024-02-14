@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-14" />
   <meta name="citation_publication_date" content="2024-02-14" />
   <meta property="article:published_time" content="2024-02-14" />
-  <meta name="dc.modified" content="2024-02-14T01:06:33+00:00" />
-  <meta property="article:modified_time" content="2024-02-14T01:06:33+00:00" />
+  <meta name="dc.modified" content="2024-02-14T01:35:41+00:00" />
+  <meta property="article:modified_time" content="2024-02-14T01:35:41+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/0547deb72c0ddf4de3fef7304f1697231e447630/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/3bb6f7e17725d9a834457ba7de625c66bf2c70b7/))
 was automatically generated
-from [biocypher/biochatter-paper@0547deb](https://github.com/biocypher/biochatter-paper/tree/0547deb72c0ddf4de3fef7304f1697231e447630)
+from [biocypher/biochatter-paper@3bb6f7e](https://github.com/biocypher/biochatter-paper/tree/3bb6f7e17725d9a834457ba7de625c66bf2c70b7)
 on February 14, 2024.
 </em></small>
 
@@ -240,7 +240,7 @@ We measure more and more data points with ever-increasing resolution to such a d
 One reason for this challenge may be the inherent limitation of human knowledge [@doi:10.1016/j.tics.2005.04.010]: Even seasoned domain experts cannot know the implications of every gene, molecule, symptom, or biomarker.
 In addition, biological events are context-dependent, for instance, with respect to a cell type or specific disease.
 
-Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311;@doi:10.48550/arxiv.2201.08239;@doi:10.48550/arxiv.2303.08774].
+Large Language Models (LLMs) of the current generation, on the other hand, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311;@doi:10.48550/arxiv.2201.08239;@doi:10.48550/arxiv.2303.08774;@doi:10.1609/aaai.v36i11.21488].
 Trained correctly, they can recall and combine virtually limitless knowledge from their training set.
 ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as research tasks [@doi:10.1038/s41586-023-06792-0;@doi:10.1101/2023.04.16.537094;@doi:10.1038/s41587-023-01789-6].
 However, the current way of interacting with LLMs is predominantly manual, virtually non-reproducible, and their behaviour can be erratic.
@@ -371,7 +371,7 @@ KGs are a powerful tool to represent and query knowledge in a structured manner.
 With BioCypher [@biocypher], we have developed a framework to create KGs from biomedical data in a user-friendly manner while also semantically grounding the data in ontologies.
 BioChatter is an extension of the BioCypher ecosystem, elevating its user-friendliness further by allowing natural language interactions with the data; any BioCypher KG is automatically compatible with BioChatter.
 We use information generated in the build process of BioCypher KGs to tune BioChatter's understanding of the data structures and contents, thereby increasing the efficiency of LLM-based KG querying (see Methods).
-In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's reasoning, which can be used to ground the model's responses in the context of the KG via in-context learning / retrieval-augmented generation (see below).
+In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's retrieval, which can be used to ground the model's responses in the context of the KG via in-context learning / retrieval-augmented generation, which can facilitate human-AI interaction via symbolic concepts [@doi:10.1609/aaai.v36i11.21488].
 We demonstrate the user experience of KG-driven interaction in [Supplementary Note 1: Knowledge Graph Retrieval-Augmented Generation] and on our website ([https://biochatter.org/vignette-kg/](https://biochatter.org/vignette-kg/)).
 
 ### Retrieval-Augmented Generation
