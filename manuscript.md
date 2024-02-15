@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-15" />
   <meta name="citation_publication_date" content="2024-02-15" />
   <meta property="article:published_time" content="2024-02-15" />
-  <meta name="dc.modified" content="2024-02-15T10:38:49+00:00" />
-  <meta property="article:modified_time" content="2024-02-15T10:38:49+00:00" />
+  <meta name="dc.modified" content="2024-02-15T10:44:30+00:00" />
+  <meta property="article:modified_time" content="2024-02-15T10:44:30+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/f1d1a88d4ff5c035230d842bc20ffd57f02917da/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f1d1a88d4ff5c035230d842bc20ffd57f02917da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/f1d1a88d4ff5c035230d842bc20ffd57f02917da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/f1d1a88d4ff5c035230d842bc20ffd57f02917da/))
 was automatically generated
-from [biocypher/biochatter-paper@32a9909](https://github.com/biocypher/biochatter-paper/tree/32a990970f754b4a632acac66c661aed6c8b01c6)
+from [biocypher/biochatter-paper@f1d1a88](https://github.com/biocypher/biochatter-paper/tree/f1d1a88d4ff5c035230d842bc20ffd57f02917da)
 on February 15, 2024.
 </em></small>
 
@@ -367,7 +367,7 @@ OpenAI's GPT models (gpt-4 and gpt-3.5-turbo) lead by some margin on overall per
 Of note, while the newer version (0125) of gpt-3.5-turbo outperforms the previous version (0613) of gpt-4, version 0125 of gpt-4 shows a significant drop in performance.
 The performance of open-source models appears to depend on their quantisation level, i.e., the bit-precision used to represent the model's parameters.
 For models that offer quantisation options, performance apparently plateaus or even decreases after the 4- or 5-bit mark (Figure @fig:benchmark A).
-There is no apparent correlation between model size and performance (Pearson's r = 0.171, p = 9.59e-05).
+There is no apparent correlation between model size and performance (Pearson's r = 0.171, p < 0.001).
 
 To evaluate the benefit of BioChatter functionality, we compared the performance of models with and without the use of BioChatter's prompt engine for KG querying.
 The models without prompt engine still have access to the BioCypher schema definition, which details the KG structure, but they do not use the multi-step procedure available through BioChatter.
