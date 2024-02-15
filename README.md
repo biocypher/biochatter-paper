@@ -6,6 +6,8 @@
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://biocypher.github.io/biochatter-paper/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/biocypher/biochatter-paper/workflows/Manubot/badge.svg)](https://github.com/biocypher/biochatter-paper/actions)
 
+Read it online [here](https://biocypher.github.io/biochatter-paper/).
+
 ## Manuscript description
 
 Current-generation Large Language Models (LLMs) have stirred enormous interest in the recent months, yielding great potential for accessibility and automation, while simultaneously posing significant challenges and risk of misuse.
