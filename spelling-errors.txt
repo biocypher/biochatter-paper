@@ -17,7 +17,7 @@ BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
-Bioinformatics
+bioinformatics
 biomarker
 Biomedicine
 BioSC
@@ -140,7 +140,7 @@ TCF
 TODO
 tradeoff
 Trang
-Transmembrane
+transmembrane
 Travere
 Tsuda
 tumorigenic
