@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-15" />
   <meta name="citation_publication_date" content="2024-02-15" />
   <meta property="article:published_time" content="2024-02-15" />
-  <meta name="dc.modified" content="2024-02-15T10:31:15+00:00" />
-  <meta property="article:modified_time" content="2024-02-15T10:31:15+00:00" />
+  <meta name="dc.modified" content="2024-02-15T10:32:05+00:00" />
+  <meta property="article:modified_time" content="2024-02-15T10:32:05+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/))
 was automatically generated
-from [biocypher/biochatter-paper@0b6f149](https://github.com/biocypher/biochatter-paper/tree/0b6f149728de443d9cb2c24cced7c765da9cff02)
+from [biocypher/biochatter-paper@e0f5db3](https://github.com/biocypher/biochatter-paper/tree/e0f5db3e66336eb8747054cb7d32b3c1edce029e)
 on February 15, 2024.
 </em></small>
 
@@ -230,7 +230,7 @@ Current-generation Large Language Models (LLMs) have stirred enormous interest i
 To facilitate interfacing with LLMs in the biomedical space, while at the same time safeguarding their functionalities through sensible constraints, we propose a dedicated, open-source framework: BioChatter.
 Based on open-source software packages, we synergise the many functionalities that are currently developing around LLMs, such as knowledge integration / retrieval-augmented generation, model chaining, and benchmarking, resulting in an easy-to-use and inclusive framework for application in many use cases of biomedicine.
 We focus on robust and user-friendly implementation, including ways to deploy privacy-preserving local open-source LLMs.
-We demonstrate use cases via two multi-purpose web apps (https://chat.biocypher.org), and provide documentation, support, and an open community.
+We demonstrate use cases via two multi-purpose web apps ([https://chat.biocypher.org](https://chat.biocypher.org)), and provide documentation, support, and an open community.
 
 
 ## Introduction
