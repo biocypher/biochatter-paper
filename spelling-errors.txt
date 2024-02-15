@@ -12,14 +12,14 @@ Bao
 Baumbach
 Beier
 benchmarked
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
 Bioinformatics
 biomarker
-Biomedicine
+biomedicine
 BioSC
 Brussel
 Bruxelles
@@ -54,7 +54,7 @@ Forschungszentrum
 frontend
 frontends
 Geosciences
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
