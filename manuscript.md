@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-15" />
   <meta name="citation_publication_date" content="2024-02-15" />
   <meta property="article:published_time" content="2024-02-15" />
-  <meta name="dc.modified" content="2024-02-15T10:32:05+00:00" />
-  <meta property="article:modified_time" content="2024-02-15T10:32:05+00:00" />
+  <meta name="dc.modified" content="2024-02-15T10:33:39+00:00" />
+  <meta property="article:modified_time" content="2024-02-15T10:33:39+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/e0f5db3e66336eb8747054cb7d32b3c1edce029e/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/))
 was automatically generated
-from [biocypher/biochatter-paper@e0f5db3](https://github.com/biocypher/biochatter-paper/tree/e0f5db3e66336eb8747054cb7d32b3c1edce029e)
+from [biocypher/biochatter-paper@ccfa0d0](https://github.com/biocypher/biochatter-paper/tree/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2)
 on February 15, 2024.
 </em></small>
 
@@ -238,7 +238,7 @@ We demonstrate use cases via two multi-purpose web apps ([https://chat.biocypher
 Despite technological advances, understanding biological and biomedical systems still poses major challenges [@gallagher-infinite;@dl-bioscience].
 We measure more and more data points with ever-increasing resolution to such a degree that their analysis and interpretation have become the bottleneck for their exploitation [@dl-bioscience].
 One reason for this challenge may be the inherent limitation of human knowledge [@doi:10.1016/j.tics.2005.04.010]: Even seasoned domain experts cannot know the implications of every gene, molecule, symptom, or biomarker.
-In addition, biological events are context-dependent, for instance, with respect to a cell type or specific disease.
+In addition, biological events are context-dependent, for instance with respect to a cell type or specific disease.
 
 Large Language Models (LLMs) of the current generation, in contrast, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311;@doi:10.48550/arxiv.2201.08239;@doi:10.48550/arxiv.2303.08774;@doi:10.1609/aaai.v36i11.21488].
 Trained correctly, they can recall and combine virtually limitless knowledge from their training set.

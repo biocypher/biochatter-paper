@@ -140,7 +140,7 @@ TCF
 TODO
 tradeoff
 Trang
-Transmembrane
+transmembrane
 Travere
 Tsuda
 tumorigenic
