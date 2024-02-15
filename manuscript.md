@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-15" />
   <meta name="citation_publication_date" content="2024-02-15" />
   <meta property="article:published_time" content="2024-02-15" />
-  <meta name="dc.modified" content="2024-02-15T06:22:46+00:00" />
-  <meta property="article:modified_time" content="2024-02-15T06:22:46+00:00" />
+  <meta name="dc.modified" content="2024-02-15T08:45:19+00:00" />
+  <meta property="article:modified_time" content="2024-02-15T08:45:19+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/c007683fbd0c28970805008a28c2d5288e26d089/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/c007683fbd0c28970805008a28c2d5288e26d089/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/c007683fbd0c28970805008a28c2d5288e26d089/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/7832d5090430cdcfd6dc41a06b2d7faf3b73cb75/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7832d5090430cdcfd6dc41a06b2d7faf3b73cb75/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/7832d5090430cdcfd6dc41a06b2d7faf3b73cb75/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/c007683fbd0c28970805008a28c2d5288e26d089/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/7832d5090430cdcfd6dc41a06b2d7faf3b73cb75/))
 was automatically generated
-from [biocypher/biochatter-paper@c007683](https://github.com/biocypher/biochatter-paper/tree/c007683fbd0c28970805008a28c2d5288e26d089)
+from [biocypher/biochatter-paper@7832d50](https://github.com/biocypher/biochatter-paper/tree/7832d5090430cdcfd6dc41a06b2d7faf3b73cb75)
 on February 15, 2024.
 </em></small>
 
