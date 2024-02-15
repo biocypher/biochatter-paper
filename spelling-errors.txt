@@ -53,7 +53,7 @@ Forschungszentrum
 frontend
 frontends
 Geosciences
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
