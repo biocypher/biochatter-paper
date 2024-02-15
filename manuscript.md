@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-15" />
   <meta name="citation_publication_date" content="2024-02-15" />
   <meta property="article:published_time" content="2024-02-15" />
-  <meta name="dc.modified" content="2024-02-15T10:07:27+00:00" />
-  <meta property="article:modified_time" content="2024-02-15T10:07:27+00:00" />
+  <meta name="dc.modified" content="2024-02-15T10:31:15+00:00" />
+  <meta property="article:modified_time" content="2024-02-15T10:31:15+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/929a15e53a94bde1555babf9065cbe6eff7b2421/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/929a15e53a94bde1555babf9065cbe6eff7b2421/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/929a15e53a94bde1555babf9065cbe6eff7b2421/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/929a15e53a94bde1555babf9065cbe6eff7b2421/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/0b6f149728de443d9cb2c24cced7c765da9cff02/))
 was automatically generated
-from [biocypher/biochatter-paper@929a15e](https://github.com/biocypher/biochatter-paper/tree/929a15e53a94bde1555babf9065cbe6eff7b2421)
+from [biocypher/biochatter-paper@0b6f149](https://github.com/biocypher/biochatter-paper/tree/0b6f149728de443d9cb2c24cced7c765da9cff02)
 on February 15, 2024.
 </em></small>
 
@@ -579,14 +579,14 @@ They also add to the computational burden of the system, which is particularly r
 ## Author Contributions {.page_break_before}
 
 SL conceptualised and developed the platform and wrote the manuscript.
-AM implemented the local deployment functionality.
-NK implemented benchmarking procedures.
-CW architected the BioChatter Next server infrastructure.
-QM oversaw the development and deployment of the BioChatter Next server environment.
 SF integrated BioChatter continuous integration pipelines and developed both front-end and back-end components for the BioChatter Next server.
-JB provided guidance and supervision as well as hardware resources for local LLM use and contributed to performance benchmarking.
-JSR supervised the project, revised the manuscript, and acquired funding.
 The BioChatter consortium members contributed to the development of the platform and provided feedback on the manuscript.
+AM implemented the local deployment functionality.
+CW architected the BioChatter Next server infrastructure.
+JB provided guidance and supervision as well as hardware resources for local LLM use and contributed to performance benchmarking.
+NK implemented benchmarking procedures.
+QM oversaw the development and deployment of the BioChatter Next server environment.
+JSR supervised the project, revised the manuscript, and acquired funding.
 All authors read and approved the final manuscript.
 
 ## Acknowledgements
