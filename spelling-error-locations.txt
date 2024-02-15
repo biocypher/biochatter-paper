@@ -11,7 +11,6 @@ content/01.abstract.md:7:biocypher
 content/01.abstract.md:7:biocypher
 content/10.introduction.md:5:biomarker
 content/10.introduction.md:8:LLMs
-content/10.introduction.md:10:ChatGPT
 content/10.introduction.md:10:LLMs
 content/10.introduction.md:11:LLMs
 content/10.introduction.md:13:ensembling

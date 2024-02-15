@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-15" />
   <meta name="citation_publication_date" content="2024-02-15" />
   <meta property="article:published_time" content="2024-02-15" />
-  <meta name="dc.modified" content="2024-02-15T10:33:39+00:00" />
-  <meta property="article:modified_time" content="2024-02-15T10:33:39+00:00" />
+  <meta name="dc.modified" content="2024-02-15T10:38:49+00:00" />
+  <meta property="article:modified_time" content="2024-02-15T10:38:49+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/32a990970f754b4a632acac66c661aed6c8b01c6/))
 was automatically generated
-from [biocypher/biochatter-paper@ccfa0d0](https://github.com/biocypher/biochatter-paper/tree/ccfa0d0db46d487019ff6a8a6ced67f18306f5e2)
+from [biocypher/biochatter-paper@32a9909](https://github.com/biocypher/biochatter-paper/tree/32a990970f754b4a632acac66c661aed6c8b01c6)
 on February 15, 2024.
 </em></small>
 
@@ -242,7 +242,7 @@ In addition, biological events are context-dependent, for instance with respect 
 
 Large Language Models (LLMs) of the current generation, in contrast, can access enormous amounts of knowledge, encoded (incomprehensibly) in their billions of parameters [@doi:10.48550/arxiv.2204.02311;@doi:10.48550/arxiv.2201.08239;@doi:10.48550/arxiv.2303.08774;@doi:10.1609/aaai.v36i11.21488].
 Trained correctly, they can recall and combine virtually limitless knowledge from their training set.
-ChatGPT has taken the world by storm, and many biomedical researchers already use LLMs in their daily work, for general as well as research tasks [@doi:10.1038/s41586-023-06792-0;@doi:10.1101/2023.04.16.537094;@doi:10.1038/s41587-023-01789-6].
+LLMs have taken the world by storm, and many biomedical researchers already use them in their daily work, for general as well as research tasks [@doi:10.1038/s41586-023-06792-0;@doi:10.1101/2023.04.16.537094;@doi:10.1038/s41587-023-01789-6].
 However, the current way of interacting with LLMs is predominantly manual, virtually non-reproducible, and their behaviour can be erratic.
 For instance, they are known to confabulate: they make up facts as they go along, and, to make matters worse, are convinced — and convincing — regarding the truth of their confabulations [@doi:10.1038/s41586-023-05881-4;@doi:10.1038/s41587-023-01789-6].
 While current efforts towards Artificial General Intelligence manage to ameliorate some of the shortcomings by ensembling multiple models [@{https://python.langchain.com}] with long-term memory stores [@{https://autogpt.net/}], the current generation of AI does not inspire adequate trust to be applied to biomedical problems without supervision [@doi:10.1038/s41586-023-05881-4].
@@ -256,7 +256,7 @@ Since the interaction is mainly based on plain text (in any language), it can be
 <!-- Figure 1 -->
 ![
 **The BioChatter composable platform architecture (simplified).**
-LLMs can facilitate many tasks in daily biomedical research practice, for instance, interpretation of experimental results or the use of a web resource (top left).
+LLMs can facilitate many tasks in daily biomedical research practice, for instance interpretation of experimental results or the use of a web resource (top left).
 BioChatter’s main response circuit (blue) composes a number of specifically engineered prompts and passes them (and a conversation history) to the primary LLM, which generates a response for the user based on all inputs.
 This response is simultaneously used to prompt the secondary circuit (orange), which fulfils auxiliary tasks to complement the primary response.
 In particular, using search, the secondary circuit queries a database as a prior knowledge repository and compares annotations to the primary response, or uses the knowledge to perform Retrieval-Augmented Generation (RAG).
@@ -310,7 +310,7 @@ Currently, the most powerful conversational AI platform, ChatGPT (OpenAI), is su
 To address this issue, we provide access to the different OpenAI models through their API, which is subject to different, more stringent data protection than the web interface [@{https://openai.com/policies/terms-of-use}], most importantly by disallowing reuse of user inputs for subsequent model training.
 Further, we aim to preferentially support open-source LLMs to facilitate more transparency in their application and increase data privacy by being able to run a model locally on dedicated hardware and end-user devices [@doi:10.1038/d41586-023-01295-4].
 By building on LangChain [@langchain], we support dozens of LLM providers, such as the Xorbits Inference and Hugging Face APIs [@{https://github.com/xorbitsai/inference}], which can be used to query any of the more than 100 000 open-source models on Hugging Face Hub [@{https://huggingface.co/docs/hub/index}], for instance those on its LLM leaderboard [@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}].
-Although OpenAI’s models currently vastly outperform any alternatives in terms of both LLM performance and API convenience, we expect many open-source developments in this area in the future [@biollmbench].
+Although OpenAI’s models currently outperform any alternatives in terms of both LLM performance and API convenience, we expect many open-source developments in this area in the future [@biollmbench].
 Therefore, we support plug-and-play exchange of models to enhance biomedical AI readiness, and we implement a bespoke benchmarking framework for the biomedical application of LLMs.
 
 ### Prompt Engineering
