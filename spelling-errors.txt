@@ -12,14 +12,14 @@ Bao
 Baumbach
 Beier
 benchmarked
-benchmarking
+Benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
 Bioinformatics
 biomarker
-biomedicine
+Biomedicine
 BioSC
 Brussel
 Bruxelles
@@ -47,14 +47,13 @@ EBI
 embeddings
 EMBL
 ensembling
-expectedly
 Feng
 fengsh
 Forschungszentrum
 frontend
 frontends
 Geosciences
-gpt
+GPT
 GPUs
 Grunenthal
 GSK
@@ -94,6 +93,7 @@ microRNA
 Milvus
 Mixtral
 Mompel
+multimodal
 natively
 Nils
 nilskre
@@ -105,6 +105,7 @@ OpenAI
 OpenAI’s
 openhermes
 overexpression
+Owkin
 parameterisation
 Pau
 Pelotonia
@@ -139,7 +140,7 @@ TCF
 TODO
 tradeoff
 Trang
-Transmembrane
+transmembrane
 Travere
 Tsuda
 tumorigenic
