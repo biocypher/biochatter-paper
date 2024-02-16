@@ -124,8 +124,8 @@
   <meta name="dc.date" content="2024-02-16" />
   <meta name="citation_publication_date" content="2024-02-16" />
   <meta property="article:published_time" content="2024-02-16" />
-  <meta name="dc.modified" content="2024-02-16T00:10:50+00:00" />
-  <meta property="article:modified_time" content="2024-02-16T00:10:50+00:00" />
+  <meta name="dc.modified" content="2024-02-16T00:16:54+00:00" />
+  <meta property="article:modified_time" content="2024-02-16T00:16:54+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -169,9 +169,9 @@
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -188,9 +188,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/">permalink</a>)
+(<a href="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/biocypher/biochatter-paper/tree/60322cb9e415d5d52108a9376d020cfb18bf8458">biocypher/biochatter-paper@60322cb</a>
+from <a href="https://github.com/biocypher/biochatter-paper/tree/b82b23134b1d959409a914e6eb2b4e222934b57e">biocypher/biochatter-paper@b82b231</a>
 on February 16, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -454,14 +454,13 @@ Proprietary models are currently the most economical solution for accessing stat
 In contrast, open-source models are quickly catching up in terms of performance <span class="citation" data-cites="uYvzQA7w">[<a href="#ref-uYvzQA7w" role="doc-biblioref">25</a>]</span> and are essential for the sustainability of the field <span class="citation" data-cites="BXdkfGlr">[<a href="#ref-BXdkfGlr" role="doc-biblioref">35</a>]</span>.
 We allow self-hosting of open-source models on any scale, from dedicated hardware with GPUs, to local deployment on end-user laptops, to browser-based deployment using web technology.</p>
 <h3 id="limitations">Limitations</h3>
-<p>The current generation of LLMs is not yet ready for unsupervised use in biomedical research.
+<p>The current generation of LLMs is not yet ready for unsupervised use in biomedical research with its vast array of unique subfields.
+Effectively supporting this diversity through robust and contextually aware LLM interactions is a daunting task.
 While we have taken steps to mitigate the risks of using LLMs such as independent benchmarks, fact-checking, and RAG processes, we cannot guarantee that the models will not produce harmful outputs.
 We see current LLMs, particularly in the scope of the BioCypher ecosystem, as helpful tools to assist human researchers, alleviating menial and repetitive tasks and helping with technical aspects such as query languages.
-They are not meant to replace human ingenuity and expertise but to augment it with their complementary strengths.</p>
-<p>Depending on generic open-source libraries such as LangChain <span class="citation" data-cites="vKMc6EpN">[<a href="#ref-vKMc6EpN" role="doc-biblioref">16</a>]</span> and Pytest <span class="citation" data-cites="14upAJPXR">[<a href="#ref-14upAJPXR" role="doc-biblioref">31</a>]</span> allows us to focus on the biomedical domain but also introduces technical dependencies on these libraries.
-While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
-In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.
-For the continued relevance of our framework, it is essential that its components, such as the benchmark, are maintained as the field evolves.</p>
+They are not meant to replace human ingenuity and expertise but to augment it with their complementary strengths.
+Despite the user-friendly design of BioChatter, there may be a learning curve for researchers unfamiliar with LLMs or the specific functionalities of the framework.
+Encouraging adoption and providing adequate training and support are critical for maximizing its impact in the biomedical research community.</p>
 <h3 id="future-directions">Future directions</h3>
 <p>Multitask learners that can synthesise, for instance, language, vision, and molecular measurements are an emerging field of research <span class="citation" data-cites="47ndFyxw JbgxHZwW 43KJj9IS">[<a href="#ref-47ndFyxw" role="doc-biblioref">41</a>,<a href="#ref-JbgxHZwW" role="doc-biblioref">42</a>,<a href="#ref-43KJj9IS" role="doc-biblioref">43</a>]</span>.
 Autonomous agents for trivial tasks have already been developed on the basis of LLMs, and we expect this field to mature in the future <span class="citation" data-cites="lmJHElQl">[<a href="#ref-lmJHElQl" role="doc-biblioref">30</a>]</span>.
