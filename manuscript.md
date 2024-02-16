@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-16" />
   <meta name="citation_publication_date" content="2024-02-16" />
   <meta property="article:published_time" content="2024-02-16" />
-  <meta name="dc.modified" content="2024-02-16T00:10:50+00:00" />
-  <meta property="article:modified_time" content="2024-02-16T00:10:50+00:00" />
+  <meta name="dc.modified" content="2024-02-16T00:16:54+00:00" />
+  <meta property="article:modified_time" content="2024-02-16T00:16:54+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/))
 was automatically generated
-from [biocypher/biochatter-paper@60322cb](https://github.com/biocypher/biochatter-paper/tree/60322cb9e415d5d52108a9376d020cfb18bf8458)
+from [biocypher/biochatter-paper@b82b231](https://github.com/biocypher/biochatter-paper/tree/b82b23134b1d959409a914e6eb2b4e222934b57e)
 on February 16, 2024.
 </em></small>
 
@@ -418,15 +418,13 @@ We allow self-hosting of open-source models on any scale, from dedicated hardwar
 
 ### Limitations
 
-The current generation of LLMs is not yet ready for unsupervised use in biomedical research.
+The current generation of LLMs is not yet ready for unsupervised use in biomedical research with its vast array of unique subfields.
+Effectively supporting this diversity through robust and contextually aware LLM interactions is a daunting task.
 While we have taken steps to mitigate the risks of using LLMs such as independent benchmarks, fact-checking, and RAG processes, we cannot guarantee that the models will not produce harmful outputs.
 We see current LLMs, particularly in the scope of the BioCypher ecosystem, as helpful tools to assist human researchers, alleviating menial and repetitive tasks and helping with technical aspects such as query languages.
 They are not meant to replace human ingenuity and expertise but to augment it with their complementary strengths.
-
-Depending on generic open-source libraries such as LangChain [@langchain] and Pytest [@pytest] allows us to focus on the biomedical domain but also introduces technical dependencies on these libraries.
-While we support those upstream libraries via pull requests, we depend on their maintainers for future updates.
-In addition, keeping up with these rapid developments is demanding on developer time, which is only sustainable in a community-driven open-source effort.
-For the continued relevance of our framework, it is essential that its components, such as the benchmark, are maintained as the field evolves.
+Despite the user-friendly design of BioChatter, there may be a learning curve for researchers unfamiliar with LLMs or the specific functionalities of the framework.
+Encouraging adoption and providing adequate training and support are critical for maximizing its impact in the biomedical research community.
 
 ### Future directions
 

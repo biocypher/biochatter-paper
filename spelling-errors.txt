@@ -19,7 +19,7 @@ BioCypher
 Bioeconomy
 Bioinformatics
 biomarker
-Biomedicine
+biomedicine
 BioSC
 Brussel
 Bruxelles
@@ -53,7 +53,7 @@ Forschungszentrum
 frontend
 frontends
 Geosciences
-gpt
+GPT
 GPUs
 Grunenthal
 GSK
@@ -134,6 +134,7 @@ Src
 Stadapharm
 stochasticity
 Streamlit
+subfields
 synergise
 TCF
 TODO
