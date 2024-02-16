@@ -12,12 +12,12 @@ Bao
 Baumbach
 Beier
 benchmarked
-Benchmarking
+benchmarking
 BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
-bioinformatics
+Bioinformatics
 biomarker
 Biomedicine
 BioSC
@@ -109,7 +109,6 @@ Owkin
 parameterisation
 Pau
 Pelotonia
-PIIO
 pre
 programme
 Pytest

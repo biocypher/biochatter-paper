@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-15'
+date-meta: '2024-02-16'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-15" />
-  <meta name="citation_publication_date" content="2024-02-15" />
-  <meta property="article:published_time" content="2024-02-15" />
-  <meta name="dc.modified" content="2024-02-15T10:58:38+00:00" />
-  <meta property="article:modified_time" content="2024-02-15T10:58:38+00:00" />
+  <meta name="dc.date" content="2024-02-16" />
+  <meta name="citation_publication_date" content="2024-02-16" />
+  <meta property="article:published_time" content="2024-02-16" />
+  <meta name="dc.modified" content="2024-02-16T00:10:50+00:00" />
+  <meta property="article:modified_time" content="2024-02-16T00:10:50+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/8214615882ebefca4dadd487177de0a87b276d5e/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8214615882ebefca4dadd487177de0a87b276d5e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/8214615882ebefca4dadd487177de0a87b276d5e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/8214615882ebefca4dadd487177de0a87b276d5e/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/60322cb9e415d5d52108a9376d020cfb18bf8458/))
 was automatically generated
-from [biocypher/biochatter-paper@8214615](https://github.com/biocypher/biochatter-paper/tree/8214615882ebefca4dadd487177de0a87b276d5e)
-on February 15, 2024.
+from [biocypher/biochatter-paper@60322cb](https://github.com/biocypher/biochatter-paper/tree/60322cb9e415d5d52108a9376d020cfb18bf8458)
+on February 16, 2024.
 </em></small>
 
 
@@ -245,8 +245,9 @@ Trained correctly, they can recall and combine virtually limitless knowledge fro
 LLMs have taken the world by storm, and many biomedical researchers already use them in their daily work, for general as well as research tasks [@doi:10.1038/s41586-023-06792-0;@doi:10.1101/2023.04.16.537094;@doi:10.1038/s41587-023-01789-6].
 However, the current way of interacting with LLMs is predominantly manual, virtually non-reproducible, and their behaviour can be erratic.
 For instance, they are known to confabulate: they make up facts as they go along, and, to make matters worse, are convinced — and convincing — regarding the truth of their confabulations [@doi:10.1038/s41586-023-05881-4;@doi:10.1038/s41587-023-01789-6].
-While current efforts towards Artificial General Intelligence manage to ameliorate some of the shortcomings by ensembling multiple models [@{https://python.langchain.com}] with long-term memory stores [@{https://autogpt.net/}], the current generation of AI does not inspire adequate trust to be applied to biomedical problems without supervision [@doi:10.1038/s41586-023-05881-4].
-Additionally, biomedicine demands greater care in data privacy, licensing, and transparency than most other real-world issues [@doi:10.48550/arXiv.2401.05654].
+Current efforts towards Artificial General Intelligence have made some progress in addressing these issues by ensembling multiple models [@{https://python.langchain.com}] with long-term memory stores [@{https://autogpt.net/}].
+However, current AI systems have not yet earned sufficient trust for use in biomedical fields [@doi:10.1038/s41586-023-05881-4].
+These areas demand greater care in data privacy, licensing, and transparency than many other issues and cannot be approached without oversight [@doi:10.48550/arXiv.2401.05654].
 
 Computational biomedicine involves many tasks that could be assisted by LLMs, such as experimental design, outcome interpretation, literature evaluation, and web resource exploration.
 To improve and accelerate these tasks, we have developed BioChatter, a platform optimised for communicating with LLMs in biomedical research (Figure @fig:overview).
@@ -404,7 +405,7 @@ As such, a framework is a necessary step towards the objective and reproducible 
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
 The living benchmark will be updated with new questions and tasks as they arise in the community.
 
-The benchmark's results are a great starting point for delving deeper into the reasons why some models perform differently than expected.
+The benchmark's results provide a starting point for understanding why some models perform differently than expected.
 For instance, the benchmark allowed immediate flagging of the drop in performance from the older (0613) to the newer (0125) version of gpt-4.
 It also identified a range of pre-trained open-source models suitable for our uses, most notably, the openhermes-2.5 model in 4- or 5-bit quantisation.
 This model is a fine-tuned (on GPT-4-generated data) variant of Mistral 7B v0.1, whose vanilla variants perform considerably worse in our benchmarks.
@@ -431,9 +432,7 @@ For the continued relevance of our framework, it is essential that its component
 
 Multitask learners that can synthesise, for instance, language, vision, and molecular measurements are an emerging field of research [@doi:10.48550/arXiv.2306.04529;@doi:10.48550/arXiv.2211.01786;@doi:10.48550/arXiv.2310.09478].
 Autonomous agents for trivial tasks have already been developed on the basis of LLMs, and we expect this field to mature in the future [@doi:10.48550/arXiv.2308.11432].
-As research on multimodal learning and agent behaviour progresses, we will integrate these developments into the BioChatter framework.
-Remaining accessible in the face of ever increasing complexity of models and workflows requires continuous maintenance and usability improvements to allow broad adoption in biomedical research. 
-
+As research on multimodal learning and agent behaviour progresses, we plan to integrate these developments into the BioChatter framework.
 All framework developments will be performed in light of the ethical implications of LLMs, and we will continue to support the use of open-source models to increase transparency and data privacy.
 While we focus on the biomedical field, the concept of our frameworks can easily be extended to other scientific domains by adjusting domain-specific prompts and data inputs, which are accessible in a composable and user-friendly manner in our frameworks [@biocypher].
 Our Python library is developed openly on GitHub ([https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)) and can be integrated into any downstream user interface solution.
@@ -457,7 +456,7 @@ This framework is suitable for rapid prototyping of bespoke solutions for specif
 For an up-to-date overview and preview of the current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
 
 BioChatter Next ([https://github.com/biocypher/biochatter-next](https://github.com/biocypher/biochatter-next)) is a modern web app with server-client architecture, based on the open-source template of ChatGPT-Next-Web ([https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)).
-It is written combining Typescript and Python and utilises Next.js (v13.4.9) for a sleek frontend and Flask (v3.0.0) as backend.
+It is written combining Typescript and Python and uses Next.js (v13.4.9) for a sleek frontend and Flask (v3.0.0) as backend.
 It demonstrates the use of BioChatter in a modern web app, including full customisation and scalability and localisation in 18 languages.
 However, this comes at the cost of increased complexity and development time.
 To provide seamless integration of the BioChatter backend into existing frontend solutions, we provide the server implementation at [https://github.com/biocypher/biochatter-server](https://github.com/biocypher/biochatter-server) and as a Docker image in our Docker Hub organisation ([https://hub.docker.com/repository/docker/biocypher/biochatter-server](https://hub.docker.com/repository/docker/biocypher/biochatter-server)).
@@ -593,7 +592,7 @@ All authors read and approved the final manuscript.
 
 We thank Hanna Schumacher, Daniel Dimitrov, Pau Badia i Mompel, and Aurelien Dugourd for feedback on the original draft of the manuscript and the software.
 
-This work was supported by funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 965193 (SL), award U54-AG075931 (QM) from the National Institutes of Health, award NSF1945971 (QM) from the National Science Foundation, and the Pelotonia Institute of Immuno-Oncology (PIIO).
+This work was supported by funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 965193 (JSR), award U54-AG075931 (QM) from the National Institutes of Health, award NSF1945971 (QM) from the National Science Foundation, and the Pelotonia Institute of Immuno-Oncology.
 
 ## Disclaimer
 
@@ -611,6 +610,20 @@ JSR reports funding from GSK, Pfizer and Sanofi and fees/honoraria from Travere 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 
+## The BioChatter Consortium
+
+The BioChatter Consortium is a community of researchers and developers who are interested in the application of LLMs to biomedical research.
+We list here alphabetically all members of the consortium who have contributed to the development of the BioChatter framework.
+
+- Adrián G. Díaz (Interuniversity Institute of Bioinformatics in Brussels, Brussels, Belgium and Structural Biology Brussels, Vrije Universiteit Brussels, Brussels, Belgium)
+- Aurelien Dugourd (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
+- Emma Verkinderen (Interuniversity Institute of Bioinformatics in Brussels, Université Libre de Bruxelles-Vrije Universiteit Brussel, 1050, Brussels, Belgium)
+- Fernando M. Delgado-Chaves (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany)
+- Megan McNutt (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
+- Sebastian Beier (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
+- Trang T. Le (Bristol Myers Squibb, 250 Water St, Cambridge, MA 02141, USA)
+- Xiao-Ran Zhou (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
+- Yuyao Song (European Molecular Biology Laboratory-European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, Hinxton, United Kingdom)
 
 ## Supplementary Materials {.page_break_before}
 
@@ -920,21 +933,6 @@ Ion Transport and Cancer: CFTR is involved in ion transport across cell membrane
 Potential Therapeutic Target: Some research suggests that modulating CFTR activity or expression could be a potential target for cancer therapy, including ovarian cancer. However, more research is needed to determine the feasibility and effectiveness of such approaches.
 It's important to note that the understanding of the role of CFTR in cancer, including ovarian cancer, is an evolving field, and new research findings may have emerged since my last update in January 2022. To get the most up-to-date information on this topic, I recommend consulting recent scientific literature and speaking with medical experts or researchers actively working in the field of ovarian cancer and CFTR biology.
 
-
-### The BioChatter Consortium
-
-The BioChatter Consortium is a community of researchers and developers who are interested in the application of LLMs to biomedical research.
-We list here alphabetically all members of the consortium who have contributed to the development of the BioChatter framework.
-
-- Adrián G. Díaz (Interuniversity Institute of Bioinformatics in Brussels, Brussels, Belgium and Structural Biology Brussels, Vrije Universiteit Brussels, Brussels, Belgium)
-- Aurelien Dugourd (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
-- Emma Verkinderen (Interuniversity Institute of Bioinformatics in Brussels, Université Libre de Bruxelles-Vrije Universiteit Brussel, 1050, Brussels, Belgium)
-- Fernando M. Delgado-Chaves (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany)
-- Megan McNutt (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
-- Sebastian Beier (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
-- Trang T. Le (Bristol Myers Squibb, 250 Water St, Cambridge, MA 02141, USA)
-- Xiao-Ran Zhou (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
-- Yuyao Song (European Molecular Biology Laboratory-European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, Hinxton, United Kingdom)
 
 [@biocypher]: doi:10.1038/s41587-023-01848-y
 [@pytest]: https://github.com/pytest-dev/pytest
