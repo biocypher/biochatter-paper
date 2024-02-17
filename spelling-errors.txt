@@ -54,7 +54,7 @@ franca
 frontend
 frontends
 Geosciences
-gpt
+GPT
 GPUs
 Grunenthal
 GSK
@@ -142,7 +142,7 @@ TCF
 TODO
 tradeoff
 Trang
-transmembrane
+Transmembrane
 Travere
 Tsuda
 tumorigenic

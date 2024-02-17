@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-17" />
   <meta name="citation_publication_date" content="2024-02-17" />
   <meta property="article:published_time" content="2024-02-17" />
-  <meta name="dc.modified" content="2024-02-17T06:11:42+00:00" />
-  <meta property="article:modified_time" content="2024-02-17T06:11:42+00:00" />
+  <meta name="dc.modified" content="2024-02-17T06:31:27+00:00" />
+  <meta property="article:modified_time" content="2024-02-17T06:31:27+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/))
 was automatically generated
-from [biocypher/biochatter-paper@336baf0](https://github.com/biocypher/biochatter-paper/tree/336baf0c3f072b3524a425c525ecf0e0b789faa8)
+from [biocypher/biochatter-paper@5df3234](https://github.com/biocypher/biochatter-paper/tree/5df3234aa3ddd87adf06c071c51aab7b2d732e41)
 on February 17, 2024.
 </em></small>
 
@@ -325,7 +325,7 @@ In addition, to facilitate the scaling of prompt engineering, we integrate this 
 ### Knowledge Graphs
 
 KGs are a powerful tool to represent and query knowledge in a structured manner.
-With BioCypher [@biocypher], we have developed a framework to create KGs from biomedical data in a user-friendly manner while also semantically grounding the data in ontologies.
+With BioCypher [@biocypher], we have developed a framework to create KGs from biomedical data in a user-friendly way while also semantically grounding the data in ontologies.
 BioChatter is an extension of the BioCypher ecosystem, elevating its user-friendliness further by allowing natural language interactions with the data; any BioCypher KG is automatically compatible with BioChatter.
 We use information generated in the build process of BioCypher KGs to tune BioChatter's understanding of the data structures and contents, thereby increasing the efficiency of LLM-based KG querying (see Methods).
 In addition, the ability to connect to any BioCypher KG allows the integration of prior knowledge into the LLM's retrieval, which can be used to ground the model's responses in the context of the KG via in-context learning / retrieval-augmented generation, which can facilitate human-AI interaction via symbolic concepts [@doi:10.1609/aaai.v36i11.21488].
