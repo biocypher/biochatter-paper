@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-17" />
   <meta name="citation_publication_date" content="2024-02-17" />
   <meta property="article:published_time" content="2024-02-17" />
-  <meta name="dc.modified" content="2024-02-17T06:31:27+00:00" />
-  <meta property="article:modified_time" content="2024-02-17T06:31:27+00:00" />
+  <meta name="dc.modified" content="2024-02-17T06:36:09+00:00" />
+  <meta property="article:modified_time" content="2024-02-17T06:36:09+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/5df3234aa3ddd87adf06c071c51aab7b2d732e41/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/))
 was automatically generated
-from [biocypher/biochatter-paper@5df3234](https://github.com/biocypher/biochatter-paper/tree/5df3234aa3ddd87adf06c071c51aab7b2d732e41)
+from [biocypher/biochatter-paper@d09aa6d](https://github.com/biocypher/biochatter-paper/tree/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e)
 on February 17, 2024.
 </em></small>
 
@@ -395,7 +395,7 @@ The fast pace of developments around current-generation LLMs poses a great chall
 While the potential of these models is enormous, their application is not straightforward, and their use requires a certain level of expertise [@doi:10.1038/s41587-023-02103-0].
 In addition, biomedical research is often performed in a siloed way due to the complexity of the domain and systemic incentives that work against open science and collaboration [@doi:10.1177/1745691612459058;@doi:10.1038/d41586-024-00322-2].
 Inspired by the productivity of open source libraries such as LangChain [@langchain], we propose an open framework that allows biomedical researchers to focus on the application of LLMs as opposed to engineering challenges.
-To keep the framework effective and sustainable, we focus on reusing existing open-source libraries and tools, while adapting the advancements from the wider LLM community to the biomedical domain.
+To keep the framework effective and sustainable, we reuse existing open-source libraries and tools while adapting the advancements from the wider LLM community to the biomedical domain.
 The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond [@doi:10.1038/d41586-024-00029-4].
 
 To facilitate efficient human-AI interaction, a "lingua franca" is required; symbolic representations of concepts are required at least at the surface level of the conversation [@doi:10.1609/aaai.v36i11.21488].
