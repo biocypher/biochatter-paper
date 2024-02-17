@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-16'
+date-meta: '2024-02-17'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-16" />
-  <meta name="citation_publication_date" content="2024-02-16" />
-  <meta property="article:published_time" content="2024-02-16" />
-  <meta name="dc.modified" content="2024-02-16T00:16:54+00:00" />
-  <meta property="article:modified_time" content="2024-02-16T00:16:54+00:00" />
+  <meta name="dc.date" content="2024-02-17" />
+  <meta name="citation_publication_date" content="2024-02-17" />
+  <meta property="article:published_time" content="2024-02-17" />
+  <meta name="dc.modified" content="2024-02-17T06:11:42+00:00" />
+  <meta property="article:modified_time" content="2024-02-17T06:11:42+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/b82b23134b1d959409a914e6eb2b4e222934b57e/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/336baf0c3f072b3524a425c525ecf0e0b789faa8/))
 was automatically generated
-from [biocypher/biochatter-paper@b82b231](https://github.com/biocypher/biochatter-paper/tree/b82b23134b1d959409a914e6eb2b4e222934b57e)
-on February 16, 2024.
+from [biocypher/biochatter-paper@336baf0](https://github.com/biocypher/biochatter-paper/tree/336baf0c3f072b3524a425c525ecf0e0b789faa8)
+on February 17, 2024.
 </em></small>
 
 
@@ -398,9 +398,14 @@ Inspired by the productivity of open source libraries such as LangChain [@langch
 To keep the framework effective and sustainable, we focus on reusing existing open-source libraries and tools, while adapting the advancements from the wider LLM community to the biomedical domain.
 The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond [@doi:10.1038/d41586-024-00029-4].
 
-To account for the requirements of biomedical research workflows, we take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
+To facilitate efficient human-AI interaction, a "lingua franca" is required; symbolic representations of concepts are required at least at the surface level of the conversation [@doi:10.1609/aaai.v36i11.21488].
+We enable interaction with LLMs on a symbolic level by providing ontological grounding via the synergy of BioChatter with BioCypher KGs.
+The configuration of BioCypher KGs allows the user to specify the contextual domain by mapping KG concepts to existing ontologies and custom terminology.
+This way, we guarantee an overlap in the contextual understanding of user and LLM despite the generic nature of most pre-trained models.
+
+We take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
-Even the most recent and biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters such as model version and temperature [@biollmbench].
+Even the most recent biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters such as model version and temperature [@biollmbench].
 As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
 The living benchmark will be updated with new questions and tasks as they arise in the community.
@@ -424,7 +429,7 @@ While we have taken steps to mitigate the risks of using LLMs such as independen
 We see current LLMs, particularly in the scope of the BioCypher ecosystem, as helpful tools to assist human researchers, alleviating menial and repetitive tasks and helping with technical aspects such as query languages.
 They are not meant to replace human ingenuity and expertise but to augment it with their complementary strengths.
 Despite the user-friendly design of BioChatter, there may be a learning curve for researchers unfamiliar with LLMs or the specific functionalities of the framework.
-Encouraging adoption and providing adequate training and support are critical for maximizing its impact in the biomedical research community.
+For maximising its benefit to the community, encouraging adoption and providing adequate training and support will be critical.
 
 ### Future directions
 

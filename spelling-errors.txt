@@ -50,10 +50,11 @@ ensembling
 Feng
 fengsh
 Forschungszentrum
+franca
 frontend
 frontends
 Geosciences
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
@@ -81,6 +82,7 @@ LangChain
 leaderboard
 leaderboards
 Libre
+lingua
 LLM
 LLM’s
 LLMs
