@@ -32,8 +32,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-17" />
   <meta name="citation_publication_date" content="2024-02-17" />
   <meta property="article:published_time" content="2024-02-17" />
-  <meta name="dc.modified" content="2024-02-17T06:36:09+00:00" />
-  <meta property="article:modified_time" content="2024-02-17T06:36:09+00:00" />
+  <meta name="dc.modified" content="2024-02-17T07:09:01+00:00" />
+  <meta property="article:modified_time" content="2024-02-17T07:09:01+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,9 +101,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/))
 was automatically generated
-from [biocypher/biochatter-paper@d09aa6d](https://github.com/biocypher/biochatter-paper/tree/d09aa6d0023e7ee48355c05a7260d3f65e36ef9e)
+from [biocypher/biochatter-paper@0cdd377](https://github.com/biocypher/biochatter-paper/tree/0cdd37790a8dda42978a9ad0e39a66b21daa9f83)
 on February 17, 2024.
 </em></small>
 
@@ -398,19 +398,19 @@ Inspired by the productivity of open source libraries such as LangChain [@langch
 To keep the framework effective and sustainable, we reuse existing open-source libraries and tools while adapting the advancements from the wider LLM community to the biomedical domain.
 The transparency we emphasise at every step of the framework is essential to a sustainable application of LLMs in biomedical research and beyond [@doi:10.1038/d41586-024-00029-4].
 
-To facilitate efficient human-AI interaction, a "lingua franca" is required; symbolic representations of concepts are required at least at the surface level of the conversation [@doi:10.1609/aaai.v36i11.21488].
+Efficient human-AI interaction may require a "lingua franca": symbolic representations of concepts at least at the surface level of the conversation [@doi:10.1609/aaai.v36i11.21488].
 We enable interaction with LLMs on a symbolic level by providing ontological grounding via the synergy of BioChatter with BioCypher KGs.
 The configuration of BioCypher KGs allows the user to specify the contextual domain by mapping KG concepts to existing ontologies and custom terminology.
 This way, we guarantee an overlap in the contextual understanding of user and LLM despite the generic nature of most pre-trained models.
 
-We take particular care to guarantee robustness and objective evaluation of LLM behaviour and their performance in interaction with other parts of the framework.
+We emphasise robustness and objective evaluation of LLM behaviour and performance in interaction with other parts of the framework.
 We achieve this goal by implementing a living benchmarking framework that allows the automated evaluation of LLMs, prompts, and other components ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
 Even the most recent biomedicine-specific benchmarking efforts are small-scale manual approaches that do not consider the full matrix of possible combinations of components, and many benchmarks are performed by accessing web interfaces of LLMs, which obfuscates important parameters such as model version and temperature [@biollmbench].
 As such, a framework is a necessary step towards the objective and reproducible evaluation of LLMs.
 We prevent data leakage from the benchmark datasets into the training data of new models by encryption, which is essential for the sustainability of the benchmark as new models are released.
 The living benchmark will be updated with new questions and tasks as they arise in the community.
 
-The benchmark's results provide a starting point for understanding why some models perform differently than expected.
+The benchmark's results provide convenient selection criteria and a starting point for exploring why some models perform differently than expected.
 For instance, the benchmark allowed immediate flagging of the drop in performance from the older (0613) to the newer (0125) version of gpt-4.
 It also identified a range of pre-trained open-source models suitable for our uses, most notably, the openhermes-2.5 model in 4- or 5-bit quantisation.
 This model is a fine-tuned (on GPT-4-generated data) variant of Mistral 7B v0.1, whose vanilla variants perform considerably worse in our benchmarks.
@@ -453,7 +453,7 @@ We include a code of conduct and contributor guidelines to offer accessibility a
 
 To demonstrate basic and advanced use cases of the framework, we provide two web apps, BioChatter Light and BioChatter Next.
 
-BioChatter Light is a web app based on the Streamlit framework (version 1.21.0, [https://streamlit.io](https://streamlit.io)), which is written in Python and can be deployed locally or on a server ([https://github.com/biocypher/biochatter-light](https://github.com/biocypher/biochatter-light)).
+BioChatter Light is a web app based on the Streamlit framework (version 1.31.1, [https://streamlit.io](https://streamlit.io)), which is written in Python and can be deployed locally or on a server ([https://github.com/biocypher/biochatter-light](https://github.com/biocypher/biochatter-light)).
 The ease with which Streamlit allows the creation of interactive web apps in pure Python enables rapid iteration and agile development of new features, with the tradeoff of limited customisation and scalability.
 This framework is suitable for rapid prototyping of bespoke solutions for specific use cases.
 For an up-to-date overview and preview of the current functionality of the platform, please visit the [online preview](https://chat.biocypher.org).
@@ -500,8 +500,7 @@ For instance, we test the conversion of numbers (which LLMs are notoriously bad 
 
 The Pytest framework is implemented at [https://github.com/biocypher/biochatter/blob/main/benchmark](https://github.com/biocypher/biochatter/blob/main/benchmark), and more information is available at [https://biochatter.org/benchmarking](https://biochatter.org/benchmarking).
 The benchmark is updated upon the release of new models and extensions to the datasets, and continuously available at [https://biochatter.org/benchmark](https://biochatter.org/benchmark).
-<!-- TODO link -->
-We will run the benchmark on new models and variants (including fine-tuned models) upon requests from the community, which can be made on GitHub using our issue template (TODO link).
+We will run the benchmark on new models and variants (including fine-tuned models) upon requests from the community, which can be made on GitHub using our issue template ([https://github.com/biocypher/biochatter/issues/new/choose](https://github.com/biocypher/biochatter/issues/new/choose)).
 The living benchmark process is inspired by test-driven development, meaning test cases are created based on specific features or behaviors that are desired.
 When a model doesn't initially produce the optimal response, which is often the case, adjustments are made to various elements of the framework, including prompts or functions, to enhance the model's effectiveness.
 Monitoring the model's performance on these tests over time allows us to assess the framework's reliability and pinpoint areas that need improvement.
@@ -619,11 +618,19 @@ The BioChatter Consortium is a community of researchers and developers who are i
 We list here alphabetically all members of the consortium who have contributed to the development of the BioChatter framework.
 
 - Adrián G. Díaz (Interuniversity Institute of Bioinformatics in Brussels, Brussels, Belgium and Structural Biology Brussels, Vrije Universiteit Brussels, Brussels, Belgium)
+- Andreas Maier (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany)
 - Aurelien Dugourd (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
+- Cankun Wang (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
 - Emma Verkinderen (Interuniversity Institute of Bioinformatics in Brussels, Université Libre de Bruxelles-Vrije Universiteit Brussel, 1050, Brussels, Belgium)
 - Fernando M. Delgado-Chaves (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany)
+- Jan Baumbach (Institute for Computational Systems Biology, University of Hamburg, Hamburg, Germany and Computational Biomedicine Lab, Department of Mathematics and Computer Science, University of Southern Denmark, Odense, Denmark)
+- Julio Saez-Rodriguez (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
 - Megan McNutt (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
+- Nils Krehl (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
+- Qin Ma (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
 - Sebastian Beier (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
+- Sebastian Lobentanzer (Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany)
+- Shaohong Feng (Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA)
 - Trang T. Le (Bristol Myers Squibb, 250 Water St, Cambridge, MA 02141, USA)
 - Xiao-Ran Zhou (Institute of Bio- and Geosciences (IBG-4: Bioinformatics), Bioeconomy Science Center (BioSC), CEPLAS, Forschungszentrum Jülich, Jülich, Germany)
 - Yuyao Song (European Molecular Biology Laboratory-European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, Hinxton, United Kingdom)
