@@ -7,7 +7,7 @@ keywords:
 - retrieval-augmented generation
 - knowledge graph
 lang: en-UK
-date-meta: '2024-02-17'
+date-meta: '2024-02-23'
 author-meta:
 - Sebastian Lobentanzer
 - Shaohong Feng
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="og:title" content="A Platform for the Biomedical Application of Large Language Models" />
   <meta property="twitter:title" content="A Platform for the Biomedical Application of Large Language Models" />
-  <meta name="dc.date" content="2024-02-17" />
-  <meta name="citation_publication_date" content="2024-02-17" />
-  <meta property="article:published_time" content="2024-02-17" />
-  <meta name="dc.modified" content="2024-02-17T07:09:01+00:00" />
-  <meta property="article:modified_time" content="2024-02-17T07:09:01+00:00" />
+  <meta name="dc.date" content="2024-02-23" />
+  <meta name="citation_publication_date" content="2024-02-23" />
+  <meta property="article:published_time" content="2024-02-23" />
+  <meta name="dc.modified" content="2024-02-23T17:03:33+00:00" />
+  <meta property="article:modified_time" content="2024-02-23T17:03:33+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://biocypher.github.io/biochatter-paper/" />
   <meta name="citation_pdf_url" content="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://biocypher.github.io/biochatter-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/" />
-  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/" />
-  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://biocypher.github.io/biochatter-paper/v/5eaecd1c15465add63457d91832d56774ca2564a/" />
+  <meta name="manubot_html_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/5eaecd1c15465add63457d91832d56774ca2564a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://biocypher.github.io/biochatter-paper/v/5eaecd1c15465add63457d91832d56774ca2564a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://biocypher.github.io/biochatter-paper/v/0cdd37790a8dda42978a9ad0e39a66b21daa9f83/))
+([permalink](https://biocypher.github.io/biochatter-paper/v/5eaecd1c15465add63457d91832d56774ca2564a/))
 was automatically generated
-from [biocypher/biochatter-paper@0cdd377](https://github.com/biocypher/biochatter-paper/tree/0cdd37790a8dda42978a9ad0e39a66b21daa9f83)
-on February 17, 2024.
+from [biocypher/biochatter-paper@5eaecd1](https://github.com/biocypher/biochatter-paper/tree/5eaecd1c15465add63457d91832d56774ca2564a)
+on February 23, 2024.
 </em></small>
 
 
@@ -358,7 +358,7 @@ For transparent and reproducible evaluation of LLMs, we implement a benchmarking
 The generic Pytest framework [@pytest] allows for the automated evaluation of a matrix of all possible combinations of components.
 The results are stored and displayed on our website for simple comparison, and the benchmark is updated upon the release of new models and extensions to the datasets and BioChatter capabilities ([https://biochatter.org/benchmark/](https://biochatter.org/benchmark/)).
 
-Since the biomedical domain has its own tasks and requirements, we created a bespoke benchmark that allows us to be more precise in the evaluation of components [@biollmbench].
+Since the biomedical domain has its own tasks and requirements [@biollmbench], we created a bespoke benchmark that allows us to be more precise in the evaluation of components.
 This is complementary to the existing, general-purpose benchmarks and leaderboards for LLMs [@doi:10.1038/s41586-023-06291-2;@{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard};@{https://crfm.stanford.edu/helm/lite/latest/}].
 Furthermore, to prevent leakage of the benchmark data into the training data of the models, a known issue in the general-purpose benchmarks [@doi:10.48550/arXiv.2310.18018], we implemented an encrypted pipeline that contains the benchmark datasets and is only accessible to the workflow that executes the benchmark (see Methods).
 

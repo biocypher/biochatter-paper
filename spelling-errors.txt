@@ -17,9 +17,9 @@ BioChatter
 BioChatter’s
 BioCypher
 Bioeconomy
-Bioinformatics
+bioinformatics
 biomarker
-biomedicine
+Biomedicine
 BioSC
 Brussel
 Bruxelles
@@ -54,7 +54,7 @@ franca
 frontend
 frontends
 Geosciences
-GPT
+gpt
 GPUs
 Grunenthal
 GSK
@@ -141,7 +141,7 @@ synergise
 TCF
 tradeoff
 Trang
-Transmembrane
+transmembrane
 Travere
 Tsuda
 tumorigenic
